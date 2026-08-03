@@ -376,8 +376,9 @@ def _fit_scene_projector(
     for x in (-length / 2, length / 2):
         for y in (-room_width / 2, room_width / 2):
             samples.append((x, y, 0))
-    for x, y in ((-length / 2, room_width / 2), (length / 2, room_width / 2), (length / 2, -room_width / 2)):
-        samples.append((x, y, wall_height))
+    for x in (-length / 2, length / 2):
+        for y in (-room_width / 2, room_width / 2):
+            samples.append((x, y, wall_height))
 
     for opening in scene["openings"]:
         cx_m, cy_m, _ = opening["clearance_center_xyz_m"]
@@ -695,6 +696,12 @@ def draw_realistic_3d_scene(
         project(-length / 2, room_width / 2, wall_h),
         project(length / 2, room_width / 2, wall_h),
     ]
+    left_wall = [
+        project(-length / 2, room_width / 2, 0),
+        project(-length / 2, -room_width / 2, 0),
+        project(-length / 2, -room_width / 2, wall_h),
+        project(-length / 2, room_width / 2, wall_h),
+    ]
     right_wall = [
         project(length / 2, -room_width / 2, 0),
         project(length / 2, room_width / 2, 0),
@@ -702,9 +709,11 @@ def draw_realistic_3d_scene(
         project(length / 2, -room_width / 2, wall_h),
     ]
     _paste_texture_polygon(image, back_wall, WALL_TEXTURE, tint="#f2f5f8", opacity=205)
+    _paste_texture_polygon(image, left_wall, WALL_TEXTURE, tint="#edf2f7", opacity=145)
     _paste_texture_polygon(image, right_wall, WALL_TEXTURE, tint="#e9eef4", opacity=185)
     _paste_texture_polygon(image, floor, FLOOR_TEXTURE, tint="#d2b37e", opacity=220)
     draw.polygon(back_wall, outline="#b3c3d5")
+    draw.polygon(left_wall, outline="#c5d1df")
     draw.polygon(right_wall, outline="#b3c3d5")
     draw.line(floor + [floor[0]], fill="#2f4868", width=3)
 
@@ -2003,7 +2012,7 @@ def figure_application() -> None:
     candidates = [
         row
         for row in prediction_payload["examples"]
-        if row["scene_id"] == "clean_v2_prod_0018_home_office_0042"
+        if row["scene_id"] == "clean_v2_prod_0018_living_room_0006"
         and row.get("geometry_cleared")
         and row.get("sfur_after", {}).get("scene_functional_pass")
     ]
