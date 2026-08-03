@@ -1,0 +1,149 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "living_room_authored_001",
+  "room_type": "living_room",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 6.1,
+    "width_m": 4.8,
+    "spatial_character": "A rectangular media-and-reading living room with a clear cross-room viewing axis and a separate north-side reading perch.",
+    "daily_activities": [
+      "watching media from the main sofa",
+      "casual conversation and drinks",
+      "quiet reading near daylight"
+    ],
+    "organization": "sofa_main on the east wall faces tv_bench_media on the west wall. coffee_table_main is shifted toward the sofa rather than centered, while armchair_reading, side_table_reading, and floor_lamp_reading make a smaller reading group in the north-center below the window.",
+    "main_path": "Enter from the south-west, move east across the open south strip to the sofa approach, continue north through the central gap to the reading chair, or turn north-west to the media cabinet; no route requires passing through the coffee-table reach area.",
+    "protected_open_space": "The south strip from the entrance, the central band between the coffee table and media wall, and the window clearance at the north wall stay open for circulation, standing, and daylight."
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_southwest",
+      "kind": "door",
+      "wall": "south",
+      "along_m": -2.0,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "placement_rationale": "The south-west entry opens to an unoccupied band below the media and reading furniture, allowing direct movement toward either seating area without facing the back of the sofa."
+    },
+    {
+      "opening_id": "window_north_center",
+      "kind": "window",
+      "wall": "north",
+      "along_m": 0.0,
+      "opening_width_m": 1.9,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "placement_rationale": "The north window supplies daylight above the reading group; the armchair, side table, and lamp stop below its clearance band, so the glazing remains visually and physically open."
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "sofa_main",
+      "hssd_id": "00366b86401aa16b702c21de49fd59b75ab9c57b",
+      "category": "sofa",
+      "x": 2.52,
+      "y": 0.25,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "placement_rationale": "The main sofa uses the east wall and faces west toward tv_bench_media. It is centered on the media axis but leaves its south end clear of the entry route and a usable west-facing approach zone between the sofa and coffee table."
+    },
+    {
+      "object_id": "tv_bench_media",
+      "hssd_id": "0074b6bf5758fd7186157fd3a8d53afe3e200cba",
+      "category": "tv_bench",
+      "x": -2.723,
+      "y": 0.3,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "placement_rationale": "The media bench anchors the west wall and faces east toward sofa_main. It stays north of the door clearance and its operating space opens toward the room rather than into the entry corner."
+    },
+    {
+      "object_id": "coffee_table_main",
+      "hssd_id": "0239c03b6896e4e4fad328885cf078995c913046",
+      "category": "coffee_table",
+      "x": 1.05,
+      "y": -0.4,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "This low table is deliberately shifted toward sofa_main's south half, where it is within reach of the main seat while leaving the north-center passage free for the reading chair. It is not used as a geometric center point for evenly spaced seating."
+    },
+    {
+      "object_id": "armchair_reading",
+      "hssd_id": "0df55741b2499a6d155ba54ec55199e85ed83386",
+      "category": "armchair",
+      "x": 0.5,
+      "y": 1.15,
+      "z": 0.0,
+      "yaw_rad": 0.25,
+      "placement_rationale": "The reading chair sits north of coffee_table_main and turns south-east toward the table and sofa conversation area. Its diagonal orientation keeps it out of the window clearance while providing an independent reading posture rather than another symmetric television-facing seat."
+    },
+    {
+      "object_id": "side_table_reading",
+      "hssd_id": "065f704809e85a8e986e891c39a7cfeb3427fcb6",
+      "category": "side_table",
+      "x": 1.22,
+      "y": 1.55,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The small side table sits at armchair_reading's north-east side for a book or cup. It remains below the north-window clearance and outside the chair's south-east approach zone."
+    },
+    {
+      "object_id": "floor_lamp_reading",
+      "hssd_id": "1363704ef1a2dc37a27d347b2af3bd79772a1423",
+      "category": "floor_lamp",
+      "x": -0.25,
+      "y": 1.65,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The floor lamp stands at armchair_reading's north-west flank to light the reading seat. It is separated from the chair's approach wedge and stays below the north-window clearance, preserving both walkability and daylight."
+    }
+  ],
+  "use_clearance_zones": [
+    {
+      "zone_id": "use_sofa_main_front",
+      "owner_id": "sofa_main",
+      "center_xy_m": [1.82, 0.25],
+      "size_xy_m": [1.2, 0.5],
+      "yaw_rad": -1.5707963267948966,
+      "purpose": "sofa_seating_approach_and_exit",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_tv_bench_media_front",
+      "owner_id": "tv_bench_media",
+      "center_xy_m": [-2.176, 0.3],
+      "size_xy_m": [1.2, 0.6],
+      "yaw_rad": 1.5707963267948966,
+      "purpose": "media_cabinet_access",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_armchair_reading_front",
+      "owner_id": "armchair_reading",
+      "center_xy_m": [0.6361, 0.6172],
+      "size_xy_m": [0.7, 0.4],
+      "yaw_rad": 0.25,
+      "purpose": "reading_chair_approach_and_sit",
+      "allowed_overlap_object_ids": []
+    }
+  ],
+  "path_targets": [
+    {"target_id": "sofa_access", "goal_xy_m": [1.55, 0.85]},
+    {"target_id": "media_access", "goal_xy_m": [-2.1, 0.3]},
+    {"target_id": "reading_access", "goal_xy_m": [0.64, 0.62]},
+    {"target_id": "coffee_table_access", "goal_xy_m": [0.75, -0.4]}
+  ],
+  "primary_zone_goal_xy_m": [1.55, 0.85],
+  "authorship": {
+    "layout_decisions_by": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "functional_partners_authored": false,
+    "old_scene_coordinates_viewed_before_initial_draft": false
+  }
+}

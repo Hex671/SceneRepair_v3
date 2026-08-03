@@ -1,0 +1,79 @@
+{
+  "scene_id": "home_office_authored_002",
+  "isolation_compliance": {
+    "compliant": true,
+    "inspected_artifacts": [
+      "reviews/reviewer_packet/home_office_authored_002_scene.json",
+      "visualizations/home_office_authored_002.png",
+      "validation/home_office_authored_002.json",
+      "validation/home_office_authored_002_diversity.json"
+    ],
+    "note": "This assessment relies exclusively on the four authorized final artifacts."
+  },
+  "object_reports": [
+    {
+      "object_id": "desk_work_east",
+      "cited_object_ids": ["desk_work_east", "chair_work_east"],
+      "assessment": "pass",
+      "concrete_reason": "The desk is aligned at the east wall and the chair is directly opposite it on the room side. The rendered work-use and chair pull-out zones remain open, and the validator confirms collision-free reachable desk access.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "chair_work_east",
+      "cited_object_ids": ["chair_work_east", "desk_work_east"],
+      "assessment": "pass",
+      "concrete_reason": "The chair is close enough to serve the desk without occupying the door route, and its dedicated pull-out/standing clearance is unobstructed in the visualization and validation report.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "bookcase_reference_north",
+      "cited_object_ids": ["bookcase_reference_north"],
+      "assessment": "pass",
+      "concrete_reason": "The bookcase is wall-aligned at the north side, away from the window opening, with a clear front-facing browsing zone and a reachable access target.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "cabinet_files_south_east",
+      "cited_object_ids": ["cabinet_files_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "The cabinet is placed along the south wall clear of the entry opening, and its front operation zone and access target are both unobstructed and reachable.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "armchair_window_reading",
+      "cited_object_ids": ["armchair_window_reading", "side_table_window_reading", "floor_lamp_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The armchair forms a distinct, angled reading position near the window. Its side table and floor lamp are nearby without encroaching on the chair approach zone or the window clearance, and reading access is validated.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "side_table_window_reading",
+      "cited_object_ids": ["side_table_window_reading", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The compact side table is positioned beside the reading seat as a usable support surface while preserving a visible gap and the seat's approach clearance.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "floor_lamp_window_reading",
+      "cited_object_ids": ["floor_lamp_window_reading", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The floor lamp is within practical reach of the reading chair, remains outside the chair approach area, and does not block the circulation path from the door.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    }
+  ],
+  "final_verdict": "semantic_review_pass"
+}

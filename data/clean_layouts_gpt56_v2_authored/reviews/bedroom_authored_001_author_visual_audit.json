@@ -1,0 +1,58 @@
+{
+  "schema_version": "authored_topdown_visual_audit_v1",
+  "scene_id": "bedroom_authored_001",
+  "reviewer_role": "layout_author",
+  "review_basis": "Final top-down PNG after deterministic validation round 1",
+  "review_items": [
+    {
+      "criterion": "natural_entry",
+      "cited_object_ids": ["armchair_reading", "floor_lamp_reading", "bed_sleep"],
+      "assessment": "pass",
+      "concrete_reason": "The south-east door opens into an empty strip; armchair_reading and floor_lamp_reading sit north of the door clearance, and bed_sleep is well west of the incoming route."
+    },
+    {
+      "criterion": "continuous_paths",
+      "cited_object_ids": ["bed_sleep", "wardrobe_clothes", "armchair_reading", "nightstand_sleep"],
+      "assessment": "pass",
+      "concrete_reason": "All four declared targets are reachable from the door through the east-side lane and center. The route reaches wardrobe_clothes without crossing the bed egress area and reaches nightstand_sleep around the bed's north-east corner."
+    },
+    {
+      "criterion": "normal_use",
+      "cited_object_ids": ["bed_sleep", "nightstand_sleep", "wardrobe_clothes", "armchair_reading", "side_table_reading", "floor_lamp_reading"],
+      "assessment": "pass",
+      "concrete_reason": "bed_sleep has a clear east-side making and egress zone; nightstand_sleep is reachable from the bed's north side; wardrobe_clothes has unobstructed south-facing dressing space; and the reading chair's north-west approach remains free of its support table and lamp."
+    },
+    {
+      "criterion": "functional_grouping",
+      "cited_object_ids": ["bed_sleep", "nightstand_sleep", "armchair_reading", "side_table_reading", "floor_lamp_reading"],
+      "assessment": "pass",
+      "concrete_reason": "bed_sleep and nightstand_sleep make a compact sleep group while armchair_reading, side_table_reading, and floor_lamp_reading form an independent day-reading group rather than scattering occasional furniture around the bed."
+    },
+    {
+      "criterion": "density_and_open_space",
+      "cited_object_ids": ["bed_sleep", "wardrobe_clothes", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The large bed and north-wall wardrobe establish the two required bedroom masses, while the center and east-side lane remain intentionally open for dressing and passage instead of overfilling the room with duplicate bedside furniture."
+    },
+    {
+      "criterion": "human_habit_and_orientation",
+      "cited_object_ids": ["bed_sleep", "wardrobe_clothes", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The bed head is against the west wall with access toward the room, wardrobe_clothes faces into a usable dressing area, and armchair_reading turns toward its open approach rather than toward a wall or the doorway."
+    },
+    {
+      "criterion": "hierarchy",
+      "cited_object_ids": ["bed_sleep", "wardrobe_clothes", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "bed_sleep is the dominant west-side sleeping anchor, wardrobe_clothes is the secondary north-side utility anchor, and the smaller reading group is clearly subordinate in the south-east."
+    },
+    {
+      "criterion": "not_old_template",
+      "cited_object_ids": ["bed_sleep", "nightstand_sleep", "floor_lamp_reading", "wardrobe_clothes"],
+      "assessment": "pass",
+      "concrete_reason": "The closest bedroom_003 uses a north-wall bed, two nightstands, a west-wall wardrobe, and no reading lamp. This scene rotates the bed to the west wall, uses one north-side nightstand, moves the wardrobe north-east, and builds a distinct five-edge frozen partner graph."
+    }
+  ],
+  "modification_rounds": [],
+  "final_verdict": "author_visual_pass"
+}

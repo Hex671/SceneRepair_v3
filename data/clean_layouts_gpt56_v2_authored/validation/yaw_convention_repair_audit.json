@@ -1,0 +1,234 @@
+{
+  "schema_version": "authored_yaw_convention_repair_audit_v1",
+  "coordinate_contract": "HSSD local -Y is the semantic front",
+  "scenes": [
+    {
+      "scene_id": "bedroom_authored_002",
+      "yaw_corrections": [
+        {
+          "object_id": "nightstand_sleep_west",
+          "old_yaw_rad": -3.141592653589793,
+          "new_yaw_rad": 0.0,
+          "old_local_minus_y_front_xy": [
+            -0.0,
+            1.0
+          ],
+          "new_local_minus_y_front_xy": [
+            0.0,
+            -1.0
+          ]
+        },
+        {
+          "object_id": "wardrobe_clothes_east",
+          "old_yaw_rad": 1.5707963267948966,
+          "new_yaw_rad": -1.5707963267948966,
+          "old_local_minus_y_front_xy": [
+            1.0,
+            -0.0
+          ],
+          "new_local_minus_y_front_xy": [
+            -1.0,
+            -0.0
+          ]
+        },
+        {
+          "object_id": "cabinet_dressing_south",
+          "old_yaw_rad": 0.0,
+          "new_yaw_rad": -3.141592653589793,
+          "old_local_minus_y_front_xy": [
+            0.0,
+            -1.0
+          ],
+          "new_local_minus_y_front_xy": [
+            -0.0,
+            1.0
+          ]
+        },
+        {
+          "object_id": "armchair_daylight_south_east",
+          "old_yaw_rad": 0.8,
+          "new_yaw_rad": -2.3415926535897933,
+          "old_local_minus_y_front_xy": [
+            0.717356,
+            -0.696707
+          ],
+          "new_local_minus_y_front_xy": [
+            -0.717356,
+            0.696707
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "dining_room_authored_003",
+      "yaw_corrections": [
+        {
+          "object_id": "bench_east_diners",
+          "old_yaw_rad": 1.5707963267948966,
+          "new_yaw_rad": -1.5707963267948966,
+          "old_local_minus_y_front_xy": [
+            1.0,
+            -0.0
+          ],
+          "new_local_minus_y_front_xy": [
+            -1.0,
+            -0.0
+          ]
+        },
+        {
+          "object_id": "chair_west_diner",
+          "old_yaw_rad": -1.5707963267948966,
+          "new_yaw_rad": 1.5707963267948966,
+          "old_local_minus_y_front_xy": [
+            -1.0,
+            -0.0
+          ],
+          "new_local_minus_y_front_xy": [
+            1.0,
+            -0.0
+          ]
+        },
+        {
+          "object_id": "cabinet_dishes_west",
+          "old_yaw_rad": -1.5707963267948966,
+          "new_yaw_rad": 1.5707963267948966,
+          "old_local_minus_y_front_xy": [
+            -1.0,
+            -0.0
+          ],
+          "new_local_minus_y_front_xy": [
+            1.0,
+            -0.0
+          ]
+        },
+        {
+          "object_id": "console_serving_south",
+          "old_yaw_rad": 0.0,
+          "new_yaw_rad": -3.141592653589793,
+          "old_local_minus_y_front_xy": [
+            0.0,
+            -1.0
+          ],
+          "new_local_minus_y_front_xy": [
+            -0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "home_office_authored_002",
+      "yaw_corrections": [
+        {
+          "object_id": "desk_work_east",
+          "old_yaw_rad": 1.5707963267948966,
+          "new_yaw_rad": -1.5707963267948966,
+          "old_local_minus_y_front_xy": [
+            1.0,
+            -0.0
+          ],
+          "new_local_minus_y_front_xy": [
+            -1.0,
+            -0.0
+          ]
+        },
+        {
+          "object_id": "chair_work_east",
+          "old_yaw_rad": -1.5707963267948966,
+          "new_yaw_rad": 1.5707963267948966,
+          "old_local_minus_y_front_xy": [
+            -1.0,
+            -0.0
+          ],
+          "new_local_minus_y_front_xy": [
+            1.0,
+            -0.0
+          ]
+        },
+        {
+          "object_id": "bookcase_reference_north",
+          "old_yaw_rad": -3.141592653589793,
+          "new_yaw_rad": 0.0,
+          "old_local_minus_y_front_xy": [
+            -0.0,
+            1.0
+          ],
+          "new_local_minus_y_front_xy": [
+            0.0,
+            -1.0
+          ]
+        },
+        {
+          "object_id": "cabinet_files_south_east",
+          "old_yaw_rad": 0.0,
+          "new_yaw_rad": -3.141592653589793,
+          "old_local_minus_y_front_xy": [
+            0.0,
+            -1.0
+          ],
+          "new_local_minus_y_front_xy": [
+            -0.0,
+            1.0
+          ]
+        },
+        {
+          "object_id": "armchair_window_reading",
+          "old_yaw_rad": -2.35,
+          "new_yaw_rad": 0.791592653589793,
+          "old_local_minus_y_front_xy": [
+            -0.711473,
+            0.702713
+          ],
+          "new_local_minus_y_front_xy": [
+            0.711473,
+            -0.702713
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "living_room_authored_002",
+      "yaw_corrections": [
+        {
+          "object_id": "sofa_conversation_north",
+          "old_yaw_rad": -3.141592653589793,
+          "new_yaw_rad": 0.0,
+          "old_local_minus_y_front_xy": [
+            -0.0,
+            1.0
+          ],
+          "new_local_minus_y_front_xy": [
+            0.0,
+            -1.0
+          ]
+        },
+        {
+          "object_id": "armchair_conversation_east",
+          "old_yaw_rad": 0.8,
+          "new_yaw_rad": -2.3415926535897933,
+          "old_local_minus_y_front_xy": [
+            0.717356,
+            -0.696707
+          ],
+          "new_local_minus_y_front_xy": [
+            -0.717356,
+            0.696707
+          ]
+        },
+        {
+          "object_id": "console_serving_south_east",
+          "old_yaw_rad": 0.0,
+          "new_yaw_rad": -3.141592653589793,
+          "old_local_minus_y_front_xy": [
+            0.0,
+            -1.0
+          ],
+          "new_local_minus_y_front_xy": [
+            -0.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}

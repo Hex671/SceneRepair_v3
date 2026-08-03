@@ -1,0 +1,64 @@
+{
+  "schema_version": "authored_topdown_visual_audit_v1",
+  "scene_id": "home_office_authored_001",
+  "reviewer_role": "layout_author",
+  "review_basis": "Final top-down PNG after deterministic validation round 2",
+  "review_items": [
+    {
+      "criterion": "natural_entry",
+      "cited_object_ids": ["cabinet_files", "desk_chair"],
+      "assessment": "pass",
+      "concrete_reason": "The south-east door opens into an empty turning area; cabinet_files is north of the door clearance and desk_chair is farther north beyond the central approach."
+    },
+    {
+      "criterion": "continuous_paths",
+      "cited_object_ids": ["desk_chair", "cabinet_files", "bookcase_reference", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The open center branches directly to the dedicated access targets for all four objects, and deterministic path checks reached every target."
+    },
+    {
+      "criterion": "normal_use",
+      "cited_object_ids": ["desk_work", "desk_chair", "bookcase_reference", "cabinet_files", "armchair_reading", "side_table_reading", "floor_lamp_reading"],
+      "assessment": "pass",
+      "concrete_reason": "desk_chair faces desk_work with pull-out room; both storage fronts are unobstructed; armchair_reading has a clear north-east approach, with side_table_reading set back on the south-east flank and floor_lamp_reading on the west flank."
+    },
+    {
+      "criterion": "functional_grouping",
+      "cited_object_ids": ["desk_work", "desk_chair", "armchair_reading", "side_table_reading", "floor_lamp_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The paired desk zone is visually primary in the north-east, while the diagonal chair, side table, and lamp form a compact secondary reading zone in the south-west."
+    },
+    {
+      "criterion": "density_and_open_space",
+      "cited_object_ids": ["bookcase_reference", "cabinet_files", "armchair_reading", "desk_work"],
+      "assessment": "pass",
+      "concrete_reason": "Perimeter storage and the two corner activity zones leave a deliberately broad central circulation field without making either activity zone feel isolated."
+    },
+    {
+      "criterion": "human_habit_and_orientation",
+      "cited_object_ids": ["desk_work", "desk_chair", "bookcase_reference", "cabinet_files", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The task seat faces its desk, wall storage faces inward, and the reading chair turns toward the room instead of a blank wall; the desk sits beside rather than inside the north-window clearance."
+    },
+    {
+      "criterion": "hierarchy",
+      "cited_object_ids": ["desk_work", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The larger desk_work footprint and direct entry-to-work route establish focused work as primary, while armchair_reading remains a distinct but smaller retreat."
+    },
+    {
+      "criterion": "not_old_template",
+      "cited_object_ids": ["desk_work", "cabinet_files", "armchair_reading", "floor_lamp_reading"],
+      "assessment": "pass",
+      "concrete_reason": "Against the closest home_office_001, this scene adds an east file-storage zone and dedicated reading light, moves the work focus to the north-east and reading focus to the south-west, and changes the opening and circulation organization rather than mirroring or shifting the old group."
+    }
+  ],
+  "modification_rounds": [
+    {
+      "round": 1,
+      "validation_error": "use_armchair_reading_front blocked by side_table_reading",
+      "author_correction": "Moved side_table_reading from (-0.75, -1.35) to (-1.05, -1.67) along the chair's south-east flank."
+    }
+  ],
+  "final_verdict": "author_visual_pass"
+}

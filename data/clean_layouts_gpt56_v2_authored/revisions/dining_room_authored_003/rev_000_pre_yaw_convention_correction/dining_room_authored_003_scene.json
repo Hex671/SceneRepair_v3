@@ -1,0 +1,700 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "dining_room_authored_003",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "dining_room",
+  "length": 6.0,
+  "width": 5.0,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_north_west",
+      "kind": "door",
+      "wall": "north",
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        -1.8,
+        2.1,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.9,
+        0.8,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        -1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_daylight_east",
+      "kind": "window",
+      "wall": "east",
+      "opening_width_m": 1.6,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        2.75,
+        1.25,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.5,
+        1.6,
+        2.05
+      ],
+      "interior_normal_xy": [
+        -1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "table_meal_east",
+      "hssd_id": "01fd238f3e39659142240fc38ae44796e180597c",
+      "hssd_source_category": "dining table",
+      "category": "table",
+      "family": "support_surface",
+      "functions": [
+        "dining_surface",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 1.5,
+        "depth": 0.8,
+        "height": 0.73
+      },
+      "x": 0.55,
+      "y": -0.25,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "dining table",
+          "partners": [
+            "chair",
+            "cup",
+            "place_mat",
+            "plate"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "bench_east_diners",
+      "hssd_id": "1545dff46c628df670d35950119834dbb0d7cdf3",
+      "hssd_source_category": "bench",
+      "category": "bench",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 1.219,
+        "depth": 0.502,
+        "height": 0.396
+      },
+      "x": 1.801,
+      "y": -0.25,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "bench",
+          "partners": [
+            "dining_table",
+            "picnic_table"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "chair_west_diner",
+      "hssd_id": "05e74cdc180382e77852871d4f0041023f18a16a",
+      "hssd_source_category": "chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.596,
+        "depth": 0.577,
+        "height": 0.735
+      },
+      "x": -0.75,
+      "y": -0.25,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "chair",
+          "partners": [
+            "conference_table",
+            "desk",
+            "dining_table"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "cabinet_dishes_west",
+      "hssd_id": "198459120142c19e59b9d94063326307dba1be5b",
+      "hssd_source_category": "cabinet",
+      "category": "cabinet",
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ],
+      "bbox": {
+        "width": 1.2008,
+        "depth": 0.6338,
+        "height": 0.8921
+      },
+      "x": -2.633,
+      "y": 0.6,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor",
+            "wall"
+          ],
+          "confidence": 0.84,
+          "dof": 1,
+          "orientation_constraints": [
+            "back against wall; front faces accessible room area"
+          ],
+          "provenance": "seed_rule:wall_floor_boundary",
+          "support_anchor": "wall+floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "cabinet",
+          "partners": [
+            "door",
+            "drawer"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "cabinet",
+          "geometry_root_key": "hssd_materialized",
+          "match_id": "198459120142c19e59b9d94063326307dba1be5b",
+          "n_movable": 4,
+          "realization_kind": "hssd_official",
+          "source": "HSSD-official",
+          "static_dims": [
+            1.201,
+            0.892,
+            0.634
+          ],
+          "swept_dims": [
+            2.079,
+            0.892,
+            1.158
+          ],
+          "vol_bloat": 3.163
+        }
+      }
+    },
+    {
+      "object_id": "console_serving_south",
+      "hssd_id": "183de9f61a9c362d58ac340058ecddc54da18809",
+      "hssd_source_category": "console table",
+      "category": "console_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ],
+      "bbox": {
+        "width": 1.5,
+        "depth": 0.4794,
+        "height": 0.76
+      },
+      "x": -0.5,
+      "y": -2.2103,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "console table",
+          "partners": [
+            "table_lamp",
+            "vase",
+            "wall_mirror"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "console_table",
+          "geometry_root_key": "hssd_materialized",
+          "match_id": "183de9f61a9c362d58ac340058ecddc54da18809",
+          "n_movable": 2,
+          "realization_kind": "hssd_official",
+          "source": "HSSD-official",
+          "static_dims": [
+            1.5,
+            0.751,
+            0.479
+          ],
+          "swept_dims": [
+            1.5,
+            0.751,
+            0.867
+          ],
+          "vol_bloat": 1.808
+        }
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "table_meal_east",
+      "target_id": "chair_west_diner",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "01fd238f3e39659142240fc38ae44796e180597c",
+        "matched_original_partner_category": "chair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "bench_east_diners",
+      "target_id": "table_meal_east",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "1545dff46c628df670d35950119834dbb0d7cdf3",
+        "matched_original_partner_category": "dining_table",
+        "category_match_mode": "frozen_semantic_compatibility",
+        "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "chair_west_diner",
+      "target_id": "table_meal_east",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "05e74cdc180382e77852871d4f0041023f18a16a",
+        "matched_original_partner_category": "dining_table",
+        "category_match_mode": "frozen_semantic_compatibility",
+        "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    }
+  ],
+  "audit": {
+    "use_clearance_zones": [
+      {
+        "zone_id": "use_table_south_service",
+        "owner_id": "table_meal_east",
+        "center_xy_m": [
+          0.55,
+          -1.12
+        ],
+        "size_xy_m": [
+          1.5,
+          0.52
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "table_setting_and_south_access",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_bench_east_north_access",
+        "owner_id": "bench_east_diners",
+        "center_xy_m": [
+          1.801,
+          0.68
+        ],
+        "size_xy_m": [
+          0.56,
+          0.48
+        ],
+        "yaw_rad": 1.5707963267948966,
+        "purpose": "bench_entry_and_seating_access",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_chair_west_pull_out",
+        "owner_id": "chair_west_diner",
+        "center_xy_m": [
+          -1.33,
+          -0.25
+        ],
+        "size_xy_m": [
+          0.54,
+          0.68
+        ],
+        "yaw_rad": -1.5707963267948966,
+        "purpose": "chair_pull_out_and_guest_seating",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_china_cabinet_front",
+        "owner_id": "cabinet_dishes_west",
+        "center_xy_m": [
+          -1.95,
+          0.6
+        ],
+        "size_xy_m": [
+          0.68,
+          1.32
+        ],
+        "yaw_rad": -1.5707963267948966,
+        "purpose": "dish_retrieval_and_cabinet_opening",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_console_serving_front",
+        "owner_id": "console_serving_south",
+        "center_xy_m": [
+          -0.5,
+          -1.53
+        ],
+        "size_xy_m": [
+          1.65,
+          0.6
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "serving_and_clearing_dishes",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "path_targets": [
+      {
+        "target_id": "table_service_access",
+        "goal_xy_m": [
+          0.55,
+          -1.12
+        ]
+      },
+      {
+        "target_id": "bench_access",
+        "goal_xy_m": [
+          1.801,
+          0.68
+        ]
+      },
+      {
+        "target_id": "chair_access",
+        "goal_xy_m": [
+          -1.33,
+          -0.25
+        ]
+      },
+      {
+        "target_id": "cabinet_access",
+        "goal_xy_m": [
+          -1.95,
+          0.6
+        ]
+      },
+      {
+        "target_id": "console_access",
+        "goal_xy_m": [
+          -0.5,
+          -1.53
+        ]
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      0.55,
+      -1.12
+    ],
+    "functional_partner_builder": {
+      "implementation": "FrozenFunctionalPartnerRules",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "no_handwritten_edges": true
+    },
+    "layout_hash": "71d00b3bae908961f8bc6cb17d7de7029a123944c98bd6bc947aa0f924cc4115"
+  }
+}

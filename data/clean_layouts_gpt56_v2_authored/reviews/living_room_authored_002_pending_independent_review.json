@@ -1,0 +1,17 @@
+{
+  "schema_version": "authored_semantic_review_pending_v1",
+  "scene_id": "living_room_authored_002",
+  "semantic_review_status": "pending_independent_review",
+  "independent_review_completed": false,
+  "independent_review_pass": false,
+  "scene_layout_hash": "223dc51941bcc4a45965bd5cdc717a07a8532be1c32e33bcbaa6b322bf312046",
+  "reason": "The local -Y yaw convention correction changed rendered furniture front directions. The previous review is archived and cannot attest to the corrected artifacts.",
+  "isolation_packet": [
+    "reviews/reviewer_packet/living_room_authored_002_scene.json",
+    "reviews/reviewer_packet/living_room_authored_002_geometry.json",
+    "visualizations/living_room_authored_002.png",
+    "validation/living_room_authored_002.json",
+    "diversity/living_room_authored_002.json"
+  ],
+  "final_verdict": "pending_independent_review"
+}

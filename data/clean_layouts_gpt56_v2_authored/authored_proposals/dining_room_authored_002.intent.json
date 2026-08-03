@@ -1,0 +1,25 @@
+{
+  "scene_id": "dining_room_authored_002",
+  "room_type": "dining_room",
+  "primary_activity": "A small family shares daily meals at a daylight-oriented table without treating the table as a ceremonial room-center object.",
+  "secondary_activities": [
+    "One child completes homework at the table near the window",
+    "Food is staged and cleared from a south-wall service cabinet",
+    "A guest can join at the loose end chair"
+  ],
+  "circulation_plan": "The west-wall door opens into a broad south-west landing. The main route crosses east toward the table's open south end, while a separate short route follows the south wall to the service cabinet; chairs do not form a closed ring around the table.",
+  "spatial_organization": "The dining group is offset into the brighter north-east half. A bench anchors the table's north side, two everyday chairs use the west side, and one loose end chair serves the south end. Service storage occupies the south wall away from chair pull-out zones.",
+  "daylight_or_opening_considerations": "An east-wall window illuminates the table laterally. The table stays west of the window clearance, and no tall furniture is placed between the glazing and the dining surface. The west door determines the open south-west entry court.",
+  "intended_furniture_groups": [
+    "table, north bench, two west-side chairs, and one south-end chair as an asymmetric five-place dining group",
+    "south-wall cabinet as a separate serving and dish-storage point"
+  ],
+  "intended_open_space": "The south-west quadrant remains largely empty, with a clear approach along the table's south and west sides and an unobstructed serving path from cabinet to table.",
+  "difference_from_previous_scenes": "Conceived after closing scene1 but before inspecting prior dining coordinates: this uses a window-side offset table, mixed bench/chair seating, an intentionally open east side, and a south-west entry court rather than a centered symmetric chair ring.",
+  "room_dimensions_m": {"length": 5.3, "width": 4.1},
+  "planned_openings": [
+    {"opening_id": "door_00", "wall": "west", "along_m": -1.15, "width_m": 0.9},
+    {"opening_id": "window_00", "wall": "east", "along_m": 0.80, "width_m": 1.7}
+  ],
+  "authorship_stage": "design_intent_before_asset_query_or_prior-layout-inspection"
+}

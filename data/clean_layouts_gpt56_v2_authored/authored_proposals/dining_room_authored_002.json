@@ -1,0 +1,101 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "dining_room_authored_002",
+  "room_type": "dining_room",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 5.3,
+    "width_m": 4.1,
+    "organization": "A north-east daylight dining group uses a mixed bench-and-chair arrangement, while the south-west entry court and south-wall service route remain open.",
+    "daily_activities": ["family meals", "child homework", "serving and clearing dishes", "occasional guest seating"],
+    "main_path": "From door_00 on the west wall, walk east across the open south-west court, approach the table at its south end, and branch north to the two west-side chairs or east toward window_00.",
+    "protected_open_space": "The south-west landing, table south approach, and a continuous strip between the table and cabinet_01 remain free for serving and turning."
+  },
+  "openings": [
+    {"opening_id": "door_00", "kind": "door", "wall": "west", "along_m": -1.15, "opening_width_m": 0.9, "opening_height_m": 2.05, "sill_height_m": 0.0, "clearance_depth_m": 0.8, "interior_normal_xy": [1.0, 0.0]},
+    {"opening_id": "window_00", "kind": "window", "wall": "east", "along_m": 0.80, "opening_width_m": 1.7, "opening_height_m": 1.2, "sill_height_m": 0.85, "clearance_depth_m": 0.5, "interior_normal_xy": [-1.0, 0.0]}
+  ],
+  "furniture": [
+    {
+      "object_id": "table_01",
+      "hssd_id": "58c41e1e141147c2fcf9027c8930acecc9f39276",
+      "category": "table",
+      "x": 0.65,
+      "y": 0.65,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "table_01 is offset into the north-east half so window_00 provides side daylight without the table touching the east clearance band. Its south edge faces the open door_00 approach, while the north and west edges support the mixed bench and chair seating rather than a symmetric ring."
+    },
+    {
+      "object_id": "bench_01",
+      "hssd_id": "396cb5be76282bba5590f45f0bacdd9d79475a93",
+      "category": "bench",
+      "x": 0.65,
+      "y": 1.52,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "bench_01 runs along the north side of table_01, using the long edge efficiently for a family seat while leaving the east window_00 side open. Its local -Y front faces table_01 with a deliberate 0.17 m knee and sit-down gap, and its shallow depth leaves a standing strip behind it near the north wall."
+    },
+    {
+      "object_id": "chair_01",
+      "hssd_id": "ac92c090320c6273da3073b81639ae33b30a0fe0",
+      "category": "chair",
+      "x": -0.63,
+      "y": 0.34,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "placement_rationale": "chair_01 occupies the lower west side of table_01, facing east toward the near place setting. Its west pull-out space opens toward the clear door_00 landing, and its position avoids the south-end serving path."
+    },
+    {
+      "object_id": "chair_02",
+      "hssd_id": "56ce3dac1ca47c0534438464f8df65faddea0302",
+      "category": "chair",
+      "x": -0.63,
+      "y": 0.98,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "placement_rationale": "chair_02 shares the west edge of table_01 with chair_01 but is separated along the table length for two distinct places. The same east-facing yaw serves its setting, while its north-west pull-out strip remains clear of bench_01."
+    },
+    {
+      "object_id": "chair_03",
+      "hssd_id": "d96243bc179651b7469f0e0a4ab6fa72e261bbf4",
+      "category": "chair",
+      "x": 0.65,
+      "y": -0.18,
+      "z": 0.0,
+      "yaw_rad": 3.141592653589793,
+      "placement_rationale": "chair_03 is the loose south-end seat of table_01, facing north toward the tabletop and leaving the west side open for entry from door_00. Its centered end position provides a guest place without enclosing the table or blocking cabinet_01 access."
+    },
+    {
+      "object_id": "cabinet_01",
+      "hssd_id": "eade7e268f40bd14940a6b767baf0a76d0b264e7",
+      "category": "cabinet",
+      "x": 1.72,
+      "y": -1.62,
+      "z": 0.0,
+      "yaw_rad": 3.141592653589793,
+      "placement_rationale": "cabinet_01 anchors the south wall as serving and dish storage, close to table_01 but outside chair_03's front and pull-out zone. Its north-facing front is approached from the open south-west route, and it stays well west of window_00 so the glazing remains visually and physically open."
+    }
+  ],
+  "use_clearance_zones": [
+    {"zone_id": "chair_01_pullout", "owner_id": "chair_01", "purpose": "west_side_dining_seat_pullout", "center_xy_m": [-1.03, 0.34], "size_xy_m": [0.48, 0.62], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "chair_02_pullout", "owner_id": "chair_02", "purpose": "west_side_dining_seat_pullout", "center_xy_m": [-1.03, 0.98], "size_xy_m": [0.48, 0.62], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "chair_03_pullout", "owner_id": "chair_03", "purpose": "south_end_guest_seat_pullout", "center_xy_m": [0.65, -0.61], "size_xy_m": [0.62, 0.48], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "bench_01_approach", "owner_id": "bench_01", "purpose": "bench_sit_stand_access", "center_xy_m": [0.65, 1.84], "size_xy_m": [1.50, 0.40], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "cabinet_01_serving_access", "owner_id": "cabinet_01", "purpose": "dish_and_serving_access", "center_xy_m": [1.72, -1.06], "size_xy_m": [1.20, 0.70], "yaw_rad": 0.0, "allowed_overlap_object_ids": []}
+  ],
+  "path_targets": [
+    {"target_id": "table_01", "goal_xy_m": [0.65, -0.02], "purpose": "primary_dining_zone"},
+    {"target_id": "cabinet_01", "goal_xy_m": [1.72, -1.06], "purpose": "serving_storage_zone"}
+  ],
+  "primary_zone_goal_xy_m": [0.65, -0.02],
+  "authorship": {
+    "author": "GPT-5.6 Codex primary agent",
+    "layout_decisions_by_python": false,
+    "design_intent_path": "authored_proposals/dining_room_authored_002.intent.json",
+    "asset_query_source": "hssd-annotations/data/hssd_annotation_lookup.json.gz",
+    "functional_partners": "omitted_by_design; generated only by FrozenFunctionalPartnerRules"
+  }
+}

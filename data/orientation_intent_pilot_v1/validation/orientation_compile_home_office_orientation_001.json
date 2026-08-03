@@ -1,0 +1,265 @@
+{
+  "schema_version": "orientation_intent_compile_report_v1",
+  "scene_id": "home_office_orientation_001",
+  "source_schema_version": "authored_furniture_intent_proposal_v1",
+  "coordinate_contract": {
+    "coordinate_frame": "room_local_z_up",
+    "yaw_axis": "+Z",
+    "semantic_front": "local_-Y",
+    "yaw_range": "[-pi,pi)",
+    "quaternion_order": "wxyz"
+  },
+  "compiler_invariants": {
+    "furniture_order_preserved": true,
+    "furniture_identity_preserved": true,
+    "hssd_id_preserved": true,
+    "xy_preserved": true,
+    "yaw_authored_by_model": false,
+    "quaternion_authored_by_model": false,
+    "clearance_geometry_authored_by_model": false
+  },
+  "objects": [
+    {
+      "object_id": "desk_personal_north",
+      "hssd_id": "dc7a4ef39408cdfc7e9dce48757bde5cbe4ee2c1",
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "north"
+      },
+      "computed_yaw_rad": 0.0,
+      "computed_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "computation_rule": "back_to_wall:north->front_south",
+      "clearance_intent": "front_access",
+      "computed_clearance_geometry": {
+        "zone_id": "use_desk_personal_north_front_access",
+        "owner_id": "desk_personal_north",
+        "purpose": "front_access",
+        "center_xy_m": [
+          1.65,
+          1.4365
+        ],
+        "size_xy_m": [
+          1.2,
+          0.82
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": [
+          "chair_personal"
+        ]
+      }
+    },
+    {
+      "object_id": "chair_personal",
+      "hssd_id": "65cd781989f935391fc07009226cb99f7198b486",
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "desk_personal_north"
+      },
+      "computed_yaw_rad": -3.141592653589793,
+      "computed_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        -0.0,
+        1.0
+      ],
+      "computation_rule": "yaw_facing:target_object:desk_personal_north",
+      "clearance_intent": "rear_pullout",
+      "computed_clearance_geometry": {
+        "zone_id": "use_chair_personal_rear_pullout",
+        "owner_id": "chair_personal",
+        "purpose": "rear_pullout",
+        "center_xy_m": [
+          1.65,
+          0.67
+        ],
+        "size_xy_m": [
+          0.562,
+          0.48
+        ],
+        "yaw_rad": -3.1415926536,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "table_consultation",
+      "hssd_id": "78da408a3864493508ff2078d9ef2c0b1ff81b93",
+      "orientation_intent": {
+        "type": "axis_only",
+        "long_axis": "east_west"
+      },
+      "computed_yaw_rad": 0.0,
+      "computed_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "computation_rule": "axis_only:native_east_west->target_east_west",
+      "clearance_intent": "none",
+      "computed_clearance_geometry": null
+    },
+    {
+      "object_id": "chair_consultation_south",
+      "hssd_id": "553ab4ac2c9bd3bb0bccb16a58e16c07b53788a9",
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_consultation"
+      },
+      "computed_yaw_rad": -2.9382565695615175,
+      "computed_quaternion_wxyz": [
+        0.1014929857,
+        0.0,
+        0.0,
+        -0.9948362548
+      ],
+      "local_minus_y_front_vector_xy": [
+        -0.2019378036,
+        0.9793983477
+      ],
+      "computation_rule": "yaw_facing:target_object:table_consultation",
+      "clearance_intent": "rear_pullout",
+      "computed_clearance_geometry": {
+        "zone_id": "use_chair_consultation_south_rear_pullout",
+        "owner_id": "chair_consultation_south",
+        "purpose": "rear_pullout",
+        "center_xy_m": [
+          -0.150546,
+          -1.202354
+        ],
+        "size_xy_m": [
+          0.402,
+          0.48
+        ],
+        "yaw_rad": -2.9382565696,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "chair_consultation_west",
+      "hssd_id": "4652661588c3e25396b891901da281f41f7a140c",
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_consultation"
+      },
+      "computed_yaw_rad": 1.5029395039385927,
+      "computed_quaternion_wxyz": [
+        0.730686239,
+        0.0,
+        0.0,
+        0.6827134246
+      ],
+      "local_minus_y_front_vector_xy": [
+        0.9976986091,
+        -0.0678047598
+      ],
+      "computation_rule": "yaw_facing:target_object:table_consultation",
+      "clearance_intent": "rear_pullout",
+      "computed_clearance_geometry": {
+        "zone_id": "use_chair_consultation_west_rear_pullout",
+        "owner_id": "chair_consultation_west",
+        "purpose": "rear_pullout",
+        "center_xy_m": [
+          -1.930461,
+          0.350614
+        ],
+        "size_xy_m": [
+          0.436,
+          0.48
+        ],
+        "yaw_rad": 1.5029395039,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "bookcase_reference_south",
+      "hssd_id": "09bf641c92f5ff9f2ccf9eece94c33ab793130ed",
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "south"
+      },
+      "computed_yaw_rad": -3.141592653589793,
+      "computed_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        -0.0,
+        1.0
+      ],
+      "computation_rule": "back_to_wall:south->front_north",
+      "clearance_intent": "front_access",
+      "computed_clearance_geometry": {
+        "zone_id": "use_bookcase_reference_south_front_access",
+        "owner_id": "bookcase_reference_south",
+        "purpose": "front_access",
+        "center_xy_m": [
+          1.25,
+          -1.71
+        ],
+        "size_xy_m": [
+          0.694,
+          0.62
+        ],
+        "yaw_rad": -3.1415926536,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "cabinet_files_east",
+      "hssd_id": "960b4f4d8511ffd0daba1219c9f4af1a04cfb950",
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "east"
+      },
+      "computed_yaw_rad": -1.5707963267948966,
+      "computed_quaternion_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "local_minus_y_front_vector_xy": [
+        -1.0,
+        -0.0
+      ],
+      "computation_rule": "back_to_wall:east->front_west",
+      "clearance_intent": "front_access",
+      "computed_clearance_geometry": {
+        "zone_id": "use_cabinet_files_east_front_access",
+        "owner_id": "cabinet_files_east",
+        "purpose": "front_access",
+        "center_xy_m": [
+          2.4351,
+          -0.72
+        ],
+        "size_xy_m": [
+          0.3672,
+          0.7
+        ],
+        "yaw_rad": -1.5707963268,
+        "allowed_overlap_object_ids": []
+      }
+    }
+  ],
+  "passed": true,
+  "errors": []
+}

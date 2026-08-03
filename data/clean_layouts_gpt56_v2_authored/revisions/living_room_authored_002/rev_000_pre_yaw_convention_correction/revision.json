@@ -1,0 +1,57 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "living_room_authored_002",
+  "revision_id": "rev_000_pre_yaw_convention_correction",
+  "status": "superseded_yaw_semantic_error",
+  "reason": "The proposal used local +Y as the furniture front although the dataset contract defines HSSD local -Y as the front.",
+  "yaw_corrections": [
+    {
+      "object_id": "sofa_conversation_north",
+      "old_yaw_rad": -3.141592653589793,
+      "new_yaw_rad": 0.0,
+      "old_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "object_id": "armchair_conversation_east",
+      "old_yaw_rad": 0.8,
+      "new_yaw_rad": -2.3415926535897933,
+      "old_local_minus_y_front_xy": [
+        0.717356,
+        -0.696707
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.717356,
+        0.696707
+      ]
+    },
+    {
+      "object_id": "console_serving_south_east",
+      "old_yaw_rad": 0.0,
+      "new_yaw_rad": -3.141592653589793,
+      "old_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ]
+    }
+  ],
+  "artifact_sha256": {
+    "authored_proposal": "c09d4c2cd93777538b0b1f68cd4b084d4c54aca20706c398eb1f8211f4a2946a",
+    "scene": "daeae8761537581335921a37aca7e64022c13b69aa28e3b7fa786e4d4f34e06a",
+    "validation": "cb58db127203ea0386f8e0e8465c904a303873c58817ede64513a7b903a499a2",
+    "diversity_legacy": "11fcbbbb8807ee4843e7c67cef4edfe4f2c9245edb54e5ec6b5a135541bb29cf",
+    "visualization": "a89bcc7ff62083f62ec9a2944a11d7bbbaf0e6a03cd6d194b56e868ef8721631",
+    "reviewer_scene": "1e5b84803e8048919cbfbc1756b7375ddeb6758eb3e42c384f8b89f7fdcdbe8f"
+  },
+  "superseded_by": "rev_001_local_minus_y_yaw_corrected"
+}

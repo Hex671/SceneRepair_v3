@@ -1,0 +1,969 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "home_office_intent_pilot_002",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "home_office",
+  "length": 5.8,
+  "width": 5.1,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "west",
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        -2.5,
+        -1.426,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.8,
+        0.9,
+        2.05
+      ],
+      "interior_normal_xy": [
+        1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "north",
+      "opening_width_m": 1.6,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        0.181,
+        2.3,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        1.6,
+        0.5,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        -1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "desk_01",
+      "hssd_id": "95ecb8436c547896a7d222d29d2a354c03837950",
+      "hssd_source_category": "desk",
+      "category": "desk",
+      "family": "support_surface",
+      "functions": [
+        "work_surface",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 1.4,
+        "depth": 0.8,
+        "height": 0.75
+      },
+      "x": 2.5,
+      "y": 0.5,
+      "z": 0.375,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.articulated_swept_volume.bbox",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The desk is backed against the east wall, outside both opening clearances, with its work front facing west into the room and its long dimension running north-south.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "desk",
+          "partners": [
+            "chair",
+            "computer_screen",
+            "desk_calendar",
+            "desk_organizer"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "desk",
+          "geometry_root_key": "pm_root",
+          "match_id": "26670",
+          "match_quality": "exact_semantic",
+          "n_movable": 1,
+          "pm_ref": "26670",
+          "pnm_cat": "Table",
+          "realization_kind": "pm_replacement",
+          "source": "PartNet-Mobility",
+          "static_dims": [
+            1.688,
+            0.913,
+            0.985
+          ],
+          "swept_dims": [
+            1.688,
+            0.913,
+            1.391
+          ],
+          "vol_bloat": 1.411
+        }
+      }
+    },
+    {
+      "object_id": "office_chair_01",
+      "hssd_id": "635ab59d7907b0ad6234fd5b7f0e58e7726cac20",
+      "hssd_source_category": "swivel chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.703,
+        "depth": 0.748,
+        "height": 1.214
+      },
+      "x": 1.45,
+      "y": 0.5,
+      "z": 0.607,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "The swivel chair is centered on the desk's west-facing work side, with enough separation for seated use and a direct approach from the open center of the room.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "swivel chair",
+          "partners": [
+            "computer_screen",
+            "conference_table",
+            "desk"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "bookcase_01",
+      "hssd_id": "5c60be6945490b8be0256760b447608e49c55150",
+      "hssd_source_category": "bookcase",
+      "category": "bookcase",
+      "family": "storage",
+      "functions": [
+        "store",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 0.8372,
+        "depth": 0.3984,
+        "height": 1.9304
+      },
+      "x": 0.4,
+      "y": -2.34,
+      "z": 0.9652,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The bookcase occupies a quiet section of the south wall, inset slightly from the boundary and well east of the doorway approach while remaining clear of the primary route to the desk.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor",
+            "wall"
+          ],
+          "confidence": 0.84,
+          "dof": 1,
+          "orientation_constraints": [
+            "back against wall; front faces accessible room area"
+          ],
+          "provenance": "seed_rule:wall_floor_boundary",
+          "support_anchor": "wall+floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "bookcase",
+          "partners": [
+            "book",
+            "bookend"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "bookcase",
+          "geometry_root_key": "hssd_materialized",
+          "match_id": "5c60be6945490b8be0256760b447608e49c55150",
+          "n_movable": 2,
+          "realization_kind": "hssd_official",
+          "source": "HSSD-official",
+          "static_dims": [
+            0.839,
+            1.931,
+            0.399
+          ],
+          "swept_dims": [
+            1.194,
+            1.931,
+            0.712
+          ],
+          "vol_bloat": 2.538
+        }
+      }
+    },
+    {
+      "object_id": "cabinet_01",
+      "hssd_id": "b3839ea63c12168f51635e0f01f431fa4de910b4",
+      "hssd_source_category": "cabinet",
+      "category": "cabinet",
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ],
+      "bbox": {
+        "width": 1.001,
+        "depth": 0.479,
+        "height": 1.5
+      },
+      "x": -2.6605,
+      "y": 1.55,
+      "z": 0.75,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.articulated_swept_volume.bbox",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The cabinet is backed against the northwest portion of the west wall, north of the door zone and outside the north-window clearance.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor",
+            "wall"
+          ],
+          "confidence": 0.84,
+          "dof": 1,
+          "orientation_constraints": [
+            "back against wall; front faces accessible room area"
+          ],
+          "provenance": "seed_rule:wall_floor_boundary",
+          "support_anchor": "wall+floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "cabinet",
+          "partners": [
+            "door",
+            "drawer"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "cabinet",
+          "geometry_root_key": "pm_root",
+          "match_id": "45503",
+          "match_quality": "exact_semantic",
+          "n_movable": 3,
+          "pm_ref": "45503",
+          "pnm_cat": "StorageFurniture",
+          "realization_kind": "pm_replacement",
+          "source": "PartNet-Mobility",
+          "static_dims": [
+            1.088,
+            1.632,
+            0.506
+          ],
+          "swept_dims": [
+            1.233,
+            1.632,
+            0.987
+          ],
+          "vol_bloat": 2.209
+        }
+      }
+    },
+    {
+      "object_id": "reading_armchair_01",
+      "hssd_id": "a2019b85453656ac64d641ff7098bc79598089e8",
+      "hssd_source_category": "armchair",
+      "category": "armchair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.608,
+        "depth": 0.659,
+        "height": 1.064
+      },
+      "x": -1.25,
+      "y": 1.05,
+      "z": 0.532,
+      "yaw_rad": 0.8721365020734337,
+      "rotation_wxyz": [
+        0.9064193528,
+        0.0,
+        0.0,
+        0.4223789256
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "The armchair forms an informal reading corner northwest of center and faces diagonally into the room rather than toward its adjacent table or lamp.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "armchair",
+          "partners": [
+            "coffee_table",
+            "floor_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "side_table_01",
+      "hssd_id": "4b410e0f052d226f5d429064000e29e1cae39d8a",
+      "hssd_source_category": "end table",
+      "category": "side_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 0.364,
+        "depth": 0.364,
+        "height": 0.471
+      },
+      "x": -2.12,
+      "y": 0.72,
+      "z": 0.2355,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The compact square table sits beside the armchair on its west side, within easy reach while remaining separated from the cabinet and circulation route.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "end table",
+          "partners": [
+            "armchair",
+            "sofa",
+            "table_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "floor_lamp_01",
+      "hssd_id": "1dd1d62f7ee0db01a8b67719ed4105279bb937ba",
+      "hssd_source_category": "floor lamp",
+      "category": "floor_lamp",
+      "family": "lighting",
+      "functions": [
+        "illuminate"
+      ],
+      "bbox": {
+        "width": 0.245,
+        "depth": 0.605,
+        "height": 1.449
+      },
+      "x": -0.55,
+      "y": 1.55,
+      "z": 0.7245,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The narrow floor lamp stands northeast of the reading chair, close enough to support reading without entering the window clearance or the central walking path.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "floor lamp",
+          "partners": [
+            "armchair",
+            "socket",
+            "sofa"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "desk_01",
+      "target_id": "office_chair_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "95ecb8436c547896a7d222d29d2a354c03837950",
+        "matched_original_partner_category": "chair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "office_chair_01",
+      "target_id": "desk_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "635ab59d7907b0ad6234fd5b7f0e58e7726cac20",
+        "matched_original_partner_category": "desk",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "reading_armchair_01",
+      "target_id": "floor_lamp_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "a2019b85453656ac64d641ff7098bc79598089e8",
+        "matched_original_partner_category": "floor_lamp",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "side_table_01",
+      "target_id": "reading_armchair_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "4b410e0f052d226f5d429064000e29e1cae39d8a",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "floor_lamp_01",
+      "target_id": "reading_armchair_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "1dd1d62f7ee0db01a8b67719ed4105279bb937ba",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    }
+  ],
+  "audit": {
+    "pipeline_version": "authored_single_scene_validator_v2",
+    "proposal_schema_version": "authored_furniture_proposal_v1",
+    "rules_version": "authored_furniture_layout_validation_rules_v2",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "An asymmetric perimeter layout concentrates focused work on the east wall, storage on separate south and northwest walls, and a compact reading group northwest of center.",
+    "daily_activities": [
+      "computer work at the east-wall desk",
+      "document and book storage",
+      "reading in the northwest lounge corner"
+    ],
+    "main_path": "Enter through the west-wall door, move east along the unobstructed south-central aisle, then turn northeast through the room center to reach the work chair; short branches serve the south bookcase and northwest reading area.",
+    "protected_open_space": "Keep the west-door clearance, the north-window interior strip, and the broad central-to-south aisle free of furniture so entry, daylight access, chair pullout, and circulation remain unobstructed.",
+    "provenance": {
+      "layout_author": "GPT-5.6 Codex primary agent",
+      "python_layout_decisions": false,
+      "proposal_path": "data/orientation_intent_pilot_v2/compiled_proposals/home_office_intent_pilot_002.json",
+      "proposal_sha256": "77d1154fc2b2c207b6cedb474cd231a2032b2e31e733f5619f294df125054882",
+      "hssd_lookup_path": "../hssd-annotations/data/hssd_annotation_lookup.json.gz",
+      "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "semantic_mapping_path": "data/clean_layouts_gpt56_v1/semantic_mapping.json",
+      "semantic_mapping_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+      "layout_rules_path": "configs/authored_layout_validation_rules_v2.json",
+      "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+      "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+      "functional_rules_path": "configs/functional_partner_rules_hssd_v1.json",
+      "functional_rules_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+      "functional_compatibility_path": "configs/functional_partner_category_compatibility_v1.json",
+      "functional_compatibility_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+      "vocabulary_path": "configs/furniture_vocab_bootstrap_v1.json",
+      "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "desk_01_front_access",
+        "owner_id": "desk_01",
+        "center_xy_m": [
+          1.69,
+          0.5
+        ],
+        "size_xy_m": [
+          1.2,
+          0.82
+        ],
+        "yaw_rad": -1.5707963268,
+        "purpose": "Primary seated work zone with clear access from the west side of the desk.",
+        "allowed_overlap_object_ids": [
+          "office_chair_01"
+        ],
+        "validity": true
+      },
+      {
+        "zone_id": "office_chair_01_rear_pullout",
+        "owner_id": "office_chair_01",
+        "center_xy_m": [
+          0.836,
+          0.5
+        ],
+        "size_xy_m": [
+          0.703,
+          0.48
+        ],
+        "yaw_rad": 1.5707963268,
+        "purpose": "Allows the work chair to roll westward for entry, exit, and repositioning.",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "bookcase_01_front_access",
+        "owner_id": "bookcase_01",
+        "center_xy_m": [
+          0.4,
+          -1.8308
+        ],
+        "size_xy_m": [
+          0.8372,
+          0.62
+        ],
+        "yaw_rad": -3.1415926536,
+        "purpose": "Provides unobstructed standing and browsing space along the north-facing shelves.",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "cabinet_01_front_access",
+        "owner_id": "cabinet_01",
+        "center_xy_m": [
+          -2.071,
+          1.55
+        ],
+        "size_xy_m": [
+          1.001,
+          0.7
+        ],
+        "yaw_rad": 1.5707963268,
+        "purpose": "Keeps the cabinet doors or drawers accessible from the open area to the east.",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "reading_armchair_01_front_access",
+        "owner_id": "reading_armchair_01",
+        "center_xy_m": [
+          -0.852216,
+          0.715862
+        ],
+        "size_xy_m": [
+          0.608,
+          0.38
+        ],
+        "yaw_rad": 0.8721365021,
+        "purpose": "Preserves an open approach to the reading seat from the room center.",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "path_targets": [
+      {
+        "target_id": "office_chair_01",
+        "goal_xy_m": [
+          0.836,
+          0.5
+        ],
+        "purpose": "Primary route from the west door through the open center to the work chair."
+      },
+      {
+        "target_id": "desk_01",
+        "goal_xy_m": [
+          1.69,
+          0.5
+        ],
+        "purpose": "Maintains direct access to the main work surface from the central aisle."
+      },
+      {
+        "target_id": "bookcase_01",
+        "goal_xy_m": [
+          0.4,
+          -1.8308
+        ],
+        "purpose": "Branches south from the central aisle to the bookcase browsing zone."
+      },
+      {
+        "target_id": "cabinet_01",
+        "goal_xy_m": [
+          -2.071,
+          1.55
+        ],
+        "purpose": "Provides an approach to northwest storage without crossing the reading seat."
+      },
+      {
+        "target_id": "reading_armchair_01",
+        "goal_xy_m": [
+          -0.852216,
+          0.715862
+        ],
+        "purpose": "Provides a clear diagonal approach from the room center to the reading corner."
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      0.836,
+      0.5
+    ],
+    "functional_partner_builder": {
+      "implementation": "FrozenFunctionalPartnerRules",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "no_handwritten_edges": true
+    },
+    "layout_hash": "83449af9410ac262d9bab19dcf05cca25e7c2c5be7d53a45f8781351ee13df3d"
+  }
+}

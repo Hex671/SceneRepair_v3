@@ -1,0 +1,58 @@
+{
+  "schema_version": "authored_topdown_visual_audit_v1",
+  "scene_id": "living_room_authored_001",
+  "reviewer_role": "layout_author",
+  "review_basis": "Final top-down PNG after deterministic validation round 1",
+  "review_items": [
+    {
+      "criterion": "natural_entry",
+      "cited_object_ids": ["tv_bench_media", "coffee_table_main", "sofa_main"],
+      "assessment": "pass",
+      "concrete_reason": "The south-west door opens into an unobstructed south lane: tv_bench_media is well north of the door clearance, coffee_table_main begins beyond the incoming route, and sofa_main is on the opposite east wall."
+    },
+    {
+      "criterion": "continuous_paths",
+      "cited_object_ids": ["sofa_main", "tv_bench_media", "armchair_reading", "coffee_table_main"],
+      "assessment": "pass",
+      "concrete_reason": "The rendered route targets reach sofa_main, tv_bench_media, armchair_reading, and coffee_table_main from the entry. The south lane feeds the west media access, then the open central lane branches to the sofa and the north reading position."
+    },
+    {
+      "criterion": "normal_use",
+      "cited_object_ids": ["sofa_main", "coffee_table_main", "tv_bench_media", "armchair_reading", "side_table_reading", "floor_lamp_reading"],
+      "assessment": "pass",
+      "concrete_reason": "sofa_main has a clear west-facing sitting approach separated from coffee_table_main; tv_bench_media is reachable from the entry-side lane; and armchair_reading has an open south-west approach while side_table_reading and floor_lamp_reading remain out of its sit-down footprint."
+    },
+    {
+      "criterion": "functional_grouping",
+      "cited_object_ids": ["sofa_main", "tv_bench_media", "coffee_table_main", "armchair_reading", "side_table_reading", "floor_lamp_reading"],
+      "assessment": "pass",
+      "concrete_reason": "sofa_main, tv_bench_media, and coffee_table_main form the media-and-conversation axis. armchair_reading, side_table_reading, and floor_lamp_reading form a compact north reading perch rather than being distributed as unrelated decorative objects."
+    },
+    {
+      "criterion": "density_and_open_space",
+      "cited_object_ids": ["sofa_main", "tv_bench_media", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The two largest pieces are constrained to opposite walls, leaving a continuous south entry lane and a broad central passage. armchair_reading uses the north interior without crowding the north window clearance."
+    },
+    {
+      "criterion": "human_habit_and_orientation",
+      "cited_object_ids": ["sofa_main", "tv_bench_media", "coffee_table_main", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "sofa_main faces tv_bench_media across the room and coffee_table_main sits in reachable shared space rather than blocking the doorway. armchair_reading is turned toward its open approach and the social zone, not directly into the north wall or window."
+    },
+    {
+      "criterion": "hierarchy",
+      "cited_object_ids": ["sofa_main", "tv_bench_media", "coffee_table_main", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The east-wall sofa and opposing media bench establish the primary room axis. coffee_table_main is a subordinate shared surface, while armchair_reading is visibly a smaller secondary activity zone at the north side."
+    },
+    {
+      "criterion": "not_old_template",
+      "cited_object_ids": ["armchair_reading", "side_table_reading", "floor_lamp_reading", "tv_bench_media"],
+      "assessment": "pass",
+      "concrete_reason": "The closest living_room_004 puts tv_bench_01 on the west-south side and serves its east-wall sofa with both side_table_01 and floor_lamp_01. This scene instead makes a north reading trio around armchair_reading, centers tv_bench_media on the west wall, offsets coffee_table_main southward, and has a ten-edge frozen partner graph with only 0.333333 graph similarity."
+    }
+  ],
+  "modification_rounds": [],
+  "final_verdict": "author_visual_pass"
+}

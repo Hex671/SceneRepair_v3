@@ -1,0 +1,235 @@
+{
+  "schema_version": "frozen_functional_partner_build_report_v1",
+  "scene_id": "bedroom_authored_003",
+  "edge_count": 5,
+  "edges": [
+    {
+      "source_id": "bed_01",
+      "target_id": "nightstand_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "nightstand_01",
+      "target_id": "bed_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "desk_01",
+      "target_id": "chair_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "chair_01",
+      "target_id": "desk_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "side_table_01",
+      "target_id": "armchair_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    }
+  ],
+  "asset_audit": [
+    {
+      "object_id": "bed_01",
+      "hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+      "source_category": "bed",
+      "annotated_partner_categories": [
+        "bedclothes",
+        "headboard",
+        "mattress",
+        "nightstand"
+      ],
+      "emitted_edges": [
+        {
+          "source_id": "bed_01",
+          "target_id": "nightstand_01"
+        }
+      ]
+    },
+    {
+      "object_id": "nightstand_01",
+      "hssd_id": "e0d5b8aea675e79541af41ec6cbd4e132d82cd37",
+      "source_category": "nightstand",
+      "annotated_partner_categories": [
+        "alarm_clock",
+        "bed",
+        "table_lamp"
+      ],
+      "emitted_edges": [
+        {
+          "source_id": "nightstand_01",
+          "target_id": "bed_01"
+        }
+      ]
+    },
+    {
+      "object_id": "desk_01",
+      "hssd_id": "a42e2ef37ca205ecb1927bde89c6b618ddcda71b",
+      "source_category": "desk",
+      "annotated_partner_categories": [
+        "chair",
+        "computer_screen",
+        "desk_calendar",
+        "desk_organizer"
+      ],
+      "emitted_edges": [
+        {
+          "source_id": "desk_01",
+          "target_id": "chair_01"
+        }
+      ]
+    },
+    {
+      "object_id": "chair_01",
+      "hssd_id": "ac92c090320c6273da3073b81639ae33b30a0fe0",
+      "source_category": "chair",
+      "annotated_partner_categories": [
+        "conference_table",
+        "desk",
+        "dining_table"
+      ],
+      "emitted_edges": [
+        {
+          "source_id": "chair_01",
+          "target_id": "desk_01"
+        }
+      ]
+    },
+    {
+      "object_id": "wardrobe_01",
+      "hssd_id": "115400dd7dd9aa26ca595007f18b5a515626554d",
+      "source_category": "wardrobe",
+      "annotated_partner_categories": [
+        "shoe_rack"
+      ],
+      "emitted_edges": []
+    },
+    {
+      "object_id": "armchair_01",
+      "hssd_id": "a7083dbe58df81fdaf42d9483d2f6a4a80d56df0",
+      "source_category": "armchair",
+      "annotated_partner_categories": [
+        "coffee_table",
+        "floor_lamp"
+      ],
+      "emitted_edges": []
+    },
+    {
+      "object_id": "side_table_01",
+      "hssd_id": "0a2e52d5f93bd2346b2e686bbad4e128b2ff276b",
+      "source_category": "end table",
+      "annotated_partner_categories": [
+        "armchair",
+        "sofa",
+        "table_lamp"
+      ],
+      "emitted_edges": [
+        {
+          "source_id": "side_table_01",
+          "target_id": "armchair_01"
+        }
+      ]
+    }
+  ],
+  "unannotated_assets": [],
+  "rules_version": {
+    "implementation": "FrozenFunctionalPartnerRules",
+    "rules_schema_version": "hssd_functional_partner_rules_v1",
+    "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+    "source_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+    "no_handwritten_edges": true
+  },
+  "handwritten_edges": false,
+  "source": "FrozenFunctionalPartnerRules.build_edges"
+}

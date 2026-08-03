@@ -1,0 +1,177 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "home_office_authored_001",
+  "room_type": "home_office",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 5.6,
+    "width_m": 4.4,
+    "spatial_character": "A moderately wide single-person office with side daylight, wall storage, and a separate low-key reading corner.",
+    "daily_activities": [
+      "focused computer and writing work",
+      "retrieving books and files",
+      "short-form reading away from the desk"
+    ],
+    "organization": "The north-east work zone receives light from the adjacent north window; storage occupies the east and west boundaries; the south-west corner forms a compact reading zone; the center stays open for circulation.",
+    "main_path": "Enter from the south-east door, move north-west into the open center, then branch north to the desk chair, east to the cabinet, west to the bookcase, or south-west to the reading chair.",
+    "protected_open_space": "The center and the strip immediately north of the door remain free of furniture so a person can turn and reach each zone without threading between narrow gaps."
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_south",
+      "kind": "door",
+      "wall": "south",
+      "along_m": 1.75,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "placement_rationale": "The south-east entry opens directly into the unoccupied center rather than toward the desk chair or reading furniture."
+    },
+    {
+      "opening_id": "window_daylight_north",
+      "kind": "window",
+      "wall": "north",
+      "along_m": -0.85,
+      "opening_width_m": 1.9,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "placement_rationale": "The north window gives side light to the desk on its east and daylight to the bookcase side of the room while its full interior clearance remains unfurnished."
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "desk_work",
+      "hssd_id": "0c01883f5728e4840e7b57cf6670adb5212572db",
+      "category": "desk",
+      "x": 1.65,
+      "y": 1.73,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "This is the primary work surface. It sits against the north wall east of the window, so daylight arrives from the user's left without the desk occupying the window clearance. Its south-facing access side opens toward desk_chair, and the generous central area behind that chair remains available for pulling out and standing."
+    },
+    {
+      "object_id": "desk_chair",
+      "hssd_id": "0070649630e7b2262ec0427c0e2035232240fb4d",
+      "category": "chair",
+      "x": 1.55,
+      "y": 0.78,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "placement_rationale": "The swivel chair faces north toward desk_work and is slightly offset west to align with the usable center of the desktop. It has a dedicated pull-out zone to its south, away from the entry door, while keeping a comfortable gap from the desk edge."
+    },
+    {
+      "object_id": "bookcase_reference",
+      "hssd_id": "0ef97f65cbf5ec5a97e982db08cfb42533d8dc12",
+      "category": "bookcase",
+      "x": -2.545,
+      "y": 0.75,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "placement_rationale": "The tall bookcase uses the west wall above the reading corner, faces east into the room, and stays clear of the north window. Its retrieval zone opens into the broad center, so books can be browsed without standing in the entry route."
+    },
+    {
+      "object_id": "cabinet_files",
+      "hssd_id": "14a55d7cdd6f72794835d1580ec491b47e16155e",
+      "category": "cabinet",
+      "x": 2.47,
+      "y": -0.45,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "placement_rationale": "The low file cabinet is on the east wall within a few steps of desk_work but north of the door swing clearance. It faces west, giving full door and drawer access from the central aisle without narrowing the initial entry turn."
+    },
+    {
+      "object_id": "armchair_reading",
+      "hssd_id": "0a81a2080691d1f953a26cf727587a1faa880681",
+      "category": "armchair",
+      "x": -1.55,
+      "y": -1.1,
+      "z": 0.0,
+      "yaw_rad": 2.25,
+      "placement_rationale": "The reading chair anchors the south-west corner and turns diagonally toward the open room rather than staring into a wall. The angle separates reading from desk work, admits an approach from the center, and leaves room at its west side for floor_lamp_reading and at its east side for side_table_reading."
+    },
+    {
+      "object_id": "side_table_reading",
+      "hssd_id": "061efc927667529129a76d04993bd6920865eca8",
+      "category": "side_table",
+      "x": -1.05,
+      "y": -1.67,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The compact side table sits at the reading chair's reachable south-east side for a book or drink. It is set back from the chair's diagonal north-east approach line and does not project into the central route from the door to the desk."
+    },
+    {
+      "object_id": "floor_lamp_reading",
+      "hssd_id": "02d45a27671570055bbc6637b6064f6b45e2921d",
+      "category": "floor_lamp",
+      "x": -2.23,
+      "y": -1.62,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The slender floor lamp occupies the otherwise unusable corner beside armchair_reading, close enough to light the seat while staying behind its approach edge. Its small footprint avoids competing with the side table or the path along the room center."
+    }
+  ],
+  "use_clearance_zones": [
+    {
+      "zone_id": "use_desk_work_front",
+      "owner_id": "desk_work",
+      "center_xy_m": [1.65, 0.93],
+      "size_xy_m": [1.2, 0.82],
+      "yaw_rad": 0.0,
+      "purpose": "desk_seated_work_and_leg_space",
+      "allowed_overlap_object_ids": ["desk_chair"]
+    },
+    {
+      "zone_id": "use_desk_chair_behind",
+      "owner_id": "desk_chair",
+      "center_xy_m": [1.55, 0.2305],
+      "size_xy_m": [0.635, 0.48],
+      "yaw_rad": -3.141592653589793,
+      "purpose": "chair_pull_out_and_stand",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_bookcase_reference_front",
+      "owner_id": "bookcase_reference",
+      "center_xy_m": [-2.06, 0.75],
+      "size_xy_m": [0.954, 0.62],
+      "yaw_rad": 1.5707963267948966,
+      "purpose": "book_retrieval_and_browsing",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_cabinet_files_front",
+      "owner_id": "cabinet_files",
+      "center_xy_m": [1.87, -0.45],
+      "size_xy_m": [0.9, 0.7],
+      "yaw_rad": -1.5707963267948966,
+      "purpose": "cabinet_door_and_drawer_operation",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_armchair_reading_front",
+      "owner_id": "armchair_reading",
+      "center_xy_m": [-1.12235, -0.75482],
+      "size_xy_m": [0.805, 0.4],
+      "yaw_rad": 2.25,
+      "purpose": "reading_chair_approach_and_sit",
+      "allowed_overlap_object_ids": []
+    }
+  ],
+  "path_targets": [
+    {"target_id": "desk_access", "goal_xy_m": [1.55, 0.2]},
+    {"target_id": "cabinet_access", "goal_xy_m": [1.82, -0.45]},
+    {"target_id": "bookcase_access", "goal_xy_m": [-1.95, 0.75]},
+    {"target_id": "reading_access", "goal_xy_m": [-1.05, -0.72]}
+  ],
+  "primary_zone_goal_xy_m": [1.55, 0.2],
+  "authorship": {
+    "layout_decisions_by": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "functional_partners_authored": false,
+    "old_scene_coordinates_viewed_before_initial_draft": false
+  }
+}

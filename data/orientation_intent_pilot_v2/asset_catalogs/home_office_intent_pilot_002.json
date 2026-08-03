@@ -1,0 +1,428 @@
+{
+  "scene_id": "home_office_intent_pilot_002",
+  "assets": [
+    {
+      "hssd_id": "bb034d375833247e8539a25b7075afb01e908507",
+      "category": "desk",
+      "bbox_width_depth_height_m": [
+        1.651,
+        0.7366,
+        0.7559
+      ],
+      "functional_partner_annotation": {
+        "cat": "desk",
+        "partners": [
+          "chair",
+          "computer_screen",
+          "desk_calendar",
+          "desk_organizer"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "95ecb8436c547896a7d222d29d2a354c03837950",
+      "category": "desk",
+      "bbox_width_depth_height_m": [
+        1.4,
+        0.8,
+        0.75
+      ],
+      "functional_partner_annotation": {
+        "cat": "desk",
+        "partners": [
+          "chair",
+          "computer_screen",
+          "desk_calendar",
+          "desk_organizer"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "ea4826625a4ad17e2bd2f4013acdb1c26b568999",
+      "category": "desk",
+      "bbox_width_depth_height_m": [
+        1.906,
+        1.957,
+        0.762
+      ],
+      "functional_partner_annotation": {
+        "cat": "desk",
+        "partners": [
+          "chair",
+          "computer_screen",
+          "desk_calendar",
+          "desk_organizer"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "87ad8f378945dee3b52d159095f2fac61f4cf640",
+      "category": "chair",
+      "bbox_width_depth_height_m": [
+        0.495,
+        0.594,
+        0.889
+      ],
+      "functional_partner_annotation": {
+        "cat": "chair",
+        "partners": [
+          "conference_table",
+          "desk",
+          "dining_table"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "635ab59d7907b0ad6234fd5b7f0e58e7726cac20",
+      "category": "chair",
+      "bbox_width_depth_height_m": [
+        0.703,
+        0.748,
+        1.214
+      ],
+      "functional_partner_annotation": {
+        "cat": "swivel chair",
+        "partners": [
+          "computer_screen",
+          "conference_table",
+          "desk"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "bac62beb214a2cee256edead8d57456a4f646921",
+      "category": "chair",
+      "bbox_width_depth_height_m": [
+        0.697,
+        0.712,
+        0.988
+      ],
+      "functional_partner_annotation": {
+        "cat": "swivel chair",
+        "partners": [
+          "computer_screen",
+          "conference_table",
+          "desk"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "4ea211502b27bdf851c4b4fd8650019b452a27b7",
+      "category": "bookcase",
+      "bbox_width_depth_height_m": [
+        0.474,
+        0.35,
+        1.755
+      ],
+      "functional_partner_annotation": {
+        "cat": "bookcase",
+        "partners": [
+          "book",
+          "bookend"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "ccc3a05acbdd0ca79a82f36a71cd775f2781eb62",
+      "category": "bookcase",
+      "bbox_width_depth_height_m": [
+        0.704,
+        0.462,
+        1.342
+      ],
+      "functional_partner_annotation": {
+        "cat": "bookcase",
+        "partners": [
+          "book",
+          "bookend"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "5c60be6945490b8be0256760b447608e49c55150",
+      "category": "bookcase",
+      "bbox_width_depth_height_m": [
+        0.8372,
+        0.3984,
+        1.9304
+      ],
+      "functional_partner_annotation": {
+        "cat": "bookcase",
+        "partners": [
+          "book",
+          "bookend"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "b3839ea63c12168f51635e0f01f431fa4de910b4",
+      "category": "cabinet",
+      "bbox_width_depth_height_m": [
+        1.001,
+        0.479,
+        1.5
+      ],
+      "functional_partner_annotation": {
+        "cat": "cabinet",
+        "partners": [
+          "door",
+          "drawer"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "9ea4bd481aad181dc67e26e04d97561848ae0615",
+      "category": "cabinet",
+      "bbox_width_depth_height_m": [
+        0.33,
+        0.19,
+        1.11
+      ],
+      "functional_partner_annotation": {
+        "cat": "cabinet",
+        "partners": [
+          "door",
+          "drawer"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "cd196cef130b539fc5f2596f6acf43384a63a515",
+      "category": "cabinet",
+      "bbox_width_depth_height_m": [
+        0.352,
+        0.42,
+        1.78
+      ],
+      "functional_partner_annotation": {
+        "cat": "cabinet",
+        "partners": [
+          "door",
+          "drawer"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "f6b5bf924de25d8ca15fe6e233045025e21c2be6",
+      "category": "armchair",
+      "bbox_width_depth_height_m": [
+        0.702,
+        0.739,
+        0.99
+      ],
+      "functional_partner_annotation": {
+        "cat": "armchair",
+        "partners": [
+          "coffee_table",
+          "floor_lamp"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "e8e0945e9f720d7b472986924483c661d172794c",
+      "category": "armchair",
+      "bbox_width_depth_height_m": [
+        0.57,
+        0.606,
+        0.94
+      ],
+      "functional_partner_annotation": {
+        "cat": "armchair",
+        "partners": [
+          "coffee_table",
+          "floor_lamp"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "a2019b85453656ac64d641ff7098bc79598089e8",
+      "category": "armchair",
+      "bbox_width_depth_height_m": [
+        0.608,
+        0.659,
+        1.064
+      ],
+      "functional_partner_annotation": {
+        "cat": "armchair",
+        "partners": [
+          "coffee_table",
+          "floor_lamp"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "4b410e0f052d226f5d429064000e29e1cae39d8a",
+      "category": "side_table",
+      "bbox_width_depth_height_m": [
+        0.364,
+        0.364,
+        0.471
+      ],
+      "functional_partner_annotation": {
+        "cat": "end table",
+        "partners": [
+          "armchair",
+          "sofa",
+          "table_lamp"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "03ee88f8d8feb58ba1714bdfb88093b7469d51c9",
+      "category": "side_table",
+      "bbox_width_depth_height_m": [
+        0.477,
+        0.477,
+        0.609
+      ],
+      "functional_partner_annotation": {
+        "cat": "end table",
+        "partners": [
+          "armchair",
+          "sofa",
+          "table_lamp"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "0915788bc145bbb5baa30d86bd6e13bd83a4ba99",
+      "category": "side_table",
+      "bbox_width_depth_height_m": [
+        0.452,
+        0.452,
+        0.546
+      ],
+      "functional_partner_annotation": {
+        "cat": "end table",
+        "partners": [
+          "armchair",
+          "sofa",
+          "table_lamp"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "1dd1d62f7ee0db01a8b67719ed4105279bb937ba",
+      "category": "floor_lamp",
+      "bbox_width_depth_height_m": [
+        0.245,
+        0.605,
+        1.449
+      ],
+      "functional_partner_annotation": {
+        "cat": "floor lamp",
+        "partners": [
+          "armchair",
+          "socket",
+          "sofa"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "20e20fd238c7e5563a0611b6e0cca39a6f48333b",
+      "category": "floor_lamp",
+      "bbox_width_depth_height_m": [
+        1.68,
+        0.372,
+        2.042
+      ],
+      "functional_partner_annotation": {
+        "cat": "floor lamp",
+        "partners": [
+          "armchair",
+          "socket",
+          "sofa"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "7665c41b3afee199b9a292ac07707983abf09d50",
+      "category": "floor_lamp",
+      "bbox_width_depth_height_m": [
+        0.861,
+        0.751,
+        1.911
+      ],
+      "functional_partner_annotation": {
+        "cat": "floor lamp",
+        "partners": [
+          "armchair",
+          "socket",
+          "sofa"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "c0b318d034839e2277126f61e18e70f642c3c103",
+      "category": "bench",
+      "bbox_width_depth_height_m": [
+        2.199,
+        0.399,
+        0.451
+      ],
+      "functional_partner_annotation": {
+        "cat": "bench",
+        "partners": [
+          "dining_table",
+          "picnic_table"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "0ba2ffcba10f0e803712cb84f583c060efd8daf7",
+      "category": "bench",
+      "bbox_width_depth_height_m": [
+        1.168,
+        0.432,
+        0.686
+      ],
+      "functional_partner_annotation": {
+        "cat": "bench",
+        "partners": [
+          "dining_table",
+          "picnic_table"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    },
+    {
+      "hssd_id": "e802547f60351086248b98b793cc7d1cd02ac86d",
+      "category": "bench",
+      "bbox_width_depth_height_m": [
+        1.5,
+        0.35,
+        0.351
+      ],
+      "functional_partner_annotation": {
+        "cat": "bench",
+        "partners": [
+          "dining_table",
+          "picnic_table"
+        ]
+      },
+      "unseen_in_current_clean_dataset": true
+    }
+  ]
+}

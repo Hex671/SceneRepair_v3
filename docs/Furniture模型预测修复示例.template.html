@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Furniture 模型预测修复示例</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f3f5f7;
+      --surface: #ffffff;
+      --line: #d7dde3;
+      --line-strong: #aab4bf;
+      --text: #18212b;
+      --muted: #66727f;
+      --blue: #2563a6;
+      --green: #198754;
+      --red: #c43c35;
+      --amber: #a86512;
+      --purple: #7551a6;
+      --shadow: 0 2px 8px rgba(18, 29, 40, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+    button, select { font: inherit; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+    .topbar-inner, main { width: min(1540px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar-inner { padding: 16px 0 14px; }
+    .title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; }
+    h1 { margin: 0; font-size: 22px; line-height: 1.25; font-weight: 700; }
+    .run-meta { color: var(--muted); font-size: 12px; white-space: nowrap; }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(130px, 1fr));
+      gap: 8px;
+      margin-top: 13px;
+    }
+    .metric { border-left: 3px solid var(--line-strong); padding: 4px 10px; min-width: 0; }
+    .metric strong { display: block; font-size: 18px; line-height: 1.2; }
+    .metric span { display: block; color: var(--muted); font-size: 11px; margin-top: 3px; }
+    .metric.good { border-color: var(--green); }
+    .metric.warn { border-color: var(--amber); }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 14px;
+      padding-top: 13px;
+    }
+    .filter-group { display: flex; align-items: center; gap: 4px; min-width: 0; }
+    .filter-label { color: var(--muted); font-size: 11px; margin-right: 3px; }
+    .filter-button {
+      min-height: 30px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #34404c;
+      padding: 4px 9px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .filter-button:hover { border-color: #7d8996; }
+    .filter-button.active { background: #263746; color: #fff; border-color: #263746; }
+    main { padding: 18px 0 40px; }
+    .results-line { color: var(--muted); font-size: 12px; margin: 0 0 10px; }
+    .examples { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    .example {
+      min-width: 0;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .example-header {
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) auto;
+      align-items: start;
+      gap: 16px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .example-title { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; min-width: 0; }
+    .example-title h2 {
+      flex: 1 1 280px;
+      min-width: 0;
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 23px;
+      border-radius: 3px;
+      padding: 2px 7px;
+      font-size: 11px;
+      font-weight: 650;
+      white-space: nowrap;
+      border: 1px solid transparent;
+    }
+    .badge.success { color: #09633c; background: #e8f5ee; border-color: #a7d8be; }
+    .badge.review { color: #8e302b; background: #fbeceb; border-color: #e5b5b1; }
+    .badge.neutral { color: #42505d; background: #edf1f4; border-color: #d2d9df; }
+    .header-facts { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px 12px; color: var(--muted); font-size: 11px; }
+    .header-facts strong { color: var(--text); font-weight: 650; }
+    .scene-grid { display: grid; min-width: 0; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .scene-panel { min-width: 0; border-right: 1px solid var(--line); }
+    .scene-panel:last-child { border-right: 0; }
+    .panel-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 36px;
+      gap: 8px;
+      padding: 7px 10px;
+      border-bottom: 1px solid #e8ecef;
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .panel-heading span { min-width: 0; }
+    .panel-heading span:last-child {
+      min-width: 0;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 10px;
+      text-align: right;
+      overflow-wrap: anywhere;
+    }
+    .scene-svg { display: block; width: 100%; aspect-ratio: 1.36 / 1; background: #fbfcfd; }
+    .details { border-top: 1px solid var(--line); }
+    .details summary { cursor: pointer; padding: 9px 14px; color: #34404c; font-weight: 650; font-size: 12px; }
+    .action-table-wrap { overflow-x: auto; padding: 0 14px 12px; }
+    table { width: 100%; border-collapse: collapse; min-width: 780px; font-size: 11px; }
+    th, td { border-bottom: 1px solid #e5e9ed; padding: 7px 8px; text-align: left; white-space: nowrap; }
+    th { color: var(--muted); font-weight: 650; background: #f8fafb; }
+    tr.mismatch td { background: #fff4f3; }
+    .action-keep { color: #5d6975; }
+    .action-translate { color: var(--blue); font-weight: 650; }
+    .action-rotate { color: var(--purple); font-weight: 650; }
+    .action-both { color: var(--amber); font-weight: 650; }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      color: var(--muted);
+      font-size: 11px;
+      padding: 0 0 12px;
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 5px; min-width: 0; white-space: normal; }
+    .swatch { width: 14px; height: 9px; border: 1px solid #4f5b66; }
+    .swatch.door { background: rgba(215,72,65,.25); border-color: #cc4a43; }
+    .swatch.window { background: rgba(52,139,202,.22); border-color: #348bca; }
+    .swatch.changed { background: #e9b55d; border-color: #8d5d0f; }
+    .swatch.keep { background: #a7c7aa; border-color: #507257; }
+    .empty { padding: 40px 16px; text-align: center; color: var(--muted); background: #fff; border: 1px solid var(--line); }
+    @media (max-width: 980px) {
+      .summary { grid-template-columns: repeat(3, minmax(100px, 1fr)); }
+      .scene-grid { grid-template-columns: 1fr; }
+      .scene-panel { border-right: 0; border-bottom: 1px solid var(--line); }
+      .scene-panel:last-child { border-bottom: 0; }
+      .scene-svg { aspect-ratio: 1.6 / 1; }
+    }
+    @media (max-width: 620px) {
+      .topbar-inner, main { width: min(100% - 18px, 1540px); }
+      .title-row, .example-header { display: block; }
+      .run-meta { margin-top: 5px; white-space: normal; }
+      .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .header-facts { justify-content: flex-start; margin-top: 8px; }
+      .example-title h2 { flex-basis: 100%; }
+      .scene-svg { aspect-ratio: 1.25 / 1; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="title-row">
+        <h1>Furniture 模型预测修复示例</h1>
+        <div class="run-meta" id="runMeta"></div>
+      </div>
+      <div class="summary" id="summary"></div>
+      <div class="filters" id="filters"></div>
+    </div>
+  </header>
+  <main>
+    <div class="legend">
+      <span class="legend-item"><span class="swatch door"></span>Door clearance</span>
+      <span class="legend-item"><span class="swatch window"></span>Window clearance</span>
+      <span class="legend-item"><span class="swatch changed"></span>需要动作</span>
+      <span class="legend-item"><span class="swatch keep"></span>KEEP</span>
+      <span class="legend-item">虚线：修复前位置</span>
+      <span class="legend-item">箭头：几何朝向</span>
+    </div>
+    <p class="results-line" id="resultsLine"></p>
+    <section class="examples" id="examples"></section>
+  </main>
+  <script id="predictionData" type="application/json">__PREDICTION_DATA__</script>
+  <script>
+    const payload = JSON.parse(document.getElementById('predictionData').textContent);
+    const examples = payload.examples;
+    const state = { status: 'all', room: 'all', k: 'all', violation: 'all', disturbance: 'all' };
+    const palette = ['#9fc4a1','#dfb36b','#92b9d5','#c2a8d7','#d89f99','#a7c7c2','#c7bd8c','#aeb8d4'];
+
+    function esc(value) {
+      return String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+    }
+    function hashColor(value) {
+      let hash = 0;
+      for (const ch of value) hash = ((hash << 5) - hash + ch.charCodeAt(0)) | 0;
+      return palette[Math.abs(hash) % palette.length];
+    }
+    function fmt(value, digits = 2) { return Number(value).toFixed(digits); }
+    function actionClass(value) { return `action-${value.toLowerCase()}`; }
+    function actionLabel(value) {
+      return ({KEEP:'KEEP',TRANSLATE:'平移',ROTATE:'旋转',BOTH:'平移+旋转'})[value] || value;
+    }
+    function violationText(value) {
+      const map = { boundary: '越界', collision: '碰撞', opening: 'Opening', clean: '无违规' };
+      return value.map(v => map[v]).join(' + ');
+    }
+    function violationCountText(value) {
+      return `边界 ${value.boundary} · 碰撞 ${value.collision} · Opening ${value.opening}`;
+    }
+    function deltaText(delta) {
+      return `[${fmt(delta[0])}, ${fmt(delta[1])}, ${fmt(delta[2])}]`;
+    }
+    function sfurText(report) {
+      if (!report) return 'SFUR n/a';
+      return `SFUR ${report.scene_functional_pass ? 'PASS' : 'FAIL'} · score ${fmt(report.functional_score, 3)}`;
+    }
+
+    function makeSvg(example, poses, mode) {
+      const width = 520, height = 382, padding = 28;
+      const room = example.room;
+      const scale = Math.min((width - padding * 2) / room.length, (height - padding * 2) / room.width);
+      const roomW = room.length * scale, roomH = room.width * scale;
+      const ox = (width - roomW) / 2, oy = (height - roomH) / 2;
+      const sx = x => ox + (x + room.length / 2) * scale;
+      const sy = y => oy + (room.width / 2 - y) * scale;
+      const parts = [
+        `<svg class="scene-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(mode)} scene">`,
+        `<rect x="${fmt(ox)}" y="${fmt(oy)}" width="${fmt(roomW)}" height="${fmt(roomH)}" fill="#fff" stroke="#27323c" stroke-width="3"/>`
+      ];
+      for (const opening of example.openings) {
+        const color = opening.kind === 'door' ? '#d74841' : '#348bca';
+        parts.push(`<rect x="${fmt(sx(opening.x) - opening.width * scale / 2)}" y="${fmt(sy(opening.y) - opening.depth * scale / 2)}" width="${fmt(opening.width * scale)}" height="${fmt(opening.depth * scale)}" fill="${color}" fill-opacity="0.18" stroke="${color}" stroke-width="2"/>`);
+      }
+      if (mode !== 'input') {
+        example.current_poses.forEach((pose, index) => {
+          const item = example.furniture[index];
+          if (item.predicted_action === 'KEEP' && mode === 'prediction') return;
+          if (item.target_action === 'KEEP' && mode === 'target') return;
+          parts.push(`<rect x="${fmt(-pose.width * scale / 2)}" y="${fmt(-pose.depth * scale / 2)}" width="${fmt(pose.width * scale)}" height="${fmt(pose.depth * scale)}" transform="translate(${fmt(sx(pose.x))} ${fmt(sy(pose.y))}) rotate(${fmt(-pose.yaw * 180 / Math.PI)})" fill="none" stroke="#74808b" stroke-width="1.5" stroke-dasharray="5 4"/>`);
+        });
+      }
+      poses.forEach((pose, index) => {
+        const item = example.furniture[index];
+        const action = mode === 'prediction' ? item.predicted_action : item.target_action;
+        const changed = action !== 'KEEP';
+        const fill = changed ? '#e9b55d' : hashColor(item.category);
+        const stroke = item.action_correct || mode !== 'prediction' ? '#42515e' : '#c43c35';
+        const cx = sx(pose.x), cy = sy(pose.y);
+        parts.push(`<g transform="translate(${fmt(cx)} ${fmt(cy)}) rotate(${fmt(-pose.yaw * 180 / Math.PI)})">`);
+        parts.push(`<rect x="${fmt(-pose.width * scale / 2)}" y="${fmt(-pose.depth * scale / 2)}" width="${fmt(pose.width * scale)}" height="${fmt(pose.depth * scale)}" rx="2" fill="${fill}" fill-opacity="0.82" stroke="${stroke}" stroke-width="${item.action_correct ? 1.4 : 2.4}"/>`);
+        parts.push(`</g>`);
+        const arrowLength = Math.max(10, Math.min(26, pose.depth * scale * 0.44));
+        const ax = cx + Math.sin(pose.yaw) * arrowLength;
+        const ay = cy + Math.cos(pose.yaw) * arrowLength;
+        parts.push(`<line x1="${fmt(cx)}" y1="${fmt(cy)}" x2="${fmt(ax)}" y2="${fmt(ay)}" stroke="#18212b" stroke-width="2"/>`);
+        parts.push(`<circle cx="${fmt(ax)}" cy="${fmt(ay)}" r="2.6" fill="#18212b"/>`);
+        const short = item.category.replace('_table',' tbl').replace('console_','').slice(0, 12);
+        parts.push(`<text x="${fmt(cx)}" y="${fmt(cy + 4)}" text-anchor="middle" font-size="10" font-weight="600" fill="#17202a" style="paint-order:stroke;stroke:#fff;stroke-width:2px;stroke-linejoin:round">${esc(short)}</text>`);
+      });
+      parts.push('</svg>');
+      return parts.join('');
+    }
+
+    function actionRows(example) {
+      return example.furniture.map(item => {
+        const rowClass = item.action_correct ? '' : 'mismatch';
+        return `<tr class="${rowClass}">
+          <td>${esc(item.id)}</td>
+          <td>${esc(item.category)}</td>
+          <td class="${actionClass(item.corruption_action)}">${actionLabel(item.corruption_action)}</td>
+          <td class="${actionClass(item.target_action)}">${actionLabel(item.target_action)}</td>
+          <td class="${actionClass(item.predicted_action)}">${actionLabel(item.predicted_action)}</td>
+          <td>${deltaText(item.target_delta)}</td>
+          <td>${deltaText(item.predicted_delta)}</td>
+          <td>${item.action_correct ? '匹配' : '不匹配'}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    function exampleHtml(example, index) {
+      const sfurPassed = Boolean(example.sfur_after && example.sfur_after.scene_functional_pass);
+      const statusClass = sfurPassed ? 'success' : 'review';
+      const statusText = sfurPassed ? 'SFUR PASS' : 'SFUR REVIEW';
+      const disturbanceText = example.disturbance_tags.map(v => v === 'translation' ? '平移' : v === 'rotation' ? '旋转' : '无').join('+');
+      return `<article class="example" data-status="${sfurPassed ? 'success' : 'review'}" data-room="${esc(example.room.type)}" data-k="${esc(example.k_group)}" data-violations="${esc(example.violation_tags.join(','))}" data-disturbance="${esc(example.disturbance_tags.join(','))}">
+        <div class="example-header">
+          <div class="example-title">
+            <h2>${String(index + 1).padStart(2, '0')} · ${esc(example.scene_id)}</h2>
+            <span class="badge ${statusClass}">${statusText}</span>
+            <span class="badge neutral">${esc(example.room.type)}</span>
+            <span class="badge neutral">K=${example.k}</span>
+            <span class="badge neutral">${violationText(example.violation_tags)}</span>
+            <span class="badge neutral">扰动 ${disturbanceText}</span>
+          </div>
+          <div class="header-facts">
+            <span>Furniture <strong>${example.furniture.length}</strong></span>
+            <span>违规 <strong>${example.violations_before.total} → ${example.violations_after.total}</strong></span>
+            <span><strong>${sfurText(example.sfur_after)}</strong></span>
+            <span>Seed <strong>${example.seed}</strong></span>
+          </div>
+        </div>
+        <div class="scene-grid">
+          <section class="scene-panel">
+            <div class="panel-heading"><span>受扰动输入</span><span>${violationCountText(example.violations_before)}</span></div>
+            ${makeSvg(example, example.current_poses, 'input')}
+          </section>
+          <section class="scene-panel">
+            <div class="panel-heading"><span>SFUR 完整模型修复</span><span>${sfurText(example.sfur_after)}</span></div>
+            ${makeSvg(example, example.predicted_poses, 'prediction')}
+          </section>
+          <section class="scene-panel">
+            <div class="panel-heading"><span>Clean reference（仅用于对照）</span><span>${sfurText(example.sfur_target)}</span></div>
+            ${makeSvg(example, example.target_poses, 'target')}
+          </section>
+        </div>
+        <details class="details">
+          <summary>对象动作与 delta 对照</summary>
+          <div class="action-table-wrap">
+            <table>
+              <thead><tr><th>Object</th><th>Category</th><th>输入扰动</th><th>目标 action</th><th>预测 action</th><th>目标 [dx,dy,dyaw]</th><th>预测 [dx,dy,dyaw]</th><th>结果</th></tr></thead>
+              <tbody>${actionRows(example)}</tbody>
+            </table>
+          </div>
+        </details>
+      </article>`;
+    }
+
+    function filterGroup(label, key, values) {
+      return `<div class="filter-group"><span class="filter-label">${label}</span>${values.map(([value, text]) => `<button class="filter-button ${state[key] === value ? 'active' : ''}" type="button" data-filter-key="${key}" data-filter-value="${value}">${text}</button>`).join('')}</div>`;
+    }
+    function renderFilters() {
+      document.getElementById('filters').innerHTML = [
+        filterGroup('动作解', 'status', [['all','全部'],['success','监督同解'],['review','另一合法解']]),
+        filterGroup('房型', 'room', [['all','全部'],['bedroom','卧室'],['living_room','客厅'],['dining_room','餐厅'],['home_office','办公室']]),
+        filterGroup('K', 'k', [['all','全部'],['0','0'],['1','1'],['2-3','2-3'],['4-5','4-5'],['6+','6+']]),
+        filterGroup('违规', 'violation', [['all','全部'],['boundary','越界'],['collision','碰撞'],['opening','Opening'],['clean','无违规']]),
+        filterGroup('输入扰动', 'disturbance', [['all','全部'],['translation','含平移'],['rotation','含旋转'],['none','无扰动']])
+      ].join('');
+      document.querySelectorAll('.filter-button').forEach(button => button.addEventListener('click', () => {
+        state[button.dataset.filterKey] = button.dataset.filterValue;
+        renderFilters();
+        renderExamples();
+      }));
+    }
+    function visibleExamples() {
+      return examples.filter(example => {
+        if (state.status !== 'all' && (example.sfur_after.scene_functional_pass ? 'success' : 'review') !== state.status) return false;
+        if (state.room !== 'all' && example.room.type !== state.room) return false;
+        if (state.k !== 'all' && example.k_group !== state.k) return false;
+        if (state.violation !== 'all' && !example.violation_tags.includes(state.violation)) return false;
+        if (state.disturbance !== 'all' && !example.disturbance_tags.includes(state.disturbance)) return false;
+        return true;
+      });
+    }
+    function renderExamples() {
+      const visible = visibleExamples();
+      document.getElementById('resultsLine').textContent = `显示 ${visible.length} / ${examples.length} 个案例`;
+      document.getElementById('examples').innerHTML = visible.length
+        ? visible.map((example) => exampleHtml(example, examples.indexOf(example))).join('')
+        : '<div class="empty">当前筛选条件下没有案例</div>';
+    }
+    function renderSummary() {
+      const successes = examples.filter(v => v.sfur_after.scene_functional_pass).length;
+      const cleared = examples.filter(v => v.geometry_cleared).length;
+      const highK = examples.filter(v => v.k >= 6).length;
+      const rotationCorruptions = examples.filter(v => v.has_rotation_corruption).length;
+      const before = examples.reduce((sum, v) => sum + v.violations_before.total, 0);
+      const after = examples.reduce((sum, v) => sum + v.violations_after.total, 0);
+      document.getElementById('summary').innerHTML = `
+        <div class="metric"><strong>${examples.length}</strong><span>展示案例</span></div>
+        <div class="metric good"><strong>${successes} / ${examples.length}</strong><span>展示集整场 SFUR 通过</span></div>
+        <div class="metric good"><strong>${cleared}</strong><span>预测后硬违规清零</span></div>
+        <div class="metric"><strong>${highK}</strong><span>K ≥ 6 案例</span></div>
+        <div class="metric"><strong>${rotationCorruptions}</strong><span>含旋转输入扰动</span></div>
+        <div class="metric warn"><strong>${before} → ${after}</strong><span>展示集硬违规总数</span></div>`;
+      const mode = payload.label_mode || 'observable_v5';
+      const inference = payload.functional_refinement ? ` · SFUR complete model · ${payload.model_passes} passes` : payload.constraint_aware_model ? ' · constraint-aware model v1' : ' · neural raw';
+      const release = payload.checkpoint_extra.release_id || `checkpoint epoch ${payload.checkpoint_extra.epoch}`;
+      document.getElementById('runMeta').textContent = `${mode}${inference} · ${release} · test seed ${payload.test_seed}`;
+    }
+    renderSummary();
+    renderFilters();
+    renderExamples();
+  </script>
+</body>
+</html>

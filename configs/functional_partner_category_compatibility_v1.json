@@ -1,0 +1,21 @@
+{
+  "schema_version": "hssd_functional_partner_category_compatibility_v1",
+  "policy": {
+    "source_asset_annotation_required": true,
+    "semantic_evidence_required": true,
+    "category_inheritance": false,
+    "commonsense_completion": false
+  },
+  "rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+  "rules": [
+    {
+      "rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "annotated_partner_category": "dining_table",
+      "target_category": "table",
+      "required_family": "support_surface",
+      "required_functions": [
+        "dining_surface"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": "authored_scene_geometry_review_tables_v1",
+  "numeric_separation_epsilon_m": 1e-09,
+  "accepted_min_signed_separation_m": 0.0,
+  "pairwise_signed_separation_table": [
+    {
+      "source_id": "table_meal_east",
+      "target_id": "bench_east_diners",
+      "signed_separation_m": 0.25,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "table_meal_east",
+      "target_id": "chair_west_diner",
+      "signed_separation_m": 0.2615,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "table_meal_east",
+      "target_id": "cabinet_dishes_west",
+      "signed_separation_m": 2.1161,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "table_meal_east",
+      "target_id": "console_serving_south",
+      "signed_separation_m": 1.3206,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_east_diners",
+      "target_id": "chair_west_diner",
+      "signed_separation_m": 2.0115,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_east_diners",
+      "target_id": "cabinet_dishes_west",
+      "signed_separation_m": 3.8661,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_east_diners",
+      "target_id": "console_serving_south",
+      "signed_separation_m": 1.3,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_west_diner",
+      "target_id": "cabinet_dishes_west",
+      "signed_separation_m": 1.2776,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_west_diner",
+      "target_id": "console_serving_south",
+      "signed_separation_m": 1.4226,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "cabinet_dishes_west",
+      "target_id": "console_serving_south",
+      "signed_separation_m": 1.9702,
+      "classification": "positive_gap"
+    }
+  ],
+  "yaw_direction_table": [
+    {
+      "object_id": "table_meal_east",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    },
+    {
+      "object_id": "bench_east_diners",
+      "yaw_rad": 1.570796326795,
+      "yaw_deg": 90.0,
+      "local_minus_y_front_vector_xy": [
+        1.0,
+        -0.0
+      ],
+      "dominant_cardinal_direction": "east"
+    },
+    {
+      "object_id": "chair_west_diner",
+      "yaw_rad": -1.570796326795,
+      "yaw_deg": -90.0,
+      "local_minus_y_front_vector_xy": [
+        -1.0,
+        -0.0
+      ],
+      "dominant_cardinal_direction": "west"
+    },
+    {
+      "object_id": "cabinet_dishes_west",
+      "yaw_rad": -1.570796326795,
+      "yaw_deg": -90.0,
+      "local_minus_y_front_vector_xy": [
+        -1.0,
+        -0.0
+      ],
+      "dominant_cardinal_direction": "west"
+    },
+    {
+      "object_id": "console_serving_south",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    }
+  ],
+  "scene_id": "dining_room_authored_003",
+  "scene_layout_hash": "71d00b3bae908961f8bc6cb17d7de7029a123944c98bd6bc947aa0f924cc4115",
+  "functional_partner_match_table": [
+    {
+      "source_id": "table_meal_east",
+      "target_id": "chair_west_diner",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "01fd238f3e39659142240fc38ae44796e180597c",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "bench_east_diners",
+      "target_id": "table_meal_east",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "1545dff46c628df670d35950119834dbb0d7cdf3",
+      "matched_original_partner_category": "dining_table",
+      "category_match_mode": "frozen_semantic_compatibility",
+      "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_west_diner",
+      "target_id": "table_meal_east",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "05e74cdc180382e77852871d4f0041023f18a16a",
+      "matched_original_partner_category": "dining_table",
+      "category_match_mode": "frozen_semantic_compatibility",
+      "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "clean_layout_production_config_v2",
+  "base_seed": 20260729,
+  "default_target_count": 48,
+  "room_type_weights": {
+    "bedroom": 0.25,
+    "living_room": 0.25,
+    "dining_room": 0.25,
+    "home_office": 0.25
+  },
+  "candidate_multiplier": 5.0,
+  "pipeline_enabled": true,
+  "author_workers": 12,
+  "reviewer_workers": 4,
+  "speculative_buffer_per_room": 2,
+  "wave_size": 16,
+  "max_workers": 16,
+  "launch_interval_seconds": 1.0,
+  "max_generation_runs_per_candidate": 2,
+  "max_review_runs_per_candidate": 2,
+  "max_consecutive_runtime_api_failure_waves": 3,
+  "runtime_api_retry_backoff_seconds": 15.0,
+  "runtime_api_retry_backoff_multiplier": 2.0,
+  "runtime_api_retry_max_seconds": 60.0,
+  "worker_process_timeout_seconds": 300.0,
+  "review_enabled": true
+}

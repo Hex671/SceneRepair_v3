@@ -1,0 +1,231 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "bedroom_authored_002",
+  "room_type": "bedroom",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 6.4,
+    "width_m": 5.2,
+    "spatial_character": "A single-occupant bedroom with a north-wall sleeping anchor, three perimeter storage functions, and a small south-east daylight sitting place.",
+    "daily_activities": [
+      "sleeping and making the bed",
+      "changing clothes and retrieving wardrobe items",
+      "brief sitting while dressing or using daylight"
+    ],
+    "organization": "The bed is held to the north wall with its west-side egress lane open. The wardrobe uses the east wall and the low cabinet uses the south wall west of the window. A bench sits at the bed foot for dressing, and one armchair uses the south-east open area without becoming a separate reading ensemble.",
+    "main_path": "Enter at the south-west door, turn north through the west-side lane to the bed, then branch east to the wardrobe or across the south of the bed to the cabinet, bench, and armchair.",
+    "protected_open_space": "The west-side bed egress lane, the gap between the bed foot and bench, and the south-west door turn-in field remain open; neither storage piece occupies the south window clearance."
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_west_south",
+      "kind": "door",
+      "wall": "west",
+      "along_m": -1.55,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "placement_rationale": "The west-south door opens into the intentionally empty west lane; the cabinet begins far east of the swing clearance and the bed is reached by turning north rather than walking directly into its foot."
+    },
+    {
+      "opening_id": "window_daylight_south_east",
+      "kind": "window",
+      "wall": "south",
+      "along_m": 1.35,
+      "opening_width_m": 1.65,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "placement_rationale": "The south-east window keeps the low cabinet to its west and gives daylight to the nearby armchair, while its full interior clearance remains free of furniture."
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "bed_sleep_north",
+      "hssd_id": "033ec086c23a6d39fb37df87e6748c413bf80e29",
+      "category": "bed",
+      "x": -0.55,
+      "y": 1.4735,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The bed is the room's primary mass, with its long side running north-south and its north edge held close to the north wall. It leaves a broad west-side egress lane from the door and a clear gap at the foot for bench_dressing, instead of forcing all circulation around a centered bed."
+    },
+    {
+      "object_id": "nightstand_sleep_west",
+      "hssd_id": "01362ea241206b5668fb03f345c4637fd9386c8a",
+      "category": "nightstand",
+      "x": -1.85,
+      "y": 2.3167,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "This single nightstand serves the bed's west side nearest the entry lane, giving a reachable bedside surface without adding a second mirrored piece. It is wall-backed on the north side and remains outside the long west-side egress strip used to make the bed."
+    },
+    {
+      "object_id": "wardrobe_clothes_east",
+      "hssd_id": "115400dd7dd9aa26ca595007f18b5a515626554d",
+      "category": "wardrobe",
+      "x": 2.861,
+      "y": 0.8,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "placement_rationale": "The wardrobe uses the east wall, where its front opens west into a deep dressing area separated from the bed and the armchair. Keeping it on this wall preserves the south window and lets a user retrieve clothing without crossing the west entry lane."
+    },
+    {
+      "object_id": "bench_dressing_foot",
+      "hssd_id": "0fddc2463656c5494549c791c21bd8ac8b8b4fe7",
+      "category": "bench",
+      "x": -0.55,
+      "y": -0.3,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The low bench sits beyond the bed foot with a deliberate walking gap, providing a place to lay clothing or sit while dressing. It follows the bed width but is offset far enough south that it does not become an obstacle to making the bed or reaching the cabinet."
+    },
+    {
+      "object_id": "cabinet_dressing_south",
+      "hssd_id": "198459120142c19e59b9d94063326307dba1be5b",
+      "category": "cabinet",
+      "x": -0.6,
+      "y": -2.2331,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "placement_rationale": "The low cabinet creates a south-wall dressing and folded-clothes surface west of the window. Its north-facing drawers have a clear operating zone, it remains well east of the door clearance, and it is separated from the bench so both can be used at once."
+    },
+    {
+      "object_id": "armchair_daylight_south_east",
+      "hssd_id": "098cb07d9311b915c7d28680fd4ce1b44df9b637",
+      "category": "armchair",
+      "x": 1.75,
+      "y": -0.65,
+      "z": 0.0,
+      "yaw_rad": -2.3415926535897933,
+      "placement_rationale": "The armchair uses the otherwise open south-east side near daylight and faces diagonally back toward the room, so it can be used for shoes or a brief pause without blocking the wardrobe approach. It is kept north of the south window clearance and clear of the bed-foot bench route."
+    }
+  ],
+  "use_clearance_zones": [
+    {
+      "zone_id": "use_bed_sleep_west_egress",
+      "owner_id": "bed_sleep_north",
+      "center_xy_m": [
+        -1.78,
+        1.1
+      ],
+      "size_xy_m": [
+        0.55,
+        1.5
+      ],
+      "yaw_rad": 0.0,
+      "purpose": "bedside_egress_and_making",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_wardrobe_clothes_front",
+      "owner_id": "wardrobe_clothes_east",
+      "center_xy_m": [
+        2.1,
+        0.8
+      ],
+      "size_xy_m": [
+        0.68,
+        1.35
+      ],
+      "yaw_rad": -1.5707963267948966,
+      "purpose": "wardrobe_opening_and_dressing",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_bench_dressing_front",
+      "owner_id": "bench_dressing_foot",
+      "center_xy_m": [
+        -0.55,
+        -0.82
+      ],
+      "size_xy_m": [
+        1.2,
+        0.42
+      ],
+      "yaw_rad": 0.0,
+      "purpose": "bench_sitting_and_dressing",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_cabinet_dressing_front",
+      "owner_id": "cabinet_dressing_south",
+      "center_xy_m": [
+        -0.6,
+        -1.58
+      ],
+      "size_xy_m": [
+        1.35,
+        0.62
+      ],
+      "yaw_rad": -3.141592653589793,
+      "purpose": "cabinet_drawer_and_folding_access",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_armchair_daylight_front",
+      "owner_id": "armchair_daylight_south_east",
+      "center_xy_m": [
+        1.42,
+        -0.33
+      ],
+      "size_xy_m": [
+        0.68,
+        0.46
+      ],
+      "yaw_rad": -2.3415926535897933,
+      "purpose": "armchair_approach_and_sit",
+      "allowed_overlap_object_ids": []
+    }
+  ],
+  "path_targets": [
+    {
+      "target_id": "bed_access",
+      "goal_xy_m": [
+        -1.78,
+        1.1
+      ]
+    },
+    {
+      "target_id": "wardrobe_access",
+      "goal_xy_m": [
+        2.1,
+        0.8
+      ]
+    },
+    {
+      "target_id": "bench_access",
+      "goal_xy_m": [
+        -0.55,
+        -0.82
+      ]
+    },
+    {
+      "target_id": "cabinet_access",
+      "goal_xy_m": [
+        -0.6,
+        -1.58
+      ]
+    },
+    {
+      "target_id": "armchair_access",
+      "goal_xy_m": [
+        1.42,
+        -0.33
+      ]
+    }
+  ],
+  "primary_zone_goal_xy_m": [
+    -1.78,
+    1.1
+  ],
+  "authorship": {
+    "layout_decisions_by": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "functional_partners_authored": false,
+    "old_scene_coordinates_viewed_before_initial_draft": false
+  }
+}

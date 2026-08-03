@@ -1,0 +1,226 @@
+{
+  "schema_version": "orientation_intent_compile_report_v1",
+  "scene_id": "dining_room_orientation_001",
+  "source_schema_version": "authored_furniture_intent_proposal_v1",
+  "coordinate_contract": {
+    "coordinate_frame": "room_local_z_up",
+    "yaw_axis": "+Z",
+    "semantic_front": "local_-Y",
+    "yaw_range": "[-pi,pi)",
+    "quaternion_order": "wxyz"
+  },
+  "compiler_invariants": {
+    "furniture_order_preserved": true,
+    "furniture_identity_preserved": true,
+    "hssd_id_preserved": true,
+    "xy_preserved": true,
+    "yaw_authored_by_model": false,
+    "quaternion_authored_by_model": false,
+    "clearance_geometry_authored_by_model": false
+  },
+  "objects": [
+    {
+      "object_id": "table_compact_east",
+      "hssd_id": "2be31ee230714129948eda5af7d3b29777601dba",
+      "orientation_intent": {
+        "type": "orientation_irrelevant"
+      },
+      "computed_yaw_rad": 0.0,
+      "computed_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "computation_rule": "orientation_irrelevant:canonical_yaw_0",
+      "clearance_intent": "none",
+      "computed_clearance_geometry": null
+    },
+    {
+      "object_id": "chair_dining_north",
+      "hssd_id": "088c257155d527517719972d29f363a438cfb4cd",
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_compact_east"
+      },
+      "computed_yaw_rad": 0.0,
+      "computed_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "computation_rule": "yaw_facing:target_object:table_compact_east",
+      "clearance_intent": "rear_pullout",
+      "computed_clearance_geometry": {
+        "zone_id": "use_chair_dining_north_rear_pullout",
+        "owner_id": "chair_dining_north",
+        "purpose": "rear_pullout",
+        "center_xy_m": [
+          0.75,
+          1.4365
+        ],
+        "size_xy_m": [
+          0.46,
+          0.48
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "chair_dining_south",
+      "hssd_id": "088c257155d527517719972d29f363a438cfb4cd",
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_compact_east"
+      },
+      "computed_yaw_rad": -3.141592653589793,
+      "computed_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        -0.0,
+        1.0
+      ],
+      "computation_rule": "yaw_facing:target_object:table_compact_east",
+      "clearance_intent": "rear_pullout",
+      "computed_clearance_geometry": {
+        "zone_id": "use_chair_dining_south_rear_pullout",
+        "owner_id": "chair_dining_south",
+        "purpose": "rear_pullout",
+        "center_xy_m": [
+          0.75,
+          -1.7365
+        ],
+        "size_xy_m": [
+          0.46,
+          0.48
+        ],
+        "yaw_rad": -3.1415926536,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "chair_dining_east",
+      "hssd_id": "088c257155d527517719972d29f363a438cfb4cd",
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_compact_east"
+      },
+      "computed_yaw_rad": -1.5707963267948966,
+      "computed_quaternion_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "local_minus_y_front_vector_xy": [
+        -1.0,
+        -0.0
+      ],
+      "computation_rule": "yaw_facing:target_object:table_compact_east",
+      "clearance_intent": "rear_pullout",
+      "computed_clearance_geometry": {
+        "zone_id": "use_chair_dining_east_rear_pullout",
+        "owner_id": "chair_dining_east",
+        "purpose": "rear_pullout",
+        "center_xy_m": [
+          2.3365,
+          -0.15
+        ],
+        "size_xy_m": [
+          0.46,
+          0.48
+        ],
+        "yaw_rad": -1.5707963268,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "chair_dining_west",
+      "hssd_id": "088c257155d527517719972d29f363a438cfb4cd",
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_compact_east"
+      },
+      "computed_yaw_rad": 1.5707963267948966,
+      "computed_quaternion_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "local_minus_y_front_vector_xy": [
+        1.0,
+        -0.0
+      ],
+      "computation_rule": "yaw_facing:target_object:table_compact_east",
+      "clearance_intent": "rear_pullout",
+      "computed_clearance_geometry": {
+        "zone_id": "use_chair_dining_west_rear_pullout",
+        "owner_id": "chair_dining_west",
+        "purpose": "rear_pullout",
+        "center_xy_m": [
+          -0.8365,
+          -0.15
+        ],
+        "size_xy_m": [
+          0.46,
+          0.48
+        ],
+        "yaw_rad": 1.5707963268,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "cabinet_serving_west",
+      "hssd_id": "8e792021f82f67d9662c15328a28063d06dc3623",
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "west"
+      },
+      "computed_yaw_rad": 1.5707963267948966,
+      "computed_quaternion_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "local_minus_y_front_vector_xy": [
+        1.0,
+        -0.0
+      ],
+      "computation_rule": "back_to_wall:west->front_east",
+      "clearance_intent": "front_access",
+      "computed_clearance_geometry": {
+        "zone_id": "use_cabinet_serving_west_front_access",
+        "owner_id": "cabinet_serving_west",
+        "purpose": "front_access",
+        "center_xy_m": [
+          -2.01195,
+          0.35
+        ],
+        "size_xy_m": [
+          1.2209,
+          0.7
+        ],
+        "yaw_rad": 1.5707963268,
+        "allowed_overlap_object_ids": []
+      }
+    }
+  ],
+  "passed": true,
+  "errors": []
+}

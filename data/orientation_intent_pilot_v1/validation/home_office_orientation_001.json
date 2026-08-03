@@ -1,0 +1,546 @@
+{
+  "schema_version": "authored_scene_deterministic_validation_v2",
+  "scene_id": "home_office_orientation_001",
+  "pipeline_version": "authored_single_scene_validator_v2",
+  "passed": true,
+  "checks": {
+    "schema_valid": true,
+    "hssd_metadata_valid": true,
+    "bbox_valid": true,
+    "geometry_hard_valid": true,
+    "room_bounds_valid": true,
+    "collision_valid": true,
+    "opening_clearance_valid": true,
+    "path_reachability_valid": true,
+    "use_clearance_valid": true,
+    "frozen_functional_partner_rules_used": true,
+    "no_handwritten_functional_edges": true,
+    "all_model_input_fields_available": true,
+    "functional_partner_coverage_valid": true,
+    "diversity_novelty_pass": true
+  },
+  "geometry_report": {
+    "passed": true,
+    "checks": {
+      "finite_transform": {
+        "passed": true,
+        "violations": []
+      },
+      "identity_bbox": {
+        "passed": true,
+        "violations": []
+      },
+      "room_bounds": {
+        "passed": true,
+        "violations": []
+      },
+      "furniture_collision": {
+        "passed": true,
+        "violations": [],
+        "accepted_min_signed_separation_m": 0.0,
+        "numeric_separation_epsilon_m": 1e-09,
+        "minimum_pairwise_signed_separation_m": 0.204205307
+      },
+      "opening_clearance": {
+        "passed": true,
+        "violations": []
+      },
+      "functional_relations": {
+        "passed": true,
+        "violations": []
+      },
+      "use_clearance": {
+        "passed": true,
+        "violations": []
+      },
+      "path_reachability": {
+        "passed": true,
+        "violations": [],
+        "details": {
+          "visited_cells": 1661,
+          "grid_shape": [
+            65,
+            48
+          ],
+          "resolved_start_cell": [
+            11,
+            8
+          ],
+          "resolved_goal_cell": [
+            48,
+            30
+          ]
+        }
+      }
+    },
+    "violations": []
+  },
+  "all_path_targets_report": {
+    "passed": true,
+    "targets": [
+      {
+        "target_id": "desk_personal_north",
+        "goal_xy_m": [
+          1.65,
+          0.72
+        ],
+        "purpose": "primary_work_position",
+        "reachable": true,
+        "details": {
+          "visited_cells": 1661,
+          "grid_shape": [
+            65,
+            48
+          ],
+          "resolved_start_cell": [
+            8,
+            8
+          ],
+          "resolved_goal_cell": [
+            48,
+            30
+          ]
+        }
+      },
+      {
+        "target_id": "table_consultation",
+        "goal_xy_m": [
+          -0.25,
+          -0.72
+        ],
+        "purpose": "consultation_position",
+        "reachable": true,
+        "details": {
+          "visited_cells": 884,
+          "grid_shape": [
+            65,
+            48
+          ],
+          "resolved_start_cell": [
+            8,
+            8
+          ],
+          "resolved_goal_cell": [
+            35,
+            17
+          ]
+        }
+      }
+    ]
+  },
+  "model_input_report": {
+    "passed": true,
+    "num_nodes": 10,
+    "num_furniture": 7,
+    "functional_partner_edges": 11,
+    "furniture_function_dim": 16
+  },
+  "functional_partner_completeness": {
+    "passed": true,
+    "expected_edge_count": 11,
+    "actual_edge_count": 11,
+    "missing_edges": [],
+    "unexpected_edges": [],
+    "frozen_compatibility_matches": [
+      {
+        "source_id": "chair_consultation_south",
+        "target_id": "table_consultation",
+        "annotated_partner_category": "dining_table",
+        "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+      },
+      {
+        "source_id": "chair_consultation_west",
+        "target_id": "table_consultation",
+        "annotated_partner_category": "dining_table",
+        "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+      }
+    ],
+    "compatibility_rule_count": 2,
+    "source_asset_annotation_required": true
+  },
+  "geometry_review_tables": {
+    "schema_version": "authored_scene_geometry_review_tables_v1",
+    "numeric_separation_epsilon_m": 1e-09,
+    "accepted_min_signed_separation_m": 0.0,
+    "pairwise_signed_separation_table": [
+      {
+        "source_id": "desk_personal_north",
+        "target_id": "chair_personal",
+        "signed_separation_m": 0.3965,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_personal_north",
+        "target_id": "table_consultation",
+        "signed_separation_m": 1.2215,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_personal_north",
+        "target_id": "chair_consultation_south",
+        "signed_separation_m": 2.278612419,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_personal_north",
+        "target_id": "chair_consultation_west",
+        "signed_separation_m": 2.304205307,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_personal_north",
+        "target_id": "bookcase_reference_south",
+        "signed_separation_m": 3.8665,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_personal_north",
+        "target_id": "cabinet_files_east",
+        "signed_separation_m": 2.3829,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_personal",
+        "target_id": "table_consultation",
+        "signed_separation_m": 1.219,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_personal",
+        "target_id": "chair_consultation_south",
+        "signed_separation_m": 1.713804545,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_personal",
+        "target_id": "chair_consultation_west",
+        "signed_separation_m": 2.623205307,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_personal",
+        "target_id": "bookcase_reference_south",
+        "signed_separation_m": 2.93,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_personal",
+        "target_id": "cabinet_files_east",
+        "signed_separation_m": 1.4464,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "table_consultation",
+        "target_id": "chair_consultation_south",
+        "signed_separation_m": 0.307112419,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "table_consultation",
+        "target_id": "chair_consultation_west",
+        "signed_separation_m": 0.204205307,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "table_consultation",
+        "target_id": "bookcase_reference_south",
+        "signed_separation_m": 1.895,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "table_consultation",
+        "target_id": "cabinet_files_east",
+        "signed_separation_m": 2.6351,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_consultation_south",
+        "target_id": "chair_consultation_west",
+        "signed_separation_m": 0.824892446,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_consultation_south",
+        "target_id": "bookcase_reference_south",
+        "signed_separation_m": 1.25355214,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_consultation_south",
+        "target_id": "cabinet_files_east",
+        "signed_separation_m": 2.787251637,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_consultation_west",
+        "target_id": "bookcase_reference_south",
+        "signed_separation_m": 2.324678923,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_consultation_west",
+        "target_id": "cabinet_files_east",
+        "signed_separation_m": 4.101852334,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bookcase_reference_south",
+        "target_id": "cabinet_files_east",
+        "signed_separation_m": 1.1881,
+        "classification": "positive_gap"
+      }
+    ],
+    "yaw_direction_table": [
+      {
+        "object_id": "desk_personal_north",
+        "yaw_rad": 0.0,
+        "yaw_deg": 0.0,
+        "local_minus_y_front_vector_xy": [
+          0.0,
+          -1.0
+        ],
+        "dominant_cardinal_direction": "south"
+      },
+      {
+        "object_id": "chair_personal",
+        "yaw_rad": -3.14159265359,
+        "yaw_deg": -180.0,
+        "local_minus_y_front_vector_xy": [
+          -0.0,
+          1.0
+        ],
+        "dominant_cardinal_direction": "north"
+      },
+      {
+        "object_id": "table_consultation",
+        "yaw_rad": 0.0,
+        "yaw_deg": 0.0,
+        "local_minus_y_front_vector_xy": [
+          0.0,
+          -1.0
+        ],
+        "dominant_cardinal_direction": "south"
+      },
+      {
+        "object_id": "chair_consultation_south",
+        "yaw_rad": -2.938256569562,
+        "yaw_deg": -168.349701,
+        "local_minus_y_front_vector_xy": [
+          -0.201937804,
+          0.979398348
+        ],
+        "dominant_cardinal_direction": "north"
+      },
+      {
+        "object_id": "chair_consultation_west",
+        "yaw_rad": 1.502939503939,
+        "yaw_deg": 86.11209,
+        "local_minus_y_front_vector_xy": [
+          0.997698609,
+          -0.06780476
+        ],
+        "dominant_cardinal_direction": "east"
+      },
+      {
+        "object_id": "bookcase_reference_south",
+        "yaw_rad": -3.14159265359,
+        "yaw_deg": -180.0,
+        "local_minus_y_front_vector_xy": [
+          -0.0,
+          1.0
+        ],
+        "dominant_cardinal_direction": "north"
+      },
+      {
+        "object_id": "cabinet_files_east",
+        "yaw_rad": -1.570796326795,
+        "yaw_deg": -90.0,
+        "local_minus_y_front_vector_xy": [
+          -1.0,
+          -0.0
+        ],
+        "dominant_cardinal_direction": "west"
+      }
+    ]
+  },
+  "functional_partner_match_table": [
+    {
+      "source_id": "desk_personal_north",
+      "target_id": "chair_personal",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "dc7a4ef39408cdfc7e9dce48757bde5cbe4ee2c1",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "desk_personal_north",
+      "target_id": "chair_consultation_south",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "dc7a4ef39408cdfc7e9dce48757bde5cbe4ee2c1",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "desk_personal_north",
+      "target_id": "chair_consultation_west",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "dc7a4ef39408cdfc7e9dce48757bde5cbe4ee2c1",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_personal",
+      "target_id": "desk_personal_north",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "65cd781989f935391fc07009226cb99f7198b486",
+      "matched_original_partner_category": "desk",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "table_consultation",
+      "target_id": "chair_personal",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "78da408a3864493508ff2078d9ef2c0b1ff81b93",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "table_consultation",
+      "target_id": "chair_consultation_south",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "78da408a3864493508ff2078d9ef2c0b1ff81b93",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "table_consultation",
+      "target_id": "chair_consultation_west",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "78da408a3864493508ff2078d9ef2c0b1ff81b93",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_consultation_south",
+      "target_id": "desk_personal_north",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "553ab4ac2c9bd3bb0bccb16a58e16c07b53788a9",
+      "matched_original_partner_category": "desk",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_consultation_south",
+      "target_id": "table_consultation",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "553ab4ac2c9bd3bb0bccb16a58e16c07b53788a9",
+      "matched_original_partner_category": "dining_table",
+      "category_match_mode": "frozen_semantic_compatibility",
+      "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_consultation_west",
+      "target_id": "desk_personal_north",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "4652661588c3e25396b891901da281f41f7a140c",
+      "matched_original_partner_category": "desk",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_consultation_west",
+      "target_id": "table_consultation",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "4652661588c3e25396b891901da281f41f7a140c",
+      "matched_original_partner_category": "dining_table",
+      "category_match_mode": "frozen_semantic_compatibility",
+      "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    }
+  ],
+  "functional_partner_edge_count": 11,
+  "violations": []
+}

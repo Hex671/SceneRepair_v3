@@ -1,0 +1,58 @@
+{
+  "schema_version": "authored_topdown_visual_audit_v1",
+  "scene_id": "dining_room_authored_001",
+  "reviewer_role": "layout_author",
+  "review_basis": "Final top-down PNG after deterministic validation round 1",
+  "review_items": [
+    {
+      "criterion": "natural_entry",
+      "cited_object_ids": ["chair_south_west", "chair_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "The south-west door opens into a clear transverse strip behind both south chairs; a diner can turn east before approaching either pull-out zone instead of entering into a chair footprint."
+    },
+    {
+      "criterion": "continuous_paths",
+      "cited_object_ids": ["chair_south_west", "chair_south_east", "chair_east_end", "bench_banquette", "cabinet_dishes"],
+      "assessment": "pass",
+      "concrete_reason": "All five declared access targets are reachable from the door. The route advances along the south, opens around the table's east end, and branches independently to the bench entry and cabinet."
+    },
+    {
+      "criterion": "normal_use",
+      "cited_object_ids": ["table_dining", "bench_banquette", "chair_south_west", "chair_south_east", "chair_east_end", "cabinet_dishes"],
+      "assessment": "pass",
+      "concrete_reason": "The bench-to-table and chair-to-table gaps suit seated dining, each loose chair has a separate pull-out area, the bench is entered from its projecting east end, and the cabinet has an unobstructed west-facing operating zone."
+    },
+    {
+      "criterion": "functional_grouping",
+      "cited_object_ids": ["table_dining", "bench_banquette", "chair_south_west", "chair_south_east", "chair_east_end"],
+      "assessment": "pass",
+      "concrete_reason": "The five-seat group reads as one coherent banquette arrangement: shared north seating, two daily-use south chairs, and an east end chair, all oriented toward the same rectangular table."
+    },
+    {
+      "criterion": "density_and_open_space",
+      "cited_object_ids": ["table_dining", "cabinet_dishes"],
+      "assessment": "pass",
+      "concrete_reason": "Concentrating the table group in the north-west and cabinet on the east wall preserves the south-east as useful circulation and serving space rather than leaving accidental narrow leftovers around a centered table."
+    },
+    {
+      "criterion": "human_habit_and_orientation",
+      "cited_object_ids": ["bench_banquette", "chair_south_west", "chair_south_east", "chair_east_end", "cabinet_dishes"],
+      "assessment": "pass",
+      "concrete_reason": "The bench and all three chairs face table_dining, while cabinet_dishes faces inward. No diner faces away from the table and no storage door opens toward a wall."
+    },
+    {
+      "criterion": "hierarchy",
+      "cited_object_ids": ["table_dining", "bench_banquette", "cabinet_dishes"],
+      "assessment": "pass",
+      "concrete_reason": "The table and long bench establish dining as the dominant north-west zone; the smaller east-wall cabinet is visibly secondary and supports rather than competes with the seating group."
+    },
+    {
+      "criterion": "not_old_template",
+      "cited_object_ids": ["table_dining", "bench_banquette", "chair_east_end", "cabinet_dishes"],
+      "assessment": "pass",
+      "concrete_reason": "The closest dining_room_001 uses a centered table and four cardinal chairs. This scene replaces one side with a north-wall bench, offsets the table west, uses only three loose chairs, moves primary activity north-west, and leaves the south-east open; the frozen partner graph structure also has zero similarity to that old graph."
+    }
+  ],
+  "modification_rounds": [],
+  "final_verdict": "author_visual_pass"
+}

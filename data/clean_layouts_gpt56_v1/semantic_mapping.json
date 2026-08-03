@@ -1,0 +1,159 @@
+{
+  "schema_version": "furniture_semantic_mapping_gpt56_v1",
+  "frozen_vocab_source": "configs/furniture_vocab_bootstrap_v1.json",
+  "hssd_id_is_model_feature": false,
+  "source_category_to_frozen": {
+    "armchair": "armchair",
+    "bed": "bed",
+    "bench": "bench",
+    "bookcase": "bookcase",
+    "cabinet": "cabinet",
+    "chair": "chair",
+    "coffee table": "coffee_table",
+    "console table": "console_table",
+    "daybed": "bed",
+    "desk": "desk",
+    "dining table": "table",
+    "double bed": "bed",
+    "end table": "side_table",
+    "floor lamp": "floor_lamp",
+    "king bed": "bed",
+    "nightstand": "nightstand",
+    "ottoman": "ottoman",
+    "sofa": "sofa",
+    "swivel chair": "chair",
+    "table": "table",
+    "tv stand": "tv_bench",
+    "wardrobe": "wardrobe"
+  },
+  "frozen_category_semantics": {
+    "armchair": {
+      "family": "seating",
+      "functions": [
+        "sit"
+      ]
+    },
+    "bed": {
+      "family": "sleep_surface",
+      "functions": [
+        "sleep"
+      ]
+    },
+    "bench": {
+      "family": "seating",
+      "functions": [
+        "sit"
+      ]
+    },
+    "bookcase": {
+      "family": "storage",
+      "functions": [
+        "store",
+        "support_objects"
+      ]
+    },
+    "cabinet": {
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ]
+    },
+    "chair": {
+      "family": "seating",
+      "functions": [
+        "sit"
+      ]
+    },
+    "coffee_table": {
+      "family": "support_surface",
+      "functions": [
+        "support_objects"
+      ]
+    },
+    "console_table": {
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ]
+    },
+    "desk": {
+      "family": "support_surface",
+      "functions": [
+        "work_surface",
+        "support_objects"
+      ]
+    },
+    "floor_lamp": {
+      "family": "lighting",
+      "functions": [
+        "illuminate"
+      ]
+    },
+    "nightstand": {
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ]
+    },
+    "ottoman": {
+      "family": "seating",
+      "functions": [
+        "sit",
+        "foot_support"
+      ]
+    },
+    "side_table": {
+      "family": "support_surface",
+      "functions": [
+        "support_objects"
+      ]
+    },
+    "sofa": {
+      "family": "seating",
+      "functions": [
+        "sit"
+      ]
+    },
+    "table": {
+      "family": "support_surface",
+      "functions": [
+        "dining_surface",
+        "support_objects"
+      ]
+    },
+    "tv_bench": {
+      "family": "support_surface",
+      "functions": [
+        "media_support",
+        "support_objects"
+      ]
+    },
+    "wardrobe": {
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ]
+    }
+  },
+  "bbox_sources": {
+    "static_z_up": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+    "official_articulated": "interaction_clearance.official_combined_clearance.obj_aabb",
+    "retrieved_articulated": "interaction_clearance.articulated_swept_volume.bbox"
+  },
+  "bbox_axis_contract": {
+    "room_output": "width=x, depth=y, height=z",
+    "static_z_up": "identity [x,y,z]",
+    "articulated_asset": "asset [x,y_up,z] -> room [x,z,y]"
+  },
+  "canonical_front_policy": {
+    "asset_local_front_axis": "HSSD canonical_orientation_axis",
+    "room_layout_front_convention": "local -Y rotated by geometric yaw",
+    "semantic_front_used_only_when_flagged": true,
+    "saved_model_pose": "geometric yaw only"
+  },
+  "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11"
+}

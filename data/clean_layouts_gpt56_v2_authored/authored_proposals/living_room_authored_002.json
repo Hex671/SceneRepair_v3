@@ -1,0 +1,211 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "living_room_authored_002",
+  "room_type": "living_room",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 6.2,
+    "width_m": 5.0,
+    "spatial_character": "A television-free living room organized for conversation, relaxed sitting, and occasional serving rather than a media-viewing axis.",
+    "daily_activities": [
+      "two- or three-person conversation",
+      "relaxed sitting with a movable footrest",
+      "placing drinks or serving items away from the entry"
+    ],
+    "organization": "The north-wall sofa is the primary seat. One diagonal armchair closes the group from the east, an offset coffee table serves both, and a movable ottoman supports the sofa's west end. A south-east console provides a separate landing surface while the south-west entry and center-south strip remain open.",
+    "main_path": "Enter through the south-west door, move east along the open south strip, then branch north-west to the sofa, north-east to the armchair and lamp, or east to the console without crossing the coffee table group.",
+    "protected_open_space": "The full south-west door turn-in, the center-south circulation field, the sofa's west approach, and the east window clearance remain free of fixed furniture."
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_south_west",
+      "kind": "door",
+      "wall": "south",
+      "along_m": -2.05,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "placement_rationale": "The south-west entry opens into an empty south band; console_serving_south_east is far to the east, while all seating begins north of the inward door clearance."
+    },
+    {
+      "opening_id": "window_daylight_east_north",
+      "kind": "window",
+      "wall": "east",
+      "along_m": 1.25,
+      "opening_width_m": 1.5,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "placement_rationale": "The east-north window gives side daylight to the conversation group; floor_lamp_armchair and armchair_conversation_east remain west of its clearance, so the glazing strip stays usable and visually open."
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "sofa_conversation_north",
+      "hssd_id": "01cc0bbc121ef31692b03269b6946aeb2aca5f10",
+      "category": "sofa",
+      "x": -0.75,
+      "y": 1.967,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The sofa is the dominant conversation seat and is backed by the north wall, facing south into the room rather than toward a television. Its central approach remains open from the entry, while its west seat is paired with the movable ottoman without blocking the armchair route."
+    },
+    {
+      "object_id": "armchair_conversation_east",
+      "hssd_id": "0dfca0a4e90bc2b410b6f9bd708526c4b66aea92",
+      "category": "armchair",
+      "x": 1.35,
+      "y": 0.1,
+      "z": 0.0,
+      "yaw_rad": -2.3415926535897933,
+      "placement_rationale": "The compact armchair closes the seating group from the east and turns north-west toward both sofa_conversation_north and coffee_table_shared. It remains well west of the east window clearance and admits a south-west approach from the main circulation field."
+    },
+    {
+      "object_id": "coffee_table_shared",
+      "hssd_id": "03fdc8dd8b89fbff8cf749f5c847180ab13e53d2",
+      "category": "coffee_table",
+      "x": -0.2,
+      "y": 0.75,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The coffee table is offset north of the geometric room center, within reach of the sofa and diagonal armchair but outside the south circulation band. Its narrow depth leaves a practical gap to the sofa and a clear service approach from the south."
+    },
+    {
+      "object_id": "ottoman_flexible_sofa",
+      "hssd_id": "210dcab90f14654e1de4cdddffe4e4c9080336bf",
+      "category": "ottoman",
+      "x": -1.35,
+      "y": 1.08,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The small ottoman sits in front of the sofa's west seat as a footrest or movable extra perch. It is separated laterally from coffee_table_shared, remains inside the sofa use area, and releases the diagonal armchair's south-west approach."
+    },
+    {
+      "object_id": "floor_lamp_armchair",
+      "hssd_id": "00ff4e2d38b8c28bd0e02607b698ae80ddb497ef",
+      "category": "floor_lamp",
+      "x": 2.05,
+      "y": 0.55,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The slim floor lamp uses the small pocket east of armchair_conversation_east, close enough to support evening sitting without entering the chair's south-west approach. Its footprint remains west of the window clearance and north of the route to the console."
+    },
+    {
+      "object_id": "console_serving_south_east",
+      "hssd_id": "43e120bb77cbdb8fadcac1cc33aeacce57e738c5",
+      "category": "console_table",
+      "x": 1.15,
+      "y": -2.2994,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "placement_rationale": "The narrow console sits on the south-east wall as a drinks and serving surface, leaving the south-west entry entirely open. It faces north into its own working strip and stays far enough south of armchair_conversation_east to preserve the main branch path."
+    }
+  ],
+  "use_clearance_zones": [
+    {
+      "zone_id": "use_sofa_conversation_front",
+      "owner_id": "sofa_conversation_north",
+      "center_xy_m": [
+        -0.75,
+        1.25
+      ],
+      "size_xy_m": [
+        1.8,
+        0.4
+      ],
+      "yaw_rad": 0.0,
+      "purpose": "sofa_sitting_approach_and_exit",
+      "allowed_overlap_object_ids": [
+        "ottoman_flexible_sofa"
+      ]
+    },
+    {
+      "zone_id": "use_armchair_conversation_front",
+      "owner_id": "armchair_conversation_east",
+      "center_xy_m": [
+        0.98,
+        0.46
+      ],
+      "size_xy_m": [
+        0.64,
+        0.46
+      ],
+      "yaw_rad": -2.3415926535897933,
+      "purpose": "armchair_approach_and_sit",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_coffee_table_south",
+      "owner_id": "coffee_table_shared",
+      "center_xy_m": [
+        -0.2,
+        0.18
+      ],
+      "size_xy_m": [
+        1.08,
+        0.42
+      ],
+      "yaw_rad": 0.0,
+      "purpose": "coffee_table_serving_access",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_console_serving_front",
+      "owner_id": "console_serving_south_east",
+      "center_xy_m": [
+        1.15,
+        -1.73
+      ],
+      "size_xy_m": [
+        1.2,
+        0.64
+      ],
+      "yaw_rad": -3.141592653589793,
+      "purpose": "console_drink_and_serving_access",
+      "allowed_overlap_object_ids": []
+    }
+  ],
+  "path_targets": [
+    {
+      "target_id": "sofa_access",
+      "goal_xy_m": [
+        -0.9,
+        1.3
+      ]
+    },
+    {
+      "target_id": "armchair_access",
+      "goal_xy_m": [
+        0.98,
+        0.46
+      ]
+    },
+    {
+      "target_id": "coffee_table_access",
+      "goal_xy_m": [
+        -0.2,
+        0.18
+      ]
+    },
+    {
+      "target_id": "console_access",
+      "goal_xy_m": [
+        1.15,
+        -1.73
+      ]
+    }
+  ],
+  "primary_zone_goal_xy_m": [
+    -0.9,
+    1.3
+  ],
+  "authorship": {
+    "layout_decisions_by": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "functional_partners_authored": false,
+    "old_scene_coordinates_viewed_before_initial_draft": false
+  }
+}

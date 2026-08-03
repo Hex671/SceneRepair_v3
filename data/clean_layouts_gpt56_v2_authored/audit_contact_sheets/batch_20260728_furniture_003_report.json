@@ -1,0 +1,69 @@
+{
+  "schema_version": "furniture_batch_completion_report_v2",
+  "batch_scene_ids": [
+    "home_office_authored_003",
+    "dining_room_authored_002",
+    "bedroom_authored_003"
+  ],
+  "scenes": [
+    {
+      "scene_id": "home_office_authored_003",
+      "room_type": "home_office",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 3,
+      "deterministic_validation": true,
+      "semantic_review_status": "semantic_review_pass",
+      "semantic_review_verdict": "semantic_review_pass",
+      "diversity_novelty_pass": true,
+      "closest_global": "home_office_authored_001",
+      "closest_global_similarity": 0.600467,
+      "closest_same_room_type": "home_office_authored_001",
+      "closest_same_room_type_similarity": 0.600467,
+      "unannotated_assets": 0,
+      "handwritten_functional_edges": false
+    },
+    {
+      "scene_id": "dining_room_authored_002",
+      "room_type": "dining_room",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 7,
+      "deterministic_validation": true,
+      "semantic_review_status": "complete_pass",
+      "semantic_review_verdict": "PASS",
+      "diversity_novelty_pass": true,
+      "closest_global": "dining_room_authored_001",
+      "closest_global_similarity": 0.685724,
+      "closest_same_room_type": "dining_room_authored_001",
+      "closest_same_room_type_similarity": 0.685724,
+      "unannotated_assets": 0,
+      "handwritten_functional_edges": false
+    },
+    {
+      "scene_id": "bedroom_authored_003",
+      "room_type": "bedroom",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "deterministic_validation": true,
+      "semantic_review_status": "approved",
+      "semantic_review_verdict": "pass",
+      "diversity_novelty_pass": true,
+      "closest_global": "home_office_authored_003",
+      "closest_global_similarity": 0.587382,
+      "closest_same_room_type": "bedroom_authored_001",
+      "closest_same_room_type_similarity": 0.524624,
+      "unannotated_assets": 0,
+      "handwritten_functional_edges": false
+    }
+  ],
+  "contact_sheet": "audit_contact_sheets/batch_20260728_furniture_003_contact_sheet.png",
+  "tests": {
+    "command": "pytest -q tests",
+    "passed": 29,
+    "failed": 0
+  },
+  "functional_rules_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+  "compatibility_rules_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+  "accepted_count": 3,
+  "pending_count": 0,
+  "rejected_count": 0
+}

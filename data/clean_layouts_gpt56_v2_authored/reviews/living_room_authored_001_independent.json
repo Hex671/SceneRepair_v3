@@ -1,0 +1,72 @@
+{
+  "scene_id": "living_room_authored_001",
+  "review_type": "independent_semantic_review",
+  "isolation_compliance": {
+    "compliant": true,
+    "inspected_artifacts": [
+      "reviews/reviewer_packet/living_room_authored_001_scene.json",
+      "visualizations/living_room_authored_001.png",
+      "validation/living_room_authored_001.json",
+      "validation/living_room_authored_001_diversity.json"
+    ],
+    "nonpermitted_artifacts_inspected": false
+  },
+  "object_reports": [
+    {
+      "object_id": "sofa_main",
+      "cited_object_ids": ["sofa_main", "tv_bench_media", "coffee_table_main"],
+      "assessment": "pass",
+      "concrete_reason": "The sofa is placed along the east side facing the media bench across an unobstructed central viewing area, with the coffee table at a practical intervening distance. Its seating approach zone and access target both validate.",
+      "detected_problem": "none",
+      "required_correction": "none",
+      "template_risk": false
+    },
+    {
+      "object_id": "tv_bench_media",
+      "cited_object_ids": ["tv_bench_media", "sofa_main"],
+      "assessment": "pass",
+      "concrete_reason": "The media bench is wall-attached on the west side and faces the sofa. Its front access zone is reachable from the entry without conflicting with furniture or the opening clearance.",
+      "detected_problem": "none",
+      "required_correction": "none",
+      "template_risk": false
+    },
+    {
+      "object_id": "coffee_table_main",
+      "cited_object_ids": ["coffee_table_main", "sofa_main", "armchair_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The coffee table is centrally located for the sofa and remains reachable; it does not obstruct the sofa approach zone, media access, or the reading chair's use clearance.",
+      "detected_problem": "none",
+      "required_correction": "none",
+      "template_risk": false
+    },
+    {
+      "object_id": "armchair_reading",
+      "cited_object_ids": ["armchair_reading", "side_table_reading", "floor_lamp_reading", "coffee_table_main"],
+      "assessment": "pass",
+      "concrete_reason": "The armchair forms a distinct reading nook with the nearby side table and floor lamp while retaining a validated approach-and-sit clearance. Its orientation is visually consistent with facing toward the central conversation/coffee-table area.",
+      "detected_problem": "none",
+      "required_correction": "none",
+      "template_risk": false
+    },
+    {
+      "object_id": "side_table_reading",
+      "cited_object_ids": ["side_table_reading", "armchair_reading", "floor_lamp_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The side table sits close enough to serve the reading chair but outside its designated front use clearance, and it preserves circulation along the north side of the room.",
+      "detected_problem": "none",
+      "required_correction": "none",
+      "template_risk": false
+    },
+    {
+      "object_id": "floor_lamp_reading",
+      "cited_object_ids": ["floor_lamp_reading", "armchair_reading", "side_table_reading", "sofa_main"],
+      "assessment": "pass",
+      "concrete_reason": "The floor lamp is positioned adjacent to the armchair to support the reading use case without entering the chair's validated approach zone or blocking the window and room circulation.",
+      "detected_problem": "none",
+      "required_correction": "none",
+      "template_risk": false
+    }
+  ],
+  "scene_assessment": "The room has a coherent primary media-viewing arrangement and a secondary reading nook. Deterministic validation reports no collisions, opening-clearance issues, use-clearance conflicts, or unreachable access targets. The diversity report identifies no template risk.",
+  "final_verdict": "semantic_review_pass"
+}

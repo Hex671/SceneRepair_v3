@@ -1,0 +1,81 @@
+{
+  "schema_version": "furniture_layout_rules_gpt56_v1",
+  "verifier_version": "clean_furniture_verifier_gpt56_v1",
+  "scene": {
+    "single_room_only": true,
+    "allowed_opening_kinds": [
+      "door",
+      "window"
+    ],
+    "max_furniture": 17,
+    "furniture_stage_only": true
+  },
+  "transform": {
+    "coordinate_frame": "room_local_z_up",
+    "room_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quaternion_order": "wxyz",
+    "yaw_axis": "+Z",
+    "yaw_unit": "radian",
+    "yaw_range": "[-pi,pi)",
+    "quaternion_norm_tolerance": 1e-06,
+    "quaternion_component_tolerance": 1e-06
+  },
+  "identity_bbox": {
+    "absolute_tolerance_m": 1e-06
+  },
+  "geometry": {
+    "room_bounds_tolerance_m": 1e-06,
+    "penetration_tolerance_m": 0.005
+  },
+  "openings": {
+    "door_clearance_depth_m": 0.8,
+    "window_clearance_depth_m": 0.5,
+    "door_height_m": 2.05,
+    "window_height_m": 1.2,
+    "window_sill_height_m": 0.85
+  },
+  "functional_relations": {
+    "orientation_tolerance_deg": 22.5,
+    "gap_tolerance_m": 0.035,
+    "instance_endpoints_required": true
+  },
+  "use_clearance": {
+    "wardrobe_front_depth_m": 0.78,
+    "cabinet_front_depth_m": 0.7,
+    "bookcase_front_depth_m": 0.62,
+    "desk_front_depth_m": 0.82,
+    "seat_approach_depth_m": 0.38,
+    "chair_behind_depth_m": 0.48,
+    "bed_side_width_m": 0.62,
+    "required_zone_categories": {
+      "bedroom": [
+        "bed",
+        "wardrobe"
+      ],
+      "living_room": [
+        "sofa"
+      ],
+      "dining_room": [
+        "chair"
+      ],
+      "home_office": [
+        "desk",
+        "chair"
+      ]
+    }
+  },
+  "path": {
+    "grid_resolution_m": 0.1,
+    "human_radius_m": 0.28,
+    "required": "door to primary functional zone"
+  },
+  "deduplication": {
+    "exact_hash": "sha256 of quantized room/opening/furniture geometry",
+    "near_duplicate_distance_threshold": 0.035,
+    "room_dimension_prefilter_m": 0.35
+  }
+}

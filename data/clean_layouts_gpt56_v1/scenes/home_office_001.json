@@ -1,0 +1,465 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "home_office_001",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "home_office",
+  "length": 4.8,
+  "width": 4.0,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "south",
+      "opening_width_m": 0.92,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        1.35,
+        -1.6,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.92,
+        0.8,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "east",
+      "opening_width_m": 1.45,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        2.15,
+        -1.1,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.5,
+        1.45,
+        2.05
+      ],
+      "interior_normal_xy": [
+        -1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "desk_01",
+      "hssd_id": "eb6aa6ead94ef785c022795b36da765ac1c1cbe1",
+      "hssd_source_category": "desk",
+      "category": "desk",
+      "family": "support_surface",
+      "functions": [
+        "work_surface",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 1.3,
+        "depth": 0.65,
+        "height": 0.76
+      },
+      "x": -0.55,
+      "y": 1.595,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.articulated_swept_volume.bbox",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The work surface uses a solid wall segment and faces its chair into the room."
+      }
+    },
+    {
+      "object_id": "chair_01",
+      "hssd_id": "690e8c1cacddc85ec161581ea595d10d9b496ca7",
+      "hssd_source_category": "swivel chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.597,
+        "depth": 0.604,
+        "height": 0.845
+      },
+      "x": -0.55,
+      "y": 0.628,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Task chair faces this desk and retains a pull-out/entry zone behind."
+      }
+    },
+    {
+      "object_id": "bookcase_01",
+      "hssd_id": "0ef97f65cbf5ec5a97e982db08cfb42533d8dc12",
+      "hssd_source_category": "bookcase",
+      "category": "bookcase",
+      "family": "storage",
+      "functions": [
+        "store",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 0.954,
+        "depth": 0.35,
+        "height": 1.755
+      },
+      "x": -2.145,
+      "y": 0.9,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.articulated_swept_volume.bbox",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Reference/storage furniture occupies an opening-free wall and faces accessible room space."
+      }
+    },
+    {
+      "object_id": "armchair_01",
+      "hssd_id": "448d008ec31f9a6e35f96e2a165a4864fbaea2d4",
+      "hssd_source_category": "armchair",
+      "category": "armchair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.798,
+        "depth": 0.895,
+        "height": 0.939
+      },
+      "x": 1.7125,
+      "y": 1.15,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "A secondary reading chair sits near daylight but outside the work-chair movement envelope."
+      }
+    },
+    {
+      "object_id": "side_table_01",
+      "hssd_id": "db26848a7c31fc6c4bece7ffaebf295e6290066d",
+      "hssd_source_category": "end table",
+      "category": "side_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 0.499,
+        "depth": 0.499,
+        "height": 0.53
+      },
+      "x": 1.7125,
+      "y": 0.371,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Small reachable support for the reading chair."
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "chair_01",
+      "target_id": "desk_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.3,
+        0.4
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This chair is the working seat for this exact desk."
+      }
+    },
+    {
+      "source_id": "side_table_01",
+      "target_id": "armchair_01",
+      "orientation_mode": "aligned",
+      "target_strategy": "place_beside",
+      "desired_gap_range": [
+        0.08,
+        0.34
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This side table belongs to the adjacent reading chair."
+      }
+    }
+  ],
+  "audit": {
+    "generator_version": "clean_furniture_generator_gpt56_v1",
+    "rules_version": "furniture_layout_rules_gpt56_v1",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "Primary desk uses the north wall, with a dedicated work chair, accessible storage, and a small reading zone.",
+    "provenance": {
+      "layout_author": "GPT-5.6 independent layout reasoning",
+      "qwen_layout_used_as_answer": false,
+      "hssd_usage": "asset semantics, canonical orientation metadata, and bbox lookup only"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "use_desk_01_front",
+        "owner_id": "desk_01",
+        "center_xy_m": [
+          -0.55,
+          0.86
+        ],
+        "size_xy_m": [
+          1.2,
+          0.82
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "desk_seated_work_clearance",
+        "allowed_overlap_object_ids": [
+          "chair_01"
+        ],
+        "validity": true
+      },
+      {
+        "zone_id": "use_chair_01_behind",
+        "owner_id": "chair_01",
+        "center_xy_m": [
+          -0.55,
+          0.086
+        ],
+        "size_xy_m": [
+          0.597,
+          0.48
+        ],
+        "yaw_rad": -3.1415926536,
+        "purpose": "task_chair_pull_out_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_bookcase_01_front",
+        "owner_id": "bookcase_01",
+        "center_xy_m": [
+          -1.645,
+          0.9
+        ],
+        "size_xy_m": [
+          0.954,
+          0.65
+        ],
+        "yaw_rad": 1.5707963268,
+        "purpose": "office_storage_access_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_armchair_01_front",
+        "owner_id": "armchair_01",
+        "center_xy_m": [
+          1.075,
+          1.15
+        ],
+        "size_xy_m": [
+          0.798,
+          0.38
+        ],
+        "yaw_rad": -1.5707963268,
+        "purpose": "reading_chair_approach_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      -0.55,
+      -0.092
+    ],
+    "gpt_semantic_review": {
+      "status": "gpt_visual_pass",
+      "requires_human_review": false,
+      "notes": [
+        "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+      ],
+      "review_schema_version": "gpt56_topdown_semantic_review_v1",
+      "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+    },
+    "layout_hash": "4861c395b4e0df4b3dad70e92cd6bf5d4beb5b048081938266508e53132cd98e"
+  }
+}

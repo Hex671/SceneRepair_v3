@@ -1,0 +1,827 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "bedroom_authored_001",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "bedroom",
+  "length": 5.4,
+  "width": 4.4,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_south_east",
+      "kind": "door",
+      "wall": "south",
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        1.65,
+        -1.8000000000000003,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.9,
+        0.8,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_east_daylight",
+      "kind": "window",
+      "wall": "east",
+      "opening_width_m": 1.7,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        2.45,
+        0.8,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.5,
+        1.7,
+        2.05
+      ],
+      "interior_normal_xy": [
+        -1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "bed_sleep",
+      "hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+      "hssd_source_category": "bed",
+      "category": "bed",
+      "family": "sleep_surface",
+      "functions": [
+        "sleep"
+      ],
+      "bbox": {
+        "width": 1.759,
+        "depth": 1.994,
+        "height": 1.144
+      },
+      "x": -1.623,
+      "y": 0.25,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "The bed anchors the west wall with its headboard side against that wall and its usable east side facing the open room. This avoids the south-east entry, leaves a full egress lane on the bed's east side, and keeps the north side available for nightstand_sleep without forcing a pair of symmetric bedside tables.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "bed",
+          "partners": [
+            "bedclothes",
+            "headboard",
+            "mattress",
+            "nightstand"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "nightstand_sleep",
+      "hssd_id": "030dc7920f6b43d809ddc87281cdd46ffdad2d9f",
+      "hssd_source_category": "nightstand",
+      "category": "nightstand",
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ],
+      "bbox": {
+        "width": 0.564,
+        "depth": 0.4676,
+        "height": 0.7496
+      },
+      "x": -1.95,
+      "y": 1.48,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "This single nightstand sits on the bed's north side near the head end, giving a reachable surface for nighttime items while preserving the larger east-side route. It is deliberately not duplicated on the south side, where a second table would reduce the entry-side freedom.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor",
+            "wall"
+          ],
+          "confidence": 0.84,
+          "dof": 1,
+          "orientation_constraints": [
+            "back against wall; front faces accessible room area"
+          ],
+          "provenance": "seed_rule:wall_floor_boundary",
+          "support_anchor": "wall+floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "nightstand",
+          "partners": [
+            "alarm_clock",
+            "bed",
+            "table_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "nightstand",
+          "geometry_root_key": "hssd_materialized",
+          "match_id": "030dc7920f6b43d809ddc87281cdd46ffdad2d9f",
+          "n_movable": 3,
+          "realization_kind": "hssd_official",
+          "source": "HSSD-official",
+          "static_dims": [
+            0.564,
+            0.744,
+            0.461
+          ],
+          "swept_dims": [
+            0.564,
+            0.744,
+            0.796
+          ],
+          "vol_bloat": 1.726
+        }
+      }
+    },
+    {
+      "object_id": "wardrobe_clothes",
+      "hssd_id": "5f1c51116d658b454806329a7be495f18190e7d1",
+      "hssd_source_category": "wardrobe",
+      "category": "wardrobe",
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ],
+      "bbox": {
+        "width": 1.4999,
+        "depth": 0.5021,
+        "height": 1.8978
+      },
+      "x": 0.8,
+      "y": 1.869,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The wardrobe occupies the north-east wall and faces south into a dedicated dressing zone. It is clear of the east window and far enough from bed_sleep that doors can be opened and clothes selected without entering the sleeping surface's egress lane.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor",
+            "wall"
+          ],
+          "confidence": 0.84,
+          "dof": 1,
+          "orientation_constraints": [
+            "back against wall; front faces accessible room area"
+          ],
+          "provenance": "seed_rule:wall_floor_boundary",
+          "support_anchor": "wall+floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "wardrobe",
+          "partners": [
+            "shoe_rack"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "wardrobe",
+          "geometry_root_key": "hssd_materialized",
+          "match_id": "5f1c51116d658b454806329a7be495f18190e7d1",
+          "n_movable": 2,
+          "realization_kind": "hssd_official",
+          "source": "HSSD-official",
+          "static_dims": [
+            1.5,
+            1.898,
+            0.482
+          ],
+          "swept_dims": [
+            2.439,
+            1.898,
+            1.169
+          ],
+          "vol_bloat": 3.948
+        }
+      }
+    },
+    {
+      "object_id": "armchair_reading",
+      "hssd_id": "098cb07d9311b915c7d28680fd4ce1b44df9b637",
+      "hssd_source_category": "armchair",
+      "category": "armchair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.724,
+        "depth": 0.666,
+        "height": 0.732
+      },
+      "x": 1.05,
+      "y": -0.45,
+      "z": 0.0,
+      "yaw_rad": -2.356194490192345,
+      "rotation_wxyz": [
+        0.3826834324,
+        0.0,
+        0.0,
+        -0.9238795325
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "The reading chair occupies the south-east corner but is set north of the door clearance. Its diagonal north-west orientation faces the room and bed-side daylight rather than a wall, and its approach remains separate from the main route to wardrobe_clothes.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "armchair",
+          "partners": [
+            "coffee_table",
+            "floor_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "side_table_reading",
+      "hssd_id": "0eaba51224158a6f8e89a31843f85cf8b978b592",
+      "hssd_source_category": "end table",
+      "category": "side_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 0.377,
+        "depth": 0.318,
+        "height": 0.456
+      },
+      "x": 1.85,
+      "y": 0.12,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The slim side table is on armchair_reading's north-east side for a book or drink. Its compact footprint stays west of the window clearance and outside the chair's north-west approach wedge.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "end table",
+          "partners": [
+            "armchair",
+            "sofa",
+            "table_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "floor_lamp_reading",
+      "hssd_id": "129451389f982fcfe102675270009ce1da6671db",
+      "hssd_source_category": "floor lamp",
+      "category": "floor_lamp",
+      "family": "lighting",
+      "functions": [
+        "illuminate"
+      ],
+      "bbox": {
+        "width": 0.333,
+        "depth": 0.407,
+        "height": 1.276
+      },
+      "x": 1.9,
+      "y": -0.75,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The slender floor lamp occupies the armchair's east-south flank, where it can light reading without entering the chair approach or the door's inward clearance. It also remains west of the window clearance despite sitting near the daylight side of the room.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "floor lamp",
+          "partners": [
+            "armchair",
+            "socket",
+            "sofa"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "bed_sleep",
+      "target_id": "nightstand_sleep",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+        "matched_original_partner_category": "nightstand",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "nightstand_sleep",
+      "target_id": "bed_sleep",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "030dc7920f6b43d809ddc87281cdd46ffdad2d9f",
+        "matched_original_partner_category": "bed",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "armchair_reading",
+      "target_id": "floor_lamp_reading",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "098cb07d9311b915c7d28680fd4ce1b44df9b637",
+        "matched_original_partner_category": "floor_lamp",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "side_table_reading",
+      "target_id": "armchair_reading",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "0eaba51224158a6f8e89a31843f85cf8b978b592",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "floor_lamp_reading",
+      "target_id": "armchair_reading",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "129451389f982fcfe102675270009ce1da6671db",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    }
+  ],
+  "audit": {
+    "pipeline_version": "authored_single_scene_validator_v2",
+    "proposal_schema_version": "authored_furniture_proposal_v1",
+    "rules_version": "authored_furniture_layout_validation_rules_v2",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "The bed runs north-south with its head at the west wall and a broad east-side egress lane. The wardrobe uses the north-east wall, while a compact angled armchair, side table, and lamp form a separate reading group in the south-east without crowding the entry.",
+    "daily_activities": [
+      "sleeping and waking",
+      "changing clothes and storing garments",
+      "quiet reading away from the bed"
+    ],
+    "main_path": "Enter from the south-east door, move north through the open east-side lane to reach the wardrobe or bed egress, or turn northwest into the reading chair approach; the bed never needs to be crossed to reach storage.",
+    "protected_open_space": "The east side of the bed, the strip north of the door, and the center between sleeping and dressing remain open for morning movement, changing clothes, and carrying laundry.",
+    "provenance": {
+      "layout_author": "GPT-5.6 Codex primary agent",
+      "python_layout_decisions": false,
+      "proposal_path": "data/clean_layouts_gpt56_v2_authored/authored_proposals/bedroom_authored_001.json",
+      "proposal_sha256": "013fdf948b2d6ca6c77d4d57f848994226c08f361108fe546a60e537bfaad8ee",
+      "hssd_lookup_path": "../hssd-annotations/data/hssd_annotation_lookup.json.gz",
+      "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "semantic_mapping_path": "data/clean_layouts_gpt56_v1/semantic_mapping.json",
+      "semantic_mapping_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+      "layout_rules_path": "configs/authored_layout_validation_rules_v2.json",
+      "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+      "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+      "functional_rules_path": "configs/functional_partner_rules_hssd_v1.json",
+      "functional_rules_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+      "functional_compatibility_path": "configs/functional_partner_category_compatibility_v1.json",
+      "functional_compatibility_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+      "vocabulary_path": "configs/furniture_vocab_bootstrap_v1.json",
+      "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "use_bed_sleep_east_egress",
+        "owner_id": "bed_sleep",
+        "center_xy_m": [
+          -0.276,
+          0.25
+        ],
+        "size_xy_m": [
+          1.2,
+          0.7
+        ],
+        "yaw_rad": 1.5707963267948966,
+        "purpose": "bed_east_side_egress_and_making",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_wardrobe_clothes_front",
+        "owner_id": "wardrobe_clothes",
+        "center_xy_m": [
+          0.8,
+          1.228
+        ],
+        "size_xy_m": [
+          1.2,
+          0.78
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "wardrobe_door_and_dressing",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_armchair_reading_front",
+        "owner_id": "armchair_reading",
+        "center_xy_m": [
+          0.6731,
+          -0.0731
+        ],
+        "size_xy_m": [
+          0.724,
+          0.4
+        ],
+        "yaw_rad": -2.356194490192345,
+        "purpose": "reading_chair_approach_and_sit",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "path_targets": [
+      {
+        "target_id": "bed_egress_access",
+        "goal_xy_m": [
+          -0.15,
+          0.25
+        ]
+      },
+      {
+        "target_id": "wardrobe_access",
+        "goal_xy_m": [
+          0.8,
+          1.05
+        ]
+      },
+      {
+        "target_id": "reading_access",
+        "goal_xy_m": [
+          0.65,
+          -0.08
+        ]
+      },
+      {
+        "target_id": "nightstand_access",
+        "goal_xy_m": [
+          -1.55,
+          1.18
+        ]
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      -0.15,
+      0.25
+    ],
+    "functional_partner_builder": {
+      "implementation": "FrozenFunctionalPartnerRules",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "no_handwritten_edges": true
+    },
+    "layout_hash": "4b5e71a253c8b437a4cad7c46ee94bbd3976bd84aa7b523db0aa0e7936a83454"
+  }
+}

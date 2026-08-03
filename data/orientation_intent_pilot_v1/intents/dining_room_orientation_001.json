@@ -1,0 +1,139 @@
+{
+  "schema_version": "authored_furniture_intent_proposal_v1",
+  "scene_id": "dining_room_orientation_001",
+  "room_type": "dining_room",
+  "coordinate_frame": "room_local_z_up",
+  "room": {
+    "length_m": 5.8,
+    "width_m": 5.0,
+    "organization": "A compact four-sided dining group is shifted into the brighter east half of the room. A single west-wall cabinet forms a separate serving and storage edge, while the north-west entry opens into an uncluttered cross-room approach.",
+    "daily_activities": [
+      "four-person dining",
+      "serving from the west cabinet",
+      "setting and clearing the table",
+      "daylight breakfast"
+    ],
+    "main_path": "Enter from the north-west door, pass along the open north side of the cabinet, then approach the table from its north-west quadrant without crossing a chair footprint.",
+    "protected_open_space": "The north-west arrival area and the diagonal route toward the north side of the dining group remain free of furniture."
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "north",
+      "along_m": -1.65,
+      "opening_width_m": 0.9
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "east",
+      "along_m": 1.3,
+      "opening_width_m": 1.4
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "table_compact_east",
+      "hssd_id": "2be31ee230714129948eda5af7d3b29777601dba",
+      "category": "table",
+      "x": 0.75,
+      "y": -0.15,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "orientation_irrelevant"
+      },
+      "clearance_intent": "none",
+      "placement_rationale": "The near-square table is treated as orientation-neutral and is shifted east for side daylight. Its center leaves a broad north-west approach and a dedicated serving side toward the west cabinet."
+    },
+    {
+      "object_id": "chair_dining_north",
+      "hssd_id": "088c257155d527517719972d29f363a438cfb4cd",
+      "category": "chair",
+      "x": 0.75,
+      "y": 0.95,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_compact_east"
+      },
+      "clearance_intent": "rear_pullout",
+      "placement_rationale": "The north chair faces the table directly and pulls back into the open northern approach without entering the door clearance."
+    },
+    {
+      "object_id": "chair_dining_south",
+      "hssd_id": "088c257155d527517719972d29f363a438cfb4cd",
+      "category": "chair",
+      "x": 0.75,
+      "y": -1.25,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_compact_east"
+      },
+      "clearance_intent": "rear_pullout",
+      "placement_rationale": "The south chair completes the opposing pair, faces the table, and retains a deep unobstructed pull-back area toward the south wall."
+    },
+    {
+      "object_id": "chair_dining_east",
+      "hssd_id": "088c257155d527517719972d29f363a438cfb4cd",
+      "category": "chair",
+      "x": 1.85,
+      "y": -0.15,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_compact_east"
+      },
+      "clearance_intent": "rear_pullout",
+      "placement_rationale": "The east chair faces west toward the table. Its pull-back strip stays south of the elevated east-window clearance rather than occupying the daylight opening."
+    },
+    {
+      "object_id": "chair_dining_west",
+      "hssd_id": "088c257155d527517719972d29f363a438cfb4cd",
+      "category": "chair",
+      "x": -0.35,
+      "y": -0.15,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_compact_east"
+      },
+      "clearance_intent": "rear_pullout",
+      "placement_rationale": "The west chair faces the table and remains well east of the cabinet access strip, leaving a serving passage between storage and dining group."
+    },
+    {
+      "object_id": "cabinet_serving_west",
+      "hssd_id": "8e792021f82f67d9662c15328a28063d06dc3623",
+      "category": "cabinet",
+      "x": -2.59,
+      "y": 0.35,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "west"
+      },
+      "clearance_intent": "front_access",
+      "placement_rationale": "The serving cabinet backs onto the west wall below the arrival route, faces east into a clear access strip, and avoids turning the room into the bench-and-sideboard pattern used by the formal dining scenes."
+    }
+  ],
+  "path_targets": [
+    {
+      "target_id": "table_compact_east",
+      "goal_xy_m": [0.25, 1.35],
+      "purpose": "primary_dining_approach"
+    },
+    {
+      "target_id": "cabinet_serving_west",
+      "goal_xy_m": [-1.75, 0.35],
+      "purpose": "serving_storage_access"
+    }
+  ],
+  "primary_zone_goal_xy_m": [0.25, 1.35],
+  "authorship": {
+    "layout_author": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "design_iteration": 2,
+    "status": "author_experiment_pending_compile"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "scene_repair_v3_sfur_rules_v1",
+  "functional_score_threshold": 0.9,
+  "geometry_tolerance_m": 0.001,
+  "path": {
+    "grid_resolution_m": 0.1,
+    "human_radius_m": 0.28
+  },
+  "weights": {
+    "functional_relations": 0.4,
+    "use_clearance": 0.35,
+    "reachability": 0.25
+  },
+  "pair_rules": [
+    {
+      "rule_id": "chair_table_v1",
+      "categories": ["chair", "table"],
+      "subjects": ["chair"],
+      "gap_range_m": [0.0, 0.35],
+      "facing": {"chair": 45.0}
+    },
+    {
+      "rule_id": "chair_desk_v1",
+      "categories": ["chair", "desk"],
+      "subjects": ["chair", "desk"],
+      "gap_range_m": [0.0, 0.35],
+      "facing": {"chair": 25.0, "desk": 40.0}
+    },
+    {
+      "rule_id": "bench_table_v1",
+      "categories": ["bench", "table"],
+      "subjects": ["bench"],
+      "gap_range_m": [0.0, 0.35],
+      "facing": {"bench": 25.0}
+    },
+    {
+      "rule_id": "sofa_coffee_table_v1",
+      "categories": ["coffee_table", "sofa"],
+      "subjects": ["sofa"],
+      "gap_range_m": [0.25, 1.3],
+      "facing": {"sofa": 45.0}
+    },
+    {
+      "rule_id": "bed_nightstand_v1",
+      "categories": ["bed", "nightstand"],
+      "subjects": ["nightstand"],
+      "gap_range_m": [0.0, 0.31],
+      "facing": {}
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "orientation_intent_author_review_v1",
+  "scene_id": "dining_room_orientation_001",
+  "review_type": "author_generation_and_self_review_only",
+  "independent_semantic_review_completed": false,
+  "status": "author_self_review_pass",
+  "accepted_clean": false,
+  "design_iterations_used": 2,
+  "iteration_history": [
+    {
+      "iteration": 1,
+      "result": "hard_and_diversity_pass",
+      "author_issue": "Object id implied a round tabletop although the frozen evidence used here only establishes a near-square bbox."
+    },
+    {
+      "iteration": 2,
+      "result": "pass",
+      "change": "Renamed the object to table_compact_east without changing HSSD id, category, or position."
+    }
+  ],
+  "deterministic_validation_passed": true,
+  "diversity_validation_passed": true,
+  "orientation_compile_passed": true,
+  "yaw_direction_table_review": {
+    "passed": true,
+    "back_to_wall_fronts_point_indoors": true,
+    "seats_face_declared_service_objects": true,
+    "local_minus_y_front_matches_intent": true,
+    "clearance_regions_match_declared_side": true,
+    "notes": "North, south, east, and west chairs point south, north, west, and east respectively toward the table. Every rear-pullout zone lies on the opposite radial direction. The west cabinet points and opens east."
+  },
+  "object_reviews": [
+    {
+      "object_id": "table_compact_east",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "The 1.067 by 1.067 m annotated bbox has no meaningful long-axis distinction, so orientation_irrelevant and canonical yaw zero are appropriate."
+    },
+    {
+      "object_id": "chair_dining_north",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Faces south to the table center; rear clearance extends north without touching the door opening."
+    },
+    {
+      "object_id": "chair_dining_south",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Faces north to the table center; rear clearance extends south into open floor."
+    },
+    {
+      "object_id": "chair_dining_east",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Faces west to the table center; rear clearance extends east but remains south of the east-window clearance."
+    },
+    {
+      "object_id": "chair_dining_west",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Faces east to the table center; rear clearance ends before the west cabinet access strip."
+    },
+    {
+      "object_id": "cabinet_serving_west",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Back is against the west wall, front points east, and the access strip occupies the intended serving side."
+    }
+  ],
+  "visual_review": {
+    "image_checked": true,
+    "furniture_overlap_observed": false,
+    "opening_conflict_observed": false,
+    "incoherent_text_or_geometry_overlap_observed": false,
+    "main_path_visually_plausible": true,
+    "functional_zoning_visually_plausible": true
+  },
+  "unexpressible_orientation_intent": false,
+  "review_limitations": "This is the generating author's semantic and visual self-review. It is not an independent semantic audit."
+}

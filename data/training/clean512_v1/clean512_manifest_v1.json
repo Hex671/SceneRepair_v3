@@ -1,0 +1,3085 @@
+{
+  "schema_version": "scene_repair_v3_clean_scene_manifest_v1",
+  "seed": 20260801,
+  "source_directory": "..\\..\\clean_layout_production_v2\\accepted\\scenes",
+  "scene_count": 512,
+  "splits": {
+    "train": 409,
+    "val": 51,
+    "test": 52
+  },
+  "scenes": [
+    {
+      "scene_id": "clean_v2_prod_0002_home_office_0002",
+      "path": "clean_v2_prod_0002_home_office_0002.json",
+      "sha256": "e65341a0330484f14c2015048d79acca82c917b1327f8091abf2c25fb78c1448",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0013",
+      "path": "clean_v2_prod_0012_living_room_0013.json",
+      "sha256": "e064e3b2e867dc1bdc794322f6fd6c3f1a11660847e2018a73eed64f7f376e45",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0019",
+      "path": "clean_v2_prod_0012_home_office_0019.json",
+      "sha256": "64a6b856adb6e630175061a71ef4f0db95516d94fcd1d73968c9c1ba2e898433",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0060",
+      "path": "clean_v2_prod_0015_living_room_0060.json",
+      "sha256": "02ba5903755d137c6f7d5f1dfbc2832769854377fb077af3509c2a9a8adb3b6b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0029",
+      "path": "clean_v2_prod_0015_home_office_0029.json",
+      "sha256": "7fa05493f3ac28ecc6d1ed7d5f2277a7d382cd4195136169dfcc15ec11dc696a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_bedroom_0001",
+      "path": "clean_v2_prod_0004_bedroom_0001.json",
+      "sha256": "a8b7e87a5f327cdee1ef4d0d1a63bf20819cfe0038722754d4f2fdb3f83187f7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_living_room_0003",
+      "path": "clean_v2_prod_0005_living_room_0003.json",
+      "sha256": "efc8588db2a3471d0c21202296980cc02a466f0c178a7bda6e400646eb9c8439",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0018",
+      "path": "clean_v2_prod_0016_bedroom_0018.json",
+      "sha256": "7f67fbc0ecda78cb981609c7f183a61c49a6f77fc7c5c1a30881be5b9897c36e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0032",
+      "path": "clean_v2_prod_0015_home_office_0032.json",
+      "sha256": "5dc80c73fb81e06d870500297ed121da021a331d4335f7ae18970d33407232b5",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0017",
+      "path": "clean_v2_prod_0013_dining_room_0017.json",
+      "sha256": "24f0b699cd5ac01952add51616d7bba2ac51fca73d2e66f12edf6e13c26a75de",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0048",
+      "path": "clean_v2_prod_0012_dining_room_0048.json",
+      "sha256": "f2147e36f2616567edb4920d31332cca1f68b6bf98cd57c7baa2bd7247c35bd2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0006",
+      "path": "clean_v2_prod_0017_dining_room_0006.json",
+      "sha256": "3cb302587c72e028d8f5defe3d33f8ac0202bcc672015a000d78a5a02398d381",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0014",
+      "path": "clean_v2_prod_0015_living_room_0014.json",
+      "sha256": "4a39cd62feac6b42b7ad5498b37da8f8019bb2485aa7bcda3cea0c67845defcb",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0022",
+      "path": "clean_v2_prod_0010_living_room_0022.json",
+      "sha256": "9f95aec197580bc3bc0fbde3fbeb406565df10a9d23a4b1b15aaa997963612a6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0011",
+      "path": "clean_v2_prod_0009_dining_room_0011.json",
+      "sha256": "fe437824f0652cb9cc089f45fc336cafc58189c27697c01e9ee07f06ae8e4958",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0014",
+      "path": "clean_v2_prod_0012_dining_room_0014.json",
+      "sha256": "2ef02bb7a79fdd81a48d007a96ddee3e3eee6803d07d7d7eadaded1b3a1471e9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0009",
+      "path": "clean_v2_prod_0014_bedroom_0009.json",
+      "sha256": "fa360f0ff9aa5971c8f34e175b691d238dda367a20502f349bce5c3bc24ef17c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0021",
+      "path": "clean_v2_prod_0010_dining_room_0021.json",
+      "sha256": "fa0af3b7dc493e1d39000363166b1aaccb79bf2e623da949557c9b73fc59ff00",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0014",
+      "path": "clean_v2_prod_0010_dining_room_0014.json",
+      "sha256": "918704d389786a57b1b344f19f1483799fbd0af4eadae2fd504c99dfda39e3d7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_living_room_0004",
+      "path": "clean_v2_prod_0003_living_room_0004.json",
+      "sha256": "3f05995f54fc89edbc4ff0fee16244b8550f5f9c61574912e71edeaf04fd6604",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_bedroom_0007",
+      "path": "clean_v2_prod_0003_bedroom_0007.json",
+      "sha256": "420b59df82c6d729ca329623eeca7de5fa9934e36fd809ae703be7aade9e465e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_living_room_0008",
+      "path": "clean_v2_prod_0004_living_room_0008.json",
+      "sha256": "f39fb2639c03f114a951fb03a5ab20a7404712b62c8a90fa188cf6b70f184050",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0018",
+      "path": "clean_v2_prod_0016_dining_room_0018.json",
+      "sha256": "e76183810cda106711b23de08a5f2bcb344e72fd1918b3328f249ad50886a0d7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_living_room_0004",
+      "path": "clean_v2_prod_0002_living_room_0004.json",
+      "sha256": "98b564a3e8245d1fcb781b2b959cc279bc4b0ded469fae9d8c05a0caff6c7bd7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0053",
+      "path": "clean_v2_prod_0012_bedroom_0053.json",
+      "sha256": "601c37c73d2a1833105a1cfcaa5acf134e3b33ab7b84a598d51f5bed865a18db",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0008",
+      "path": "clean_v2_prod_0015_dining_room_0008.json",
+      "sha256": "9f8c181da16cabf6d2832a3c289b27c692204f7f98c3d824573831b78e1aff48",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0019",
+      "path": "clean_v2_prod_0014_dining_room_0019.json",
+      "sha256": "3ea7cc63370ada7b5c663e686c7dff763d7686df80e00d072a850987a7ab1f69",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_home_office_0006",
+      "path": "clean_v2_prod_0005_home_office_0006.json",
+      "sha256": "38775b015c324ec7404aeeb704b2fbf0b934920ecd9ed38aed01304fccfba8bf",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0019",
+      "path": "clean_v2_prod_0012_bedroom_0019.json",
+      "sha256": "42ea94540703926c0ad035ae1b58ecd1c05b219700e45183c76116a346466cf4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_dining_room_0008",
+      "path": "clean_v2_prod_0004_dining_room_0008.json",
+      "sha256": "633086b2dae9d3eb1d3a5a8a6ddda3fa9c9a7412d7d48c65145d7c81ff7ce0dc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_dining_room_0005",
+      "path": "clean_v2_prod_0004_dining_room_0005.json",
+      "sha256": "5013eac56819dbbff53be1fc9451ace5f6a44c95b62c0e051bdac3be26a8f802",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0011",
+      "path": "clean_v2_prod_0017_home_office_0011.json",
+      "sha256": "b2321e75f996b4c8b8f4476d4b610e1fb677c612492ad1612014736658ae727c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0020",
+      "path": "clean_v2_prod_0016_dining_room_0020.json",
+      "sha256": "9514052531a9b08fe16ff3c59e5f0e9d58e5809faeca52c6b5892c77f6e089af",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0017",
+      "path": "clean_v2_prod_0015_dining_room_0017.json",
+      "sha256": "3d97d6271cbc0dfe782ab79edaf7e693ff33c4a03d933c7c67f4532f98487766",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_bedroom_0025",
+      "path": "clean_v2_prod_0018_bedroom_0025.json",
+      "sha256": "312eb19a4d6be39c76032aa647e25f51aee43ad45f6285d3f9cfa29f0f623772",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0016",
+      "path": "clean_v2_prod_0017_living_room_0016.json",
+      "sha256": "0b2b6eb149c209df63be24cf6b8446449dc39a18cf1c4525a94732083abb0214",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_living_room_0009",
+      "path": "clean_v2_prod_0003_living_room_0009.json",
+      "sha256": "72dec88400df0e56d7d261e0d3218f8d54f7d937158540c65889560a3167b17e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0020",
+      "path": "clean_v2_prod_0012_living_room_0020.json",
+      "sha256": "1f45f9f89c8d56592d7f784a08b9bde883b2efacd70d625e02f2f4b69005cd65",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0010",
+      "path": "clean_v2_prod_0017_bedroom_0010.json",
+      "sha256": "b32e0993671f06ba6776ff0953d3898ef5e807c1482d9181d7ba670e4714cc01",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0048",
+      "path": "clean_v2_prod_0017_living_room_0048.json",
+      "sha256": "5a16f1839f80f40ade6c32500d7683abcc3d984e11dcfe6c301f78ff319fde5e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0012",
+      "path": "clean_v2_prod_0009_living_room_0012.json",
+      "sha256": "1d299fc2593b73b3df7135bf7e832daf398f70f3e9062966d9e5759d4a3b8605",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0036",
+      "path": "clean_v2_prod_0012_living_room_0036.json",
+      "sha256": "936199b8112e319cbb47367aeac37fab94a3c00d5ddcf62d6a740767ce10c0aa",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0020",
+      "path": "clean_v2_prod_0009_bedroom_0020.json",
+      "sha256": "6e0b1e8f9b66416122590ba5b249c4a2a957ae276b0dc15618b1ec3eb80523d2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0021",
+      "path": "clean_v2_prod_0009_dining_room_0021.json",
+      "sha256": "9bd0d919d64fc179ebdd68134d344e255eeca0fb1dde293975bf0938a9d0a6f1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0013",
+      "path": "clean_v2_prod_0009_living_room_0013.json",
+      "sha256": "2920e81b346313c257d704fa525c7c2a1d48c8a4527f9889256a5d6263689aa7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0034",
+      "path": "clean_v2_prod_0014_bedroom_0034.json",
+      "sha256": "9715859fb17ec1778fbe7e46c611bfaeea743ccd6dd56eb8226411fdf43ae414",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0039",
+      "path": "clean_v2_prod_0013_bedroom_0039.json",
+      "sha256": "7f9559ef2a9e0ca5d58ddf13bf8f3f8b72ef2d371d3211325469c1b600fb43e8",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_dining_room_0010",
+      "path": "clean_v2_prod_0002_dining_room_0010.json",
+      "sha256": "5bf03a976b7622249f2f029e7e01ffbcfcf05d7f1a45912287e959fa1b7f6d2b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_living_room_0005",
+      "path": "clean_v2_prod_0004_living_room_0005.json",
+      "sha256": "8b57c7110754b4497712d1303c5cb27dd335823e56df9a3331a682a485bd4be7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0027",
+      "path": "clean_v2_prod_0010_bedroom_0027.json",
+      "sha256": "071a5eaf18f64db4ba60667847791814363a58b16c41e955294cef9bfc258fbc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0014",
+      "path": "clean_v2_prod_0009_home_office_0014.json",
+      "sha256": "91c4cc668cc3c7b64667b8035df68502f343c3a665e96cdf4e50643e45f7842a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0014",
+      "path": "clean_v2_prod_0016_bedroom_0014.json",
+      "sha256": "32a2cdfc62c0ac0c7270b584cc07b5e8a671b7ed28595ce48ff85a9794cd4592",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0002",
+      "path": "clean_v2_prod_0014_home_office_0002.json",
+      "sha256": "d78e6659b1e9bd59609f32c4a3511e3fd8366c1ba750d734ccef94e84dfecb2a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0028",
+      "path": "clean_v2_prod_0013_bedroom_0028.json",
+      "sha256": "756fbd88df178f57c53dbf0373f41d83533348ec55df29aac53a67733ee3e4f9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_dining_room_0010",
+      "path": "clean_v2_prod_0003_dining_room_0010.json",
+      "sha256": "599de3e2f894fc12d8c365ffdd1da804cd13b1036a13c14f938603307b50e93e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0021",
+      "path": "clean_v2_prod_0012_home_office_0021.json",
+      "sha256": "b3011cfdd25b77e2ddc5a29f3c7c9226bdbc0972b2d74a39bbbad86fe44b341c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_home_office_0007",
+      "path": "clean_v2_prod_0003_home_office_0007.json",
+      "sha256": "4d2e0d127f40b762e95e22c34ef5f38dd0655b3ff072bacad7c92593e18dbb65",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0041",
+      "path": "clean_v2_prod_0017_living_room_0041.json",
+      "sha256": "ed7d416c26986d97881629354c1138aa79f16ba118114764f3a1d6321568933f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_living_room_0003",
+      "path": "clean_v2_prod_0004_living_room_0003.json",
+      "sha256": "c3109b772cff2a1be3aa9f73b59b40374bfd395dc3376d442d680cde6c70a3de",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0005",
+      "path": "clean_v2_prod_0009_bedroom_0005.json",
+      "sha256": "05d5079d2b947d574d3a839354e5b52ed8b138c68a8656a73352aa1542907e88",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_home_office_0005",
+      "path": "clean_v2_prod_0005_home_office_0005.json",
+      "sha256": "ec8a7185365b3331033635c5f2025d7c701667930da22baef1f3dafc7658d416",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_bedroom_0002",
+      "path": "clean_v2_prod_0005_bedroom_0002.json",
+      "sha256": "0d2f50d320794b357bd9b13b68b2f48a52a45c6bd126d9ab7da25f7da012e394",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0004",
+      "path": "clean_v2_prod_0014_home_office_0004.json",
+      "sha256": "1275585f62d53135367b2de31101e1245133dc720ec503a0226e9963aa122efa",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0019",
+      "path": "clean_v2_prod_0009_bedroom_0019.json",
+      "sha256": "954c828f6d5af0bfc3e3a920ef7aff9b194cc80630103e6f607592fd1fcaa69a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_living_room_0016",
+      "path": "clean_v2_prod_0018_living_room_0016.json",
+      "sha256": "ddf69e021f13ccbe84f37a42a2fc4884e79f030eef669eef57bfda86e8dc54cd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0004",
+      "path": "clean_v2_prod_0017_living_room_0004.json",
+      "sha256": "656efcd205270f277f5207b61dfab03f6f46657b168ea15ff521ee15dc9c9bbe",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0018",
+      "path": "clean_v2_prod_0009_bedroom_0018.json",
+      "sha256": "f04a51a7fa92704a505b82492f792c34256b1501ff21c323d07d454d4216ac49",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0005",
+      "path": "clean_v2_prod_0017_bedroom_0005.json",
+      "sha256": "6ac1d40a3212387b3da2819ec9af93cfc5722e9f9e24085e53104fa5ce3b80bc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0008_dining_room_0001",
+      "path": "clean_v2_prod_0008_dining_room_0001.json",
+      "sha256": "fe16a4faf40789cb9c2e57ff9e5f4df1d5a548940ddf72286d91fe49a97ea921",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0025",
+      "path": "clean_v2_prod_0017_bedroom_0025.json",
+      "sha256": "c120ffcbf9946d069a2af514988c56ddbdfb4ca05dd15c75866a3d64df8c13ef",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_bedroom_0006",
+      "path": "clean_v2_prod_0002_bedroom_0006.json",
+      "sha256": "959dbf76707c2a763cf507a878a93050bd9cf68655f0f7cedba82445642875f6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_living_room_0001",
+      "path": "clean_v2_prod_0003_living_room_0001.json",
+      "sha256": "ea25a69f5ca34a429225415ceb729572b3ac15c35091f61a2bac806449e2bf1b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0010",
+      "path": "clean_v2_prod_0016_living_room_0010.json",
+      "sha256": "6ade4b3a39d20a50e2bdb110c9508f1c381868c9a31e420fce53f6887a48e313",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_dining_room_0006",
+      "path": "clean_v2_prod_0004_dining_room_0006.json",
+      "sha256": "0648436b37276a6a61abcdc19058523f0f4f3afff7f49d2bf48d99afb7485afc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_dining_room_0015",
+      "path": "clean_v2_prod_0018_dining_room_0015.json",
+      "sha256": "9bf3807cd5b920bdae9d2427a063bcc57db40d4b43d1731d658976f85d930c30",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0010",
+      "path": "clean_v2_prod_0014_living_room_0010.json",
+      "sha256": "7e75e8cec5edeab5bf8f9991f690b69356cf4120447963fe4c4e4ac66d932e0c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0024",
+      "path": "clean_v2_prod_0017_living_room_0024.json",
+      "sha256": "d4e5b3be835f4465c5b285f6e25e04a0b0f31175da8a7b755b75a503f96d40be",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0013",
+      "path": "clean_v2_prod_0013_home_office_0013.json",
+      "sha256": "75ee033443d6ddf215bddff84984c27d2a03f197a8dec205973ca04a0448d0df",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0030",
+      "path": "clean_v2_prod_0014_bedroom_0030.json",
+      "sha256": "9ce5e8433de3d8bd63c2985afb67fdcb3f2847903193c65be13d1eba6d984b51",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0003",
+      "path": "clean_v2_prod_0014_home_office_0003.json",
+      "sha256": "67f29b15ff8a776f78d5c4b5a9206c1f5c14138e70bbae458edfa586447176b7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0014",
+      "path": "clean_v2_prod_0017_living_room_0014.json",
+      "sha256": "b0b21eac30c3af02731b5b37fc374c15768f5cde7494022d087ceeec7cfb425c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0006",
+      "path": "clean_v2_prod_0015_living_room_0006.json",
+      "sha256": "827e6959fc6ab3c22538767d7537b69a9fbea833817d952f5681f8b0fdfa8982",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0002",
+      "path": "clean_v2_prod_0013_home_office_0002.json",
+      "sha256": "d24ece2a68c66f09d957bd7ef6802ee5a34c02243a7719d48fa528a073aaaca4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0012",
+      "path": "clean_v2_prod_0013_home_office_0012.json",
+      "sha256": "9485dbcfac5de6ffcbaf261c8bdf348ba55fa464ad59a9ff8219066763df4925",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_home_office_0001",
+      "path": "clean_v2_prod_0005_home_office_0001.json",
+      "sha256": "0e88d04a886b8e1685d302c59e21478423b74ff11f38739cb8b7b3df831993d5",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0051",
+      "path": "clean_v2_prod_0015_living_room_0051.json",
+      "sha256": "8bbd2baf296f65ba20e29f8afa469d3c7fc422e19070371af82acfbc7773dfea",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0022",
+      "path": "clean_v2_prod_0013_dining_room_0022.json",
+      "sha256": "84bc8a2c128745f64be88c1ff8b13457bae235b4f8081c875415717da01c59c9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_dining_room_0009",
+      "path": "clean_v2_prod_0003_dining_room_0009.json",
+      "sha256": "5dad2c73519bb854cb5996498acffc673b2d379f5cf047b7893ea0e7f57a56c2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0048",
+      "path": "clean_v2_prod_0017_dining_room_0048.json",
+      "sha256": "e1e826aae15cab960e6dd4f95f89d4ef9e0062b2270bf00c5279d2bd732affce",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_dining_room_0004",
+      "path": "clean_v2_prod_0005_dining_room_0004.json",
+      "sha256": "af6d071ba9ed258a538ca5923324c3134afb20eed3dc9aecdcc0c30ee90380b1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0007",
+      "path": "clean_v2_prod_0014_living_room_0007.json",
+      "sha256": "1f3fb2678b199febc77528c90733522a5d7ac03e28bccf70c66ed3432f884b84",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0008_bedroom_0003",
+      "path": "clean_v2_prod_0008_bedroom_0003.json",
+      "sha256": "983d6184c2cf29583fcdf150a05c4b138843235780346874f3ffb0eaa09d74f6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0014",
+      "path": "clean_v2_prod_0014_bedroom_0014.json",
+      "sha256": "2020915ed3a3ac31d468c53b8d61604a023849d729b622d327a956467f556a5a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0031",
+      "path": "clean_v2_prod_0016_bedroom_0031.json",
+      "sha256": "982c37c0ce7470dea4542a80f1f2b433f094c26de0565a17db360155a1b37500",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0001",
+      "path": "clean_v2_prod_0009_home_office_0001.json",
+      "sha256": "036d857a12af32b59dc09ea6c55e62c9be93c59e362de3286d70061244d23120",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0015",
+      "path": "clean_v2_prod_0016_home_office_0015.json",
+      "sha256": "059611ada90294304f521c54c9f5a988188d619fcfae40570fe57f42a9e19465",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0014",
+      "path": "clean_v2_prod_0016_home_office_0014.json",
+      "sha256": "e59ce791b5131e4cb54610675fbd6f4560160431120a9986f3eb795b437c0217",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0053",
+      "path": "clean_v2_prod_0015_living_room_0053.json",
+      "sha256": "13ff0f5e254bb69ec2417d4c10e5f819d12dca8c23ef83d0690d905a4b28da46",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0035",
+      "path": "clean_v2_prod_0016_living_room_0035.json",
+      "sha256": "eea075862405321f0b5bc9e2b3dfb6d694ad4055a1e0406c5ad475e411fa1a09",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_home_office_0013",
+      "path": "clean_v2_prod_0018_home_office_0013.json",
+      "sha256": "7d867545d4f724436f153f05a1bfecf619660730ddf2007e0de0cce48c33fa75",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0015",
+      "path": "clean_v2_prod_0012_home_office_0015.json",
+      "sha256": "efc6c362b10151ac540a9e4c9f4e52e3ce378fd14c4e8d81e4bee76d0a19f16a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_home_office_0002",
+      "path": "clean_v2_prod_0004_home_office_0002.json",
+      "sha256": "c97808b9b2ad85218398bcf1695ec9cf6db46f2b3eefbdb7a6a105b30469f994",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_living_room_0006",
+      "path": "clean_v2_prod_0004_living_room_0006.json",
+      "sha256": "206804eb20d1d872264457ac46e57037c384df1fc7d60b6c11894208095e14e4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0008_home_office_0001",
+      "path": "clean_v2_prod_0008_home_office_0001.json",
+      "sha256": "a895bdc8620a2be483af177c784c9b240995c567afea63b709161f9203bfeb8b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0005",
+      "path": "clean_v2_prod_0016_home_office_0005.json",
+      "sha256": "3d1525621f20755be95e0fb9575e3a0088abd07f818fad081ec07f87d638fc6b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0007",
+      "path": "clean_v2_prod_0014_home_office_0007.json",
+      "sha256": "bbb501020f09aa35e7500e7a4bf5f25656c6a192805f5fcff001f55d0a702c8f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0015",
+      "path": "clean_v2_prod_0009_home_office_0015.json",
+      "sha256": "2db16a6ecc50561195c85eb3c539e2cc75691bd0853a9ae8efc05324806dc0a4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0022",
+      "path": "clean_v2_prod_0012_home_office_0022.json",
+      "sha256": "196323a6c00d28c51137037d5d7643ad37c599a24cc5567ed1f978404d67ad75",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0013",
+      "path": "clean_v2_prod_0014_home_office_0013.json",
+      "sha256": "48da19a095415ac818313f7470b151760f8d5ab98b8b800ce094cb69b341a2b9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0016",
+      "path": "clean_v2_prod_0009_living_room_0016.json",
+      "sha256": "72b6951e4fe99b2b25c82975777d03857401fa7ceb203c501eb4265309ad1848",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0029",
+      "path": "clean_v2_prod_0010_bedroom_0029.json",
+      "sha256": "25dba2d3b2e3cddb5e0fdeab3753c2c630b068884f4c3122f4a4ee93865d5e12",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0005",
+      "path": "clean_v2_prod_0016_bedroom_0005.json",
+      "sha256": "a2aaa82409ab2feb9361d180447e834a633473a6bda754931a621c38f3912b6d",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0035",
+      "path": "clean_v2_prod_0016_bedroom_0035.json",
+      "sha256": "5b646d88554d3715840c12d6819c72d718f40e449357274bc7eeefb998b7a583",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0026",
+      "path": "clean_v2_prod_0013_living_room_0026.json",
+      "sha256": "75947db842311145ffeb23fc8a3f7585d7c5383a25e4449e760e3861c031be13",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_living_room_0011",
+      "path": "clean_v2_prod_0005_living_room_0011.json",
+      "sha256": "76d9ec6621e5d2cd2c782ca6dc96df7ff6e6da3f82d11cc0bc8c9622fff87405",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0006",
+      "path": "clean_v2_prod_0012_home_office_0006.json",
+      "sha256": "386b76c60fb1afe59916481adceca6ff8ddffc61e5d67401e83455f1c640ef71",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0023",
+      "path": "clean_v2_prod_0015_home_office_0023.json",
+      "sha256": "cc8c29b1071773fc1a50f3c6313c48135e5750b303249f987a843652fbb8a7c6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0019",
+      "path": "clean_v2_prod_0009_home_office_0019.json",
+      "sha256": "3c2a703edea51dd67cb5930ae658ebfaff9e76790f74c03a440939a8127e14a8",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0009",
+      "path": "clean_v2_prod_0010_dining_room_0009.json",
+      "sha256": "0f06c4c5f42fe7cd1c96ff6575fae143a12982d7791be5feb8ab3db97da3e9bd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0002",
+      "path": "clean_v2_prod_0015_home_office_0002.json",
+      "sha256": "51893a81f31c6aa186194c41a5872e3b8c27dd42b6261db90c6656b286339400",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_dining_room_0003",
+      "path": "clean_v2_prod_0004_dining_room_0003.json",
+      "sha256": "d2d0454490af71c5d239c5d4d9ccf748458261f4e7f681f2f694a1435173093b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0022",
+      "path": "clean_v2_prod_0016_dining_room_0022.json",
+      "sha256": "866da85b96bdd09ffd0014d293d99b1bd5b1cd5810d8e904e169f31ddd50b545",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_bedroom_0008",
+      "path": "clean_v2_prod_0002_bedroom_0008.json",
+      "sha256": "d6628c66b23531720b990f88369e37b71e0f5705add20e39704c2acf3d56130f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_home_office_0003",
+      "path": "clean_v2_prod_0003_home_office_0003.json",
+      "sha256": "d682c8d05698fa036341956b647be56e2a1037b891ef5eb0e2fba382ae0a325b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0001",
+      "path": "clean_v2_prod_0015_bedroom_0001.json",
+      "sha256": "c7a8e7250d50c36107b7ec918927b2fc20af08ca72ea15c627f301a250d395bd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0003",
+      "path": "clean_v2_prod_0010_home_office_0003.json",
+      "sha256": "1a79410c85f62335202f4cfd51e6bf04c5323cd2dab043c66352652c78c19a84",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_living_room_0010",
+      "path": "clean_v2_prod_0002_living_room_0010.json",
+      "sha256": "3ba6962a12186bd16ad9bd091e4e4a713d0e000cc3099e2d6fee02dd673eb439",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0023",
+      "path": "clean_v2_prod_0014_bedroom_0023.json",
+      "sha256": "f2ee2d9313134769b5a694fee29cf2b2592752b0d78400872670128ca56b6c0f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_home_office_0006",
+      "path": "clean_v2_prod_0003_home_office_0006.json",
+      "sha256": "0e190855b4676c14eecc8ed038934b1a2b0ad94bfbd051e8356f1ed4dc792ec9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0026",
+      "path": "clean_v2_prod_0009_home_office_0026.json",
+      "sha256": "3e15b01a8e83b7a772aaf303d3ed2b50289edbda1e9fdb5006b0f4bec83c30db",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_dining_room_0011",
+      "path": "clean_v2_prod_0002_dining_room_0011.json",
+      "sha256": "d4a6ae5baa1ed4afef0407b6ea8b2cb002eaa7c445884da186c05740f2976e78",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0009",
+      "path": "clean_v2_prod_0015_bedroom_0009.json",
+      "sha256": "83a8711ec65ce3c7e3352f9e25fa076b6cb8b69aa2e08f1dfcab2ec7c48d9389",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0020",
+      "path": "clean_v2_prod_0012_home_office_0020.json",
+      "sha256": "c95313d4355aee29cd8dcb7286f45392ddab77d48b1d84ddece76db7321e3250",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0021",
+      "path": "clean_v2_prod_0015_bedroom_0021.json",
+      "sha256": "bb3191e74333a2781d519049dfae4986780850b0bc7095ff97ecf1a59fd55880",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_home_office_0037",
+      "path": "clean_v2_prod_0018_home_office_0037.json",
+      "sha256": "520f135dbbe4691931b8979d4c2c19058c06ba165dbe597e3d462fc2c01580d6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0035",
+      "path": "clean_v2_prod_0016_home_office_0035.json",
+      "sha256": "ce9a98c1ad342e27cbf40b2c53d56ca98040ba9d16468617f0260c9bf13988ff",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_living_room_0010",
+      "path": "clean_v2_prod_0018_living_room_0010.json",
+      "sha256": "5680a16e45a9e2d2b3cc899f22ee545381e0571113b017b6e408690478763e99",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0013",
+      "path": "clean_v2_prod_0015_bedroom_0013.json",
+      "sha256": "33b87738d318738925dd47d3ed20556f95df31f1c97952b0144d5ba50b6586da",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0002",
+      "path": "clean_v2_prod_0012_bedroom_0002.json",
+      "sha256": "bd972e80ea17b494664f89077d1f662a89039b90553a7c02ddde2a1875cd2a98",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0038",
+      "path": "clean_v2_prod_0014_living_room_0038.json",
+      "sha256": "03f706d669db0c1752d6643b23d08e7d2a026837e788c250953d8d268da87474",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0021",
+      "path": "clean_v2_prod_0012_dining_room_0021.json",
+      "sha256": "6d7d351dc3591ba1b2890ccbe4cfc5bcbff1b4d70db04d7d4c2daef6f57866f9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0041",
+      "path": "clean_v2_prod_0017_dining_room_0041.json",
+      "sha256": "1f4719222d9efe34d6607168dfcdb3ae98d1746d8a21ad144a3643c5ab0d674c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0017",
+      "path": "clean_v2_prod_0009_bedroom_0017.json",
+      "sha256": "f2a0b830671115d2513fb7474c9d536742e6f2b24d1a831cda6fb64a4b50de26",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0036",
+      "path": "clean_v2_prod_0012_dining_room_0036.json",
+      "sha256": "9736bad3ddd67acce5758f6f7295120a1f2623ad9772b14705315b4ef6ede7a6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0005",
+      "path": "clean_v2_prod_0014_living_room_0005.json",
+      "sha256": "63f2e9cd282541496c4fd510c7f9c4273a84948aa6bcfffbae3000c529be7f32",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_living_room_0014",
+      "path": "clean_v2_prod_0005_living_room_0014.json",
+      "sha256": "7f58628bfac509608c5198e9839d965a236447f63ac4f01bb2747d464f944c39",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0007",
+      "path": "clean_v2_prod_0017_dining_room_0007.json",
+      "sha256": "42cf7f14fba47d6459c6afe823a930d08f77ce64149be5ce6a17c616fe8ede6b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0031",
+      "path": "clean_v2_prod_0013_bedroom_0031.json",
+      "sha256": "9b447c983596518cd8193201d2a95c40d05fb0ccfd190e4918b7c9c7c0fdbdf4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0027",
+      "path": "clean_v2_prod_0009_living_room_0027.json",
+      "sha256": "16d6385a185c2f89c390d4a51cf57bba2f9fcc738b666aee6126ee7f5bac285b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0011",
+      "path": "clean_v2_prod_0015_bedroom_0011.json",
+      "sha256": "22f7772e805d896211420816339350f39813a8a84f8a9f8a64340310181b14bd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0042",
+      "path": "clean_v2_prod_0014_living_room_0042.json",
+      "sha256": "fd671d61c58871d84f069e25eeba71adbba5b7c2b9baa8d62cf8fb1657aa429b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0055",
+      "path": "clean_v2_prod_0012_bedroom_0055.json",
+      "sha256": "b36162c6a13b555bff77b6307676bfb4224ebbd67a763be0a6680c4b1c469288",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0001",
+      "path": "clean_v2_prod_0014_home_office_0001.json",
+      "sha256": "508a3527df687249ed9cc3ed89fe9b75368720059954d5ed0f862c9c16ea287a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0044",
+      "path": "clean_v2_prod_0015_living_room_0044.json",
+      "sha256": "471b1eb4162b09d2ebaf681809d065f02fa02e31a713545c212dff0596f172b2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0031",
+      "path": "clean_v2_prod_0010_bedroom_0031.json",
+      "sha256": "79c822e2cabac071f5f66fdeb0a97fc925066dccfd8a938117fd3b36e75e127b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0039",
+      "path": "clean_v2_prod_0016_living_room_0039.json",
+      "sha256": "b709e332ec0aa433232aed37512276af1bab9dead1fd386f007fb9af6780e639",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0007",
+      "path": "clean_v2_prod_0013_home_office_0007.json",
+      "sha256": "15b9c1d81bd40bbf93e572890f564c975382187e3b50b0d41cd1ca896fe276f2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0014",
+      "path": "clean_v2_prod_0012_living_room_0014.json",
+      "sha256": "090287d44ca97a1e30077d413a31eb2be11fffa7d79173bcd028acbd7defbf91",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0034",
+      "path": "clean_v2_prod_0016_living_room_0034.json",
+      "sha256": "3e4ccf72c380aebf1c124dd27be22d77deae24fefa3ac910d1616dd81312ce3b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_home_office_0001",
+      "path": "clean_v2_prod_0002_home_office_0001.json",
+      "sha256": "6226756816477126be3f38ade459d96828479c485ddf03fa9b04ced65d705fe4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0030",
+      "path": "clean_v2_prod_0013_bedroom_0030.json",
+      "sha256": "cf9a46a6a8d3b9507cb3e8af6d8798f34e0eb2e9a2643bd0e5c03fb7be6dbdba",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0022",
+      "path": "clean_v2_prod_0016_home_office_0022.json",
+      "sha256": "332b3facda4af279caa310f306c4f08fd6f12836e173776932d7a0c05383704f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_bedroom_0002",
+      "path": "clean_v2_prod_0002_bedroom_0002.json",
+      "sha256": "4f51b4ef521f7260a399963dda471ddc4a2be88ab859a1e6b20dbfe19a678bb5",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0014",
+      "path": "clean_v2_prod_0009_dining_room_0014.json",
+      "sha256": "cd396b626b3ab64c706b5470c04faa7bacd603fac9c3cd8f02386c6eac1e404c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_dining_room_0019",
+      "path": "clean_v2_prod_0018_dining_room_0019.json",
+      "sha256": "b62b021602c1964b7f0217dddfadaebceb3615d54716cabad36ed72ade042cb9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0028",
+      "path": "clean_v2_prod_0015_home_office_0028.json",
+      "sha256": "5cea6c956d7a8289a209c21f47c0571cfaa883aeb39d5e039b771c5984aefc73",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_bedroom_0006",
+      "path": "clean_v2_prod_0005_bedroom_0006.json",
+      "sha256": "a07884710d94bb889dce2a16f9702eafef9e2e1af4efcadfc7bf3f5bbb7c4906",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0007",
+      "path": "clean_v2_prod_0015_living_room_0007.json",
+      "sha256": "13826ff0bfcd54a55d8180b3bb1d895f2a2a8e4708027c7e3c4e1ec6b1b58ab7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0012",
+      "path": "clean_v2_prod_0010_home_office_0012.json",
+      "sha256": "be4b4574ca5b13a9edb17ad45227eaf6827dd7ce57bdf512b3528d6b81167a48",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0006",
+      "path": "clean_v2_prod_0017_bedroom_0006.json",
+      "sha256": "b96890feebb83a80dabe1825f8e6ca8389a2a5bc51b1a5f48e9134830d37ddef",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0009",
+      "path": "clean_v2_prod_0013_living_room_0009.json",
+      "sha256": "dde5114b10c5567bb4f1b7e0e1ef9453cc6b0642c95f6b247c2bb4e3b4013251",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_bedroom_0005",
+      "path": "clean_v2_prod_0004_bedroom_0005.json",
+      "sha256": "25faf96268528dbf2fd4f5372218ae3fade8f142eb2b46e4d2905967b5d90940",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0013",
+      "path": "clean_v2_prod_0014_bedroom_0013.json",
+      "sha256": "220f25fb2dfe4a8baea1802e953b64c73bf1ec5ab8ec1116baf756f44a36ef61",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0005",
+      "path": "clean_v2_prod_0010_bedroom_0005.json",
+      "sha256": "22abf360c3e4121ff7740fc733f825f1d2501fd8db86fe8120f43a3446cf23a2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0019",
+      "path": "clean_v2_prod_0010_dining_room_0019.json",
+      "sha256": "40986e103e126cb9c1817fda10f07b000e60a3f8c355e470aad86bc85a3d424c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_home_office_0004",
+      "path": "clean_v2_prod_0002_home_office_0004.json",
+      "sha256": "1db0e73ba26563da145fc53b8b7d2725d6d18e537903006a8e7a67d20b316ea1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0027",
+      "path": "clean_v2_prod_0015_home_office_0027.json",
+      "sha256": "cc0d4f5cc3111c03a6059e279f2fc822f85a7a0c2c6f5637eafe9597747a11e4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_bedroom_0007",
+      "path": "clean_v2_prod_0004_bedroom_0007.json",
+      "sha256": "2efb4050820997e0e698e7fb7d32a6f9d6c11be889e5bd62bfc5f1fcfc115cce",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0019",
+      "path": "clean_v2_prod_0016_bedroom_0019.json",
+      "sha256": "b2b77870b16b6299c1258d6feafb1f2734f1a85f664931b3b30e961541e15108",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_dining_room_0002",
+      "path": "clean_v2_prod_0018_dining_room_0002.json",
+      "sha256": "8ac1a63aea74c0c9fa0809933a6e59d1508b1bbab7ea5aeacb0fb22cbfb38377",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0041",
+      "path": "clean_v2_prod_0014_dining_room_0041.json",
+      "sha256": "f9fff12b0c22501b9258c943f02fad53e7f22776cf1d524e8249970768f7cffc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0013",
+      "path": "clean_v2_prod_0013_living_room_0013.json",
+      "sha256": "819732280c2a6b86b73e1217b79df16c760e1302db86cc5c27b722570eaa8e35",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0012",
+      "path": "clean_v2_prod_0014_bedroom_0012.json",
+      "sha256": "9fdbbd28549508089af26ef7988c878e5e417c014efd0f6a915527631153c3b7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0026",
+      "path": "clean_v2_prod_0015_bedroom_0026.json",
+      "sha256": "07ed2b81624844c50951d22077fb1dbc8f93b2951bff090601d6479726c2f2e3",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0001",
+      "path": "clean_v2_prod_0017_dining_room_0001.json",
+      "sha256": "02c8fc0ee32dc1a3e71bc0a406655d66f7767bf76c78b5844d19a91662198ddb",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0045",
+      "path": "clean_v2_prod_0015_dining_room_0045.json",
+      "sha256": "5c70bf6619737f7bcf75230ab497721592efe4b3eac3b35b29d117e6444f80ed",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0010",
+      "path": "clean_v2_prod_0010_dining_room_0010.json",
+      "sha256": "65cc0c97023e804e43724bf93010c83ab15dd3125821d049dbe1c156bc48856f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0006",
+      "path": "clean_v2_prod_0017_living_room_0006.json",
+      "sha256": "26cb8c38d64bdfbf825f65900099c1e261812d8f9a0995c770db2681c0813511",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_bedroom_0006",
+      "path": "clean_v2_prod_0003_bedroom_0006.json",
+      "sha256": "7d267bece973fc15000abbd2af90233e33b2b2d259aa4678ef74b279809f107f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0036",
+      "path": "clean_v2_prod_0009_living_room_0036.json",
+      "sha256": "045a1e5bd78aa0c5f164789af25734d47f43ee3bc2f7beef216c2f59e56d21b6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0006",
+      "path": "clean_v2_prod_0010_bedroom_0006.json",
+      "sha256": "bf43b13aed676ffa66254ed6d0f33bf34522a605064d8b273ee36e2818d993d6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0023",
+      "path": "clean_v2_prod_0015_bedroom_0023.json",
+      "sha256": "e7c9430b429fd65cdb130145dbdf25d7765b00884634d3af5aaf8afd3e1827a7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0058",
+      "path": "clean_v2_prod_0015_living_room_0058.json",
+      "sha256": "07938a3c10a313d1af93f76edd7fbe4b2e38956d5d59e4691a471b3adbf822fd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0033",
+      "path": "clean_v2_prod_0016_bedroom_0033.json",
+      "sha256": "3c966150b2d3a8f734be84204d5f0fbc1a37788c94d6496a8f9d6e08bdb7e62d",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0005",
+      "path": "clean_v2_prod_0009_home_office_0005.json",
+      "sha256": "6e5fd28945dd32b63c00a32bf072f189a26fa6dcc659e86632e9839032416148",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_home_office_0004",
+      "path": "clean_v2_prod_0004_home_office_0004.json",
+      "sha256": "a3955ca454a4ae7c7efee2ce33b62bebbc26e2ed61a84fe6df5752788f406dd6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0044",
+      "path": "clean_v2_prod_0017_living_room_0044.json",
+      "sha256": "73d34769f9eae835236eff36e90ec415242597b205165fa9b399f25c90b99cb0",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_living_room_0004",
+      "path": "clean_v2_prod_0005_living_room_0004.json",
+      "sha256": "416a2081971d1cc65eff6b34ebbefaa0b0c71a38c336a4e1b663c02631d19883",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_home_office_0001",
+      "path": "clean_v2_prod_0004_home_office_0001.json",
+      "sha256": "cb92a4434b849fea6037cb1cc0db906e77906c16eccf523daff1f9c4c2a18c99",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0025",
+      "path": "clean_v2_prod_0012_living_room_0025.json",
+      "sha256": "dc345ba9f3f63e7d47136bf63a647bf142226a441f1a8c3e718b98967b0c1dbc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0016",
+      "path": "clean_v2_prod_0015_dining_room_0016.json",
+      "sha256": "69a517965c6cef26cf173c5fcf3200d00106c91641a425dbcffd6638995082b2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0007",
+      "path": "clean_v2_prod_0016_bedroom_0007.json",
+      "sha256": "d2baf87421b9ac0ccf22a82fbd36cf58dbb34a25f8efef3b119376ee7e6191e6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0036",
+      "path": "clean_v2_prod_0014_bedroom_0036.json",
+      "sha256": "c87403905b475db6d2f57199cf127d8e00a6153fa84b125d7c67349fbaf6cef2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_living_room_0007",
+      "path": "clean_v2_prod_0003_living_room_0007.json",
+      "sha256": "972794cb2ede549c1e2bfb7c500b8c4535c924207c5731ee2724186ae5ff0b1a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0008",
+      "path": "clean_v2_prod_0015_bedroom_0008.json",
+      "sha256": "a089d3bc754a5a1c9e5683ffc84856bb6335c7d1d0e654b229577c23311b5496",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_home_office_0003",
+      "path": "clean_v2_prod_0005_home_office_0003.json",
+      "sha256": "69b8c35796710aa345d093dde7a28e8fd6dd3c2986a7e7647bd08ef5ef9c64b1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0010",
+      "path": "clean_v2_prod_0009_dining_room_0010.json",
+      "sha256": "c2e07b0833d758c80b20a98468982fac3334c69706ce64c37a032119b84af487",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0011",
+      "path": "clean_v2_prod_0013_home_office_0011.json",
+      "sha256": "e482ece6520c96a4a7c8b8c626fd0f57867d209a8affc10f32f3ad0eff583b54",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_bedroom_0005",
+      "path": "clean_v2_prod_0003_bedroom_0005.json",
+      "sha256": "309d78c5e4444a084fb0d3404ef064f6e7f4742dfd75c73d33a715818b2ff4a0",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0033",
+      "path": "clean_v2_prod_0016_home_office_0033.json",
+      "sha256": "385affafd5e0e3575cbe86b5c7337a5ce03ae1b60920a6f0adff2d7d43fbcf08",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0016",
+      "path": "clean_v2_prod_0014_dining_room_0016.json",
+      "sha256": "38f3049a8b366f42f525217945ae7077e8fc18f050d0d70e6c4b4979bcf4335f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0008_living_room_0002",
+      "path": "clean_v2_prod_0008_living_room_0002.json",
+      "sha256": "c109cb8b9a0fa92938c195c0038082a7eaecff7321cb6882c5ac1466bba69589",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0029",
+      "path": "clean_v2_prod_0017_home_office_0029.json",
+      "sha256": "e54ba242cf601bd3056c36348d46f2e7c35dae2c3171e9f6e789c6e40590be13",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0018",
+      "path": "clean_v2_prod_0012_home_office_0018.json",
+      "sha256": "0bc0cc504793a663b0ce55a77ba9b5be640b8099b04f71f51172f8d35b18d6be",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0029",
+      "path": "clean_v2_prod_0016_home_office_0029.json",
+      "sha256": "adcbe71b24896babfad3b75fda8fa3f14f0c37b6a860227344f1171f16c47b86",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_dining_room_0004",
+      "path": "clean_v2_prod_0004_dining_room_0004.json",
+      "sha256": "4e6663816b5dd0fe767be9d67a8d3ef3f4078b3c899cb5e0ca5d8478c72f25ac",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0005",
+      "path": "clean_v2_prod_0013_dining_room_0005.json",
+      "sha256": "8ee22ac8ee4f88002f2d55b867059d7eb81924c7fae46894ab03d5c71e940729",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0014",
+      "path": "clean_v2_prod_0013_living_room_0014.json",
+      "sha256": "f7f59bae44ea145794fdc914fbd3db0956390fabd636281b749563dbf945c8de",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0031",
+      "path": "clean_v2_prod_0013_dining_room_0031.json",
+      "sha256": "aa69ac835ee6369b1dff921ebd916f559cfb5c7fad332767dacd741b08ee4fd1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0009",
+      "path": "clean_v2_prod_0010_home_office_0009.json",
+      "sha256": "c2d855c49a54b3777803c9474224841c663d4142e26bd2201b8581f63eeecf64",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_bedroom_0001",
+      "path": "clean_v2_prod_0018_bedroom_0001.json",
+      "sha256": "89257f00d8ceb3ed39ccefc0b38d404520604c03610d2737134a1abcfe4715e8",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0004",
+      "path": "clean_v2_prod_0013_living_room_0004.json",
+      "sha256": "7ef19c94636af6012bfccae013492fe2285e6ca39c652a5561d81283e4d8476c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0025",
+      "path": "clean_v2_prod_0010_dining_room_0025.json",
+      "sha256": "45c84ee62ac9ab32a975e5751c1d08f45bc8e55d7841ee3b038a2ccce565eaf6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0003",
+      "path": "clean_v2_prod_0010_living_room_0003.json",
+      "sha256": "847b7b8fea0a84f77c9e04c0c6097236f41631c7ae7a61a602bafb7618048ba5",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0012",
+      "path": "clean_v2_prod_0017_home_office_0012.json",
+      "sha256": "1183a8ac7392894ff9a3384abcb961e1fa91632cbe7b345c89a609256a084795",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0034",
+      "path": "clean_v2_prod_0017_living_room_0034.json",
+      "sha256": "4c9bd577429a8271472d99f0b1c3b32b0f964a04f4bde2a194dba1dfef12a076",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0028",
+      "path": "clean_v2_prod_0009_home_office_0028.json",
+      "sha256": "db91629761704eb437ebcbc200416fe3a46bbae2a69e3b076cf421111c682c95",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0004",
+      "path": "clean_v2_prod_0014_dining_room_0004.json",
+      "sha256": "3ac47d9a06da05592dacac1faf8dbb7ce420689b439450b588545d2db648fafb",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0027",
+      "path": "clean_v2_prod_0014_dining_room_0027.json",
+      "sha256": "f3b8d7283b53eae1cce56ee840aa6fec4c46e1a1721f8230914d6198200ed388",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0018",
+      "path": "clean_v2_prod_0015_bedroom_0018.json",
+      "sha256": "fbd6459da42287f6ff2e03a95f3f0f5d2a98681d59febf3455478a5134467228",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0013",
+      "path": "clean_v2_prod_0014_living_room_0013.json",
+      "sha256": "36e96ac670f00cea7ec377e5b9eb70b8822bc0d761ce4fb696a638c1669bb38e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0011",
+      "path": "clean_v2_prod_0014_dining_room_0011.json",
+      "sha256": "61b1c2f412c18acbacfce6fd7da46ef520813360dea2d6a723df7a6e76377496",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_living_room_0015",
+      "path": "clean_v2_prod_0018_living_room_0015.json",
+      "sha256": "500e63266b6a42e0c9a1e154356b9c0f7fe9f087a5d586d90069bcbea2a78aba",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0035",
+      "path": "clean_v2_prod_0017_dining_room_0035.json",
+      "sha256": "7bf990fbe053958b0f05c7046ac7e135149d4167e9ed9aa05e6806b306536727",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0018",
+      "path": "clean_v2_prod_0010_dining_room_0018.json",
+      "sha256": "4d4d71340c6f7b8223aaee6ee1e834389b876588ad54850848cd9700da5868eb",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0009",
+      "path": "clean_v2_prod_0017_home_office_0009.json",
+      "sha256": "60c16e51ce6c7a480489138df125a55eb35e07267217dbb39eb5c45f5445c192",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0011",
+      "path": "clean_v2_prod_0016_dining_room_0011.json",
+      "sha256": "2e2652b92e8796e1cae805285c8a20a65d4e41567114dac7a7524a6c07c83fdb",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0015",
+      "path": "clean_v2_prod_0009_bedroom_0015.json",
+      "sha256": "43f894252357ee6381b815d2058952c8b1743afcdc3f8555960b8d32a546baed",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0008",
+      "path": "clean_v2_prod_0010_dining_room_0008.json",
+      "sha256": "f4fbf6aa5baf7f6dde683859b668792d52bbcde65386c28548fb854503185929",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0037",
+      "path": "clean_v2_prod_0013_living_room_0037.json",
+      "sha256": "f6d0c250beae1002fa31c57f5f665489b2f4fe73402c361420f630341c43c24e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0021",
+      "path": "clean_v2_prod_0017_bedroom_0021.json",
+      "sha256": "c21ad46f66d61cdcd31fd742325b9247ca7e681d28f8f43375100e3fced02682",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_bedroom_0008",
+      "path": "clean_v2_prod_0003_bedroom_0008.json",
+      "sha256": "2c79c5886dabe822b3206db6003810820f22339a6717598ec9fed77a8b2bef26",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0046",
+      "path": "clean_v2_prod_0016_living_room_0046.json",
+      "sha256": "cdf6bc92aa5f11f00fd2ec8895e6860576f2c38e5e2b06be4d1586bafb179ce0",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0017",
+      "path": "clean_v2_prod_0009_living_room_0017.json",
+      "sha256": "cb4c1b0bc47077489f59b1b3588c83aeda484f6f6e3093cabc5548e1b9a5b4c9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0024",
+      "path": "clean_v2_prod_0017_bedroom_0024.json",
+      "sha256": "77403b33bcaff0f46212253cd309331ba0bbe9b9d2f209b06ccd8ec04e44534f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0037",
+      "path": "clean_v2_prod_0012_bedroom_0037.json",
+      "sha256": "05de0bc5c6964fe07a8a8cf09e7163671d547fd5468dfca39f7092737e3b8045",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0006",
+      "path": "clean_v2_prod_0015_dining_room_0006.json",
+      "sha256": "fa762a7172ac5f176ae59556fc33f8720bab913d0c2e1f574a54ed38c9996e76",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_living_room_0001",
+      "path": "clean_v2_prod_0005_living_room_0001.json",
+      "sha256": "6ffe8dc7fc859432adcbd6f5848f36212c7c75516dd37ac8d843a254d21097d9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0034",
+      "path": "clean_v2_prod_0013_living_room_0034.json",
+      "sha256": "1dd2e387a6527c3f503cd4ea934f9498cea6b1ff4240f07b08da9ed6ea8f58cf",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_bedroom_0003",
+      "path": "clean_v2_prod_0002_bedroom_0003.json",
+      "sha256": "fa0d20a254fc5dd154788b85bd005b86d21f6c8862881b523bc6d51cea78c82a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_dining_room_0002",
+      "path": "clean_v2_prod_0003_dining_room_0002.json",
+      "sha256": "7e7f3ca53d49bd04e4f22673ee04f90175a117bd4c6c81c9800ea88d9d5eed84",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0021",
+      "path": "clean_v2_prod_0013_bedroom_0021.json",
+      "sha256": "ab6aca08aa5e8b64c3b37c7da7921b223e4dccaf4e461ca7dca246f05a4d1db2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0015",
+      "path": "clean_v2_prod_0010_bedroom_0015.json",
+      "sha256": "74cebc44a188f011ebb8f02cfaa008cc6168179b2788703c56c478e2861b4a3d",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_dining_room_0001",
+      "path": "clean_v2_prod_0002_dining_room_0001.json",
+      "sha256": "b9970cfcff13c17e00d2f6983b01df24c7139772ad5a4e1c49edcc0ec1d2ba73",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0037",
+      "path": "clean_v2_prod_0009_living_room_0037.json",
+      "sha256": "f61ec057cb1b0e9ca306c0f9c6883e20c09ef0837f3e2ea6a606b79453a34d9f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_bedroom_0001",
+      "path": "clean_v2_prod_0005_bedroom_0001.json",
+      "sha256": "0e04daa2e0a65b1235e89145915e908c4789095cc725fdef013bce173742a1f4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0028",
+      "path": "clean_v2_prod_0017_home_office_0028.json",
+      "sha256": "899b4bc72d21db8bd3bd0e3fba660522c6c7e2d4cfd1ff601583aad1a2d434bc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0011",
+      "path": "clean_v2_prod_0009_bedroom_0011.json",
+      "sha256": "c082f52175d948873515643bfaed69fcd9baca5e7bbfb45b48c8206d27417f5b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0001",
+      "path": "clean_v2_prod_0017_living_room_0001.json",
+      "sha256": "a3593684ca0f6026a01ad72296a2c31768449a486c6cd486a94a0dae9811e94b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0015",
+      "path": "clean_v2_prod_0012_dining_room_0015.json",
+      "sha256": "553c2be105930ce35890a83bc562ae18d73da85e0a160514201c8d12bd2765dc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0023",
+      "path": "clean_v2_prod_0016_dining_room_0023.json",
+      "sha256": "0493b00ebe59e9a3c0e681f2b9483875814402920e344bd2f5436c249e37482b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0024",
+      "path": "clean_v2_prod_0012_bedroom_0024.json",
+      "sha256": "b76e7f39ae57d086af692ff8a3403be25e260357e58db87ec0612e84e195892d",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0024",
+      "path": "clean_v2_prod_0010_living_room_0024.json",
+      "sha256": "147ebcba32d041f8053d6bb55db8d3da18f03b237b7ad5a7c387d13000a1276f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0011",
+      "path": "clean_v2_prod_0017_dining_room_0011.json",
+      "sha256": "2af5c863abe6d342b29b66eb0f7ddb060c85e8692f933e284826e2ebb5334879",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0005",
+      "path": "clean_v2_prod_0010_home_office_0005.json",
+      "sha256": "5e3447745d93e6f3b97726fd03b29c58befb899345cc0d23e3920acfcce73bf1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0001",
+      "path": "clean_v2_prod_0010_living_room_0001.json",
+      "sha256": "d1efa83cebc74e5a35e02410a17d6712c44043684bef5864e38dc0cb6946541b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_home_office_0003",
+      "path": "clean_v2_prod_0004_home_office_0003.json",
+      "sha256": "42e81dddb1ec95f80ddea92bcf98080ca630028e011ac285b4e25a3208c079cf",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_home_office_0005",
+      "path": "clean_v2_prod_0003_home_office_0005.json",
+      "sha256": "4eb9028e25ed619309d6b0bb4e86e4f9dce5648db790ee555d645d175af513bd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0010",
+      "path": "clean_v2_prod_0017_home_office_0010.json",
+      "sha256": "7fcfc7f67dee3e38e5ac7a9ef8dfd5599336c9b252c5cd3728c6f4ef76149df6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0028",
+      "path": "clean_v2_prod_0013_dining_room_0028.json",
+      "sha256": "10d72560cd79ed97e3f10e9e54a089676c6a16a982130f8d44c0e4654cadb089",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0022",
+      "path": "clean_v2_prod_0014_home_office_0022.json",
+      "sha256": "78b80e0bb1e1f5132cda75036ae220a8131eed80076a09aa0b9ff7bead6be741",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0027",
+      "path": "clean_v2_prod_0017_home_office_0027.json",
+      "sha256": "ef273b04a3fc76b515f6451e90cbe2ec5ea845bac9a4c7c1ae07de5ef4f70735",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_dining_room_0008",
+      "path": "clean_v2_prod_0003_dining_room_0008.json",
+      "sha256": "513cde09bdfcb7edebea5006ca70ee9c47316499ca8e590100af7a8675ce204f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_bedroom_0001",
+      "path": "clean_v2_prod_0003_bedroom_0001.json",
+      "sha256": "b1ca3ef90737e2b51c7766f98f187087cc39565a72bd45aeca8146ede1d41127",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0004",
+      "path": "clean_v2_prod_0009_home_office_0004.json",
+      "sha256": "8ae6dd66e3c77d556857915fe6a321041e90a2a55dc59bee16922fae16af0207",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0012",
+      "path": "clean_v2_prod_0017_bedroom_0012.json",
+      "sha256": "acb3b153871e0564a479bf8cfb62538a3011b8ff173f568a4cde440cd7533198",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_home_office_0003",
+      "path": "clean_v2_prod_0018_home_office_0003.json",
+      "sha256": "3cb9489e69e43ebe3ee315c4ab0770cd1fa60c294634acb264f4d7391bb90a1e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0005",
+      "path": "clean_v2_prod_0017_home_office_0005.json",
+      "sha256": "7d866499d738bd6aab22edbc91ff5ec13d553e0f0c2908294f51f978aa6d6a11",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_bedroom_0009",
+      "path": "clean_v2_prod_0005_bedroom_0009.json",
+      "sha256": "55c1b6b32dd7db96a4c57c8879247e22cf28c2dbadb159cab40f384536d828fd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0005",
+      "path": "clean_v2_prod_0013_home_office_0005.json",
+      "sha256": "46dbadc45f21033ccdfa29c023623a6e9baa20425ecc4f76447763c0efcf3727",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0031",
+      "path": "clean_v2_prod_0015_home_office_0031.json",
+      "sha256": "ba92cfbbada71ee8f56c447c92fc55af176da15c01e9bc604a5d1378c8f96180",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0010",
+      "path": "clean_v2_prod_0010_home_office_0010.json",
+      "sha256": "3ae2e0ebbcad9eea6472b968920624647b6320447182b55dfeae4a526aab7e24",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0025",
+      "path": "clean_v2_prod_0015_home_office_0025.json",
+      "sha256": "e397d5e9968d922103c53342fcfe3675aaf63981b47932ab99b37e975f9af8a6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0012",
+      "path": "clean_v2_prod_0009_bedroom_0012.json",
+      "sha256": "b3e338a598cc66e409596ea06d1ffed3e56f2328a5495305cb8ade2e6b3660c8",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0008",
+      "path": "clean_v2_prod_0014_home_office_0008.json",
+      "sha256": "4a1fd939b2e5bdeef67ecad8196eba74d1fabb2def4944b30617429a985518b2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0007",
+      "path": "clean_v2_prod_0012_bedroom_0007.json",
+      "sha256": "cb93a1c8c34d99362044be454e13739b4f9a00d0a2b3252f7c6c9208e83179b3",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0001",
+      "path": "clean_v2_prod_0014_dining_room_0001.json",
+      "sha256": "2516ccebd76b50b83e2f3589a1506f9b25f956d9a2b8a76ba00d0d8faf141144",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0019",
+      "path": "clean_v2_prod_0010_bedroom_0019.json",
+      "sha256": "7f57c030d3cf6426416d0d1729d4b203d9d8a24de4b34c7b36c241033922ab8f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_dining_room_0009",
+      "path": "clean_v2_prod_0002_dining_room_0009.json",
+      "sha256": "c47b5f89f7abc807e98ca2c5554e09f294335fd8f60e64a43b428d898123e93f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0037",
+      "path": "clean_v2_prod_0016_living_room_0037.json",
+      "sha256": "4c633ca394ecc9c19efa60c30fd852b8cbc1468f502ae36fa4e42fcdb2273a91",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0038",
+      "path": "clean_v2_prod_0009_living_room_0038.json",
+      "sha256": "8b0dd099c3d3003b8c4545ac961bf1b62de8441268b9453f370ad74e5087fef3",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0029",
+      "path": "clean_v2_prod_0016_living_room_0029.json",
+      "sha256": "bd4ca6a89a4b559204c95a585e4a217aec0d10fc464f8d4591e5a263276b515e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0006",
+      "path": "clean_v2_prod_0010_dining_room_0006.json",
+      "sha256": "24e2840fa5431132bfec96f89851ed99cd62e76010bc8ba2b24bdd621bbea3e8",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_living_room_0007",
+      "path": "clean_v2_prod_0002_living_room_0007.json",
+      "sha256": "e06056c266bbc0af99c111cb837b63bdcaf6f19f6079edbdd5c9c33cbd038983",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0007",
+      "path": "clean_v2_prod_0012_living_room_0007.json",
+      "sha256": "b5009219c45113ab00a94ad65d6c9e9119649dc5143715e89f491da9fe757c5c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0014",
+      "path": "clean_v2_prod_0009_bedroom_0014.json",
+      "sha256": "6d936cf3b6f998fc8db1ca3513d644686d4d962dc6308045ea54c519b0c8358a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_bedroom_0047",
+      "path": "clean_v2_prod_0018_bedroom_0047.json",
+      "sha256": "a68c8a4afa0b6e3ea31cc682d50dbabe0e7ef9c3a23cce1eafd9896abbe841af",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_home_office_0002",
+      "path": "clean_v2_prod_0005_home_office_0002.json",
+      "sha256": "a2871a4d3baa2be65de9c4f368dcccafc9b4975fc1db68228cd21bba8f1fcaa7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0007",
+      "path": "clean_v2_prod_0014_bedroom_0007.json",
+      "sha256": "299c5a4231e78587956666eeb1c5adfff71867fff9e1c47c79ce387822103eb9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0012",
+      "path": "clean_v2_prod_0012_home_office_0012.json",
+      "sha256": "762913f498c1d0140f00d8621d15c7c482bdc46c34997892285c63878b1d034a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0003",
+      "path": "clean_v2_prod_0013_dining_room_0003.json",
+      "sha256": "87c38eec0b7f57d865b98dec6b4857ab2677b5b62a433fcec91dd7b5597d53c2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0012",
+      "path": "clean_v2_prod_0010_dining_room_0012.json",
+      "sha256": "c3709ee1587455b91ad448e1cac5687011b1567a452cfcc7180687eebca45790",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0033",
+      "path": "clean_v2_prod_0013_bedroom_0033.json",
+      "sha256": "d8015c9b208a9f2f2c322f17b6ac3459136e723e67ecf8aa5d8e3ab270522f21",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0001",
+      "path": "clean_v2_prod_0010_home_office_0001.json",
+      "sha256": "7b04c0e2a382003987f785d191f5073f2ebb2562410f95c3aa59daab54717428",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0026",
+      "path": "clean_v2_prod_0012_dining_room_0026.json",
+      "sha256": "bb72fb78933600155dc87af0bf39c2045fe815c8b6b4703eefd257eac2e33966",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0017",
+      "path": "clean_v2_prod_0014_dining_room_0017.json",
+      "sha256": "e873c04ec8b82e8fbf1f1ff28e5e0f44a11698f4c8e3e5852f976f84ca7d584f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_living_room_0001",
+      "path": "clean_v2_prod_0002_living_room_0001.json",
+      "sha256": "94eda6997573642250292c959054bd03360ff060b69494c3414fbf850eedecee",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0021",
+      "path": "clean_v2_prod_0015_dining_room_0021.json",
+      "sha256": "b08902a77cfaddfcad86bebe291f6b7d1c5c42cd7d863e6470baf3823a0bf7a2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0030",
+      "path": "clean_v2_prod_0017_bedroom_0030.json",
+      "sha256": "17d207a22c5832f2745171b9965e313264b1877ffe8182d9a1a8683083180f9e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0034",
+      "path": "clean_v2_prod_0012_living_room_0034.json",
+      "sha256": "ebc7a2497dac845d330899b1def46759890bd4b481d24457f04d180cee09aa2d",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0032",
+      "path": "clean_v2_prod_0016_bedroom_0032.json",
+      "sha256": "2cd042b5a4e824d1d8eb175b59a7b911eadd179b422f22fdb2b49475fa717a00",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0025",
+      "path": "clean_v2_prod_0014_dining_room_0025.json",
+      "sha256": "6c14e1089eca3cb23a14009eb3fc0f009e400353ccfa32bb011004a66c910ed3",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0047",
+      "path": "clean_v2_prod_0014_living_room_0047.json",
+      "sha256": "e513cd9774ba2ed6ad5273d5b8a0bd5c0b0df49b1df341ad5efb266ce967a3c6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_home_office_0004",
+      "path": "clean_v2_prod_0003_home_office_0004.json",
+      "sha256": "798499a38afa4e6aafeb5facb8a3d3934730998b35a53c4e3b02e2efff7dcda6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0010",
+      "path": "clean_v2_prod_0012_home_office_0010.json",
+      "sha256": "d042cfae4715b2c381d10b642f6758565aad33a7e2de6c98bae89985dc09796c",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0014",
+      "path": "clean_v2_prod_0016_dining_room_0014.json",
+      "sha256": "0c725f7d3f0007d62e8288963cdc6ac2b7df879eb1c01a28a6580cd885a0771b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0013",
+      "path": "clean_v2_prod_0010_home_office_0013.json",
+      "sha256": "8829345a048e21c6e8d7d6c80507cf3b4a65aa52f0ac53e904dc85f36482d449",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_bedroom_0004",
+      "path": "clean_v2_prod_0005_bedroom_0004.json",
+      "sha256": "8c1bd1621e69e97b0be1bd79c91641991755f1746af1bd54ebf3608a52529790",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0023",
+      "path": "clean_v2_prod_0010_living_room_0023.json",
+      "sha256": "26ad4dafa5ac4198b022ad05c84325c34d9a213d4f06213865823d7bf25da978",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0008",
+      "path": "clean_v2_prod_0010_home_office_0008.json",
+      "sha256": "781b0a9eca4281b04ae4687080ce8851fad18dd05eefad67fe570238978e8204",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_bedroom_0008",
+      "path": "clean_v2_prod_0005_bedroom_0008.json",
+      "sha256": "552aaa8630e18247b991e230b175c15463c9bd8509da84733f22c6b203dfb115",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_home_office_0011",
+      "path": "clean_v2_prod_0018_home_office_0011.json",
+      "sha256": "83924f2e1dd99bc6605660f5a33e786f29d38424bc4983f1bc09c3a4ed6492b2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0045",
+      "path": "clean_v2_prod_0017_dining_room_0045.json",
+      "sha256": "b187c431a439c0eaecc6cbd68eadfe801d6b599550d5310d61c26d0288454572",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_living_room_0039",
+      "path": "clean_v2_prod_0018_living_room_0039.json",
+      "sha256": "d7ea7392eaacaba6decd39d80025c1586bc75c47b607e1b6cfb1bee066347834",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0025",
+      "path": "clean_v2_prod_0010_bedroom_0025.json",
+      "sha256": "fb5a4727d0c9ea87921400eb50d7f7f4d72bb2a02a8088adbd72bdf231d86c95",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0006",
+      "path": "clean_v2_prod_0014_living_room_0006.json",
+      "sha256": "2b4d969c1bd347cd97fd8f76d00ff58d0cf02327366607735992df10b8cb13f0",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0018",
+      "path": "clean_v2_prod_0015_home_office_0018.json",
+      "sha256": "b408a1634ebbbc5da2873ae06dae7f25f6de853dd7ca6bf77bd4ac2e08b77859",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0013",
+      "path": "clean_v2_prod_0010_bedroom_0013.json",
+      "sha256": "0deff529a5ad43303b82eba8657b7dbabf4c4fc10a8fea9982107645841ee19b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0013",
+      "path": "clean_v2_prod_0013_dining_room_0013.json",
+      "sha256": "2428ab84fedea562e203cbb49623c53c770f7b68bc700af6c959752d9134c8fe",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0003",
+      "path": "clean_v2_prod_0009_home_office_0003.json",
+      "sha256": "07f116c6eea55b40f1689bb069f89950be666bb06740a177e3c282b540707803",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0033",
+      "path": "clean_v2_prod_0016_dining_room_0033.json",
+      "sha256": "9f788c13244fc2dfb765d260efb1ba06b11082083015164a8a9e37303410607a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0002",
+      "path": "clean_v2_prod_0014_dining_room_0002.json",
+      "sha256": "105b31c0e1653808358b224099c49e0b792be7c8df5a5a14d4f236bcb98d0b36",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0002",
+      "path": "clean_v2_prod_0016_living_room_0002.json",
+      "sha256": "3caddda20c20e3618f364af7aea4c887d7b36a9fa70deb4dbec36ed2c25400c4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0006",
+      "path": "clean_v2_prod_0012_dining_room_0006.json",
+      "sha256": "cddc5b20c49b88e76620497eb16ed7da56e380f47d643ab29ba300e86264340e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0015",
+      "path": "clean_v2_prod_0012_living_room_0015.json",
+      "sha256": "319c7884a93dca2d954cb0dfde1f5de9b1590d023580db2898756e163b08f76b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0001",
+      "path": "clean_v2_prod_0016_living_room_0001.json",
+      "sha256": "67ebd686c7c5fbbf68f9ee33c46b0eeb618db8b1b62635d36ef84f223a5e12ea",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0026",
+      "path": "clean_v2_prod_0017_home_office_0026.json",
+      "sha256": "61ba112cd7b4f371e8b9d4f8a6e2dfba40ad8ed1c76c33c960c8781f3e5e8805",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_dining_room_0028",
+      "path": "clean_v2_prod_0018_dining_room_0028.json",
+      "sha256": "84bd099872b3e88270b6541cd035a06235b0e914a22e06b73d748007108519f6",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0031",
+      "path": "clean_v2_prod_0017_living_room_0031.json",
+      "sha256": "f876fbc40b0855afc5ed9508624a437a68fc7d264aa06a4bae08cf14ed3273e7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0019",
+      "path": "clean_v2_prod_0014_home_office_0019.json",
+      "sha256": "5e9ff3be824d46b7d1a4b28c6f1751bc1d0f99dd3855db216df155c3986d1f24",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0014",
+      "path": "clean_v2_prod_0017_bedroom_0014.json",
+      "sha256": "8f98ea94bb431107d0834f3c1a62ac58af2aa9c71971de51c3e9abee30865ef5",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0033",
+      "path": "clean_v2_prod_0014_bedroom_0033.json",
+      "sha256": "98229672d73c7f2d1c91cdc879f9ff760cc884eef97e9e67ec3d93322f19debf",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0016",
+      "path": "clean_v2_prod_0010_living_room_0016.json",
+      "sha256": "5f0aacee5761be6ef2513bb22e4303c278b192d929cf22f8ff759fae1e92f2a4",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0018",
+      "path": "clean_v2_prod_0013_dining_room_0018.json",
+      "sha256": "703861beca4c5e86890b2f29578b46929653e9c1c6bcb9561cd0669aef1d5789",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0019",
+      "path": "clean_v2_prod_0015_dining_room_0019.json",
+      "sha256": "86c845612726b4e228ca2d64fc8c691f351fc0fa43f967de679983ff2503f73f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0056",
+      "path": "clean_v2_prod_0012_bedroom_0056.json",
+      "sha256": "1ff4047addbd075b5a23eb97e56e5a63abc74da8435458b794caf017518d7623",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0015",
+      "path": "clean_v2_prod_0010_living_room_0015.json",
+      "sha256": "2a90615d276090d56b8e88a7a259bb815d5f04e7e4a6cc910029f270a200252f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_home_office_0044",
+      "path": "clean_v2_prod_0018_home_office_0044.json",
+      "sha256": "a1f8e69c863bdac7eac49d6d42690fad4a298f3f28ce9e22fb845b2cb1e42483",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0008",
+      "path": "clean_v2_prod_0010_living_room_0008.json",
+      "sha256": "ccdd75d65d926b0aef0bfddcc1bf8b313b833a0557db2a2a3ec55c272d7ebc94",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0025",
+      "path": "clean_v2_prod_0009_home_office_0025.json",
+      "sha256": "375f0d6298bd3ff919474b1f66cc2d558c4701bc274c3038c3c0905f3b3e9c2f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0018",
+      "path": "clean_v2_prod_0010_bedroom_0018.json",
+      "sha256": "813087e23b7353f935da6a4181db4d640b7ab20f4e4046d761e06f1ce5988571",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_living_room_0003",
+      "path": "clean_v2_prod_0003_living_room_0003.json",
+      "sha256": "6824f2dabe954092ce4cf070db2c6ad7f4648f90f3f7b8c38ef038633884ed2f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0007",
+      "path": "clean_v2_prod_0009_dining_room_0007.json",
+      "sha256": "410e1bd140ed5dc3b86140f159a291d02426ee6576f0f53230e6f34cec106555",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0003",
+      "path": "clean_v2_prod_0015_bedroom_0003.json",
+      "sha256": "650e41f939150f15c82ac8ca505965a4b874608094f832c96ad58414b0767161",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_living_room_0005",
+      "path": "clean_v2_prod_0018_living_room_0005.json",
+      "sha256": "55f072889d82d1c1a10df0e84e2bfb47fe3ffc337c060368c1afa4525481045b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_bedroom_0004",
+      "path": "clean_v2_prod_0003_bedroom_0004.json",
+      "sha256": "9fc3bc2588cf09beddf8bc0735c44dda1a0119d7249c66650ada7a2926dbbb5b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0003",
+      "path": "clean_v2_prod_0016_dining_room_0003.json",
+      "sha256": "30d45b675480fe90f4aebd472c6dddfe2ab5199dea822bd43715587c6e63039e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0014",
+      "path": "clean_v2_prod_0015_bedroom_0014.json",
+      "sha256": "20671b188c2624a2170e2847c5c46531064224ef4de9aeba2475f9c3eeb1361f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0032",
+      "path": "clean_v2_prod_0016_home_office_0032.json",
+      "sha256": "473ecc0b0363796ca53a0a19b0f4f622ff0accd936a1cc2fe128e78d6d7fdbe9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0012",
+      "path": "clean_v2_prod_0013_dining_room_0012.json",
+      "sha256": "5d35ca4c324b2d4f0e35d1ce6994e8d7b404f3d6b426b5b377e35dc430a7cff0",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0001",
+      "path": "clean_v2_prod_0013_bedroom_0001.json",
+      "sha256": "ae19c1a7f75454c5647f0723500da2a00aef07ebafbe37f20a0571403850b035",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0020",
+      "path": "clean_v2_prod_0013_bedroom_0020.json",
+      "sha256": "b893af314f7fa199eee4afa5adb8b40d19aa09aec7f9a9f5c5c03b75bdf4a9a0",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_bedroom_0017",
+      "path": "clean_v2_prod_0015_bedroom_0017.json",
+      "sha256": "a8d4554a28dd25d920f37e8675166786821d42e51ce3cf5b3b5ae3354f3fefb3",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0020",
+      "path": "clean_v2_prod_0017_home_office_0020.json",
+      "sha256": "96c0fb36843810a3f3b570f30246306e2bac05287ce6edc4e914f88da4fcbefc",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0037",
+      "path": "clean_v2_prod_0017_dining_room_0037.json",
+      "sha256": "663a6aa9a7f507d678e4db4ec84070043d4265485ca30846607df4675b64aaa2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0047",
+      "path": "clean_v2_prod_0012_dining_room_0047.json",
+      "sha256": "629ffc5b8c64bd65b250169918f087907187b1e86d8a8cd29b1de4d39648adf2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0012",
+      "path": "clean_v2_prod_0014_living_room_0012.json",
+      "sha256": "5c930653d40da1dc7ca6924ea882f810e972b203b871e0abd3c058bc86264320",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0011",
+      "path": "clean_v2_prod_0014_bedroom_0011.json",
+      "sha256": "c1b65875ee572278a265a43adf596e129d819e5731fdfa55b4debd97e1578f7e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0057",
+      "path": "clean_v2_prod_0015_living_room_0057.json",
+      "sha256": "59ae4774d7f4d3af4b8d5e8a345fbf7d4195bea2bbdc13395a876e84b69e9635",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0013",
+      "path": "clean_v2_prod_0016_dining_room_0013.json",
+      "sha256": "8aa8b393b78980382eb563936f45ab3dc76e265ea88dc1c597c1d4354e245427",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_bedroom_0004",
+      "path": "clean_v2_prod_0004_bedroom_0004.json",
+      "sha256": "0d9f5fa92949005d6a4a904b2f90609b6e422fc3e3421bfb04386228958ea1ae",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_dining_room_0007",
+      "path": "clean_v2_prod_0004_dining_room_0007.json",
+      "sha256": "c314370014118242f4f7906ac74daf37c789890e1e3f773cb7332e3065824931",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0002",
+      "path": "clean_v2_prod_0012_dining_room_0002.json",
+      "sha256": "057a81ff70ebe879127086aa858206f3bd1b1e13d573b4a6499449b633c6d8ef",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0019",
+      "path": "clean_v2_prod_0013_dining_room_0019.json",
+      "sha256": "2960f4116243d5235ebc21155a1d12d5e570a05232c83990da3366d37ceb0426",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0004",
+      "path": "clean_v2_prod_0010_dining_room_0004.json",
+      "sha256": "990f9cd6b8066031bd8246a2da9dfd54e6da19f5b9a074d1d3e8ef7e23e85bb1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0014",
+      "path": "clean_v2_prod_0012_home_office_0014.json",
+      "sha256": "656892dfc2f415e84b4989954f1d6026ab8d65df07e510e25e298a17d732bb5b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0008",
+      "path": "clean_v2_prod_0016_home_office_0008.json",
+      "sha256": "f9b2d314219b55011fd7efbec3a663d5f7e59f929e40097dadfe1f1c8c9c227b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_dining_room_0005",
+      "path": "clean_v2_prod_0005_dining_room_0005.json",
+      "sha256": "82357a1f729b2d01621de21019c261672a7c7af01a381340813d2f847645bfcd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0025",
+      "path": "clean_v2_prod_0013_living_room_0025.json",
+      "sha256": "9da6c48ee7c39ee0ac4bdf715904c9d4fc3fd74173581a2f52c0e5a3c0f388b8",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0027",
+      "path": "clean_v2_prod_0009_home_office_0027.json",
+      "sha256": "f3f9e68d1adb7f75d8990f6327810431f0d5e622639cb696ec0de13a4930ebe5",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_dining_room_0011",
+      "path": "clean_v2_prod_0018_dining_room_0011.json",
+      "sha256": "34f8dff40c160c370dbd5757ab2b26582655501fbfa960a85b25dc9401803aa2",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_living_room_0049",
+      "path": "clean_v2_prod_0017_living_room_0049.json",
+      "sha256": "d4417c2cb2c271d09647d4eae9082c13085b972f1e73102b7dc2800fdf1ecd19",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0010",
+      "path": "clean_v2_prod_0016_dining_room_0010.json",
+      "sha256": "1a1e521b2ba48f97599424f8d1417af5b2bd52495c0f7cc26933367f1813b1e8",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_dining_room_0001",
+      "path": "clean_v2_prod_0005_dining_room_0001.json",
+      "sha256": "9d999cbc948ccc3d1f470a6d7b0d563b55109bd21d93a21206deed2bb8949afe",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0001",
+      "path": "clean_v2_prod_0009_bedroom_0001.json",
+      "sha256": "4e5434e345fc9e058c9e657c8e4be8d12905dc894625b18485ebf458e4b65f6b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0004",
+      "path": "clean_v2_prod_0013_home_office_0004.json",
+      "sha256": "4141527992206c8864d3d5f3a5051a146f3f2272416bee3d0e8e02b82bb4bb32",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_bedroom_0001",
+      "path": "clean_v2_prod_0002_bedroom_0001.json",
+      "sha256": "144baf62f88c013fb877c87e0b09cb24c34d1ca089e58cc0d0cf59347f1c538a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0021",
+      "path": "clean_v2_prod_0010_living_room_0021.json",
+      "sha256": "f39027e7af2102c30d4353d82183cfcd9915f8c3cd037d6bb0bcdc99781e668d",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0027",
+      "path": "clean_v2_prod_0012_bedroom_0027.json",
+      "sha256": "283cce0e7c043496a4a377157e9d8ec8f6daa9733f6597d14388625cbbc06434",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0025",
+      "path": "clean_v2_prod_0013_dining_room_0025.json",
+      "sha256": "2c061f0ed6160c54d9c0268c01ae4c1cee36cad1dd9f6d5107aabe00f14759a1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0030",
+      "path": "clean_v2_prod_0015_home_office_0030.json",
+      "sha256": "bf7dd065d805b8685527198326125a4041ba99606c12ef1b6740ee211076536e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0019",
+      "path": "clean_v2_prod_0009_living_room_0019.json",
+      "sha256": "5d9c89fc6f9417e8082e05890aa71c4f39b05ddb9b3c0159777efe5aefa0a7c7",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_bedroom_0007",
+      "path": "clean_v2_prod_0002_bedroom_0007.json",
+      "sha256": "c52169a1df0a89de83c51cdbdfe2ccb3d382deee51c285bb1c453b0ad986822a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0054",
+      "path": "clean_v2_prod_0012_bedroom_0054.json",
+      "sha256": "c63db032c3c414c171b99036f5e85289440afc85fc1985ff1a5793205ad6c1ca",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_dining_room_0012",
+      "path": "clean_v2_prod_0003_dining_room_0012.json",
+      "sha256": "a27e1e4290f11ef73ea795a7fa7aa4bd364ca5cef01cb5db162a41b7996f36b9",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0008",
+      "path": "clean_v2_prod_0017_bedroom_0008.json",
+      "sha256": "f44dffd0e7616345a0e70e9892dce283bdb2dd21101093f314f26f1fc0ecca94",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0017",
+      "path": "clean_v2_prod_0014_home_office_0017.json",
+      "sha256": "069243e5849749242e92073e1824508ae9665a86fb50f312da05f76d6d7905f5",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0012",
+      "path": "clean_v2_prod_0009_dining_room_0012.json",
+      "sha256": "17d573a07fe3223297e8586b93cb3ad93a29bffca7524ed013dc27247bd9f0bf",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0005",
+      "path": "clean_v2_prod_0016_dining_room_0005.json",
+      "sha256": "0415b5e038894fe3ae592f200b138a9d9a2b3ff6b7c1d4f40acd01eb7f36616e",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0003",
+      "path": "clean_v2_prod_0012_home_office_0003.json",
+      "sha256": "3acd8219ce7f39e770479ec3f1ea8bee3a2b3d8497f893565da6e6378ab6428b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0008_bedroom_0002",
+      "path": "clean_v2_prod_0008_bedroom_0002.json",
+      "sha256": "024e7dec84f225539018af2f8a84d4906b90d52f80518961af9d6c8c4b8d065f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0026",
+      "path": "clean_v2_prod_0017_bedroom_0026.json",
+      "sha256": "957af92f2c6f13bcb393a1a1388e4aa4d1efc9c4aeee1fa894dc10802c3a0ccd",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0015",
+      "path": "clean_v2_prod_0014_home_office_0015.json",
+      "sha256": "51049b2b17c05f56ed706272130a3bd09be476390dd30f35b94c37032db28b64",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_living_room_0010",
+      "path": "clean_v2_prod_0004_living_room_0010.json",
+      "sha256": "9e4827f546d3558c903fa8913a9d1d8c045237845ab0d3f6b7ec6ea327c836e1",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0019",
+      "path": "clean_v2_prod_0016_living_room_0019.json",
+      "sha256": "d36f893a41318f57926dd09c587ad2c339be636c87af30f892471ff4c1173c9b",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0048",
+      "path": "clean_v2_prod_0012_bedroom_0048.json",
+      "sha256": "05717ff92e46cf355b3200e61ec907523cd3cd47a4748c4cbfbf411db1e7f60f",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0056",
+      "path": "clean_v2_prod_0012_living_room_0056.json",
+      "sha256": "e9baa9a68a6a7b180e66a29e3be4589f5a2b025d4bdc4bb919946d331baa8575",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_home_office_0005",
+      "path": "clean_v2_prod_0004_home_office_0005.json",
+      "sha256": "2ede92ecfa689e858a455d483016d7bcc56dcedb761f47c05f6051e8c441190a",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0034",
+      "path": "clean_v2_prod_0013_bedroom_0034.json",
+      "sha256": "9559a0e05f64c7f30ae6dabc7db171093587eae12842c3c387b38044f87c1a39",
+      "split": "train"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0003",
+      "path": "clean_v2_prod_0015_dining_room_0003.json",
+      "sha256": "6718a78cd45e5650bf2446570f29e6a08a3f5853d8acc7206f5b4e7c491bee20",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0033",
+      "path": "clean_v2_prod_0016_living_room_0033.json",
+      "sha256": "2dc70047d6b74ef2163573acae155ff67d199394ecd13ee584a24c483db82058",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_home_office_0005",
+      "path": "clean_v2_prod_0014_home_office_0005.json",
+      "sha256": "81ec6e598443fe558df73ef82b71e771e29e03b8b553448cbf8fe731b8785407",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0009",
+      "path": "clean_v2_prod_0010_living_room_0009.json",
+      "sha256": "430ee2c02304c0ab562c17979e077a5b8a8fc8362832c89c850142fdd10553fc",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0033",
+      "path": "clean_v2_prod_0012_living_room_0033.json",
+      "sha256": "93eec74a867410b6152944c20a2f52bf11167de936cef00ff964585ccd39a369",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0009",
+      "path": "clean_v2_prod_0009_dining_room_0009.json",
+      "sha256": "e9f3109f4acb4aa10ad131b9802bc648be160f00a735f6e98e107fb206763b8f",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0011",
+      "path": "clean_v2_prod_0012_living_room_0011.json",
+      "sha256": "9223d9453370f89faba6a5ae1eb1108bf3e9945db6ad69fc08773fc8af7db96d",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0018",
+      "path": "clean_v2_prod_0012_dining_room_0018.json",
+      "sha256": "774ab366622b69008531153981601320c4715c58f8ab1595ff995a8fa0fc4649",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0016",
+      "path": "clean_v2_prod_0016_home_office_0016.json",
+      "sha256": "57bfeaa3b598db0e0009559a97f3a8f5c2895a4348ab0dcaa7fe3cf016759b88",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0022",
+      "path": "clean_v2_prod_0010_bedroom_0022.json",
+      "sha256": "e511a7144d1a4c92832c2b7b366211bef6a082423d0ff87a4e114fc67cab7e3b",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0003",
+      "path": "clean_v2_prod_0013_home_office_0003.json",
+      "sha256": "1f4044a9f108472ebd0820f949739749e2c15201fa00db79d6e2fc745f25b3d4",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_dining_room_0004",
+      "path": "clean_v2_prod_0013_dining_room_0004.json",
+      "sha256": "2e2ae9dd2f00d11e8c117770654bcdb5727d40c2fa63104bbf5e3db4de4a4421",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0020",
+      "path": "clean_v2_prod_0016_bedroom_0020.json",
+      "sha256": "6f86973f00a285da4b49376fa235493c448ad3d91fa54520e8d528340852c62b",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0033",
+      "path": "clean_v2_prod_0009_living_room_0033.json",
+      "sha256": "76cf1cc98e9474cf6720f8139dc79bc20261ed151bd09b7ead44b5c448b9d13f",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_home_office_0007",
+      "path": "clean_v2_prod_0005_home_office_0007.json",
+      "sha256": "d51cb0c5400b147215f9ee2a04bb565c58aed43bc13ffa971dcc505047d32a4d",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0034",
+      "path": "clean_v2_prod_0017_home_office_0034.json",
+      "sha256": "43383125447d97f95d03d589057032a62662343160b94abdc7543b0f227d09d2",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0012",
+      "path": "clean_v2_prod_0016_home_office_0012.json",
+      "sha256": "8067edc75d200c6b686f51921848e5acc737cd3454db15b9039ec76eaf4d6bed",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0002",
+      "path": "clean_v2_prod_0010_home_office_0002.json",
+      "sha256": "68c9e46c2760be42f39842c2db35f8ae44251e4f68d3f52321cffe0e1cc71baa",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0052",
+      "path": "clean_v2_prod_0015_living_room_0052.json",
+      "sha256": "4ab7382fe7fa40b59e903d59ebfe89ec8f1bd242d021af7b13698ddd9bea2164",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_dining_room_0008",
+      "path": "clean_v2_prod_0002_dining_room_0008.json",
+      "sha256": "9ce059dca838977ddfc4ece125a3923ee042aa4d2f2b5c6ece06d2453bbca82e",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_home_office_0014",
+      "path": "clean_v2_prod_0018_home_office_0014.json",
+      "sha256": "396f66e6a4cf1fe060189bd4d42871bee122dfced2629faeb27fdfe61b32d3aa",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0012",
+      "path": "clean_v2_prod_0017_dining_room_0012.json",
+      "sha256": "4c3e21e0e92d79382955dd7082f7523f861a639e22646ef9c5002fedb27c955e",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_bedroom_0048",
+      "path": "clean_v2_prod_0018_bedroom_0048.json",
+      "sha256": "51bf4a493f7487b688abefa6421b776cb9a70dbe301cc426b18e897c565aec1c",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_dining_room_0017",
+      "path": "clean_v2_prod_0016_dining_room_0017.json",
+      "sha256": "374e97d7a44c99db701b023a9358b1fedcef668642fb3ee156f87517b0f32612",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0004",
+      "path": "clean_v2_prod_0015_dining_room_0004.json",
+      "sha256": "18ffa70cb584db3206b30677ce8a97d211b49d4187ba677967f873d142f2e9a9",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0009",
+      "path": "clean_v2_prod_0009_bedroom_0009.json",
+      "sha256": "ec6ac18cdd5701ef99ef71eaba66b45bf8e720d20f46c26d31a35939ef46b9dd",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_home_office_0011",
+      "path": "clean_v2_prod_0009_home_office_0011.json",
+      "sha256": "52f1545cd86e0b3fca64fc8728ffc7b1758d3d7a5faa38d0a371d6c851a5d461",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0010",
+      "path": "clean_v2_prod_0017_dining_room_0010.json",
+      "sha256": "c69164957fc2e7892ebaafe056e50710848a44bda7b8b4f1a8e1deca74ba92ba",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_home_office_0006",
+      "path": "clean_v2_prod_0004_home_office_0006.json",
+      "sha256": "8527203bbc251a3e17d6a280602a4012287b5eb97498ba3c7d097c64690300f9",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_home_office_0005",
+      "path": "clean_v2_prod_0002_home_office_0005.json",
+      "sha256": "4ce88203b1403f7a908ef982285448a816994ae985b5aa0aae696a89d1c64abf",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0039",
+      "path": "clean_v2_prod_0014_dining_room_0039.json",
+      "sha256": "5077a8e7fcb18747a35f460888df41c1c172356d2c6c595a1a1b3d4406a023b3",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_living_room_0008",
+      "path": "clean_v2_prod_0003_living_room_0008.json",
+      "sha256": "f0b488bacb1e9b67b77a96b9fa4e7dd1aa304c0adbf2588c71c48f4d255962a6",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0017",
+      "path": "clean_v2_prod_0013_living_room_0017.json",
+      "sha256": "8caeea4814bb8addeb2f1efd230286c7acbe3e67ce31ecb3249097c01dc856a1",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0006",
+      "path": "clean_v2_prod_0016_bedroom_0006.json",
+      "sha256": "a61a87c8602b53dbae652166c64f1f4bf0cb5de8183b308a368f820bf598d6ba",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0014",
+      "path": "clean_v2_prod_0013_home_office_0014.json",
+      "sha256": "bd275cab0ecb9c4247a6c278ba5d970ca58f4946cb5320b99d439b185ba8bb2e",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0008",
+      "path": "clean_v2_prod_0009_dining_room_0008.json",
+      "sha256": "610eb75098f460aff8c4432780510943c009f039bb1117254c724261ecac09f2",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_living_room_0036",
+      "path": "clean_v2_prod_0016_living_room_0036.json",
+      "sha256": "edfeef0e571cb66fb9d3d1ec82d6b19283896b34b308aa00d1ae62f719886e58",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0026",
+      "path": "clean_v2_prod_0013_bedroom_0026.json",
+      "sha256": "97d108ccb7974e4c0c6298a8165ca5b3d323f142a0b6c7e48179926e90dca845",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0004",
+      "path": "clean_v2_prod_0010_home_office_0004.json",
+      "sha256": "7b8060d07316a0d17add1949637c518632034655aafb54b7d61f15b9ce73b6fc",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_home_office_0007",
+      "path": "clean_v2_prod_0017_home_office_0007.json",
+      "sha256": "5872ee1a83a0abaf41d42c64bbb0d591954235b0096c08ac429eba77000e881c",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_living_room_0008",
+      "path": "clean_v2_prod_0002_living_room_0008.json",
+      "sha256": "c2fa3aae8142d85e799b545e8474fd5e33137de1a34a46cf989664528774b5f0",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0023",
+      "path": "clean_v2_prod_0013_bedroom_0023.json",
+      "sha256": "9dda95a9bb456916df5f591d489aeaf43c84ad63fb9bd79455ab63bee903e06e",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_bedroom_0030",
+      "path": "clean_v2_prod_0018_bedroom_0030.json",
+      "sha256": "3747969c2c7291f223a8b27701dabbfe595c9b8abb63bca03405fe0d383e3022",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_dining_room_0022",
+      "path": "clean_v2_prod_0017_dining_room_0022.json",
+      "sha256": "bbf6e0769a3f39cf5f7c0b0468fa1236a7c1318f1b2d3fa5526923e29ae3fdb6",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_bedroom_0002",
+      "path": "clean_v2_prod_0004_bedroom_0002.json",
+      "sha256": "4f7d881824f8d13daa7d67cae6fa6fb7a37e0d0004254780e95b1b94caa3fa8a",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_bedroom_0026",
+      "path": "clean_v2_prod_0010_bedroom_0026.json",
+      "sha256": "1d544287530d5ca262e77ee9d4e039022167f51fb659823b2d2f4426fc43342c",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0054",
+      "path": "clean_v2_prod_0012_dining_room_0054.json",
+      "sha256": "cf8ca909a18cd15817809ad466d103fc6250a7a1606c2a293742f912477a242b",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0020",
+      "path": "clean_v2_prod_0010_living_room_0020.json",
+      "sha256": "d2ee3785b55bdbe8a8a3839b13444366851ceb43a683121be8b7d977ead2782f",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_living_room_0026",
+      "path": "clean_v2_prod_0012_living_room_0026.json",
+      "sha256": "92462074ecd47283823651865e9825234bf98a9e817f64302856efd059b8609e",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0007",
+      "path": "clean_v2_prod_0010_home_office_0007.json",
+      "sha256": "a86836bcef31d19f94ad8653d2189c3d280d4ad31b5f844795309b557a1755ec",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_dining_room_0002",
+      "path": "clean_v2_prod_0002_dining_room_0002.json",
+      "sha256": "90fad48fb55a3d8cbcacdd681a19e9fce2c01a10088548441524df8cefc4e524",
+      "split": "val"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_home_office_0042",
+      "path": "clean_v2_prod_0018_home_office_0042.json",
+      "sha256": "f94817b2938e460220f58b846308e1331cb62f4dfa303d8f129689833417e5f0",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_bedroom_0025",
+      "path": "clean_v2_prod_0013_bedroom_0025.json",
+      "sha256": "dd8d408271d87005e240303c8d2dab86525d0d61ca1bcc9130acaea1d06c1478",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_home_office_0001",
+      "path": "clean_v2_prod_0003_home_office_0001.json",
+      "sha256": "4beec2d6f8be00aba874da645ac18c40fbdcbd8fe74e434afb405dc3a532f771",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_dining_room_0006",
+      "path": "clean_v2_prod_0005_dining_room_0006.json",
+      "sha256": "c5c7aadcc870a0eaa0c5e11dfea5e922dd7cbfae33f0bcf825a4fe9d8a759fd3",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_living_room_0005",
+      "path": "clean_v2_prod_0002_living_room_0005.json",
+      "sha256": "fd1d61dd2372317a80acb146b2fc22de57174af24f39d55a9ee2e0bf7ebdd5c4",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_bedroom_0040",
+      "path": "clean_v2_prod_0012_bedroom_0040.json",
+      "sha256": "e98dff71b23b8b509b105642ace3939cd2c9a1abc0328139c142d6dd1f24fb35",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0003",
+      "path": "clean_v2_prod_0013_living_room_0003.json",
+      "sha256": "aa47826424eb104f8e5d0d6252ef664aeb33645c2c36812e0817211ed9f5f35e",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0026",
+      "path": "clean_v2_prod_0014_living_room_0026.json",
+      "sha256": "491a2096effe3683c1f63c407ec1316421ac47b5b1b0292f7f0de8e95b405dc5",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_dining_room_0016",
+      "path": "clean_v2_prod_0012_dining_room_0016.json",
+      "sha256": "daa1e92fc05ce3b71e6e54f0f66bce5daeabd4b58746d27263e8d76356df32bd",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_home_office_0006",
+      "path": "clean_v2_prod_0002_home_office_0006.json",
+      "sha256": "52bd1dcb72914db32d0de4f785951e179f1bc3eaa7dfc93dd7f359588eea2f63",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0023",
+      "path": "clean_v2_prod_0014_living_room_0023.json",
+      "sha256": "e5577e6c97ef5fe871eaff5af7c1a28e53ccf22c541a7641886ecbc47d594698",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0021",
+      "path": "clean_v2_prod_0015_home_office_0021.json",
+      "sha256": "fed4669c20b119b7c23a1e181dde3cb2765b946164f1c38b0629a62995981a90",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0003",
+      "path": "clean_v2_prod_0009_dining_room_0003.json",
+      "sha256": "981cfd308213d69a6f720cf438f9360945a005761d76c113c371793761a56c2f",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_home_office_0009",
+      "path": "clean_v2_prod_0016_home_office_0009.json",
+      "sha256": "3a7c0820c20ef7206339cc80e8b997899a5144087d341fd33851d9cbbbfc0319",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0008",
+      "path": "clean_v2_prod_0013_home_office_0008.json",
+      "sha256": "49821f056a6ec0a88984f44dd99548d77efdb686de2815cf0c63b6839e57c617",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0056",
+      "path": "clean_v2_prod_0015_living_room_0056.json",
+      "sha256": "75316d62a6051f67eb4a9772fb2dae9869e9e221b6b4aa22d11c4b2c20668416",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_bedroom_0024",
+      "path": "clean_v2_prod_0009_bedroom_0024.json",
+      "sha256": "fb078c4181ab8604ecb31b14922c028762d28ad310ddfca35c7ded2dc73753d9",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_dining_room_0003",
+      "path": "clean_v2_prod_0010_dining_room_0003.json",
+      "sha256": "07014bd3539d4c053e157a66836ee78699a3370c030306bcb9fda90832e5d587",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_dining_room_0030",
+      "path": "clean_v2_prod_0018_dining_room_0030.json",
+      "sha256": "d80f16b2113d26735e2d46b522ca9f6073241b8b0dcec3b1bc2a70685904be0a",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_living_room_0007",
+      "path": "clean_v2_prod_0004_living_room_0007.json",
+      "sha256": "bdc6f466c3d91bb012883876349a56db87ef6e42ad813b1162ad7cc7b874067c",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0013",
+      "path": "clean_v2_prod_0009_dining_room_0013.json",
+      "sha256": "29aaabed433a963639af8aecff3b55c15acd109780ad0dec585805c8736cc1bc",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_living_room_0008",
+      "path": "clean_v2_prod_0015_living_room_0008.json",
+      "sha256": "5e164fd03bc38534b878cc85d0c6b992a3fb0a359ffff3048620c794d363415a",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0015",
+      "path": "clean_v2_prod_0009_dining_room_0015.json",
+      "sha256": "18f395effbbd12cfc6627b2d25b9e6e42aa1a2addffc2102776cfcda4233a454",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_home_office_0006",
+      "path": "clean_v2_prod_0010_home_office_0006.json",
+      "sha256": "8a8439a02aef646973e91c5d8fc534aea2a72ffb9ba3d22844247fc4324dbca7",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_living_room_0038",
+      "path": "clean_v2_prod_0018_living_room_0038.json",
+      "sha256": "958d17baa5d50aaa5ba0719074e23a89fd851f827a7d59d8ae13580fbd79f4e9",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0032",
+      "path": "clean_v2_prod_0009_living_room_0032.json",
+      "sha256": "155b8c063c43421547fdbde668d18cfb73bdde452daa99e0a0ad336e0308d178",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_living_room_0006",
+      "path": "clean_v2_prod_0018_living_room_0006.json",
+      "sha256": "dd5d9f3abfa2e8fe732d062d69015f82e5236d7c158338895468e82dd070fd66",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0009",
+      "path": "clean_v2_prod_0013_home_office_0009.json",
+      "sha256": "afb9fbbcbf4f45e4d154e4c0ff431ffb60eb41151a411f45e16403b377e05b77",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_home_office_0033",
+      "path": "clean_v2_prod_0015_home_office_0033.json",
+      "sha256": "1175ce724aa88884189adcd501d819799a3ab11137f982aec21c0afc6c4dd429",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_dining_room_0007",
+      "path": "clean_v2_prod_0014_dining_room_0007.json",
+      "sha256": "51b7e5857cef8e3030544283b6d941912696371c8f9fd907dc226a60f9f946b7",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0016_bedroom_0037",
+      "path": "clean_v2_prod_0016_bedroom_0037.json",
+      "sha256": "a20237b6abbb1ba1d2c25ee2dc9e5b8decb341e111e4184d802ea10bd98ce326",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_living_room_0006",
+      "path": "clean_v2_prod_0005_living_room_0006.json",
+      "sha256": "8638819ee37c3b9d24c6bf587077e951c149a12d84ba203cd8b2166495987c5b",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0012_home_office_0011",
+      "path": "clean_v2_prod_0012_home_office_0011.json",
+      "sha256": "82223eaf5ec3e2387a442045e7efa1d6bde75a4ffa93b09d42cf983ebbb29989",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0017_bedroom_0022",
+      "path": "clean_v2_prod_0017_bedroom_0022.json",
+      "sha256": "d5e112fcc788933c9006b1a6234ad0a9f7efa2141b8e96fb4489d5c65830334c",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0020",
+      "path": "clean_v2_prod_0015_dining_room_0020.json",
+      "sha256": "8f6ab4748c99941f7d2ab2196e089144bdbcef44ba7f6fa61fba2deb6ffd4e85",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0010",
+      "path": "clean_v2_prod_0013_living_room_0010.json",
+      "sha256": "ed64a1cdbe035f07ac0ad86b0ef5d773d654ffe5d228446d5528b9f41f6914c9",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_dining_room_0007",
+      "path": "clean_v2_prod_0005_dining_room_0007.json",
+      "sha256": "d727f6e6ebdbf5be139f77f9707775ec4018cfddf9c2482167f0b335934155c8",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0003_dining_room_0011",
+      "path": "clean_v2_prod_0003_dining_room_0011.json",
+      "sha256": "594d439f82a09909a0995298198b12660de3f3d05ffc71fdec58fc143010bfc5",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0035",
+      "path": "clean_v2_prod_0015_dining_room_0035.json",
+      "sha256": "0aa3192e435b395b579eef95708692c1bba20beebe565f617ebf8372345730a2",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_bedroom_0015",
+      "path": "clean_v2_prod_0014_bedroom_0015.json",
+      "sha256": "6630f0efaf04c46e4b8168d4f65953d360b22f2792d59adf2c886905a26a1122",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0002_home_office_0003",
+      "path": "clean_v2_prod_0002_home_office_0003.json",
+      "sha256": "200cb017c154ba564839564a99bb0abfbf20939a749d5d81b4a8718967c94052",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0010_living_room_0004",
+      "path": "clean_v2_prod_0010_living_room_0004.json",
+      "sha256": "ef6d295c860d073dc2b0b59ba6a2b61f9c5b9633edc46f6cf2516cee104e795c",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0008_living_room_0001",
+      "path": "clean_v2_prod_0008_living_room_0001.json",
+      "sha256": "090ec5b7bd0c5490b666b5ba90003227c6f297d2df5db951c8d6ea5753b76757",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_living_room_0010",
+      "path": "clean_v2_prod_0009_living_room_0010.json",
+      "sha256": "3248c6c0ad03eb3c862eb4dcea8d642b0908f359568aa0fad230ec4c701504ed",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0018_bedroom_0024",
+      "path": "clean_v2_prod_0018_bedroom_0024.json",
+      "sha256": "d9e4a637f03ec241d8b5a3783d6b0d477c2be82aa9bfc6fbfe3a19063f540fba",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0009_dining_room_0006",
+      "path": "clean_v2_prod_0009_dining_room_0006.json",
+      "sha256": "6eb578d56f26c3a4aaf6f67a8b5ec62a4baaa02a2c7a5dbd4f0640ca2851547e",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0015_dining_room_0024",
+      "path": "clean_v2_prod_0015_dining_room_0024.json",
+      "sha256": "f0d0a9d55b7fad43d4a7674af354ba99e4a2d1b012decc6d7ab0f7b716599d01",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0004_bedroom_0003",
+      "path": "clean_v2_prod_0004_bedroom_0003.json",
+      "sha256": "2487a8a898c4b83a5ac4178c0906e39b64ac7bc1b45673587f2688879b21994e",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0005_dining_room_0003",
+      "path": "clean_v2_prod_0005_dining_room_0003.json",
+      "sha256": "a03c97845258e3917465775d69ccebcf961f5a6ac28773ab7116a7a4cd874e66",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0014_living_room_0046",
+      "path": "clean_v2_prod_0014_living_room_0046.json",
+      "sha256": "c223538769f77a63646abd706702cbcf87d4a8d5b1cd9f1c4d2dd5ca60e0d663",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_home_office_0010",
+      "path": "clean_v2_prod_0013_home_office_0010.json",
+      "sha256": "be50bb881d7f4e98217ced5e1e450a1a1cf092fc84010c23b6bf9190dce81813",
+      "split": "test"
+    },
+    {
+      "scene_id": "clean_v2_prod_0013_living_room_0001",
+      "path": "clean_v2_prod_0013_living_room_0001.json",
+      "sha256": "b196340a59e6db9aedd7ca440dcc22ae2cea67a4edd74b7fd95836ed692c1a17",
+      "split": "test"
+    }
+  ]
+}

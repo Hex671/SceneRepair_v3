@@ -1,0 +1,312 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "bedroom_006",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "bedroom",
+  "length": 5.25,
+  "width": 4.65,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "north",
+      "opening_width_m": 0.92,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        1.55,
+        1.9250000000000003,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.92,
+        0.8,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        -1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "east",
+      "opening_width_m": 1.45,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        2.375,
+        -1.25,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.5,
+        1.45,
+        2.05
+      ],
+      "interior_normal_xy": [
+        -1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "bed_01",
+      "hssd_id": "bf0d188b37ed02e5567e8651df3425c57fbff7bd",
+      "hssd_source_category": "double bed",
+      "category": "bed",
+      "family": "sleep_surface",
+      "functions": [
+        "sleep"
+      ],
+      "bbox": {
+        "width": 1.78,
+        "depth": 2.261,
+        "height": 1.016
+      },
+      "x": -1.4145,
+      "y": -0.4,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "The head side is near a solid wall while the local -Y front points into the room for foot access."
+      }
+    },
+    {
+      "object_id": "nightstand_01",
+      "hssd_id": "15c0bd474aa43ea3156a6d33a23dc58384ac68ba",
+      "hssd_source_category": "nightstand",
+      "category": "nightstand",
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ],
+      "bbox": {
+        "width": 0.5454,
+        "depth": 0.4897,
+        "height": 0.5057
+      },
+      "x": -2.30015,
+      "y": -1.6527,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "At the bed head, reachable from the sleeping surface without narrowing the foot circulation zone."
+      }
+    },
+    {
+      "object_id": "wardrobe_01",
+      "hssd_id": "a9967a984dbe294a7b789d969c5f1ed6a9dbca5c",
+      "hssd_source_category": "wardrobe",
+      "category": "wardrobe",
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ],
+      "bbox": {
+        "width": 1.64,
+        "depth": 0.74,
+        "height": 1.88
+      },
+      "x": 0.65,
+      "y": -1.875,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Placed on an opening-free wall segment with its access side facing the room."
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "nightstand_01",
+      "target_id": "bed_01",
+      "orientation_mode": "aligned",
+      "target_strategy": "place_beside",
+      "desired_gap_range": [
+        0.07,
+        0.16
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "Bedside support is aligned with and immediately beside this bed instance."
+      }
+    }
+  ],
+  "audit": {
+    "generator_version": "clean_furniture_generator_gpt56_v1",
+    "rules_version": "furniture_layout_rules_gpt56_v1",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "Bed anchored to the west wall with asymmetric supporting furniture and an opening-aware storage wall.",
+    "provenance": {
+      "layout_author": "GPT-5.6 independent layout reasoning",
+      "qwen_layout_used_as_answer": false,
+      "hssd_usage": "asset semantics, canonical orientation metadata, and bbox lookup only"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "use_wardrobe_01_front",
+        "owner_id": "wardrobe_01",
+        "center_xy_m": [
+          0.65,
+          -1.115
+        ],
+        "size_xy_m": [
+          1.2,
+          0.78
+        ],
+        "yaw_rad": -3.1415926536,
+        "purpose": "wardrobe_door_and_standing_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_bed_01_left",
+        "owner_id": "bed_01",
+        "center_xy_m": [
+          -1.14318,
+          -1.6
+        ],
+        "size_xy_m": [
+          0.62,
+          1.31138
+        ],
+        "yaw_rad": 1.5707963268,
+        "purpose": "bed_left_egress",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      0.436,
+      -0.4
+    ],
+    "gpt_semantic_review": {
+      "status": "gpt_visual_pass_human_priority",
+      "requires_human_review": true,
+      "notes": [
+        "Hard-valid minimalist three-piece bedroom; human review should confirm that the deliberately sparse furnishing density matches the desired pilot distribution."
+      ],
+      "review_schema_version": "gpt56_topdown_semantic_review_v1",
+      "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+    },
+    "layout_hash": "f6f33c870ad0eb9339a67dfa7ba4da3f0a83d569ed7191af63ce9481e6042a34"
+  }
+}

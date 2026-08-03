@@ -1,0 +1,74 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "bedroom_authored_002",
+  "revision_id": "rev_000_pre_yaw_convention_correction",
+  "status": "superseded_yaw_semantic_error",
+  "reason": "The proposal used local +Y as the furniture front although the dataset contract defines HSSD local -Y as the front.",
+  "yaw_corrections": [
+    {
+      "object_id": "nightstand_sleep_west",
+      "old_yaw_rad": -3.141592653589793,
+      "new_yaw_rad": 0.0,
+      "old_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "object_id": "wardrobe_clothes_east",
+      "old_yaw_rad": 1.5707963267948966,
+      "new_yaw_rad": -1.5707963267948966,
+      "old_local_minus_y_front_xy": [
+        1.0,
+        -0.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -1.0,
+        -0.0
+      ]
+    },
+    {
+      "object_id": "cabinet_dressing_south",
+      "old_yaw_rad": 0.0,
+      "new_yaw_rad": -3.141592653589793,
+      "old_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ]
+    },
+    {
+      "object_id": "armchair_daylight_south_east",
+      "old_yaw_rad": 0.8,
+      "new_yaw_rad": -2.3415926535897933,
+      "old_local_minus_y_front_xy": [
+        0.717356,
+        -0.696707
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.717356,
+        0.696707
+      ]
+    }
+  ],
+  "artifact_sha256": {
+    "authored_proposal": "0ae29dee86f779cf0d5b1e01ad39dfe0572e9d8c7e584f7c29f5efd9ad3b5a24",
+    "scene": "c4041a24a5d5834da40227dadc8acf71e097ad48ba3c0e060750db7170d727d8",
+    "validation": "2ad5c4c094b6a01ff4081abffd31ef84fc0065d3ae7f0667bc5b8040006b3581",
+    "diversity": "9f539c006e3e327dfcdb53c9c55fdacf12b75432a704f9c124188814b9d14e92",
+    "diversity_legacy": "9f539c006e3e327dfcdb53c9c55fdacf12b75432a704f9c124188814b9d14e92",
+    "functional_partner_build": "bdf7354bd6d910ce31d8361d8c9a81ca145a2d394a289f0f8f142ca4b413d8e8",
+    "visualization": "c7257b5a98080d1b955912760058c4aba9571e6db571a0a4b23686485b5cbcef",
+    "independent_review": "d43b0f69baccfc44bbc0eceddaedef8c57866db33c538629cd3dcc1de8c575a6",
+    "reviewer_scene": "f8d2087d895696a0398db96dd62bbcad659bcfd99fc34f1ae440bb74951461bd",
+    "reviewer_geometry": "f93f1a9eb8fea26320ff492bb97ba6fc71dcffdc079d07269e29860a8776d195"
+  },
+  "superseded_by": "rev_001_local_minus_y_yaw_corrected"
+}

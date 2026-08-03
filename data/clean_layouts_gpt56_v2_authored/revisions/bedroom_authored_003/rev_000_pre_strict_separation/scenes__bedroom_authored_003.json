@@ -1,0 +1,927 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "bedroom_authored_003",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "bedroom",
+  "length": 5.6,
+  "width": 4.2,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "east",
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        2.4,
+        -1.3,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.8,
+        0.9,
+        2.05
+      ],
+      "interior_normal_xy": [
+        -1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "north",
+      "opening_width_m": 1.8,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        0.7,
+        1.85,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        1.8,
+        0.5,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        -1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "bed_01",
+      "hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+      "hssd_source_category": "bed",
+      "category": "bed",
+      "family": "sleep_surface",
+      "functions": [
+        "sleep"
+      ],
+      "bbox": {
+        "width": 1.759,
+        "depth": 1.994,
+        "height": 1.144
+      },
+      "x": -1.75,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "bed_01 runs longitudinally along the west wall, keeping its east long side accessible from the central landing and avoiding the north window_00 band. Its yaw pi/2 turns the long depth along room X, so the bed does not divide the room and the door_00 approach can pass on the east side.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "bed",
+          "partners": [
+            "bedclothes",
+            "headboard",
+            "mattress",
+            "nightstand"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "nightstand_01",
+      "hssd_id": "e0d5b8aea675e79541af41ec6cbd4e132d82cd37",
+      "hssd_source_category": "nightstand",
+      "category": "nightstand",
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ],
+      "bbox": {
+        "width": 0.5708,
+        "depth": 0.51,
+        "height": 0.6
+      },
+      "x": -1.75,
+      "y": 1.28,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "nightstand_01 sits at bed_01's north head-side corner rather than duplicating a pair, leaving the east side open for entry and making one reachable surface sufficient. Its local -Y front faces south toward the bed and its north clearance does not intrude on window_00.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor",
+            "wall"
+          ],
+          "confidence": 0.84,
+          "dof": 1,
+          "orientation_constraints": [
+            "back against wall; front faces accessible room area"
+          ],
+          "provenance": "seed_rule:wall_floor_boundary",
+          "support_anchor": "wall+floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "nightstand",
+          "partners": [
+            "alarm_clock",
+            "bed",
+            "table_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "nightstand",
+          "geometry_root_key": "hssd_materialized",
+          "match_id": "e0d5b8aea675e79541af41ec6cbd4e132d82cd37",
+          "n_movable": 2,
+          "realization_kind": "hssd_official",
+          "source": "HSSD-official",
+          "static_dims": [
+            0.571,
+            0.6,
+            0.49
+          ],
+          "swept_dims": [
+            0.571,
+            0.6,
+            0.85
+          ],
+          "vol_bloat": 1.734
+        }
+      }
+    },
+    {
+      "object_id": "desk_01",
+      "hssd_id": "a42e2ef37ca205ecb1927bde89c6b618ddcda71b",
+      "hssd_source_category": "desk",
+      "category": "desk",
+      "family": "support_surface",
+      "functions": [
+        "work_surface",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 1.27,
+        "depth": 0.61,
+        "height": 0.763
+      },
+      "x": 0.75,
+      "y": 1.1,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.articulated_swept_volume.bbox",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "desk_01 occupies the north wall below window_00, with a 0.39 m rear setback from the window clearance so morning light reaches the surface without overlap. Its local -Y front faces chair_01 and the central room, while the desk stays east of bed_01's accessible side.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "desk",
+          "partners": [
+            "chair",
+            "computer_screen",
+            "desk_calendar",
+            "desk_organizer"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "desk",
+          "geometry_root_key": "pm_root",
+          "match_id": "23782",
+          "match_quality": "exact_semantic",
+          "n_movable": 2,
+          "pm_ref": "23782",
+          "pnm_cat": "Table",
+          "realization_kind": "pm_replacement",
+          "source": "PartNet-Mobility",
+          "static_dims": [
+            1.347,
+            0.844,
+            0.634
+          ],
+          "swept_dims": [
+            1.347,
+            0.844,
+            0.742
+          ],
+          "vol_bloat": 1.17
+        }
+      }
+    },
+    {
+      "object_id": "chair_01",
+      "hssd_id": "ac92c090320c6273da3073b81639ae33b30a0fe0",
+      "hssd_source_category": "chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.508,
+        "depth": 0.552,
+        "height": 0.88
+      },
+      "x": 0.75,
+      "y": 0.3,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "chair_01 is the single desk seat for desk_01, facing north with its local -Y front toward the work surface. The south pull-back strip remains part of the east-central route from door_00, and the chair does not compete with bed_01's bedside access.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "chair",
+          "partners": [
+            "conference_table",
+            "desk",
+            "dining_table"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "wardrobe_01",
+      "hssd_id": "115400dd7dd9aa26ca595007f18b5a515626554d",
+      "hssd_source_category": "wardrobe",
+      "category": "wardrobe",
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ],
+      "bbox": {
+        "width": 1.2062,
+        "depth": 0.5779,
+        "height": 2.0031
+      },
+      "x": -1.3,
+      "y": -1.8,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "wardrobe_01 uses the south wall so its tall storage does not compete with window_00 or the east door_00 landing. Its yaw pi turns the local -Y front north into the room, leaving the shallow back on the south wall and giving a direct dressing approach from the central landing.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor",
+            "wall"
+          ],
+          "confidence": 0.84,
+          "dof": 1,
+          "orientation_constraints": [
+            "back against wall; front faces accessible room area"
+          ],
+          "provenance": "seed_rule:wall_floor_boundary",
+          "support_anchor": "wall+floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "wardrobe",
+          "partners": [
+            "shoe_rack"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "wardrobe",
+          "geometry_root_key": "hssd_materialized",
+          "match_id": "115400dd7dd9aa26ca595007f18b5a515626554d",
+          "n_movable": 7,
+          "realization_kind": "hssd_official",
+          "source": "HSSD-official",
+          "static_dims": [
+            1.206,
+            2.003,
+            0.578
+          ],
+          "swept_dims": [
+            2.003,
+            2.249,
+            1.135
+          ],
+          "vol_bloat": 3.661
+        }
+      }
+    },
+    {
+      "object_id": "armchair_01",
+      "hssd_id": "a7083dbe58df81fdaf42d9483d2f6a4a80d56df0",
+      "hssd_source_category": "armchair",
+      "category": "armchair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.718,
+        "depth": 0.75,
+        "height": 0.792
+      },
+      "x": 1.5,
+      "y": -0.78,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "armchair_01 forms a quiet reading pocket in the east-south corner while its west-shifted footprint stays clear of door_00's east-side clearance. Its yaw -pi/2 points the local -Y front west toward the room, keeping the central landing visually open and separating reading from the bed axis.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "armchair",
+          "partners": [
+            "coffee_table",
+            "floor_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "side_table_01",
+      "hssd_id": "0a2e52d5f93bd2346b2e686bbad4e128b2ff276b",
+      "hssd_source_category": "end table",
+      "category": "side_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 0.499,
+        "depth": 0.499,
+        "height": 0.53
+      },
+      "x": 0.88,
+      "y": -0.78,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "side_table_01 sits immediately west of the west-shifted armchair_01 within arm's reach for reading material, but remains outside bed_01 and chair_01 pull-back zones. Its neutral yaw suits the square top and preserves a clean west-facing reading front.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "end table",
+          "partners": [
+            "armchair",
+            "sofa",
+            "table_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "bed_01",
+      "target_id": "nightstand_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "nightstand_01",
+      "target_id": "bed_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "desk_01",
+      "target_id": "chair_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "chair_01",
+      "target_id": "desk_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "side_table_01",
+      "target_id": "armchair_01",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edges",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    }
+  ],
+  "audit": {
+    "pipeline_version": "authored_single_scene_validator_v1",
+    "proposal_schema_version": "authored_furniture_proposal_v1",
+    "rules_version": "furniture_layout_rules_gpt56_v1",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "West-wall longitudinal bed, north-window morning surface, south-wall wardrobe, and a separate east reading pocket connected by an L-shaped circulation route.",
+    "daily_activities": [
+      "sleeping",
+      "dressing",
+      "morning paperwork or grooming",
+      "short reading"
+    ],
+    "main_path": "From door_00 on the east-south wall, pass north-west around the reading pocket, reach the central bed side, then continue north to chair_01 and desk_01.",
+    "protected_open_space": "The east-central landing, bed's accessible east side, desk chair pull-back strip, and wardrobe front remain free of unrelated furniture.",
+    "provenance": {
+      "layout_author": "GPT-5.6 Codex primary agent",
+      "python_layout_decisions": false,
+      "proposal_path": "data/clean_layouts_gpt56_v2_authored/authored_proposals/bedroom_authored_003.json",
+      "proposal_sha256": "a949bfb14dfa90483bfd036bae63887d952aa4971620e76fc460da2212d04bcb",
+      "hssd_lookup_path": "../hssd-annotations/data/hssd_annotation_lookup.json.gz",
+      "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "semantic_mapping_path": "data/clean_layouts_gpt56_v1/semantic_mapping.json",
+      "semantic_mapping_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+      "functional_rules_path": "configs/functional_partner_rules_hssd_v1.json",
+      "functional_rules_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+      "vocabulary_path": "configs/furniture_vocab_bootstrap_v1.json",
+      "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "bed_01_east_side",
+        "owner_id": "bed_01",
+        "purpose": "bed_side_entry_and_making",
+        "center_xy_m": [
+          -0.48,
+          0.0
+        ],
+        "size_xy_m": [
+          0.62,
+          2.3
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "nightstand_01_access",
+        "owner_id": "nightstand_01",
+        "purpose": "bedside_reach",
+        "center_xy_m": [
+          -1.75,
+          0.72
+        ],
+        "size_xy_m": [
+          0.7,
+          0.55
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": [
+          "bed_01"
+        ],
+        "validity": true
+      },
+      {
+        "zone_id": "desk_01_front_clearance",
+        "owner_id": "desk_01",
+        "purpose": "morning_work_and_grooming",
+        "center_xy_m": [
+          0.75,
+          0.37
+        ],
+        "size_xy_m": [
+          1.55,
+          0.82
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": [
+          "chair_01"
+        ],
+        "validity": true
+      },
+      {
+        "zone_id": "chair_01_pullback",
+        "owner_id": "chair_01",
+        "purpose": "desk_seat_pullback",
+        "center_xy_m": [
+          0.75,
+          -0.1
+        ],
+        "size_xy_m": [
+          0.85,
+          0.48
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "wardrobe_01_front_access",
+        "owner_id": "wardrobe_01",
+        "purpose": "dressing_and_clothing_access",
+        "center_xy_m": [
+          -1.3,
+          -1.27
+        ],
+        "size_xy_m": [
+          1.4,
+          0.48
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "armchair_01_approach",
+        "owner_id": "armchair_01",
+        "purpose": "reading_seat_sit_stand",
+        "center_xy_m": [
+          1.06,
+          -0.78
+        ],
+        "size_xy_m": [
+          0.8,
+          0.95
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": [
+          "side_table_01"
+        ],
+        "validity": true
+      }
+    ],
+    "path_targets": [
+      {
+        "target_id": "bed_01",
+        "goal_xy_m": [
+          -0.48,
+          0.0
+        ],
+        "purpose": "primary_sleep_zone"
+      },
+      {
+        "target_id": "desk_01",
+        "goal_xy_m": [
+          0.75,
+          0.37
+        ],
+        "purpose": "morning_surface_zone"
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      -0.48,
+      0.0
+    ],
+    "functional_partner_builder": {
+      "implementation": "FrozenFunctionalPartnerRules",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "no_handwritten_edges": true
+    },
+    "layout_hash": "8ae077093ebf3345faeef6c8f061bb0098ae3716d2967e592e26ea9eca76534d"
+  }
+}

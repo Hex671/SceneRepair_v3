@@ -1,0 +1,24 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "bedroom_authored_003",
+  "revision_id": "rev_001_strict_positive_separation",
+  "status": "superseded_semantic_review_failed",
+  "reason": "The 0.02 m west adjustment removed the numeric penetration and produced a 0.0155 m positive OBB separation, but independent review found side_table_01 directly in the west-facing sit/stand approach of armchair_01.",
+  "measured_pair": {
+    "object_a": "armchair_01",
+    "object_b": "side_table_01",
+    "signed_separation_m": 0.0155
+  },
+  "independent_review_verdict": "fail",
+  "superseded_by": "rev_002_lateral_side_table",
+  "artifact_sha256": {
+    "authored_proposal": "955ef234a1f6f1763d6f1f10b095ef90422e1fb17b1a1805fa64f8686f34bc31",
+    "scene": "ff9f064d6c212959efd773ddcdd92ddd7152141893ce7ddb025e7704791ee9f5",
+    "validation": "a633a62aa8290baa0676b3369234f1ecad7501a2e56e4b773c576accf7258e1e",
+    "diversity": "4005158981ef045d6054179c6a863f2b5f3a1ca3c3f9e7c2ca90b713befd4d05",
+    "visualization": "7408d9de2ad0e472efdb4fb3a8b71ef740eb7a057f29f40692369f47a8803c9d",
+    "independent_review": "441f846ce086d69687e4dc0842520de94228077962d039564082425090cbe0b1",
+    "reviewer_geometry": "33d0f9f585cc32c0327254c42b350762003e8fbfc07104307ccd0f47fbe8193b",
+    "functional_partner_build": "d71f3a899058d2e12d8dd932fad4b509af8b69b8421e76e93216d7e09140f25b"
+  }
+}

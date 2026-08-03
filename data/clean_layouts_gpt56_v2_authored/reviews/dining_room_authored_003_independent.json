@@ -1,0 +1,17 @@
+{
+  "schema_version": "authored_semantic_review_pending_v1",
+  "scene_id": "dining_room_authored_003",
+  "semantic_review_status": "pending_independent_review",
+  "independent_review_completed": false,
+  "independent_review_pass": false,
+  "scene_layout_hash": "cb274d8271e6f861b82c8bf4db85c236cd74ba3d1dfef128b5bae6ace85ddbd7",
+  "reason": "The local -Y yaw convention correction changed rendered furniture front directions. The previous review is archived and cannot attest to the corrected artifacts.",
+  "isolation_packet": [
+    "reviews/reviewer_packet/dining_room_authored_003_scene.json",
+    "reviews/reviewer_packet/dining_room_authored_003_geometry.json",
+    "visualizations/dining_room_authored_003.png",
+    "validation/dining_room_authored_003.json",
+    "diversity/dining_room_authored_003.json"
+  ],
+  "final_verdict": "pending_independent_review"
+}

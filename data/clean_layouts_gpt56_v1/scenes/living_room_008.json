@@ -1,0 +1,553 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "living_room_008",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "living_room",
+  "length": 6.8,
+  "width": 5.1,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "west",
+      "opening_width_m": 0.95,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        -3.0,
+        -1.45,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.8,
+        0.95,
+        2.05
+      ],
+      "interior_normal_xy": [
+        1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "south",
+      "opening_width_m": 1.65,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        -1.75,
+        -2.3,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        1.65,
+        0.5,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "sofa_01",
+      "hssd_id": "xxxx029cf0d5x2007x479bx9ae0x64038b6a6cb6",
+      "hssd_source_category": "sofa",
+      "category": "sofa",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 2.064,
+        "depth": 0.863,
+        "height": 0.811
+      },
+      "x": 2.8885,
+      "y": 0.5,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Primary seating has a protected back and faces the room's shared activity center."
+      }
+    },
+    {
+      "object_id": "coffee_table_01",
+      "hssd_id": "b54ae06e8f2bc06bc62a16b48c91f0c9fd284212",
+      "hssd_source_category": "coffee table",
+      "category": "coffee_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 1.2,
+        "depth": 0.76,
+        "height": 0.4
+      },
+      "x": 1.497,
+      "y": 0.5,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Centered within reach of the sofa but outside its approach clearance."
+      }
+    },
+    {
+      "object_id": "tv_bench_01",
+      "hssd_id": "63b7d75b724e079aab99030084f0eae1b43b7498",
+      "hssd_source_category": "tv stand",
+      "category": "tv_bench",
+      "family": "support_surface",
+      "functions": [
+        "media_support",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 1.712,
+        "depth": 0.4526,
+        "height": 0.7617
+      },
+      "x": -3.0937,
+      "y": 1.2325,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Media support sits on the opposing wall so the sofa's sight line remains direct."
+      }
+    },
+    {
+      "object_id": "armchair_01",
+      "hssd_id": "45d1703dfba289bb347d5037e51543d1b774a88e",
+      "hssd_source_category": "armchair",
+      "category": "armchair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.815,
+        "depth": 0.874,
+        "height": 0.956
+      },
+      "x": 1.497,
+      "y": 1.937,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Angled secondary seating closes the conversation group without mirroring every item."
+      }
+    },
+    {
+      "object_id": "armchair_02",
+      "hssd_id": "91999bead15b71802e7a306d174b69a924619756",
+      "hssd_source_category": "armchair",
+      "category": "armchair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.768,
+        "depth": 0.752,
+        "height": 0.859
+      },
+      "x": 1.497,
+      "y": -0.876,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Angled secondary seating closes the conversation group without mirroring every item."
+      }
+    },
+    {
+      "object_id": "console_table_01",
+      "hssd_id": "fe6abead08c939b4d883a4843aeed17f80dc0107",
+      "hssd_source_category": "console table",
+      "category": "console_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ],
+      "bbox": {
+        "width": 1.194,
+        "depth": 0.381,
+        "height": 0.788
+      },
+      "x": 0.7875,
+      "y": -2.2795,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.articulated_swept_volume.bbox",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Slim perimeter storage occupies a circulation-safe wall segment outside the main seating cluster."
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "sofa_01",
+      "target_id": "coffee_table_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.52,
+        0.66
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "The primary sofa faces and reaches this coffee table instance."
+      }
+    },
+    {
+      "source_id": "sofa_01",
+      "target_id": "tv_bench_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "The primary sofa is oriented toward this media support instance."
+      }
+    },
+    {
+      "source_id": "coffee_table_01",
+      "target_id": "tv_bench_01",
+      "orientation_mode": "aligned",
+      "target_strategy": "align_with_target",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "Coffee table and media support share the main room axis."
+      }
+    },
+    {
+      "source_id": "armchair_01",
+      "target_id": "coffee_table_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.3,
+        0.72
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This armchair faces the shared coffee table."
+      }
+    },
+    {
+      "source_id": "armchair_02",
+      "target_id": "coffee_table_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.3,
+        0.72
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This armchair faces the shared coffee table."
+      }
+    }
+  ],
+  "audit": {
+    "generator_version": "clean_furniture_generator_gpt56_v1",
+    "rules_version": "furniture_layout_rules_gpt56_v1",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "Conversation group organized from a east-wall sofa toward a central table and media wall, with deliberately asymmetric secondary seating.",
+    "provenance": {
+      "layout_author": "GPT-5.6 independent layout reasoning",
+      "qwen_layout_used_as_answer": false,
+      "hssd_usage": "asset semantics, canonical orientation metadata, and bbox lookup only"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "use_sofa_01_front",
+        "owner_id": "sofa_01",
+        "center_xy_m": [
+          2.267,
+          0.5
+        ],
+        "size_xy_m": [
+          1.2,
+          0.38
+        ],
+        "yaw_rad": -1.5707963268,
+        "purpose": "sofa_sit_stand_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_armchair_01_front",
+        "owner_id": "armchair_01",
+        "center_xy_m": [
+          1.497,
+          1.33
+        ],
+        "size_xy_m": [
+          0.815,
+          0.34
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "armchair_sit_stand_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_armchair_02_front",
+        "owner_id": "armchair_02",
+        "center_xy_m": [
+          1.497,
+          -0.33
+        ],
+        "size_xy_m": [
+          0.768,
+          0.34
+        ],
+        "yaw_rad": -3.1415926536,
+        "purpose": "armchair_sit_stand_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      1.497,
+      -0.75
+    ],
+    "gpt_semantic_review": {
+      "status": "gpt_visual_pass",
+      "requires_human_review": false,
+      "notes": [
+        "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+      ],
+      "review_schema_version": "gpt56_topdown_semantic_review_v1",
+      "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+    },
+    "layout_hash": "c7eaba4c76332b4b46f86c1e6bd4b03d4d640d396bbb3e5b2c5e1beb138fdfd2"
+  }
+}

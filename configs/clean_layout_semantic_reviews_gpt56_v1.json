@@ -1,0 +1,81 @@
+{
+  "schema_version": "gpt56_topdown_semantic_review_v1",
+  "reviewer": "GPT-5.6",
+  "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification",
+  "reviewed_scene_ids": [
+    "bedroom_001",
+    "bedroom_002",
+    "bedroom_003",
+    "bedroom_004",
+    "bedroom_005",
+    "bedroom_006",
+    "bedroom_007",
+    "bedroom_008",
+    "living_room_001",
+    "living_room_002",
+    "living_room_003",
+    "living_room_004",
+    "living_room_005",
+    "living_room_006",
+    "living_room_007",
+    "living_room_008",
+    "dining_room_001",
+    "dining_room_002",
+    "dining_room_003",
+    "dining_room_004",
+    "dining_room_005",
+    "dining_room_006",
+    "dining_room_007",
+    "home_office_001",
+    "home_office_002",
+    "home_office_003",
+    "home_office_004",
+    "home_office_005",
+    "home_office_006",
+    "home_office_007"
+  ],
+  "default_review": {
+    "status": "gpt_visual_pass",
+    "requires_human_review": false,
+    "notes": [
+      "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+    ]
+  },
+  "scene_overrides": {
+    "bedroom_006": {
+      "status": "gpt_visual_pass_human_priority",
+      "requires_human_review": true,
+      "notes": [
+        "Hard-valid minimalist three-piece bedroom; human review should confirm that the deliberately sparse furnishing density matches the desired pilot distribution."
+      ]
+    },
+    "living_room_001": {
+      "status": "gpt_visual_pass_human_priority",
+      "requires_human_review": true,
+      "notes": [
+        "Hard-valid seating/media layout with a large open arrival corridor; human review should confirm preferred visual density."
+      ]
+    },
+    "living_room_003": {
+      "status": "gpt_visual_pass_human_priority",
+      "requires_human_review": true,
+      "notes": [
+        "Hard-valid long media sight line and generous central circulation; human review should confirm the room does not feel under-furnished."
+      ]
+    },
+    "living_room_006": {
+      "status": "gpt_visual_pass_human_priority",
+      "requires_human_review": true,
+      "notes": [
+        "Hard-valid asymmetric cluster leaves substantial open floor area; human review should confirm the intended flexible-use space."
+      ]
+    },
+    "home_office_007": {
+      "status": "gpt_visual_pass_human_priority",
+      "requires_human_review": true,
+      "notes": [
+        "Hard-valid focused workroom without lounge seating; human review should confirm the intentionally minimal furniture program."
+      ]
+    }
+  }
+}

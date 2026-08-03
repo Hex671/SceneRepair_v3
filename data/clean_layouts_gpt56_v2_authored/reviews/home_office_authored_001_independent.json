@@ -1,0 +1,106 @@
+{
+  "schema_version": "independent_semantic_review_v1",
+  "scene_id": "home_office_authored_001",
+  "reviewer_role": "independent_semantic_reviewer",
+  "isolation_compliance": {
+    "compliant": true,
+    "statement": "The review used only the four explicitly authorized scene, visualization, deterministic-validation, and diversity-report files. No proposals, author audits, old scenes, source code, manifests, or other workspace files were inspected."
+  },
+  "input_files": [
+    "D:\\study\\sci_research\\LMD-3DRA\\SceneRepair_v3\\data\\clean_layouts_gpt56_v2_authored\\reviews\\reviewer_packet\\home_office_authored_001_scene.json",
+    "D:\\study\\sci_research\\LMD-3DRA\\SceneRepair_v3\\data\\clean_layouts_gpt56_v2_authored\\visualizations\\home_office_authored_001.png",
+    "D:\\study\\sci_research\\LMD-3DRA\\SceneRepair_v3\\data\\clean_layouts_gpt56_v2_authored\\validation\\home_office_authored_001.json",
+    "D:\\study\\sci_research\\LMD-3DRA\\SceneRepair_v3\\data\\clean_layouts_gpt56_v2_authored\\validation\\home_office_authored_001_diversity.json"
+  ],
+  "object_reports": [
+    {
+      "cited_object_ids": [
+        "desk_work"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The desk is the clear primary anchor on the north side, faces south into the room, pairs correctly with the chair, stays outside the north-window clearance, and retains a validated seated-work zone and reachable approach.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "desk_chair"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The swivel chair is centered in front of the desk and faces north toward it. Its pull-out and standing area remains open, the desk overlap is explicitly functional, and the desk-access target is reachable continuously from the entrance.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "bookcase_reference"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The bookcase is compactly attached to the west boundary and faces east into accessible room area. Its browsing clearance and path target are unobstructed, and its position supports both work-reference use and the nearby reading zone without constricting the central route.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "cabinet_files"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The file cabinet is placed against the east boundary, faces west into the room, and is meaningfully grouped near the desk while remaining south of the desk-chair work envelope. Its door-and-drawer operating zone and access target are validated as clear and reachable.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "armchair_reading"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The armchair establishes a distinct secondary reading area in the southwest and is angled northeast toward its open approach rather than toward a wall. Its sit/approach zone is clear, reachable, and separated from the entrance-to-work circulation corridor.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "side_table_reading"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The side table sits within convenient reach at the armchair's southeast side, completing the reading function without blocking the chair's northeast approach. Its compact footprint preserves circulation and does not collide with neighboring furniture.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "floor_lamp_reading"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The floor lamp is grouped at the armchair's southwest side where it can illuminate the seat, remains out of the chair approach and main walking route, and forms a legible reading cluster with the armchair and side table.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    }
+  ],
+  "overall_assessment": {
+    "assessment": "pass",
+    "entrance": "The south entry and its inward clearance are empty, with immediate access to the open center of the room.",
+    "continuous_circulation": "Continuous routes from the entrance reach the desk, cabinet, bookcase, and reading targets; deterministic validation marks every target reachable and the plan shows no semantic pinch point.",
+    "normal_usability_and_clearance": "All furniture is in bounds and collision-free, all opening and use clearances pass, and the desk-chair, storage-access, and reading-seat envelopes remain practically usable.",
+    "functional_grouping": "The desk, chair, and file cabinet form a concise work cluster; the armchair, side table, and floor lamp form a complete reading cluster; the bookcase bridges reference storage and reading use.",
+    "density": "Seven pieces in a 5.6 by 4.4 metre room produce a comfortably furnished, low-to-moderate density with substantial central open space.",
+    "orientations": "The chair faces the desk, both wall-storage pieces face inward, the desk faces its chair and work clearance, and the armchair faces its open approach. No orientation appears reversed or inaccessible.",
+    "hierarchy": "The large desk at the north side reads as the primary activity anchor, while the diagonal reading group is clearly subordinate and spatially distinct.",
+    "summary": "The scene is semantically plausible, functional, and visually legible, with no correction-worthy issue."
+  },
+  "detected_problem": null,
+  "required_correction": null,
+  "template_risk": {
+    "risk": false,
+    "assessment": "low",
+    "concrete_reason": "The diversity report passes novelty across 30 comparisons. The closest scene has only 0.522735 overall similarity, differs by two furniture items, has 0.4 functional-graph similarity and 0.333333 yaw-combination similarity, and is explicitly marked template_risk false. The authored layout's separate diagonal reading cluster further reduces near-duplicate concern."
+  },
+  "final_verdict": "semantic_review_pass"
+}

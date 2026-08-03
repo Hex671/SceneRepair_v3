@@ -1,0 +1,70 @@
+{
+  "schema_version": "authored_topdown_visual_audit_v1",
+  "scene_id": "living_room_authored_002",
+  "reviewer_role": "layout_author",
+  "review_basis": "Final top-down PNG after deterministic validation round 2",
+  "review_items": [
+    {
+      "criterion": "natural_entry",
+      "cited_object_ids": ["console_serving_south_east", "sofa_conversation_north", "armchair_conversation_east"],
+      "assessment": "pass",
+      "concrete_reason": "The south-west door opens into a fully empty turn-in area. console_serving_south_east is separated on the opposite side of the south wall, and both seating objects begin well north of the door clearance."
+    },
+    {
+      "criterion": "continuous_paths",
+      "cited_object_ids": ["sofa_conversation_north", "armchair_conversation_east", "coffee_table_shared", "console_serving_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "All four declared targets are reachable. The broad south field branches north-west to the sofa, north-east to the armchair and coffee table, and east to the console without threading between the ottoman and coffee table."
+    },
+    {
+      "criterion": "normal_use",
+      "cited_object_ids": ["sofa_conversation_north", "ottoman_flexible_sofa", "armchair_conversation_east", "coffee_table_shared", "console_serving_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "sofa_conversation_north has an open central approach with its permitted ottoman at the west seat; armchair_conversation_east has a clear south-west sitting zone; coffee_table_shared has an open south service edge; and the console has a full north-side operating strip."
+    },
+    {
+      "criterion": "functional_grouping",
+      "cited_object_ids": ["sofa_conversation_north", "armchair_conversation_east", "coffee_table_shared", "ottoman_flexible_sofa", "floor_lamp_armchair"],
+      "assessment": "pass",
+      "concrete_reason": "The north sofa, diagonal east armchair, and offset coffee table form one asymmetric conversation group. The ottoman serves the sofa's west seat, while floor_lamp_armchair supports the diagonal chair without becoming a detached decorative object."
+    },
+    {
+      "criterion": "density_and_open_space",
+      "cited_object_ids": ["sofa_conversation_north", "coffee_table_shared", "armchair_conversation_east", "console_serving_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "The primary seating mass is compactly concentrated in the north half, while the south half carries the entry route and console access. The leave-open area is continuous circulation rather than isolated empty corners, and the east window strip stays unfurnished."
+    },
+    {
+      "criterion": "human_habit",
+      "cited_object_ids": ["sofa_conversation_north", "armchair_conversation_east", "ottoman_flexible_sofa", "console_serving_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "A wall-backed sofa with one angled conversation chair is a normal television-free arrangement. The movable ottoman supports relaxed sitting without fixing another bulky seat, and the console gives drinks a landing point outside the main table group."
+    },
+    {
+      "criterion": "natural_orientation",
+      "cited_object_ids": ["sofa_conversation_north", "armchair_conversation_east", "coffee_table_shared", "console_serving_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "The sofa faces south toward coffee_table_shared, the armchair turns north-west toward both table and sofa, and the console faces north into its access strip. No seat points directly at a wall, door, or window."
+    },
+    {
+      "criterion": "hierarchy",
+      "cited_object_ids": ["sofa_conversation_north", "armchair_conversation_east", "coffee_table_shared", "ottoman_flexible_sofa", "console_serving_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "sofa_conversation_north is the primary anchor, armchair_conversation_east and coffee_table_shared establish the secondary conversation field, and the small ottoman plus perimeter console remain subordinate support pieces."
+    },
+    {
+      "criterion": "not_old_template",
+      "cited_object_ids": ["armchair_conversation_east", "ottoman_flexible_sofa", "console_serving_south_east", "floor_lamp_armchair"],
+      "assessment": "pass",
+      "concrete_reason": "The closest living_room_005 has a media bench and two opposed armchairs around a central table. This scene removes the television axis, uses only one diagonal armchair, adds a sofa foot ottoman and south serving console, and produces a ten-edge frozen partner graph with only 0.230769 graph similarity."
+    }
+  ],
+  "modification_rounds": [
+    {
+      "round": 1,
+      "validator_error": "ottoman_flexible_sofa blocked use_armchair_conversation_front",
+      "manual_correction": "Moved the ottoman from the armchair-coffee-table gap to the sofa's west-front footrest position and relocated the sofa access target to the clear route immediately east of the ottoman."
+    }
+  ],
+  "final_verdict": "author_visual_pass"
+}

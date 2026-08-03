@@ -1,0 +1,289 @@
+{
+  "schema_version": "authored_scene_geometry_review_tables_v1",
+  "numeric_separation_epsilon_m": 1e-09,
+  "accepted_min_signed_separation_m": 0.0,
+  "pairwise_signed_separation_table": [
+    {
+      "source_id": "desk_work_east",
+      "target_id": "chair_work_east",
+      "signed_separation_m": 0.3425,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "desk_work_east",
+      "target_id": "bookcase_reference_north",
+      "signed_separation_m": 1.2745,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "desk_work_east",
+      "target_id": "cabinet_files_south_east",
+      "signed_separation_m": 1.1117,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "desk_work_east",
+      "target_id": "armchair_window_reading",
+      "signed_separation_m": 3.336880773,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "desk_work_east",
+      "target_id": "side_table_window_reading",
+      "signed_separation_m": 2.8885,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "desk_work_east",
+      "target_id": "floor_lamp_window_reading",
+      "signed_separation_m": 4.5445,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_work_east",
+      "target_id": "bookcase_reference_north",
+      "signed_separation_m": 1.6626,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_work_east",
+      "target_id": "cabinet_files_south_east",
+      "signed_separation_m": 1.4998,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_work_east",
+      "target_id": "armchair_window_reading",
+      "signed_separation_m": 2.417380773,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_work_east",
+      "target_id": "side_table_window_reading",
+      "signed_separation_m": 1.969,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_work_east",
+      "target_id": "floor_lamp_window_reading",
+      "signed_separation_m": 3.625,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bookcase_reference_north",
+      "target_id": "cabinet_files_south_east",
+      "signed_separation_m": 3.7584,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bookcase_reference_north",
+      "target_id": "armchair_window_reading",
+      "signed_separation_m": 2.080979527,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bookcase_reference_north",
+      "target_id": "side_table_window_reading",
+      "signed_separation_m": 1.17125,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bookcase_reference_north",
+      "target_id": "floor_lamp_window_reading",
+      "signed_separation_m": 2.82725,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "cabinet_files_south_east",
+      "target_id": "armchair_window_reading",
+      "signed_separation_m": 3.413949429,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "cabinet_files_south_east",
+      "target_id": "side_table_window_reading",
+      "signed_separation_m": 2.9953,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "cabinet_files_south_east",
+      "target_id": "floor_lamp_window_reading",
+      "signed_separation_m": 3.6028,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "armchair_window_reading",
+      "target_id": "side_table_window_reading",
+      "signed_separation_m": 0.500674032,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "armchair_window_reading",
+      "target_id": "floor_lamp_window_reading",
+      "signed_separation_m": 0.255601177,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "side_table_window_reading",
+      "target_id": "floor_lamp_window_reading",
+      "signed_separation_m": 1.351,
+      "classification": "positive_gap"
+    }
+  ],
+  "yaw_direction_table": [
+    {
+      "object_id": "desk_work_east",
+      "yaw_rad": -1.570796326795,
+      "yaw_deg": -90.0,
+      "local_minus_y_front_vector_xy": [
+        -1.0,
+        -0.0
+      ],
+      "dominant_cardinal_direction": "west"
+    },
+    {
+      "object_id": "chair_work_east",
+      "yaw_rad": 1.570796326795,
+      "yaw_deg": 90.0,
+      "local_minus_y_front_vector_xy": [
+        1.0,
+        -0.0
+      ],
+      "dominant_cardinal_direction": "east"
+    },
+    {
+      "object_id": "bookcase_reference_north",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    },
+    {
+      "object_id": "cabinet_files_south_east",
+      "yaw_rad": -3.14159265359,
+      "yaw_deg": -180.0,
+      "local_minus_y_front_vector_xy": [
+        -0.0,
+        1.0
+      ],
+      "dominant_cardinal_direction": "north"
+    },
+    {
+      "object_id": "armchair_window_reading",
+      "yaw_rad": 0.79159265359,
+      "yaw_deg": 45.354918,
+      "local_minus_y_front_vector_xy": [
+        0.711473353,
+        -0.702713077
+      ],
+      "dominant_cardinal_direction": "east"
+    },
+    {
+      "object_id": "side_table_window_reading",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    },
+    {
+      "object_id": "floor_lamp_window_reading",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    }
+  ],
+  "scene_id": "home_office_authored_002",
+  "scene_layout_hash": "6b6662cd7f357ee3d0a855b14cd749148dee02bccf3b90424dd48e7e1d7a8773",
+  "functional_partner_match_table": [
+    {
+      "source_id": "desk_work_east",
+      "target_id": "chair_work_east",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "03f226dd0e012925a8674564c4de19cb786c9a88",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_work_east",
+      "target_id": "desk_work_east",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "05e74cdc180382e77852871d4f0041023f18a16a",
+      "matched_original_partner_category": "desk",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "armchair_window_reading",
+      "target_id": "floor_lamp_window_reading",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "02e404b057e77e5fa66690bc55ae14a72ce0635c",
+      "matched_original_partner_category": "floor_lamp",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "side_table_window_reading",
+      "target_id": "armchair_window_reading",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "0adbcb8e57d8b97125b672d7b50a1f7a526aa792",
+      "matched_original_partner_category": "armchair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "floor_lamp_window_reading",
+      "target_id": "armchair_window_reading",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "129451389f982fcfe102675270009ce1da6671db",
+      "matched_original_partner_category": "armchair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    }
+  ]
+}

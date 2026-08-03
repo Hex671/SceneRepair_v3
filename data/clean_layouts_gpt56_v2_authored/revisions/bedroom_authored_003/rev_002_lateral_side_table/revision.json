@@ -1,0 +1,28 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "bedroom_authored_003",
+  "revision_id": "rev_002_lateral_side_table",
+  "status": "current_accepted_clean",
+  "reason": "side_table_01 keeps the required 0.02 m west correction and is moved south to a lateral position, clearing the west-facing sit/stand approach of armchair_01.",
+  "measured_pair": {
+    "object_a": "armchair_01",
+    "object_b": "side_table_01",
+    "signed_separation_m": 0.0615
+  },
+  "yaw_evidence": {
+    "armchair_01": "west",
+    "side_table_01": "south"
+  },
+  "independent_review_verdict": "pass",
+  "supersedes": "rev_001_strict_positive_separation",
+  "artifact_sha256": {
+    "authored_proposal": "65307bd9d7f164a6549c07dc30f1db614282565a920dd52c822efaa7e242a16c",
+    "scene": "093ad044ffb6d879f8e839ea11642632647753102a404555f7c01efbebd6095c",
+    "validation": "cbc2b156cccd340264e8f1e707ae761d7fbe435ace4f24ab737b250f230060db",
+    "diversity": "b4eb6fc7545c4ca11e79b4aa6229e0f76d244a8d5267f938e7c2af1d8529c701",
+    "visualization": "c4ada2a5c7bbe994e1479341e92d0d29443f7acf5c78de03e2f6622a4386afce",
+    "independent_review": "21e2d6d599c492e2fa159a00aed53e9b3a9ce718eba2d42d328780d2bfba4923",
+    "reviewer_geometry": "a0030cf7d7562502d48c29cb95d89a7d1c36ecaa657cd1191ccee4f4c59ec1b0",
+    "functional_partner_build": "d71f3a899058d2e12d8dd932fad4b509af8b69b8421e76e93216d7e09140f25b"
+  }
+}

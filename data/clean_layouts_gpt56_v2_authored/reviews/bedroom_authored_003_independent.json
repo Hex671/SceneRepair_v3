@@ -1,0 +1,56 @@
+{
+  "schema_version": "independent_semantic_review_v2",
+  "scene_id": "bedroom_authored_003",
+  "isolation_compliance": {
+    "read_only_authorized_artifacts": true,
+    "authorized_artifact_count": 5,
+    "unauthorized_artifacts_read": false
+  },
+  "reviewed_artifacts_sha256": {
+    "reviews/reviewer_packet/bedroom_authored_003_scene.json": "C626E4DED65404206E3F6DD5F61DED7E5B1ED9DF1D80458AC81F00DB89107BC4",
+    "visualizations/bedroom_authored_003.png": "C4ADA2A5C7BBE994E1479341E92D0D29443F7ACF5C78DE03E2F6622A4386AFCE",
+    "validation/bedroom_authored_003.json": "CBC2B156CCCD340264E8F1E707AE761D7FBE435ACE4F24AB737B250F230060DB",
+    "diversity/bedroom_authored_003.json": "B4EB6FC7545C4CA11E79B4AA6229E0F76D244A8D5267F938E7C2AF1D8529C701",
+    "reviews/reviewer_packet/bedroom_authored_003_geometry.json": "A0030CF7D7562502D48C29CB95D89A7D1C36ECAA657CD1191CCEE4F4C59EC1B0"
+  },
+  "pairwise_table_read": true,
+  "yaw_direction_table_read": true,
+  "cited_object_ids": ["bed_01", "nightstand_01", "desk_01", "chair_01", "wardrobe_01", "armchair_01", "side_table_01"],
+  "object_reports": [
+    {"object_id":"bed_01","assessment":"pass","evidence":"East-facing bed on west wall; all pairwise separations are positive, including 0.1455 m to nightstand_01."},
+    {"object_id":"nightstand_01","assessment":"pass","evidence":"South-facing bedside support surface with 0.1455 m bed gap and no clearance violations."},
+    {"object_id":"desk_01","assessment":"pass","evidence":"South-facing desk has desk-chair separation 0.219 m; desk path target is reachable and work zone is clear."},
+    {"object_id":"chair_01","assessment":"pass","evidence":"North-facing chair aligns with desk_01; pullback/use clearance and path checks pass."},
+    {"object_id":"wardrobe_01","assessment":"pass","evidence":"North-facing south-wall wardrobe has positive gaps to all objects and clear dressing access."},
+    {"object_id":"armchair_01","assessment":"pass","evidence":"Yaw -90 deg gives local-minus-Y vector [-1,0], cardinal west. The side table is now south/lateral rather than on this west front vector; PNG shows a clear sit/stand approach."},
+    {"object_id":"side_table_01","assessment":"pass","evidence":"South-facing table at y=-1.45 is below/lateral to armchair_01 at y=-0.78; exact armchair_01 -> side_table_01 separation is 0.0615 m and the revised PNG no longer shows front blocking."}
+  ],
+  "geometry_assessment": {
+    "deterministic_validation_passed": true,
+    "all_pairwise_rows_positive": true,
+    "minimum_signed_separation_m": 0.0615,
+    "minimum_pair": "armchair_01 -> side_table_01",
+    "opening_clearance_passed": true,
+    "collision_passed": true,
+    "path_reachability_passed": true,
+    "use_clearance_passed": true,
+    "human_semantic_geometry_passed": true,
+    "issue": null
+  },
+  "functional_relation_assessment": {
+    "frozen_functional_edges": ["bed_01 -> nightstand_01", "nightstand_01 -> bed_01", "desk_01 -> chair_01", "chair_01 -> desk_01", "side_table_01 -> armchair_01"],
+    "functional_edges_asset_keyed_exact": true,
+    "deterministic_functional_checks_passed": true,
+    "path_targets_reachable": ["bed_01", "desk_01"],
+    "semantic_result": "pass",
+    "required_correction": null
+  },
+  "template_risk": {
+    "diversity_novelty_pass": true,
+    "template_risk": false,
+    "closest_global": {"scene_id":"home_office_authored_003","overall_similarity":0.587382},
+    "closest_same_room_type": {"scene_id":"bedroom_authored_001","overall_similarity":0.524624}
+  },
+  "semantic_review_status": "approved",
+  "final_verdict": "pass"
+}

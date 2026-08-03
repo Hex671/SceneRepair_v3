@@ -1,0 +1,553 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "bedroom_007",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "bedroom",
+  "length": 5.45,
+  "width": 4.25,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "north",
+      "opening_width_m": 0.92,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        -1.7,
+        1.725,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.92,
+        0.8,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        -1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "west",
+      "opening_width_m": 1.45,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        -2.475,
+        -1.1,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.5,
+        1.45,
+        2.05
+      ],
+      "interior_normal_xy": [
+        1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "bed_01",
+      "hssd_id": "daf3d41fa1677e0a8eabc296f9a01d4db7e0de93",
+      "hssd_source_category": "bed",
+      "category": "bed",
+      "family": "sleep_surface",
+      "functions": [
+        "sleep"
+      ],
+      "bbox": {
+        "width": 1.963,
+        "depth": 2.14,
+        "height": 1.014
+      },
+      "x": 1.575,
+      "y": -0.45,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "The head side is near a solid wall while the local -Y front points into the room for foot access."
+      }
+    },
+    {
+      "object_id": "nightstand_01",
+      "hssd_id": "84815c44d0b7569cd2c023b75d6f11d21bdb7505",
+      "hssd_source_category": "nightstand",
+      "category": "nightstand",
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ],
+      "bbox": {
+        "width": 0.48,
+        "depth": 0.47,
+        "height": 0.6
+      },
+      "x": 2.41,
+      "y": 0.8615,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "At the bed head, reachable from the sleeping surface without narrowing the foot circulation zone."
+      }
+    },
+    {
+      "object_id": "nightstand_02",
+      "hssd_id": "84815c44d0b7569cd2c023b75d6f11d21bdb7505",
+      "hssd_source_category": "nightstand",
+      "category": "nightstand",
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ],
+      "bbox": {
+        "width": 0.48,
+        "depth": 0.47,
+        "height": 0.6
+      },
+      "x": 2.41,
+      "y": -1.7615,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "At the bed head, reachable from the sleeping surface without narrowing the foot circulation zone."
+      }
+    },
+    {
+      "object_id": "wardrobe_01",
+      "hssd_id": "8685af17fa7d4d5f899912196b9bd71d3c56dcba",
+      "hssd_source_category": "wardrobe",
+      "category": "wardrobe",
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ],
+      "bbox": {
+        "width": 0.9967,
+        "depth": 0.6342,
+        "height": 1.852
+      },
+      "x": -2.3279,
+      "y": 0.55,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Placed on an opening-free wall segment with its access side facing the room."
+      }
+    },
+    {
+      "object_id": "desk_01",
+      "hssd_id": "a988bc50b88f4e627a0860ff647e1c9f62ea66a2",
+      "hssd_source_category": "desk",
+      "category": "desk",
+      "family": "support_surface",
+      "functions": [
+        "work_surface",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 1.3714,
+        "depth": 0.6596,
+        "height": 0.7757
+      },
+      "x": -1.35,
+      "y": -1.7152,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Compact secondary work zone uses a free wall segment rather than crowding the bed."
+      }
+    },
+    {
+      "object_id": "chair_01",
+      "hssd_id": "6245f5e99598a8f6fe3be8f0f8fb932271f3fa92",
+      "hssd_source_category": "swivel chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.563,
+        "depth": 0.586,
+        "height": 0.838
+      },
+      "x": -1.35,
+      "y": -0.7769,
+      "z": 0.0,
+      "yaw_rad": 4.440892098500626e-16,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Task chair faces its specific desk and leaves a pull-out path behind it."
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "nightstand_01",
+      "target_id": "bed_01",
+      "orientation_mode": "aligned",
+      "target_strategy": "place_beside",
+      "desired_gap_range": [
+        0.07,
+        0.16
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "Bedside support is aligned with and immediately beside this bed instance."
+      }
+    },
+    {
+      "source_id": "nightstand_02",
+      "target_id": "bed_01",
+      "orientation_mode": "aligned",
+      "target_strategy": "place_beside",
+      "desired_gap_range": [
+        0.07,
+        0.16
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "Bedside support is aligned with and immediately beside this bed instance."
+      }
+    },
+    {
+      "source_id": "chair_01",
+      "target_id": "desk_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.28,
+        0.4
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This chair is the work seat for this desk instance."
+      }
+    }
+  ],
+  "audit": {
+    "generator_version": "clean_furniture_generator_gpt56_v1",
+    "rules_version": "furniture_layout_rules_gpt56_v1",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "Bed anchored to the east wall with asymmetric supporting furniture and an opening-aware storage wall.",
+    "provenance": {
+      "layout_author": "GPT-5.6 independent layout reasoning",
+      "qwen_layout_used_as_answer": false,
+      "hssd_usage": "asset semantics, canonical orientation metadata, and bbox lookup only"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "use_wardrobe_01_front",
+        "owner_id": "wardrobe_01",
+        "center_xy_m": [
+          -1.6208,
+          0.55
+        ],
+        "size_xy_m": [
+          0.9967,
+          0.78
+        ],
+        "yaw_rad": 1.5707963268,
+        "purpose": "wardrobe_door_and_standing_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_bed_01_left",
+        "owner_id": "bed_01",
+        "center_xy_m": [
+          1.3182,
+          0.8415
+        ],
+        "size_xy_m": [
+          0.62,
+          1.2412
+        ],
+        "yaw_rad": -1.5707963268,
+        "purpose": "bed_left_egress",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_bed_01_right",
+        "owner_id": "bed_01",
+        "center_xy_m": [
+          1.3182,
+          -1.7415
+        ],
+        "size_xy_m": [
+          0.62,
+          1.2412
+        ],
+        "yaw_rad": -1.5707963268,
+        "purpose": "bed_right_egress",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_desk_01_front",
+        "owner_id": "desk_01",
+        "center_xy_m": [
+          -1.35,
+          -0.9754
+        ],
+        "size_xy_m": [
+          1.2,
+          0.82
+        ],
+        "yaw_rad": -3.1415926536,
+        "purpose": "desk_seated_work_clearance",
+        "allowed_overlap_object_ids": [
+          "chair_01"
+        ],
+        "validity": true
+      },
+      {
+        "zone_id": "use_chair_01_behind",
+        "owner_id": "chair_01",
+        "center_xy_m": [
+          -1.35,
+          -0.2589
+        ],
+        "size_xy_m": [
+          0.563,
+          0.45
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "chair_pull_out_and_entry_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      -0.215,
+      -0.45
+    ],
+    "gpt_semantic_review": {
+      "status": "gpt_visual_pass",
+      "requires_human_review": false,
+      "notes": [
+        "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+      ],
+      "review_schema_version": "gpt56_topdown_semantic_review_v1",
+      "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+    },
+    "layout_hash": "49e22f3ee6fb085449cccca893ee186dacc3a67d74126ddfaec0e5156f8b95c0"
+  }
+}

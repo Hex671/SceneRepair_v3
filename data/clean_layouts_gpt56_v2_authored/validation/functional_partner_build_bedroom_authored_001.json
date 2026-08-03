@@ -1,0 +1,248 @@
+{
+  "schema_version": "frozen_functional_partner_build_report_v2",
+  "scene_id": "bedroom_authored_001",
+  "edge_count": 5,
+  "edges": [
+    {
+      "source_id": "bed_sleep",
+      "target_id": "nightstand_sleep",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+        "matched_original_partner_category": "nightstand",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "nightstand_sleep",
+      "target_id": "bed_sleep",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "030dc7920f6b43d809ddc87281cdd46ffdad2d9f",
+        "matched_original_partner_category": "bed",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "armchair_reading",
+      "target_id": "floor_lamp_reading",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "098cb07d9311b915c7d28680fd4ce1b44df9b637",
+        "matched_original_partner_category": "floor_lamp",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "side_table_reading",
+      "target_id": "armchair_reading",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "0eaba51224158a6f8e89a31843f85cf8b978b592",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "floor_lamp_reading",
+      "target_id": "armchair_reading",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "129451389f982fcfe102675270009ce1da6671db",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    }
+  ],
+  "asset_audit": [
+    {
+      "object_id": "bed_sleep",
+      "hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+      "source_category": "bed",
+      "functional_partner_annotation": {
+        "cat": "bed",
+        "partners": [
+          "bedclothes",
+          "headboard",
+          "mattress",
+          "nightstand"
+        ]
+      },
+      "emitted_edge_count": 1
+    },
+    {
+      "object_id": "nightstand_sleep",
+      "hssd_id": "030dc7920f6b43d809ddc87281cdd46ffdad2d9f",
+      "source_category": "nightstand",
+      "functional_partner_annotation": {
+        "cat": "nightstand",
+        "partners": [
+          "alarm_clock",
+          "bed",
+          "table_lamp"
+        ]
+      },
+      "emitted_edge_count": 1
+    },
+    {
+      "object_id": "wardrobe_clothes",
+      "hssd_id": "5f1c51116d658b454806329a7be495f18190e7d1",
+      "source_category": "wardrobe",
+      "functional_partner_annotation": {
+        "cat": "wardrobe",
+        "partners": [
+          "shoe_rack"
+        ]
+      },
+      "emitted_edge_count": 0
+    },
+    {
+      "object_id": "armchair_reading",
+      "hssd_id": "098cb07d9311b915c7d28680fd4ce1b44df9b637",
+      "source_category": "armchair",
+      "functional_partner_annotation": {
+        "cat": "armchair",
+        "partners": [
+          "coffee_table",
+          "floor_lamp"
+        ]
+      },
+      "emitted_edge_count": 1
+    },
+    {
+      "object_id": "side_table_reading",
+      "hssd_id": "0eaba51224158a6f8e89a31843f85cf8b978b592",
+      "source_category": "end table",
+      "functional_partner_annotation": {
+        "cat": "end table",
+        "partners": [
+          "armchair",
+          "sofa",
+          "table_lamp"
+        ]
+      },
+      "emitted_edge_count": 1
+    },
+    {
+      "object_id": "floor_lamp_reading",
+      "hssd_id": "129451389f982fcfe102675270009ce1da6671db",
+      "source_category": "floor lamp",
+      "functional_partner_annotation": {
+        "cat": "floor lamp",
+        "partners": [
+          "armchair",
+          "socket",
+          "sofa"
+        ]
+      },
+      "emitted_edge_count": 1
+    }
+  ],
+  "unannotated_assets": [],
+  "rules_version": {
+    "implementation": "FrozenFunctionalPartnerRules",
+    "rules_schema_version": "hssd_functional_partner_rules_v1",
+    "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+    "source_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+    "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+    "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+    "no_handwritten_edges": true
+  },
+  "handwritten_edges": false,
+  "source": "FrozenFunctionalPartnerRules.build_edge_matches"
+}

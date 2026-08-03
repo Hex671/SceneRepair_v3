@@ -1,0 +1,509 @@
+{
+  "schema_version": "authored_scene_deterministic_validation_v2",
+  "scene_id": "home_office_intent_pilot_002",
+  "pipeline_version": "authored_single_scene_validator_v2",
+  "passed": true,
+  "checks": {
+    "schema_valid": true,
+    "hssd_metadata_valid": true,
+    "bbox_valid": true,
+    "geometry_hard_valid": true,
+    "room_bounds_valid": true,
+    "collision_valid": true,
+    "opening_clearance_valid": true,
+    "path_reachability_valid": true,
+    "use_clearance_valid": true,
+    "frozen_functional_partner_rules_used": true,
+    "no_handwritten_functional_edges": true,
+    "all_model_input_fields_available": true,
+    "functional_partner_coverage_valid": true,
+    "diversity_novelty_pass": true
+  },
+  "geometry_report": {
+    "passed": true,
+    "checks": {
+      "finite_transform": {
+        "passed": true,
+        "violations": []
+      },
+      "identity_bbox": {
+        "passed": true,
+        "violations": []
+      },
+      "room_bounds": {
+        "passed": true,
+        "violations": []
+      },
+      "furniture_collision": {
+        "passed": true,
+        "violations": [],
+        "accepted_min_signed_separation_m": 0.0,
+        "numeric_separation_epsilon_m": 1e-09,
+        "minimum_pairwise_signed_separation_m": 0.1475
+      },
+      "opening_clearance": {
+        "passed": true,
+        "violations": []
+      },
+      "functional_relations": {
+        "passed": true,
+        "violations": []
+      },
+      "use_clearance": {
+        "passed": true,
+        "violations": []
+      },
+      "path_reachability": {
+        "passed": true,
+        "violations": [],
+        "details": {
+          "visited_cells": 1253,
+          "grid_shape": [
+            58,
+            51
+          ],
+          "resolved_start_cell": [
+            11,
+            11
+          ],
+          "resolved_goal_cell": [
+            36,
+            30
+          ]
+        }
+      }
+    },
+    "violations": []
+  },
+  "all_path_targets_report": {
+    "passed": true,
+    "targets": [
+      {
+        "target_id": "office_chair_01",
+        "goal_xy_m": [
+          0.836,
+          0.5
+        ],
+        "purpose": "Primary route from the west door through the open center to the work chair.",
+        "reachable": true,
+        "details": {
+          "visited_cells": 1253,
+          "grid_shape": [
+            58,
+            51
+          ],
+          "resolved_start_cell": [
+            8,
+            11
+          ],
+          "resolved_goal_cell": [
+            36,
+            30
+          ]
+        }
+      },
+      {
+        "target_id": "desk_01",
+        "goal_xy_m": [
+          1.69,
+          0.5
+        ],
+        "purpose": "Maintains direct access to the main work surface from the central aisle.",
+        "reachable": true,
+        "details": {
+          "visited_cells": 1347,
+          "grid_shape": [
+            58,
+            51
+          ],
+          "resolved_start_cell": [
+            8,
+            11
+          ],
+          "resolved_goal_cell": [
+            46,
+            24
+          ]
+        }
+      },
+      {
+        "target_id": "bookcase_01",
+        "goal_xy_m": [
+          0.4,
+          -1.8308
+        ],
+        "purpose": "Branches south from the central aisle to the bookcase browsing zone.",
+        "reachable": true,
+        "details": {
+          "visited_cells": 724,
+          "grid_shape": [
+            58,
+            51
+          ],
+          "resolved_start_cell": [
+            8,
+            11
+          ],
+          "resolved_goal_cell": [
+            33,
+            7
+          ]
+        }
+      },
+      {
+        "target_id": "cabinet_01",
+        "goal_xy_m": [
+          -2.071,
+          1.55
+        ],
+        "purpose": "Provides an approach to northwest storage without crossing the reading seat.",
+        "reachable": true,
+        "details": {
+          "visited_cells": 1749,
+          "grid_shape": [
+            58,
+            51
+          ],
+          "resolved_start_cell": [
+            8,
+            11
+          ],
+          "resolved_goal_cell": [
+            8,
+            41
+          ]
+        }
+      },
+      {
+        "target_id": "reading_armchair_01",
+        "goal_xy_m": [
+          -0.852216,
+          0.715862
+        ],
+        "purpose": "Provides a clear diagonal approach from the room center to the reading corner.",
+        "reachable": true,
+        "details": {
+          "visited_cells": 916,
+          "grid_shape": [
+            58,
+            51
+          ],
+          "resolved_start_cell": [
+            8,
+            11
+          ],
+          "resolved_goal_cell": [
+            22,
+            33
+          ]
+        }
+      }
+    ]
+  },
+  "model_input_report": {
+    "passed": true,
+    "num_nodes": 10,
+    "num_furniture": 7,
+    "functional_partner_edges": 5,
+    "furniture_function_dim": 16
+  },
+  "functional_partner_completeness": {
+    "passed": true,
+    "expected_edge_count": 5,
+    "actual_edge_count": 5,
+    "missing_edges": [],
+    "unexpected_edges": [],
+    "frozen_compatibility_matches": [],
+    "compatibility_rule_count": 0,
+    "source_asset_annotation_required": true
+  },
+  "geometry_review_tables": {
+    "schema_version": "authored_scene_geometry_review_tables_v1",
+    "numeric_separation_epsilon_m": 1e-09,
+    "accepted_min_signed_separation_m": 0.0,
+    "pairwise_signed_separation_table": [
+      {
+        "source_id": "desk_01",
+        "target_id": "office_chair_01",
+        "signed_separation_m": 0.276,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "bookcase_01",
+        "signed_separation_m": 1.9408,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "cabinet_01",
+        "signed_separation_m": 4.521,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "reading_armchair_01",
+        "signed_separation_m": 2.902169853,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 4.038,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "floor_lamp_01",
+        "signed_separation_m": 2.5275,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "office_chair_01",
+        "target_id": "bookcase_01",
+        "signed_separation_m": 2.2893,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "office_chair_01",
+        "target_id": "cabinet_01",
+        "signed_separation_m": 3.497,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "office_chair_01",
+        "target_id": "reading_armchair_01",
+        "signed_separation_m": 1.878169853,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "office_chair_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 3.014,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "office_chair_01",
+        "target_id": "floor_lamp_01",
+        "signed_separation_m": 1.5035,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bookcase_01",
+        "target_id": "cabinet_01",
+        "signed_separation_m": 3.1903,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bookcase_01",
+        "target_id": "reading_armchair_01",
+        "signed_separation_m": 2.746093929,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bookcase_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 2.6788,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bookcase_01",
+        "target_id": "floor_lamp_01",
+        "signed_separation_m": 3.3883,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "cabinet_01",
+        "target_id": "reading_armchair_01",
+        "signed_separation_m": 0.723169853,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "cabinet_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 0.1475,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "cabinet_01",
+        "target_id": "floor_lamp_01",
+        "signed_separation_m": 1.7485,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "reading_armchair_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 0.251840475,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "reading_armchair_01",
+        "target_id": "floor_lamp_01",
+        "signed_separation_m": 0.218670141,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "side_table_01",
+        "target_id": "floor_lamp_01",
+        "signed_separation_m": 1.2655,
+        "classification": "positive_gap"
+      }
+    ],
+    "yaw_direction_table": [
+      {
+        "object_id": "desk_01",
+        "yaw_rad": -1.570796326795,
+        "yaw_deg": -90.0,
+        "local_minus_y_front_vector_xy": [
+          -1.0,
+          -0.0
+        ],
+        "dominant_cardinal_direction": "west"
+      },
+      {
+        "object_id": "office_chair_01",
+        "yaw_rad": 1.570796326795,
+        "yaw_deg": 90.0,
+        "local_minus_y_front_vector_xy": [
+          1.0,
+          -0.0
+        ],
+        "dominant_cardinal_direction": "east"
+      },
+      {
+        "object_id": "bookcase_01",
+        "yaw_rad": -3.14159265359,
+        "yaw_deg": -180.0,
+        "local_minus_y_front_vector_xy": [
+          -0.0,
+          1.0
+        ],
+        "dominant_cardinal_direction": "north"
+      },
+      {
+        "object_id": "cabinet_01",
+        "yaw_rad": 1.570796326795,
+        "yaw_deg": 90.0,
+        "local_minus_y_front_vector_xy": [
+          1.0,
+          -0.0
+        ],
+        "dominant_cardinal_direction": "east"
+      },
+      {
+        "object_id": "reading_armchair_01",
+        "yaw_rad": 0.872136502073,
+        "yaw_deg": 49.969741,
+        "local_minus_y_front_vector_xy": [
+          0.765704865,
+          -0.643192086
+        ],
+        "dominant_cardinal_direction": "east"
+      },
+      {
+        "object_id": "side_table_01",
+        "yaw_rad": 0.0,
+        "yaw_deg": 0.0,
+        "local_minus_y_front_vector_xy": [
+          0.0,
+          -1.0
+        ],
+        "dominant_cardinal_direction": "south"
+      },
+      {
+        "object_id": "floor_lamp_01",
+        "yaw_rad": 0.0,
+        "yaw_deg": 0.0,
+        "local_minus_y_front_vector_xy": [
+          0.0,
+          -1.0
+        ],
+        "dominant_cardinal_direction": "south"
+      }
+    ]
+  },
+  "functional_partner_match_table": [
+    {
+      "source_id": "desk_01",
+      "target_id": "office_chair_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "95ecb8436c547896a7d222d29d2a354c03837950",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "office_chair_01",
+      "target_id": "desk_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "635ab59d7907b0ad6234fd5b7f0e58e7726cac20",
+      "matched_original_partner_category": "desk",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "reading_armchair_01",
+      "target_id": "floor_lamp_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "a2019b85453656ac64d641ff7098bc79598089e8",
+      "matched_original_partner_category": "floor_lamp",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "side_table_01",
+      "target_id": "reading_armchair_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "4b410e0f052d226f5d429064000e29e1cae39d8a",
+      "matched_original_partner_category": "armchair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "floor_lamp_01",
+      "target_id": "reading_armchair_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "1dd1d62f7ee0db01a8b67719ed4105279bb937ba",
+      "matched_original_partner_category": "armchair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    }
+  ],
+  "functional_partner_edge_count": 5,
+  "violations": []
+}

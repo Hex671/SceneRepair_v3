@@ -1,0 +1,437 @@
+{
+  "schema_version": "authored_scene_deterministic_validation_v2",
+  "scene_id": "bedroom_authored_003",
+  "pipeline_version": "authored_single_scene_validator_v2",
+  "passed": true,
+  "checks": {
+    "schema_valid": true,
+    "hssd_metadata_valid": true,
+    "bbox_valid": true,
+    "geometry_hard_valid": true,
+    "room_bounds_valid": true,
+    "collision_valid": true,
+    "opening_clearance_valid": true,
+    "path_reachability_valid": true,
+    "use_clearance_valid": true,
+    "frozen_functional_partner_rules_used": true,
+    "no_handwritten_functional_edges": true,
+    "all_model_input_fields_available": true,
+    "functional_partner_coverage_valid": true,
+    "diversity_novelty_pass": true
+  },
+  "geometry_report": {
+    "passed": true,
+    "checks": {
+      "finite_transform": {
+        "passed": true,
+        "violations": []
+      },
+      "identity_bbox": {
+        "passed": true,
+        "violations": []
+      },
+      "room_bounds": {
+        "passed": true,
+        "violations": []
+      },
+      "furniture_collision": {
+        "passed": true,
+        "violations": [],
+        "accepted_min_signed_separation_m": 0.0,
+        "numeric_separation_epsilon_m": 1e-09,
+        "minimum_pairwise_signed_separation_m": 0.0155
+      },
+      "opening_clearance": {
+        "passed": true,
+        "violations": []
+      },
+      "functional_relations": {
+        "passed": true,
+        "violations": []
+      },
+      "use_clearance": {
+        "passed": true,
+        "violations": []
+      },
+      "path_reachability": {
+        "passed": true,
+        "violations": [],
+        "details": {
+          "visited_cells": 487,
+          "grid_shape": [
+            56,
+            43
+          ],
+          "resolved_start_cell": [
+            44,
+            6
+          ],
+          "resolved_goal_cell": [
+            24,
+            21
+          ]
+        }
+      }
+    },
+    "violations": []
+  },
+  "all_path_targets_report": {
+    "passed": true,
+    "targets": [
+      {
+        "target_id": "bed_01",
+        "goal_xy_m": [
+          -0.48,
+          0.0
+        ],
+        "purpose": "primary_sleep_zone",
+        "reachable": true,
+        "details": {
+          "visited_cells": 552,
+          "grid_shape": [
+            56,
+            43
+          ],
+          "resolved_start_cell": [
+            50,
+            8
+          ],
+          "resolved_goal_cell": [
+            24,
+            21
+          ]
+        }
+      },
+      {
+        "target_id": "desk_01",
+        "goal_xy_m": [
+          0.75,
+          0.37
+        ],
+        "purpose": "morning_surface_zone",
+        "reachable": true,
+        "details": {
+          "visited_cells": 539,
+          "grid_shape": [
+            56,
+            43
+          ],
+          "resolved_start_cell": [
+            50,
+            8
+          ],
+          "resolved_goal_cell": [
+            30,
+            25
+          ]
+        }
+      }
+    ]
+  },
+  "model_input_report": {
+    "passed": true,
+    "num_nodes": 10,
+    "num_furniture": 7,
+    "functional_partner_edges": 5,
+    "furniture_function_dim": 16
+  },
+  "functional_partner_completeness": {
+    "passed": true,
+    "expected_edge_count": 5,
+    "actual_edge_count": 5,
+    "missing_edges": [],
+    "unexpected_edges": [],
+    "frozen_compatibility_matches": [],
+    "compatibility_rule_count": 0,
+    "source_asset_annotation_required": true
+  },
+  "geometry_review_tables": {
+    "schema_version": "authored_scene_geometry_review_tables_v1",
+    "numeric_separation_epsilon_m": 1e-09,
+    "accepted_min_signed_separation_m": 0.0,
+    "pairwise_signed_separation_table": [
+      {
+        "source_id": "bed_01",
+        "target_id": "nightstand_01",
+        "signed_separation_m": 0.1455,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bed_01",
+        "target_id": "desk_01",
+        "signed_separation_m": 0.868,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bed_01",
+        "target_id": "chair_01",
+        "signed_separation_m": 1.249,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bed_01",
+        "target_id": "wardrobe_01",
+        "signed_separation_m": 0.63155,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bed_01",
+        "target_id": "armchair_01",
+        "signed_separation_m": 1.878,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "bed_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 1.3635,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "nightstand_01",
+        "target_id": "desk_01",
+        "signed_separation_m": 1.5796,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "nightstand_01",
+        "target_id": "chair_01",
+        "signed_separation_m": 1.9606,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "nightstand_01",
+        "target_id": "wardrobe_01",
+        "signed_separation_m": 2.53605,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "nightstand_01",
+        "target_id": "armchair_01",
+        "signed_separation_m": 2.5896,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "nightstand_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 2.0751,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "chair_01",
+        "signed_separation_m": 0.219,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "wardrobe_01",
+        "signed_separation_m": 2.30605,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "armchair_01",
+        "signed_separation_m": 1.216,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "desk_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 1.3255,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_01",
+        "target_id": "wardrobe_01",
+        "signed_separation_m": 1.53505,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_01",
+        "target_id": "armchair_01",
+        "signed_separation_m": 0.445,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "chair_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 0.5545,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "wardrobe_01",
+        "target_id": "armchair_01",
+        "signed_separation_m": 1.8219,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "wardrobe_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 1.3074,
+        "classification": "positive_gap"
+      },
+      {
+        "source_id": "armchair_01",
+        "target_id": "side_table_01",
+        "signed_separation_m": 0.0155,
+        "classification": "positive_gap"
+      }
+    ],
+    "yaw_direction_table": [
+      {
+        "object_id": "bed_01",
+        "yaw_rad": 1.570796326795,
+        "yaw_deg": 90.0,
+        "local_minus_y_front_vector_xy": [
+          1.0,
+          -0.0
+        ],
+        "dominant_cardinal_direction": "east"
+      },
+      {
+        "object_id": "nightstand_01",
+        "yaw_rad": 0.0,
+        "yaw_deg": 0.0,
+        "local_minus_y_front_vector_xy": [
+          0.0,
+          -1.0
+        ],
+        "dominant_cardinal_direction": "south"
+      },
+      {
+        "object_id": "desk_01",
+        "yaw_rad": 0.0,
+        "yaw_deg": 0.0,
+        "local_minus_y_front_vector_xy": [
+          0.0,
+          -1.0
+        ],
+        "dominant_cardinal_direction": "south"
+      },
+      {
+        "object_id": "chair_01",
+        "yaw_rad": -3.14159265359,
+        "yaw_deg": -180.0,
+        "local_minus_y_front_vector_xy": [
+          -0.0,
+          1.0
+        ],
+        "dominant_cardinal_direction": "north"
+      },
+      {
+        "object_id": "wardrobe_01",
+        "yaw_rad": -3.14159265359,
+        "yaw_deg": -180.0,
+        "local_minus_y_front_vector_xy": [
+          -0.0,
+          1.0
+        ],
+        "dominant_cardinal_direction": "north"
+      },
+      {
+        "object_id": "armchair_01",
+        "yaw_rad": -1.570796326795,
+        "yaw_deg": -90.0,
+        "local_minus_y_front_vector_xy": [
+          -1.0,
+          -0.0
+        ],
+        "dominant_cardinal_direction": "west"
+      },
+      {
+        "object_id": "side_table_01",
+        "yaw_rad": 0.0,
+        "yaw_deg": 0.0,
+        "local_minus_y_front_vector_xy": [
+          0.0,
+          -1.0
+        ],
+        "dominant_cardinal_direction": "south"
+      }
+    ]
+  },
+  "functional_partner_match_table": [
+    {
+      "source_id": "bed_01",
+      "target_id": "nightstand_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+      "matched_original_partner_category": "nightstand",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "nightstand_01",
+      "target_id": "bed_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "e0d5b8aea675e79541af41ec6cbd4e132d82cd37",
+      "matched_original_partner_category": "bed",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "desk_01",
+      "target_id": "chair_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "a42e2ef37ca205ecb1927bde89c6b618ddcda71b",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_01",
+      "target_id": "desk_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "ac92c090320c6273da3073b81639ae33b30a0fe0",
+      "matched_original_partner_category": "desk",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "side_table_01",
+      "target_id": "armchair_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "0a2e52d5f93bd2346b2e686bbad4e128b2ff276b",
+      "matched_original_partner_category": "armchair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    }
+  ],
+  "functional_partner_edge_count": 5,
+  "violations": []
+}

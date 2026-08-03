@@ -1,0 +1,394 @@
+{
+  "schema_version": "frozen_functional_partner_build_report_v2",
+  "scene_id": "living_room_authored_002",
+  "edge_count": 10,
+  "edges": [
+    {
+      "source_id": "sofa_conversation_north",
+      "target_id": "coffee_table_shared",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "01cc0bbc121ef31692b03269b6946aeb2aca5f10",
+        "matched_original_partner_category": "coffee_table",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "sofa_conversation_north",
+      "target_id": "floor_lamp_armchair",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "01cc0bbc121ef31692b03269b6946aeb2aca5f10",
+        "matched_original_partner_category": "floor_lamp",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "armchair_conversation_east",
+      "target_id": "coffee_table_shared",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "0dfca0a4e90bc2b410b6f9bd708526c4b66aea92",
+        "matched_original_partner_category": "coffee_table",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "armchair_conversation_east",
+      "target_id": "floor_lamp_armchair",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "0dfca0a4e90bc2b410b6f9bd708526c4b66aea92",
+        "matched_original_partner_category": "floor_lamp",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "coffee_table_shared",
+      "target_id": "sofa_conversation_north",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "03fdc8dd8b89fbff8cf749f5c847180ab13e53d2",
+        "matched_original_partner_category": "sofa",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "coffee_table_shared",
+      "target_id": "armchair_conversation_east",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "03fdc8dd8b89fbff8cf749f5c847180ab13e53d2",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "ottoman_flexible_sofa",
+      "target_id": "sofa_conversation_north",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "210dcab90f14654e1de4cdddffe4e4c9080336bf",
+        "matched_original_partner_category": "sofa",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "ottoman_flexible_sofa",
+      "target_id": "armchair_conversation_east",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "210dcab90f14654e1de4cdddffe4e4c9080336bf",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "floor_lamp_armchair",
+      "target_id": "sofa_conversation_north",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "00ff4e2d38b8c28bd0e02607b698ae80ddb497ef",
+        "matched_original_partner_category": "sofa",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "floor_lamp_armchair",
+      "target_id": "armchair_conversation_east",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "00ff4e2d38b8c28bd0e02607b698ae80ddb497ef",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    }
+  ],
+  "asset_audit": [
+    {
+      "object_id": "sofa_conversation_north",
+      "hssd_id": "01cc0bbc121ef31692b03269b6946aeb2aca5f10",
+      "source_category": "sofa",
+      "functional_partner_annotation": {
+        "cat": "sofa",
+        "partners": [
+          "coffee_table",
+          "floor_lamp",
+          "television_receiver",
+          "throw_pillow"
+        ]
+      },
+      "emitted_edge_count": 2
+    },
+    {
+      "object_id": "armchair_conversation_east",
+      "hssd_id": "0dfca0a4e90bc2b410b6f9bd708526c4b66aea92",
+      "source_category": "armchair",
+      "functional_partner_annotation": {
+        "cat": "armchair",
+        "partners": [
+          "coffee_table",
+          "floor_lamp"
+        ]
+      },
+      "emitted_edge_count": 2
+    },
+    {
+      "object_id": "coffee_table_shared",
+      "hssd_id": "03fdc8dd8b89fbff8cf749f5c847180ab13e53d2",
+      "source_category": "coffee table",
+      "functional_partner_annotation": {
+        "cat": "coffee table",
+        "partners": [
+          "armchair",
+          "sofa"
+        ]
+      },
+      "emitted_edge_count": 2
+    },
+    {
+      "object_id": "ottoman_flexible_sofa",
+      "hssd_id": "210dcab90f14654e1de4cdddffe4e4c9080336bf",
+      "source_category": "ottoman",
+      "functional_partner_annotation": {
+        "cat": "ottoman",
+        "partners": [
+          "armchair",
+          "club_chair",
+          "sofa"
+        ]
+      },
+      "emitted_edge_count": 2
+    },
+    {
+      "object_id": "floor_lamp_armchair",
+      "hssd_id": "00ff4e2d38b8c28bd0e02607b698ae80ddb497ef",
+      "source_category": "floor lamp",
+      "functional_partner_annotation": {
+        "cat": "floor lamp",
+        "partners": [
+          "armchair",
+          "socket",
+          "sofa"
+        ]
+      },
+      "emitted_edge_count": 2
+    },
+    {
+      "object_id": "console_serving_south_east",
+      "hssd_id": "43e120bb77cbdb8fadcac1cc33aeacce57e738c5",
+      "source_category": "console table",
+      "functional_partner_annotation": {
+        "cat": "console table",
+        "partners": [
+          "table_lamp",
+          "vase",
+          "wall_mirror"
+        ]
+      },
+      "emitted_edge_count": 0
+    }
+  ],
+  "unannotated_assets": [],
+  "rules_version": {
+    "implementation": "FrozenFunctionalPartnerRules",
+    "rules_schema_version": "hssd_functional_partner_rules_v1",
+    "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+    "source_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+    "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+    "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+    "no_handwritten_edges": true
+  },
+  "handwritten_edges": false,
+  "source": "FrozenFunctionalPartnerRules.build_edge_matches"
+}

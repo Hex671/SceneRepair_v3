@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1080" viewBox="0 0 1800 1080">
+  <defs>
+    <style>
+      text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#172033}.title{font-size:29px;font-weight:700}.sub{font-size:14px;fill:#667085}.h{font-size:17px;font-weight:700}.b{font-size:14px}.s{font-size:12.5px;fill:#667085}.tiny{font-size:11.5px;fill:#667085}.center{text-anchor:middle}.label{font-size:11px;font-weight:700;letter-spacing:1.35px;fill:#64748B}.group{fill:#FAFCFF;stroke:#D5DEE9;stroke-width:1.2;rx:14}.box{fill:#FFF;stroke:#CBD5E1;stroke-width:1.5;rx:9}.blue{fill:#EEF5FF;stroke:#4C78A8}.cyan{fill:#ECFEFF;stroke:#0891B2}.orange{fill:#FFF7ED;stroke:#EA580C}.green{fill:#F0FDF4;stroke:#16A34A}.violet{fill:#F5F3FF;stroke:#7C3AED}.rose{fill:#FFF1F2;stroke:#E11D48}.note{fill:#FFFBEB;stroke:#F59E0B}.muted{fill:#F1F5F9;stroke:#94A3B8}.dark{fill:#243B5A;stroke:#243B5A}.white{fill:#FFF}.arrow{stroke:#64748B;stroke-width:1.7;fill:none;marker-end:url(#arrow)}.line{stroke:#64748B;stroke-width:1.7;fill:none}.dash{stroke-dasharray:6 5}.source{font-size:12px;font-weight:700}.port{fill:#64748B}
+    </style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#64748B"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".07"/></filter>
+  </defs>
+  <rect width="1800" height="1080" fill="#F6F8FB"/>
+  <text x="52" y="51" class="title">FurnitureRepairModel — Actual Checkpoint Computation Graph</text>
+  <text x="52" y="78" class="sub">Current Shadow model · schema 5.0 · local-geometry v3 · hidden 256 · 4 layers × 8 heads · 4 candidates · 3 pose mixtures</text>
+  <rect x="1480" y="31" width="268" height="42" class="dark" rx="9"/><text x="1614" y="57" class="b center white" font-weight="700">ACTUAL ACTIVE BRANCHES ONLY</text>
+
+  <!-- 01 inputs -->
+  <rect x="42" y="112" width="328" height="822" class="group"/><text x="62" y="141" class="label">01 · RUNTIME INPUTS ACTUALLY CONSUMED</text>
+  <text x="62" y="169" class="tiny">Three provenance sources are assembled by SceneRepair:</text>
+  <rect x="62" y="184" width="88" height="48" class="box blue"/><text x="106" y="204" class="source center">SceneExpert</text><text x="106" y="220" class="tiny center">scene state</text>
+  <rect x="162" y="184" width="88" height="48" class="box rose"/><text x="206" y="204" class="source center">Verifier</text><text x="206" y="220" class="tiny center">hard findings</text>
+  <rect x="262" y="184" width="88" height="48" class="box orange"/><text x="306" y="204" class="source center">HSSD map</text><text x="306" y="220" class="tiny center">frozen lookup</text>
+
+  <rect x="62" y="260" width="288" height="126" class="box blue" filter="url(#shadow)"/>
+  <text x="80" y="286" class="h">48D node tensor</text>
+  <text x="80" y="310" class="s">Furniture: normalized xyz, sin/cos yaw, size</text>
+  <text x="80" y="331" class="s">movable / immutable / transform flags</text>
+  <text x="80" y="352" class="s">Task/room/opening scalar geometry summaries</text>
+  <text x="80" y="373" class="s">Violation energy, hard flag, confidence, margin</text>
+
+  <rect x="62" y="408" width="288" height="82" class="box"/>
+  <text x="80" y="434" class="h">Discrete identities</text>
+  <text x="80" y="458" class="b">node type ID: 7 classes</text>
+  <text x="80" y="479" class="b">category ID: SHA-256 mod 512</text>
+
+  <rect x="62" y="512" width="288" height="112" class="box orange"/>
+  <text x="80" y="538" class="h">82D HSSD label tensor</text>
+  <text x="80" y="562" class="s">family 21 · function 15 · contexts 22</text>
+  <text x="80" y="583" class="s">stage 6 · support 8 · validity 5 · confidence 5</text>
+  <text x="80" y="604" class="s">whole-vector gate: bundle-valid mask</text>
+
+  <rect x="62" y="646" width="288" height="112" class="box cyan"/>
+  <text x="80" y="672" class="h">Sparse graph edges</text>
+  <text x="80" y="696" class="s">edge index + 11 relation-type IDs</text>
+  <text x="80" y="717" class="s">16D: relative xy, distance, yaw, gaps</text>
+  <text x="80" y="738" class="s">penetration, relation confidence / constraint</text>
+
+  <rect x="62" y="780" width="288" height="76" class="box note"/>
+  <text x="80" y="806" class="h">Indices &amp; masks</text>
+  <text x="80" y="830" class="s">task / room / furniture / violation indices</text>
+  <text x="80" y="849" class="s">graph index · furniture / violation masks</text>
+
+  <rect x="62" y="876" width="288" height="42" class="box muted"/>
+  <text x="206" y="894" class="source center">Not active: 96D semantic features</text>
+  <text x="206" y="910" class="tiny center">semantic_dim = 0 in this checkpoint</text>
+
+  <!-- 02 encoders -->
+  <rect x="402" y="112" width="304" height="822" class="group"/><text x="422" y="141" class="label">02 · ACTIVE NODE ENCODERS</text>
+  <rect x="428" y="210" width="252" height="67" class="box blue"/><text x="554" y="236" class="h center">Node MLP</text><text x="554" y="260" class="s center">Linear 48→256 · GELU · LayerNorm</text>
+  <rect x="428" y="310" width="252" height="58" class="box"/><text x="554" y="345" class="b center">Node-type Embedding 7→256</text>
+  <rect x="428" y="401" width="252" height="65" class="box"/><text x="554" y="427" class="h center">Category Embedding</text><text x="554" y="450" class="s center">512 hash buckets → 256</text>
+  <rect x="428" y="500" width="252" height="76" class="box orange"/><text x="554" y="526" class="h center">HSSD Label MLP</text><text x="554" y="549" class="s center">Linear 82→256 · GELU · LayerNorm</text><text x="554" y="566" class="tiny center">output × bundle-valid mask</text>
+
+  <path d="M680 243H691 M680 339H691 M680 433H691 M680 538H691 M691 243V654H589" class="arrow"/>
+  <circle cx="554" cy="654" r="31" class="dark"/><text x="554" y="661" class="h center white">Σ</text>
+  <text x="554" y="708" class="h center">Initial node state H⁰</text>
+  <text x="554" y="731" class="s center">direct additive fusion · N × 256</text>
+  <rect x="458" y="754" width="192" height="50" class="dark" rx="9"/><text x="554" y="785" class="b center white">H⁰ · contextualization input</text>
+
+  <rect x="428" y="844" width="252" height="62" class="box cyan"/>
+  <text x="554" y="868" class="h center">Edge stream bypasses H⁰</text>
+  <text x="554" y="890" class="s center">type IDs + 16D features → every layer</text>
+
+  <!-- 03 graph transformer -->
+  <rect x="738" y="112" width="350" height="822" class="group"/><text x="758" y="141" class="label">03 · TYPED SPARSE GRAPH TRANSFORMER ×4</text>
+  <rect x="762" y="181" width="302" height="582" class="box cyan" filter="url(#shadow)"/>
+  <text x="913" y="208" class="h center">GraphTransformerLayer</text>
+  <text x="913" y="230" class="s center">8 heads · d<tspan baseline-shift="sub" font-size="9">head</tspan>=32 · sparse incoming edges</text>
+  <rect x="785" y="258" width="118" height="58" class="box"/><text x="844" y="282" class="b center">Q = W<tspan baseline-shift="sub" font-size="9">q</tspan>h<tspan baseline-shift="sub" font-size="9">target</tspan></text><text x="844" y="303" class="tiny center">target query</text>
+  <rect x="918" y="258" width="123" height="94" class="box"/><text x="979" y="281" class="b center">K / V</text><text x="979" y="303" class="tiny center">source state</text><text x="979" y="321" class="tiny center">+ edge-type emb</text><text x="979" y="339" class="tiny center">+ edge-feature MLP</text>
+  <rect x="797" y="382" width="232" height="71" class="box blue"/><text x="913" y="407" class="h center">Relation-aware attention</text><text x="913" y="430" class="s center">incoming softmax(Q·K/√32 + bias)</text><text x="913" y="446" class="tiny center">normalized per target node</text>
+  <path d="M844 316V382 M979 352V382" class="arrow"/>
+  <rect x="797" y="484" width="232" height="53" class="box"/><text x="913" y="516" class="b center">Σ α<tspan baseline-shift="sub" font-size="9">ij</tspan>V<tspan baseline-shift="sub" font-size="9">ij</tspan> → Linear 256→256</text><path d="M913 453V484" class="arrow"/>
+  <rect x="797" y="567" width="232" height="54" class="box green"/><text x="913" y="590" class="b center">Residual · Dropout · LayerNorm</text><text x="913" y="609" class="tiny center">node state + attended message</text><path d="M913 537V567" class="arrow"/>
+  <rect x="797" y="652" width="232" height="67" class="box violet"/><text x="913" y="679" class="b center">FFN 256→1024→256</text><text x="913" y="701" class="tiny center">GELU · Dropout · Residual · LayerNorm</text><path d="M913 621V652" class="arrow"/>
+  <rect x="813" y="814" width="200" height="76" class="dark" rx="10"/><text x="913" y="844" class="h center white">Contextual nodes H⁴</text><text x="913" y="874" class="b center white">N × 256</text><path d="M913 763V814" class="arrow"/>
+
+  <!-- encoder and edge arrows -->
+  <path d="M650 779H738" class="arrow"/><text x="695" y="768" class="tiny center">node stream</text>
+  <path d="M680 875H720V305H762" class="arrow dash"/><text x="708" y="865" class="tiny center">edge stream</text>
+
+  <!-- 04 decoding -->
+  <rect x="1120" y="112" width="636" height="822" class="group"/><text x="1140" y="141" class="label">04 · ACTIVE DECODERS &amp; CANDIDATE SCORING</text>
+  <rect x="1144" y="181" width="242" height="89" class="box blue"/><text x="1265" y="207" class="h center">Scene pooling</text><text x="1265" y="231" class="s center">[task H⁴; room H⁴; mean(H⁴)]</text><text x="1265" y="252" class="s center">Linear 768→256 · GELU · LN</text>
+  <rect x="1420" y="181" width="310" height="89" class="box green"/><text x="1575" y="207" class="h center">Scene heads</text><text x="1438" y="232" class="b">Route</text><text x="1500" y="232" class="s">Linear 256→3</text><text x="1600" y="232" class="b">OOD</text><text x="1642" y="232" class="s">Linear 256→1</text><path d="M1386 226H1420" class="arrow"/>
+
+  <rect x="1144" y="305" width="242" height="93" class="box violet"/><text x="1265" y="331" class="h center">Candidate context</text><text x="1265" y="354" class="s center">4 learned queries + scene state</text><text x="1265" y="377" class="s center">Linear 512→256 · GELU · LN</text><path d="M1265 270V305" class="arrow"/>
+  <rect x="1420" y="305" width="310" height="93" class="box orange"/><text x="1575" y="331" class="h center">Candidate–Furniture pairs</text><text x="1575" y="355" class="s center">[candidate state; gathered furniture H⁴]</text><text x="1575" y="378" class="s center">B × 4 × F × 512</text><path d="M1386 352H1420" class="arrow"/>
+
+  <rect x="1144" y="438" width="397" height="133" class="box orange"/><text x="1163" y="466" class="h">Object action decoder</text><text x="1163" y="494" class="b">Change head</text><text x="1282" y="494" class="s">MLP 512→256→1</text><text x="1163" y="520" class="b">Translation MDN</text><text x="1282" y="520" class="s">3× {μ<tspan baseline-shift="sub" font-size="9">xy</tspan>, log σ<tspan baseline-shift="sub" font-size="9">xy</tspan>, π}</text><text x="1163" y="546" class="b">Yaw mixture</text><text x="1282" y="546" class="s">3× {μ<tspan baseline-shift="sub" font-size="9">yaw</tspan>, log κ, π}</text><path d="M1500 398V438" class="arrow"/>
+  <rect x="1570" y="438" width="160" height="133" class="box rose"/><text x="1650" y="467" class="h center">Violation decoder</text><text x="1650" y="494" class="s center">[candidate state;</text><text x="1650" y="514" class="s center">violation H⁴]</text><text x="1650" y="541" class="s center">MLP 512→256→2</text>
+
+  <rect x="1144" y="611" width="296" height="131" class="box cyan"/><text x="1292" y="638" class="h center">10D candidate summary</text><text x="1163" y="664" class="s">change mean / max / changed fraction</text><text x="1163" y="685" class="s">|Δx| · |Δy| · |Δyaw| · entropy · scale</text><text x="1163" y="706" class="s">boundary energy · collision energy</text><text x="1163" y="727" class="tiny">candidate state + summary = 266D</text><path d="M1292 571V611" class="arrow"/>
+  <rect x="1470" y="611" width="260" height="131" class="box green"/><text x="1600" y="638" class="h center">Candidate heads</text><text x="1488" y="666" class="b">Validity</text><text x="1580" y="666" class="s">MLP 266→256→3</text><text x="1488" y="692" class="b">Soft gain</text><text x="1580" y="692" class="s">MLP 266→256→1</text><text x="1488" y="718" class="b">Ranking</text><text x="1580" y="718" class="s">MLP 266→256→1</text><path d="M1440 677H1470" class="arrow"/>
+
+  <!-- H4 fan-out and violation merge -->
+  <path d="M1013 852H1104V225H1144" class="arrow"/>
+  <path d="M1104 420H1552" class="line"/>
+  <path d="M1405 420V375H1420" class="arrow"/><text x="1396" y="411" class="tiny" text-anchor="end">furniture H⁴</text>
+  <path d="M1360 398V410H1552V420" class="line"/>
+  <circle cx="1552" cy="420" r="4" class="port"/><path d="M1552 420V505H1570" class="arrow"/>
+  <text x="1544" y="408" class="tiny" text-anchor="end">violation H⁴</text>
+  <circle cx="1500" cy="420" r="5" fill="#F6F8FB"/><path d="M1500 410V438" class="arrow"/>
+  <text x="1057" y="840" class="tiny center">H⁴ fan-out</text>
+
+  <rect x="1144" y="790" width="586" height="96" class="box muted"/>
+  <text x="1163" y="818" class="h">Explicitly absent from this checkpoint</text>
+  <text x="1163" y="844" class="s">96D Semantic MLP · Semantic action encoder · Activity head · Habit head</text>
+  <text x="1163" y="867" class="s">Exact raw_category_ids are stored by the data pipeline but are not consumed by model.forward.</text>
+
+  <!-- footer -->
+  <rect x="42" y="964" width="1714" height="79" class="box"/>
+  <text x="62" y="990" class="label">ACTUAL OUTPUT CONTRACT</text>
+  <text x="62" y="1018" class="b">Scene:</text><text x="118" y="1018" class="s">route logits · OOD score · scene embedding</text>
+  <text x="446" y="1018" class="b">Candidate × furniture:</text><text x="610" y="1018" class="s">change logits · bounded Δx/Δy/Δyaw · mixture parameters</text>
+  <text x="1115" y="1018" class="b">Candidate:</text><text x="1200" y="1018" class="s">validity · soft gain · rank · uncertainty · surrogate energy</text>
+  <text x="62" y="1036" class="tiny">Scope: neural checkpoint only. Rule fallbacks, ConstraintGuidedRefiner, full execution, FurnitureVerifier, Critic and physics validation are outside the network.</text>
+</svg>

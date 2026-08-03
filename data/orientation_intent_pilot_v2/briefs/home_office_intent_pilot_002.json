@@ -1,0 +1,43 @@
+{
+  "room_type": "home_office",
+  "length_m": 5.8,
+  "width_m": 5.1,
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "west",
+      "along_m": -1.426,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "interior_normal_xy": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "north",
+      "along_m": 0.181,
+      "opening_width_m": 1.6,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "interior_normal_xy": [
+        0.0,
+        -1.0
+      ]
+    }
+  ],
+  "required_categories": [
+    "desk",
+    "chair"
+  ],
+  "furniture_count_range": [
+    5,
+    8
+  ]
+}

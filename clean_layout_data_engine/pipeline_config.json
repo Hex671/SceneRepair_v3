@@ -1,0 +1,82 @@
+{
+  "schema_version": "orientation_intent_pilot_config_v1",
+  "default_model": "gpt-5.6-sol",
+  "candidate_assets_per_category": 3,
+  "max_author_attempts": 3,
+  "diversity_strategy": {
+    "schema_version": "clean_layout_diversity_strategy_v2",
+    "room_scales": ["small", "medium", "large"],
+    "aspect_modes": ["balanced", "elongated"],
+    "door_walls": ["north", "south", "east", "west"],
+    "door_offset_bands": ["negative", "center", "positive"],
+    "primary_anchors": ["north", "south", "east", "west", "interior"],
+    "density_levels": ["sparse", "medium", "full"],
+    "window_patterns": {
+      "bedroom": ["single_adjacent", "single_opposite", "corner_pair"],
+      "living_room": ["single_adjacent", "single_opposite", "corner_pair", "opposite_pair"],
+      "dining_room": ["none", "single_adjacent", "single_opposite", "corner_pair"],
+      "home_office": ["single_adjacent", "single_opposite", "corner_pair"]
+    },
+    "topologies": {
+      "bedroom": [
+        {"id": "sleeping_core_centered", "guidance": "Make the bed the clear sleeping focal point and keep balanced bedside access where the room permits."},
+        {"id": "sleeping_core_asymmetric", "guidance": "Use an intentionally asymmetric sleeping zone while preserving a direct door-to-bed circulation route."},
+        {"id": "sleep_plus_work", "guidance": "Create distinct sleeping and compact work zones with neither zone borrowing the other's required access space."},
+        {"id": "sleep_plus_reading", "guidance": "Create a sleeping zone and a genuinely usable reading corner with a seat facing a meaningful direction or point."},
+        {"id": "storage_emphasis", "guidance": "Make storage access a first-class zone while retaining a calm sleeping area and a clear route from the door."}
+      ],
+      "living_room": [
+        {"id": "media_focused", "guidance": "Organize the seating around a media or focal wall and preserve a usable central circulation route."},
+        {"id": "conversation_focused", "guidance": "Organize seating for conversation rather than a single media-facing line, with a coherent shared table relationship."},
+        {"id": "reading_secondary_zone", "guidance": "Use a main lounge zone plus a separate but connected reading seat zone."},
+        {"id": "open_circulation", "guidance": "Prioritize a broad, legible door-to-primary-zone route and keep furniture grouped away from that route."},
+        {"id": "asymmetric_lounge", "guidance": "Use an intentionally asymmetric lounge composition that still reads as balanced and usable."}
+      ],
+      "dining_room": [
+        {"id": "four_seat_classic", "guidance": "Create a conventional four-seat dining arrangement with every chair usable and the table as the activity center.", "min_furniture": 5},
+        {"id": "six_seat_classic", "guidance": "Create a usable six-seat dining arrangement; do not add six chairs unless their pullout and circulation space can remain valid.", "min_furniture": 7},
+        {"id": "bench_mixed_seating", "guidance": "Use a dining bench with chairs only when the resulting mixed seating arrangement remains practical and accessible.", "min_furniture": 5},
+        {"id": "sideboard_service_zone", "guidance": "Pair the dining zone with a wall-based service or storage zone while retaining a clear route around the table."},
+        {"id": "offset_table_open_path", "guidance": "Place the dining group off the room center only when this creates a clearer usable route than a centered arrangement."}
+      ],
+      "home_office": [
+        {"id": "wall_workstation", "guidance": "Use a wall-backed desk workstation with a correctly aligned chair and clear work access."},
+        {"id": "window_adjacent_workstation", "guidance": "Place the workstation near, but never in, the window clearance zone and preserve useful light-oriented organization."},
+        {"id": "floating_workstation", "guidance": "Use a freestanding desk only when the room still has clear circulation and the chair pullout remains usable."},
+        {"id": "work_plus_reading", "guidance": "Create distinct work and reading zones without treating a side table or lamp as a seat's facing target."},
+        {"id": "storage_focused", "guidance": "Make desk work and storage both usable, with independent front access to storage."}
+      ]
+    },
+    "history_summary_limit": 3
+  },
+  "room_profiles": {
+    "bedroom": {
+      "length_range_m": [4.8, 6.4],
+      "width_range_m": [4.0, 5.4],
+      "required_categories": ["bed", "wardrobe"],
+      "candidate_categories": ["bed", "nightstand", "wardrobe", "desk", "chair", "armchair", "side_table", "floor_lamp", "bench", "cabinet"],
+      "furniture_count_range": [5, 8]
+    },
+    "living_room": {
+      "length_range_m": [5.2, 7.0],
+      "width_range_m": [4.4, 5.8],
+      "required_categories": ["sofa"],
+      "candidate_categories": ["sofa", "armchair", "coffee_table", "side_table", "floor_lamp", "console_table", "tv_bench", "ottoman", "cabinet"],
+      "furniture_count_range": [5, 9]
+    },
+    "dining_room": {
+      "length_range_m": [4.8, 6.6],
+      "width_range_m": [4.2, 5.6],
+      "required_categories": ["table", "chair"],
+      "candidate_categories": ["table", "chair", "bench", "cabinet", "console_table", "floor_lamp"],
+      "furniture_count_range": [5, 9]
+    },
+    "home_office": {
+      "length_range_m": [4.8, 6.2],
+      "width_range_m": [4.0, 5.2],
+      "required_categories": ["desk", "chair"],
+      "candidate_categories": ["desk", "chair", "bookcase", "cabinet", "armchair", "side_table", "floor_lamp", "bench"],
+      "furniture_count_range": [5, 8]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "scene_id": "bedroom_authored_003",
+  "room_type": "bedroom",
+  "primary_activity": "A single occupant sleeps, dresses, and starts the day at a compact north-window work and grooming surface.",
+  "secondary_activities": [
+    "Read briefly in a separate armchair",
+    "Store clothing in a south-side wardrobe",
+    "Keep a phone, lamp, or book on one reachable bedside surface"
+  ],
+  "circulation_plan": "The east-south door opens into a clear central landing. The main route follows the east side of the bed toward the north desk, with a shorter branch west to the armchair; the bed's accessible long side and desk chair pull-back area stay open.",
+  "spatial_organization": "The bed runs along the west wall rather than floating centrally. A narrow desk occupies the north wall under the window, wardrobe storage anchors the south-west wall, and a small reading pocket uses the quiet south-east corner.",
+  "daylight_or_opening_considerations": "The north window gives the desk morning light, while the bed remains outside its clearance. The east-south door requires an uncluttered arrival zone and prevents wardrobe placement on the east wall.",
+  "intended_furniture_groups": [
+    "bed and one nightstand as a restrained sleep group",
+    "desk and chair as a north-window morning work/grooming group",
+    "armchair and side table as a separate reading group",
+    "wardrobe as south-west clothing storage"
+  ],
+  "intended_open_space": "A central-east L-shaped circulation zone from door to desk and bed side, plus a clear pull-out strip behind the desk chair and approach space in front of wardrobe.",
+  "difference_from_previous_scenes": "Conceived independently after scene2: this bedroom uses one bedside surface, a north-window desk, an east reading pocket, and a west-wall bed; it is not a mirrored or centered bed/wardrobe arrangement.",
+  "room_dimensions_m": {"length": 5.6, "width": 4.2},
+  "planned_openings": [
+    {"opening_id": "door_00", "wall": "east", "along_m": -1.30, "width_m": 0.9},
+    {"opening_id": "window_00", "wall": "north", "along_m": 0.70, "width_m": 1.8}
+  ],
+  "authorship_stage": "design_intent_before_asset_query_or_prior-layout-inspection"
+}

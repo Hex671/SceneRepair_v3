@@ -1,0 +1,168 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "dining_room_authored_001",
+  "room_type": "dining_room",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 5.3,
+    "width_m": 4.1,
+    "spatial_character": "A medium residential dining room organized around a wall-side banquette rather than a centered freestanding dining set.",
+    "daily_activities": [
+      "daily meals for three to five people",
+      "setting and clearing the table",
+      "retrieving dishes and serving pieces"
+    ],
+    "organization": "The dining group occupies the north-west, with a long bench against the north wall, an offset rectangular table, two loose chairs on the south side, and one chair at the east end. A low dish cabinet occupies the east wall while the south-east remains open.",
+    "main_path": "Enter from the south-west door into the clear strip south of the dining group, approach the two loose chairs directly, continue around the table's east end to the end chair and bench entry, or branch east to the dish cabinet.",
+    "protected_open_space": "The area immediately inside the door, the strip south of the chairs, and the south-east quadrant remain free so diners can arrive, pull chairs out, and carry dishes without circling through a narrow gap."
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_southwest",
+      "kind": "door",
+      "wall": "south",
+      "along_m": -1.75,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "placement_rationale": "The south-west entry arrives beside, rather than behind, the dining seats and opens onto a broad approach strip that also serves chair pull-out movement."
+    },
+    {
+      "opening_id": "window_north_east",
+      "kind": "window",
+      "wall": "north",
+      "along_m": 1.15,
+      "opening_width_m": 1.8,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "placement_rationale": "The north-east window lights the table from the side and begins east of the bench, preserving its full interior clearance and avoiding a seat directly against the glazing."
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "table_dining",
+      "hssd_id": "01fd238f3e39659142240fc38ae44796e180597c",
+      "category": "table",
+      "x": -1.45,
+      "y": 0.78,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "This 1.50 m rectangular table is the main dining surface. It is offset toward the north-west banquette rather than centered in the room, leaving a large carrying route to the east. Its westward offset relative to bench_banquette creates a usable entry at the bench's east end."
+    },
+    {
+      "object_id": "bench_banquette",
+      "hssd_id": "07c595b8cb65ee4f15bff2b08eadd6c3a1d8b6fb",
+      "category": "bench",
+      "x": -1.0,
+      "y": 1.668,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The long bench forms the north-side shared seating and faces south toward table_dining. It uses the solid wall segment west of the window, while its extra length and eastward projection provide an end-entry point without requiring a person to walk between bench and table."
+    },
+    {
+      "object_id": "chair_south_west",
+      "hssd_id": "0b035dc81cad90ef2c6f4b34b43ea065fb41497e",
+      "category": "chair",
+      "x": -1.85,
+      "y": -0.1,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "placement_rationale": "This chair serves the west place on the table's south side and faces north toward the tabletop. It is reached directly from the entry strip and retains pull-out room to the south without sitting inside the door clearance."
+    },
+    {
+      "object_id": "chair_south_east",
+      "hssd_id": "0b035dc81cad90ef2c6f4b34b43ea065fb41497e",
+      "category": "chair",
+      "x": -1.05,
+      "y": -0.1,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "placement_rationale": "This chair provides the second loose place along the table's south side, aligned with a separate place setting rather than mechanically centered. Its pull-out area opens into the uncrowded south-east side and does not interfere with chair_south_west."
+    },
+    {
+      "object_id": "chair_east_end",
+      "hssd_id": "0b035dc81cad90ef2c6f4b34b43ea065fb41497e",
+      "category": "chair",
+      "x": -0.2,
+      "y": 0.75,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "placement_rationale": "The end chair faces west toward the short end of table_dining and makes the seating group usable by a fifth diner without closing the room's east side. Its pull-back space is to the east, outside the bench end-entry route."
+    },
+    {
+      "object_id": "cabinet_dishes",
+      "hssd_id": "9c88ec4c032a38bfa6c6df7c69a82d3daf694326",
+      "category": "cabinet",
+      "x": 2.369,
+      "y": -0.65,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "placement_rationale": "The low cabinet stores dishes on the east wall, close to the table but outside every seat movement envelope. It faces west into an open operating zone, allowing serving pieces to be retrieved without crossing behind diners on the bench."
+    }
+  ],
+  "use_clearance_zones": [
+    {
+      "zone_id": "use_chair_south_west_behind",
+      "owner_id": "chair_south_west",
+      "center_xy_m": [-1.85, -0.609],
+      "size_xy_m": [0.476, 0.48],
+      "yaw_rad": -3.141592653589793,
+      "purpose": "south_west_chair_pull_out_and_stand",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_chair_south_east_behind",
+      "owner_id": "chair_south_east",
+      "center_xy_m": [-1.05, -0.609],
+      "size_xy_m": [0.476, 0.48],
+      "yaw_rad": -3.141592653589793,
+      "purpose": "south_east_chair_pull_out_and_stand",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_chair_east_end_behind",
+      "owner_id": "chair_east_end",
+      "center_xy_m": [0.309, 0.75],
+      "size_xy_m": [0.476, 0.48],
+      "yaw_rad": -1.5707963267948966,
+      "purpose": "east_end_chair_pull_out_and_stand",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_bench_banquette_east_entry",
+      "owner_id": "bench_banquette",
+      "center_xy_m": [0.2, 1.3],
+      "size_xy_m": [0.5, 0.6],
+      "yaw_rad": 0.0,
+      "purpose": "bench_east_end_entry_and_slide_in",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_cabinet_dishes_front",
+      "owner_id": "cabinet_dishes",
+      "center_xy_m": [1.818, -0.65],
+      "size_xy_m": [1.2, 0.7],
+      "yaw_rad": -1.5707963267948966,
+      "purpose": "dish_cabinet_door_and_drawer_operation",
+      "allowed_overlap_object_ids": []
+    }
+  ],
+  "path_targets": [
+    {"target_id": "south_west_seat_access", "goal_xy_m": [-1.85, -0.72]},
+    {"target_id": "south_east_seat_access", "goal_xy_m": [-1.05, -0.72]},
+    {"target_id": "east_end_seat_access", "goal_xy_m": [0.38, 0.75]},
+    {"target_id": "bench_end_access", "goal_xy_m": [0.25, 1.3]},
+    {"target_id": "cabinet_access", "goal_xy_m": [1.75, -0.65]}
+  ],
+  "primary_zone_goal_xy_m": [-1.05, -0.72],
+  "authorship": {
+    "layout_decisions_by": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "functional_partners_authored": false,
+    "old_scene_coordinates_viewed_before_initial_draft": false
+  }
+}

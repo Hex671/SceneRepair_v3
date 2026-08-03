@@ -1,0 +1,973 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "living_room_authored_002",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "living_room",
+  "length": 6.2,
+  "width": 5.0,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_south_west",
+      "kind": "door",
+      "wall": "south",
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        -2.05,
+        -2.1,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.9,
+        0.8,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_daylight_east_north",
+      "kind": "window",
+      "wall": "east",
+      "opening_width_m": 1.5,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        2.85,
+        1.25,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.5,
+        1.5,
+        2.05
+      ],
+      "interior_normal_xy": [
+        -1.0,
+        0.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "sofa_conversation_north",
+      "hssd_id": "01cc0bbc121ef31692b03269b6946aeb2aca5f10",
+      "hssd_source_category": "sofa",
+      "category": "sofa",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 1.926,
+        "depth": 0.966,
+        "height": 0.865
+      },
+      "x": -0.75,
+      "y": 1.967,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "The sofa is the dominant conversation seat and is backed by the north wall, facing south into the room rather than toward a television. Its central approach remains open from the entry, while its west seat is paired with the movable ottoman without blocking the armchair route.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "sofa",
+          "partners": [
+            "coffee_table",
+            "floor_lamp",
+            "television_receiver",
+            "throw_pillow"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "armchair_conversation_east",
+      "hssd_id": "0dfca0a4e90bc2b410b6f9bd708526c4b66aea92",
+      "hssd_source_category": "armchair",
+      "category": "armchair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.65,
+        "depth": 0.678,
+        "height": 0.902
+      },
+      "x": 1.35,
+      "y": 0.1,
+      "z": 0.0,
+      "yaw_rad": -2.3415926535897933,
+      "rotation_wxyz": [
+        0.3894183423,
+        0.0,
+        0.0,
+        -0.921060994
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "The compact armchair closes the seating group from the east and turns north-west toward both sofa_conversation_north and coffee_table_shared. It remains well west of the east window clearance and admits a south-west approach from the main circulation field.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "armchair",
+          "partners": [
+            "coffee_table",
+            "floor_lamp"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "coffee_table_shared",
+      "hssd_id": "03fdc8dd8b89fbff8cf749f5c847180ab13e53d2",
+      "hssd_source_category": "coffee table",
+      "category": "coffee_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 0.986,
+        "depth": 0.58,
+        "height": 0.422
+      },
+      "x": -0.2,
+      "y": 0.75,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The coffee table is offset north of the geometric room center, within reach of the sofa and diagonal armchair but outside the south circulation band. Its narrow depth leaves a practical gap to the sofa and a clear service approach from the south.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "coffee table",
+          "partners": [
+            "armchair",
+            "sofa"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "ottoman_flexible_sofa",
+      "hssd_id": "210dcab90f14654e1de4cdddffe4e4c9080336bf",
+      "hssd_source_category": "ottoman",
+      "category": "ottoman",
+      "family": "seating",
+      "functions": [
+        "sit",
+        "foot_support"
+      ],
+      "bbox": {
+        "width": 0.56,
+        "depth": 0.56,
+        "height": 0.35
+      },
+      "x": -1.35,
+      "y": 1.08,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The small ottoman sits in front of the sofa's west seat as a footrest or movable extra perch. It is separated laterally from coffee_table_shared, remains inside the sofa use area, and releases the diagonal armchair's south-west approach.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "ottoman",
+          "partners": [
+            "armchair",
+            "club_chair",
+            "sofa"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "floor_lamp_armchair",
+      "hssd_id": "00ff4e2d38b8c28bd0e02607b698ae80ddb497ef",
+      "hssd_source_category": "floor lamp",
+      "category": "floor_lamp",
+      "family": "lighting",
+      "functions": [
+        "illuminate"
+      ],
+      "bbox": {
+        "width": 0.236,
+        "depth": 0.274,
+        "height": 1.121
+      },
+      "x": 2.05,
+      "y": 0.55,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The slim floor lamp uses the small pocket east of armchair_conversation_east, close enough to support evening sitting without entering the chair's south-west approach. Its footprint remains west of the window clearance and north of the route to the console.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "floor lamp",
+          "partners": [
+            "armchair",
+            "socket",
+            "sofa"
+          ]
+        },
+        "post_replacement": {
+          "articulated": false,
+          "realization_kind": "static_only"
+        }
+      }
+    },
+    {
+      "object_id": "console_serving_south_east",
+      "hssd_id": "43e120bb77cbdb8fadcac1cc33aeacce57e738c5",
+      "hssd_source_category": "console table",
+      "category": "console_table",
+      "family": "support_surface",
+      "functions": [
+        "support_objects",
+        "store"
+      ],
+      "bbox": {
+        "width": 1.004,
+        "depth": 0.3012,
+        "height": 0.7887
+      },
+      "x": 1.15,
+      "y": -2.2994,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The narrow console sits on the south-east wall as a drinks and serving surface, leaving the south-west entry entirely open. It faces north into its own working strip and stays far enough south of armchair_conversation_east to preserve the main branch path.",
+        "placement_dof": {
+          "allowed_surfaces": [
+            "floor"
+          ],
+          "confidence": 0.86,
+          "dof": 2,
+          "orientation_constraints": [
+            "front may face relation target or room center"
+          ],
+          "provenance": "seed_rule:floor_planar",
+          "support_anchor": "floor"
+        },
+        "functional_partner_annotation": {
+          "cat": "console table",
+          "partners": [
+            "table_lamp",
+            "vase",
+            "wall_mirror"
+          ]
+        },
+        "post_replacement": {
+          "articulated": true,
+          "category": "console_table",
+          "geometry_root_key": "hssd_materialized",
+          "match_id": "43e120bb77cbdb8fadcac1cc33aeacce57e738c5",
+          "n_movable": 2,
+          "realization_kind": "hssd_official",
+          "source": "HSSD-official",
+          "static_dims": [
+            1.004,
+            0.789,
+            0.301
+          ],
+          "swept_dims": [
+            1.004,
+            0.789,
+            0.531
+          ],
+          "vol_bloat": 1.761
+        }
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "sofa_conversation_north",
+      "target_id": "coffee_table_shared",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "01cc0bbc121ef31692b03269b6946aeb2aca5f10",
+        "matched_original_partner_category": "coffee_table",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "sofa_conversation_north",
+      "target_id": "floor_lamp_armchair",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "01cc0bbc121ef31692b03269b6946aeb2aca5f10",
+        "matched_original_partner_category": "floor_lamp",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "armchair_conversation_east",
+      "target_id": "coffee_table_shared",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "0dfca0a4e90bc2b410b6f9bd708526c4b66aea92",
+        "matched_original_partner_category": "coffee_table",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "armchair_conversation_east",
+      "target_id": "floor_lamp_armchair",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "0dfca0a4e90bc2b410b6f9bd708526c4b66aea92",
+        "matched_original_partner_category": "floor_lamp",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "coffee_table_shared",
+      "target_id": "sofa_conversation_north",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "03fdc8dd8b89fbff8cf749f5c847180ab13e53d2",
+        "matched_original_partner_category": "sofa",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "coffee_table_shared",
+      "target_id": "armchair_conversation_east",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "03fdc8dd8b89fbff8cf749f5c847180ab13e53d2",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "ottoman_flexible_sofa",
+      "target_id": "sofa_conversation_north",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "210dcab90f14654e1de4cdddffe4e4c9080336bf",
+        "matched_original_partner_category": "sofa",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "ottoman_flexible_sofa",
+      "target_id": "armchair_conversation_east",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "210dcab90f14654e1de4cdddffe4e4c9080336bf",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "floor_lamp_armchair",
+      "target_id": "sofa_conversation_north",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "00ff4e2d38b8c28bd0e02607b698ae80ddb497ef",
+        "matched_original_partner_category": "sofa",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    },
+    {
+      "source_id": "floor_lamp_armchair",
+      "target_id": "armchair_conversation_east",
+      "orientation_mode": "none",
+      "target_strategy": "none",
+      "desired_gap_range": null,
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": false,
+        "relation": true
+      },
+      "audit": {
+        "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+        "rules_schema_version": "hssd_functional_partner_rules_v1",
+        "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "source_hssd_id": "00ff4e2d38b8c28bd0e02607b698ae80ddb497ef",
+        "matched_original_partner_category": "armchair",
+        "category_match_mode": "exact_canonical_category",
+        "compatibility_rule_id": null,
+        "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+        "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "asset_keyed_only": true,
+        "category_inheritance": false,
+        "commonsense_completion": false
+      }
+    }
+  ],
+  "audit": {
+    "pipeline_version": "authored_single_scene_validator_v2",
+    "proposal_schema_version": "authored_furniture_proposal_v1",
+    "rules_version": "authored_furniture_layout_validation_rules_v2",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "The north-wall sofa is the primary seat. One diagonal armchair closes the group from the east, an offset coffee table serves both, and a movable ottoman supports the sofa's west end. A south-east console provides a separate landing surface while the south-west entry and center-south strip remain open.",
+    "daily_activities": [
+      "two- or three-person conversation",
+      "relaxed sitting with a movable footrest",
+      "placing drinks or serving items away from the entry"
+    ],
+    "main_path": "Enter through the south-west door, move east along the open south strip, then branch north-west to the sofa, north-east to the armchair and lamp, or east to the console without crossing the coffee table group.",
+    "protected_open_space": "The full south-west door turn-in, the center-south circulation field, the sofa's west approach, and the east window clearance remain free of fixed furniture.",
+    "provenance": {
+      "layout_author": "GPT-5.6 Codex primary agent",
+      "python_layout_decisions": false,
+      "proposal_path": "data/clean_layouts_gpt56_v2_authored/authored_proposals/living_room_authored_002.json",
+      "proposal_sha256": "0920eaec06f2566b433ae3c83ab7c536dda5a6ebc80de2950347e1b8034f485d",
+      "hssd_lookup_path": "../hssd-annotations/data/hssd_annotation_lookup.json.gz",
+      "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "semantic_mapping_path": "data/clean_layouts_gpt56_v1/semantic_mapping.json",
+      "semantic_mapping_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+      "layout_rules_path": "configs/authored_layout_validation_rules_v2.json",
+      "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+      "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+      "functional_rules_path": "configs/functional_partner_rules_hssd_v1.json",
+      "functional_rules_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+      "functional_compatibility_path": "configs/functional_partner_category_compatibility_v1.json",
+      "functional_compatibility_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+      "vocabulary_path": "configs/furniture_vocab_bootstrap_v1.json",
+      "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "use_sofa_conversation_front",
+        "owner_id": "sofa_conversation_north",
+        "center_xy_m": [
+          -0.75,
+          1.25
+        ],
+        "size_xy_m": [
+          1.8,
+          0.4
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "sofa_sitting_approach_and_exit",
+        "allowed_overlap_object_ids": [
+          "ottoman_flexible_sofa"
+        ],
+        "validity": true
+      },
+      {
+        "zone_id": "use_armchair_conversation_front",
+        "owner_id": "armchair_conversation_east",
+        "center_xy_m": [
+          0.98,
+          0.46
+        ],
+        "size_xy_m": [
+          0.64,
+          0.46
+        ],
+        "yaw_rad": -2.3415926535897933,
+        "purpose": "armchair_approach_and_sit",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_coffee_table_south",
+        "owner_id": "coffee_table_shared",
+        "center_xy_m": [
+          -0.2,
+          0.18
+        ],
+        "size_xy_m": [
+          1.08,
+          0.42
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "coffee_table_serving_access",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_console_serving_front",
+        "owner_id": "console_serving_south_east",
+        "center_xy_m": [
+          1.15,
+          -1.73
+        ],
+        "size_xy_m": [
+          1.2,
+          0.64
+        ],
+        "yaw_rad": -3.141592653589793,
+        "purpose": "console_drink_and_serving_access",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "path_targets": [
+      {
+        "target_id": "sofa_access",
+        "goal_xy_m": [
+          -0.9,
+          1.3
+        ]
+      },
+      {
+        "target_id": "armchair_access",
+        "goal_xy_m": [
+          0.98,
+          0.46
+        ]
+      },
+      {
+        "target_id": "coffee_table_access",
+        "goal_xy_m": [
+          -0.2,
+          0.18
+        ]
+      },
+      {
+        "target_id": "console_access",
+        "goal_xy_m": [
+          1.15,
+          -1.73
+        ]
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      -0.9,
+      1.3
+    ],
+    "functional_partner_builder": {
+      "implementation": "FrozenFunctionalPartnerRules",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "no_handwritten_edges": true
+    },
+    "layout_hash": "223dc51941bcc4a45965bd5cdc717a07a8532be1c32e33bcbaa6b322bf312046"
+  }
+}

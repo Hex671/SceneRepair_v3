@@ -1,0 +1,154 @@
+{
+  "schema_version": "authored_furniture_intent_proposal_v1",
+  "scene_id": "home_office_orientation_001",
+  "room_type": "home_office",
+  "coordinate_frame": "room_local_z_up",
+  "room": {
+    "length_m": 6.4,
+    "width_m": 4.8,
+    "organization": "A north-wall personal work position shares the room with an offset central consultation table. Storage is split between the south and east walls, leaving a diagonal arrival route from the west-side door.",
+    "daily_activities": [
+      "focused computer work",
+      "two-person document review",
+      "reference retrieval",
+      "file storage"
+    ],
+    "main_path": "Enter at the south-west door, move diagonally through the open south-central area to the task chair, with a short north-east branch to storage.",
+    "protected_open_space": "The south-central arrival area and the diagonal band between the west door, consultation table, and task chair remain unfurnished."
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "west",
+      "along_m": -1.55,
+      "opening_width_m": 0.9
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "east",
+      "along_m": 0.85,
+      "opening_width_m": 1.5
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "desk_personal_north",
+      "hssd_id": "dc7a4ef39408cdfc7e9dce48757bde5cbe4ee2c1",
+      "category": "desk",
+      "x": 1.65,
+      "y": 2.08,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "north"
+      },
+      "clearance_intent": "front_access",
+      "placement_rationale": "The compact desk uses the quiet north wall and faces inward, separated from the east window so daylight arrives from the side. Its position keeps the entry-to-work route on the open diagonal rather than through the consultation group."
+    },
+    {
+      "object_id": "chair_personal",
+      "hssd_id": "65cd781989f935391fc07009226cb99f7198b486",
+      "category": "chair",
+      "x": 1.65,
+      "y": 1.18,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "desk_personal_north"
+      },
+      "clearance_intent": "rear_pullout",
+      "placement_rationale": "The task chair is centered on the desk and faces it directly, with roll-back space toward the room center and no storage behind it."
+    },
+    {
+      "object_id": "table_consultation",
+      "hssd_id": "78da408a3864493508ff2078d9ef2c0b1ff81b93",
+      "category": "table",
+      "x": -0.45,
+      "y": 0.25,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "axis_only",
+        "long_axis": "east_west"
+      },
+      "clearance_intent": "none",
+      "placement_rationale": "The small rectangular consultation table sits off center rather than on the main travel diagonal. Its long edge supports side-by-side documents while leaving the south and east approaches open."
+    },
+    {
+      "object_id": "chair_consultation_south",
+      "hssd_id": "553ab4ac2c9bd3bb0bccb16a58e16c07b53788a9",
+      "category": "chair",
+      "x": -0.25,
+      "y": -0.72,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_consultation"
+      },
+      "clearance_intent": "rear_pullout",
+      "placement_rationale": "This visitor chair approaches from the open south side and turns toward the consultation table, preserving a clear retreat toward the entry."
+    },
+    {
+      "object_id": "chair_consultation_west",
+      "hssd_id": "4652661588c3e25396b891901da281f41f7a140c",
+      "category": "chair",
+      "x": -1.48,
+      "y": 0.32,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "table_consultation"
+      },
+      "clearance_intent": "rear_pullout",
+      "placement_rationale": "The second consultation chair occupies the west end, creating an informal right-angle exchange instead of a dining-like symmetric arrangement."
+    },
+    {
+      "object_id": "bookcase_reference_south",
+      "hssd_id": "09bf641c92f5ff9f2ccf9eece94c33ab793130ed",
+      "category": "bookcase",
+      "x": 1.25,
+      "y": -2.17,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "south"
+      },
+      "clearance_intent": "front_access",
+      "placement_rationale": "Reference storage occupies the south wall east of the arrival route, faces north into usable standing space, and remains outside the door swing clearance."
+    },
+    {
+      "object_id": "cabinet_files_east",
+      "hssd_id": "960b4f4d8511ffd0daba1219c9f4af1a04cfb950",
+      "category": "cabinet",
+      "x": 2.95,
+      "y": -0.72,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "east"
+      },
+      "clearance_intent": "front_access",
+      "placement_rationale": "The narrow file cabinet uses the east wall below the window, opens west into a dedicated access strip, and keeps bulky storage away from the consultation seating."
+    }
+  ],
+  "path_targets": [
+    {
+      "target_id": "desk_personal_north",
+      "goal_xy_m": [1.65, 0.72],
+      "purpose": "primary_work_position"
+    },
+    {
+      "target_id": "table_consultation",
+      "goal_xy_m": [-0.25, -0.72],
+      "purpose": "consultation_position"
+    }
+  ],
+  "primary_zone_goal_xy_m": [1.65, 0.72],
+  "authorship": {
+    "layout_author": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "design_iteration": 1,
+    "status": "author_experiment_pending_compile"
+  }
+}

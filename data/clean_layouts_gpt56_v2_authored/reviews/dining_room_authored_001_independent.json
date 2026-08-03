@@ -1,0 +1,123 @@
+{
+  "schema_version": "independent_semantic_review_v2",
+  "scene_id": "dining_room_authored_001",
+  "review_scope": "final_scene_after_functional_category_compatibility_repair",
+  "isolation_compliance": {
+    "passed": true,
+    "read_only_authorized_artifacts": [
+      "reviews/reviewer_packet/dining_room_authored_001_scene.json",
+      "visualizations/dining_room_authored_001.png",
+      "validation/dining_room_authored_001.json",
+      "diversity/dining_room_authored_001.json",
+      "reviews/reviewer_packet/dining_room_authored_001_geometry.json"
+    ],
+    "unauthorized_artifacts_read": [],
+    "notes": "Review was isolated to the five specified artifacts."
+  },
+  "reviewed_artifacts_sha256": {
+    "reviews/reviewer_packet/dining_room_authored_001_scene.json": "235148534168166590680BD56B8C2117FEF679EC536C523F63A51EC290632A7E",
+    "visualizations/dining_room_authored_001.png": "5E1838C87884980038087C4D84A6E40B239BDD38E364743B83B53EB60E649F4E",
+    "validation/dining_room_authored_001.json": "CAB148850ACB15B5832F9E0669E5A995230D06FA2F0934B18E409BDB77170386",
+    "diversity/dining_room_authored_001.json": "32525C6FD3C86BF0558F03B55B4EA36A984F91967A6BD24F30681822E1B8BE95",
+    "reviews/reviewer_packet/dining_room_authored_001_geometry.json": "0EC77061EF3D6A45A7A16A9F99BE58EC1578D5556244FCE8A7BCDC2B1C4D6AB5"
+  },
+  "pairwise_table_read": {
+    "all_rows_inspected": true,
+    "row_count": 15,
+    "accepted_min_signed_separation_m": 0.0,
+    "numeric_separation_epsilon_m": 1e-09,
+    "minimum_signed_separation_m": 0.186,
+    "all_positive_gap": true,
+    "rows": [
+      {"source_id":"table_dining","target_id":"bench_banquette","signed_separation_m":0.186,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"table_dining","target_id":"chair_south_west","signed_separation_m":0.211,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"table_dining","target_id":"chair_south_east","signed_separation_m":0.211,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"table_dining","target_id":"chair_east_end","signed_separation_m":0.231,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"table_dining","target_id":"cabinet_dishes","signed_separation_m":2.8681,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"bench_banquette","target_id":"chair_south_west","signed_separation_m":1.197,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"bench_banquette","target_id":"chair_south_east","signed_separation_m":1.197,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"bench_banquette","target_id":"chair_east_end","signed_separation_m":0.378,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"bench_banquette","target_id":"cabinet_dishes","signed_separation_m":2.2586,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"chair_south_west","target_id":"chair_south_east","signed_separation_m":0.324,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"chair_south_west","target_id":"chair_east_end","signed_separation_m":1.143,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"chair_south_west","target_id":"cabinet_dishes","signed_separation_m":3.7801,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"chair_south_east","target_id":"chair_east_end","signed_separation_m":0.343,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"chair_south_east","target_id":"cabinet_dishes","signed_separation_m":2.9801,"classification":"positive_gap","assessment":"pass"},
+      {"source_id":"chair_east_end","target_id":"cabinet_dishes","signed_separation_m":2.0991,"classification":"positive_gap","assessment":"pass"}
+    ]
+  },
+  "yaw_direction_table_read": {
+    "all_rows_inspected": true,
+    "row_count": 6,
+    "rows": [
+      {"object_id":"table_dining","yaw_rad":0.0,"yaw_deg":0.0,"front_vector_xy":[0.0,-1.0],"dominant_cardinal_direction":"south","assessment":"front toward south seating/access side; pass"},
+      {"object_id":"bench_banquette","yaw_rad":0.0,"yaw_deg":0.0,"front_vector_xy":[0.0,-1.0],"dominant_cardinal_direction":"south","assessment":"front toward dining table; pass"},
+      {"object_id":"chair_south_west","yaw_rad":-3.14159265359,"yaw_deg":-180.0,"front_vector_xy":[0.0,1.0],"dominant_cardinal_direction":"north","assessment":"faces table; pass"},
+      {"object_id":"chair_south_east","yaw_rad":-3.14159265359,"yaw_deg":-180.0,"front_vector_xy":[0.0,1.0],"dominant_cardinal_direction":"north","assessment":"faces table; pass"},
+      {"object_id":"chair_east_end","yaw_rad":-1.570796326795,"yaw_deg":-90.0,"front_vector_xy":[-1.0,0.0],"dominant_cardinal_direction":"west","assessment":"faces table; pass"},
+      {"object_id":"cabinet_dishes","yaw_rad":-1.570796326795,"yaw_deg":-90.0,"front_vector_xy":[-1.0,0.0],"dominant_cardinal_direction":"west","assessment":"front faces accessible room area; pass"}
+    ]
+  },
+  "functional_partner_match_table": {
+    "all_rows_inspected": true,
+    "row_count": 7,
+    "all_edges_frozen_builder": true,
+    "no_handwritten_edges": true,
+    "rule_builder": "FrozenFunctionalPartnerRules.build_edge_matches",
+    "rules_schema_version": "hssd_functional_partner_rules_v1",
+    "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+    "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+    "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+    "edges": [
+      {"source_id":"table_dining","target_id":"chair_south_west","source_hssd_id":"01fd238f3e39659142240fc38ae44796e180597c","matched_original_partner_category":"chair","category_match_mode":"exact_canonical_category","compatibility_rule_id":null,"assessment":"pass"},
+      {"source_id":"table_dining","target_id":"chair_south_east","source_hssd_id":"01fd238f3e39659142240fc38ae44796e180597c","matched_original_partner_category":"chair","category_match_mode":"exact_canonical_category","compatibility_rule_id":null,"assessment":"pass"},
+      {"source_id":"table_dining","target_id":"chair_east_end","source_hssd_id":"01fd238f3e39659142240fc38ae44796e180597c","matched_original_partner_category":"chair","category_match_mode":"exact_canonical_category","compatibility_rule_id":null,"assessment":"pass"},
+      {"source_id":"bench_banquette","target_id":"table_dining","source_hssd_id":"07c595b8cb65ee4f15bff2b08eadd6c3a1d8b6fb","matched_original_partner_category":"dining_table","category_match_mode":"frozen_semantic_compatibility","compatibility_rule_id":"dining_table_to_table_with_dining_surface_v1","assessment":"pass"},
+      {"source_id":"chair_south_west","target_id":"table_dining","source_hssd_id":"0b035dc81cad90ef2c6f4b34b43ea065fb41497e","matched_original_partner_category":"dining_table","category_match_mode":"frozen_semantic_compatibility","compatibility_rule_id":"dining_table_to_table_with_dining_surface_v1","assessment":"pass"},
+      {"source_id":"chair_south_east","target_id":"table_dining","source_hssd_id":"0b035dc81cad90ef2c6f4b34b43ea065fb41497e","matched_original_partner_category":"dining_table","category_match_mode":"frozen_semantic_compatibility","compatibility_rule_id":"dining_table_to_table_with_dining_surface_v1","assessment":"pass"},
+      {"source_id":"chair_east_end","target_id":"table_dining","source_hssd_id":"0b035dc81cad90ef2c6f4b34b43ea065fb41497e","matched_original_partner_category":"dining_table","category_match_mode":"frozen_semantic_compatibility","compatibility_rule_id":"dining_table_to_table_with_dining_surface_v1","assessment":"pass"}
+    ],
+    "compatibility_edge_assessment": {
+      "compatibility_edge_count": 4,
+      "source_hssd_annotations_present": true,
+      "source_matched_category_is_dining_table": true,
+      "target_object_id": "table_dining",
+      "target_category": "table",
+      "target_family": "support_surface",
+      "target_functions_include": ["dining_surface"],
+      "frozen_rule_id_present_on_all_compatibility_edges": true,
+      "assessment": "pass"
+    }
+  },
+  "all_object_reports": [
+    {"object_id":"table_dining","category":"table","family":"support_surface","functions":["dining_surface","support_objects"],"bbox_m":{"width":1.5,"depth":0.8,"height":0.73},"transform":{"x":-1.45,"y":0.78,"z":0.0,"yaw_rad":0.0},"geometry_assessment":"inside room; all 5 pairwise separations positive","relation_assessment":"central dining support; chairs and bench semantically compatible; front south toward seating/access","status":"pass"},
+    {"object_id":"bench_banquette","category":"bench","family":"seating","functions":["sit"],"bbox_m":{"width":1.819,"depth":0.604,"height":0.45},"transform":{"x":-1.0,"y":1.668,"z":0.0,"yaw_rad":0.0},"geometry_assessment":"inside north side; all 5 pairwise separations positive","relation_assessment":"linked to dining table by frozen dining-table compatibility; front south toward table; bench entry zone clear","status":"pass"},
+    {"object_id":"chair_south_west","category":"chair","family":"seating","functions":["sit"],"bbox_m":{"width":0.476,"depth":0.538,"height":0.796},"transform":{"x":-1.85,"y":-0.1,"z":0.0,"yaw_rad":-3.141592653589793},"geometry_assessment":"inside room; all 5 pairwise separations positive","relation_assessment":"linked to dining table by exact chair edge and reverse frozen compatibility; faces north toward table; pull-out zone clear","status":"pass"},
+    {"object_id":"chair_south_east","category":"chair","family":"seating","functions":["sit"],"bbox_m":{"width":0.476,"depth":0.538,"height":0.796},"transform":{"x":-1.05,"y":-0.1,"z":0.0,"yaw_rad":-3.141592653589793},"geometry_assessment":"inside room; all 5 pairwise separations positive","relation_assessment":"linked to dining table by exact chair edge and reverse frozen compatibility; faces north toward table; pull-out zone clear","status":"pass"},
+    {"object_id":"chair_east_end","category":"chair","family":"seating","functions":["sit"],"bbox_m":{"width":0.476,"depth":0.538,"height":0.796},"transform":{"x":-0.2,"y":0.75,"z":0.0,"yaw_rad":-1.5707963267948966},"geometry_assessment":"inside room; all 5 pairwise separations positive","relation_assessment":"linked to dining table by exact chair edge and reverse frozen compatibility; faces west toward table; pull-out zone clear","status":"pass"},
+    {"object_id":"cabinet_dishes","category":"cabinet","family":"storage","functions":["store","contain"],"bbox_m":{"width":1.3261,"depth":0.4018,"height":0.81},"transform":{"x":2.369,"y":-0.65,"z":0.0,"yaw_rad":-1.5707963267948966},"geometry_assessment":"east wall-side placement inside room; all 5 pairwise separations positive","relation_assessment":"west-facing accessible front with clear cabinet operation zone; no functional partner edge required","status":"pass"}
+  ],
+  "exact_geometry_and_relation_assessment": {
+    "scene_dimensions_m": {"length":5.3,"width":4.1},
+    "furniture_count": 6,
+    "opening_count": 2,
+    "pairwise_collision": "pass; minimum signed separation 0.186 m",
+    "room_bounds": "pass",
+    "opening_clearance": "pass for southwest door and northeast window; PNG shows clear marked zones",
+    "use_clearance": "pass for all 5 zones; no disallowed overlap ids",
+    "path_clearance_and_reachability": {"pass":true,"all_targets_reachable":true,"target_count":5},
+    "visual_png_assessment": "pass; nonblank room plan with all six furniture objects, door/window clearances, five use zones, and five path targets visibly represented; no apparent object overlap or clipping",
+    "relation_assessment": "pass; dining table is support_surface with dining_surface, seating is oriented toward it, and cabinet access is west-facing and separated"
+  },
+  "template_risk": {
+    "template_risk": false,
+    "novelty_pass": true,
+    "closest_global": {"scene_id":"dining_room_authored_002","overall_similarity":0.685724,"legacy_near_duplicate_distance":0.251917,"template_risk":false},
+    "closest_same_room_type": {"scene_id":"dining_room_authored_002","overall_similarity":0.685724,"legacy_near_duplicate_distance":0.251917,"template_risk":false},
+    "similarity_threshold": 0.86,
+    "near_duplicate_distance_threshold": 0.035,
+    "assessment": "pass; closest global and same-room comparisons remain below template-risk thresholds"
+  },
+  "semantic_review_status": "pass",
+  "final_verdict": "accept"
+}

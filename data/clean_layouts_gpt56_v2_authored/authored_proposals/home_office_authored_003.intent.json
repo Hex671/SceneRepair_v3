@@ -1,0 +1,29 @@
+{
+  "scene_id": "home_office_authored_003",
+  "room_type": "home_office",
+  "primary_activity": "A single resident performs focused computer and paperwork sessions at a daylight-oriented workstation.",
+  "secondary_activities": [
+    "Read long-form material away from the screen",
+    "Retrieve active files and reference books",
+    "Hold a brief one-person conversation beside the work area"
+  ],
+  "circulation_plan": "Entry is through the west side of the south wall. A clear diagonal route runs northeast from the inward door clearance to the desk chair, then branches east toward a compact reading seat; the central-south floor remains free for turning and moving between both zones.",
+  "spatial_organization": "The workstation occupies the north daylight band without centering the entire room on a wall-facing desk. Tall reference storage is consolidated on the west wall beyond the door swing, while a small reading cluster uses the quieter east side.",
+  "daylight_or_opening_considerations": "A wide north window lights the desk from the side/front without being blocked by tall storage. The south door clearance and its northeast continuation remain furniture-free.",
+  "intended_furniture_groups": [
+    "desk, task chair, and low drawer cabinet as the active work group",
+    "lounge chair and side table as a separate reading group",
+    "bookcase and file cabinet as a west-wall reference group"
+  ],
+  "intended_open_space": "An irregular open wedge from the south-west entry through the room center, plus pull-back clearance behind the task chair and approach space in front of west-wall storage.",
+  "difference_from_previous_scenes": "Conceived before inspecting prior coordinates: this room uses a north-side daylight workstation, vertically consolidated west-wall storage, and an independent east reading pocket connected by diagonal rather than axial circulation.",
+  "room_dimensions_m": {
+    "length": 4.8,
+    "width": 3.9
+  },
+  "planned_openings": [
+    {"opening_id": "door_00", "wall": "south", "along_m": -1.35, "width_m": 0.9},
+    {"opening_id": "window_00", "wall": "north", "along_m": 0.65, "width_m": 1.8}
+  ],
+  "authorship_stage": "design_intent_before_asset_query_or_prior-layout-inspection"
+}

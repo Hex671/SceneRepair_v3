@@ -1,0 +1,23 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "bedroom_authored_003",
+  "revision_id": "rev_000_pre_strict_separation",
+  "status": "superseded_invalid_geometry",
+  "reason": "armchair_01 and side_table_01 OBB signed separation was -0.0045 m; legacy 5 mm acceptance tolerance incorrectly admitted penetration",
+  "measured_pair": {
+    "source_id": "armchair_01",
+    "target_id": "side_table_01",
+    "signed_separation_m": -0.0045
+  },
+  "files_sha256": {
+    "authored_proposals__bedroom_authored_003.json": "9fc69c7b3d6095a80f668e6309b52808da0ab17ed7f47930f5eb14505c1b1acc",
+    "diversity__bedroom_authored_003.json": "f9918b8c1a08409c0396ccc06a94d1254ebf2c783c8f8fabb340b18bb2ee81ca",
+    "reviews__bedroom_authored_003_independent.json": "fc87cc202a6aaab19e04140e6909a05de9b743ee7ca6fe0d5f690f23fd87baf3",
+    "scenes__bedroom_authored_003.json": "ae7744511ba09b8bbbea62998c48255f9a05865a92f6d32147f0ab82089e5539",
+    "validation__bedroom_authored_003.json": "44116a00c3d2516421afec426fc5e108b8bf9a22de544e242e69546596fde7c5",
+    "validation__bedroom_authored_003_diversity.json": "f9918b8c1a08409c0396ccc06a94d1254ebf2c783c8f8fabb340b18bb2ee81ca",
+    "validation__functional_partner_build_bedroom_authored_003.json": "97dc708e31df583d38e84b6ce36a78ce838c4a33a370dedff5d64ed8a654d4bc",
+    "visualizations__bedroom_authored_003.png": "d9521f6db64bd3146ee8be3e2e483ff76defe1173d107c39081dea9c1c046cb1"
+  },
+  "superseded_by": "rev_001_strict_positive_separation"
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": "authored_scene_geometry_review_tables_v1",
+  "numeric_separation_epsilon_m": 1e-09,
+  "accepted_min_signed_separation_m": 0.0,
+  "pairwise_signed_separation_table": [
+    {
+      "source_id": "bed_sleep_north",
+      "target_id": "nightstand_sleep_west",
+      "signed_separation_m": 0.111,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bed_sleep_north",
+      "target_id": "wardrobe_clothes_east",
+      "signed_separation_m": 2.23305,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bed_sleep_north",
+      "target_id": "bench_dressing_foot",
+      "signed_separation_m": 0.522,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bed_sleep_north",
+      "target_id": "cabinet_dressing_south",
+      "signed_separation_m": 2.3132,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bed_sleep_north",
+      "target_id": "armchair_daylight_south_east",
+      "signed_separation_m": 1.408641369,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "nightstand_sleep_west",
+      "target_id": "wardrobe_clothes_east",
+      "signed_separation_m": 4.12205,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "nightstand_sleep_west",
+      "target_id": "bench_dressing_foot",
+      "signed_separation_m": 2.2084,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "nightstand_sleep_west",
+      "target_id": "cabinet_dressing_south",
+      "signed_separation_m": 3.9996,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "nightstand_sleep_west",
+      "target_id": "armchair_daylight_south_east",
+      "signed_separation_m": 3.938653219,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "wardrobe_clothes_east",
+      "target_id": "bench_dressing_foot",
+      "signed_separation_m": 2.62205,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "wardrobe_clothes_east",
+      "target_id": "cabinet_dressing_south",
+      "signed_separation_m": 2.57165,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "wardrobe_clothes_east",
+      "target_id": "armchair_daylight_south_east",
+      "signed_separation_m": 0.818256624,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_dressing_foot",
+      "target_id": "cabinet_dressing_south",
+      "signed_separation_m": 1.4412,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_dressing_foot",
+      "target_id": "armchair_daylight_south_east",
+      "signed_separation_m": 1.308912593,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "cabinet_dressing_south",
+      "target_id": "armchair_daylight_south_east",
+      "signed_separation_m": 1.765274341,
+      "classification": "positive_gap"
+    }
+  ],
+  "yaw_direction_table": [
+    {
+      "object_id": "bed_sleep_north",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    },
+    {
+      "object_id": "nightstand_sleep_west",
+      "yaw_rad": -3.14159265359,
+      "yaw_deg": -180.0,
+      "local_minus_y_front_vector_xy": [
+        -0.0,
+        1.0
+      ],
+      "dominant_cardinal_direction": "north"
+    },
+    {
+      "object_id": "wardrobe_clothes_east",
+      "yaw_rad": 1.570796326795,
+      "yaw_deg": 90.0,
+      "local_minus_y_front_vector_xy": [
+        1.0,
+        -0.0
+      ],
+      "dominant_cardinal_direction": "east"
+    },
+    {
+      "object_id": "bench_dressing_foot",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    },
+    {
+      "object_id": "cabinet_dressing_south",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    },
+    {
+      "object_id": "armchair_daylight_south_east",
+      "yaw_rad": 0.8,
+      "yaw_deg": 45.836624,
+      "local_minus_y_front_vector_xy": [
+        0.717356091,
+        -0.696706709
+      ],
+      "dominant_cardinal_direction": "east"
+    }
+  ],
+  "scene_id": "bedroom_authored_002",
+  "scene_layout_hash": "5ab314877c8f86c676cff399804b85d2abf5a01b4f958ef282b24e299ed119ec",
+  "functional_partner_match_table": [
+    {
+      "source_id": "bed_sleep_north",
+      "target_id": "nightstand_sleep_west",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "033ec086c23a6d39fb37df87e6748c413bf80e29",
+      "matched_original_partner_category": "nightstand",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "nightstand_sleep_west",
+      "target_id": "bed_sleep_north",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "01362ea241206b5668fb03f345c4637fd9386c8a",
+      "matched_original_partner_category": "bed",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    }
+  ]
+}

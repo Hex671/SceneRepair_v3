@@ -1,0 +1,273 @@
+{
+  "schema_version": "authored_layout_diversity_report_v1",
+  "scene_id": "bedroom_authored_003",
+  "comparison_count": 39,
+  "novelty_pass": true,
+  "closest_scene": {
+    "scene_id": "home_office_authored_003",
+    "room_type": "home_office",
+    "overall_similarity": 0.58651,
+    "category_multiset_jaccard": 0.4,
+    "furniture_count": 7,
+    "furniture_count_delta": 0,
+    "wall_attachment_similarity": 0.4,
+    "functional_partner_graph_similarity": 0.6,
+    "normalized_position_rms": 0.053355,
+    "best_symmetry_transform": "identity",
+    "yaw_combination_similarity": 0.4,
+    "primary_activity_goal_distance": 0.244991,
+    "open_space_distribution_similarity": 0.857143,
+    "legacy_near_duplicate_distance": null,
+    "template_risk": false
+  },
+  "top_comparisons": [
+    {
+      "scene_id": "home_office_authored_003",
+      "room_type": "home_office",
+      "overall_similarity": 0.58651,
+      "category_multiset_jaccard": 0.4,
+      "furniture_count": 7,
+      "furniture_count_delta": 0,
+      "wall_attachment_similarity": 0.4,
+      "functional_partner_graph_similarity": 0.6,
+      "normalized_position_rms": 0.053355,
+      "best_symmetry_transform": "identity",
+      "yaw_combination_similarity": 0.4,
+      "primary_activity_goal_distance": 0.244991,
+      "open_space_distribution_similarity": 0.857143,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "bedroom_authored_001",
+      "room_type": "bedroom",
+      "overall_similarity": 0.527468,
+      "category_multiset_jaccard": 0.625,
+      "furniture_count": 6,
+      "furniture_count_delta": 1,
+      "wall_attachment_similarity": 0.444444,
+      "functional_partner_graph_similarity": 0.428571,
+      "normalized_position_rms": 0.266314,
+      "best_symmetry_transform": "mirror_y",
+      "yaw_combination_similarity": 0.3,
+      "primary_activity_goal_distance": 0.081148,
+      "open_space_distribution_similarity": 0.571429,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "home_office_001",
+      "room_type": "home_office",
+      "overall_similarity": 0.462433,
+      "category_multiset_jaccard": 0.5,
+      "furniture_count": 5,
+      "furniture_count_delta": 2,
+      "wall_attachment_similarity": 0.333333,
+      "functional_partner_graph_similarity": 0.4,
+      "normalized_position_rms": 0.249699,
+      "best_symmetry_transform": "identity",
+      "yaw_combination_similarity": 0.333333,
+      "primary_activity_goal_distance": 0.036911,
+      "open_space_distribution_similarity": 0.428571,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "bedroom_003",
+      "room_type": "bedroom",
+      "overall_similarity": 0.443489,
+      "category_multiset_jaccard": 0.625,
+      "furniture_count": 6,
+      "furniture_count_delta": 1,
+      "wall_attachment_similarity": 0.181818,
+      "functional_partner_graph_similarity": 0.333333,
+      "normalized_position_rms": 0.277012,
+      "best_symmetry_transform": "identity",
+      "yaw_combination_similarity": 0.083333,
+      "primary_activity_goal_distance": 0.192245,
+      "open_space_distribution_similarity": 0.571429,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "home_office_005",
+      "room_type": "home_office",
+      "overall_similarity": 0.43783,
+      "category_multiset_jaccard": 0.5,
+      "furniture_count": 5,
+      "furniture_count_delta": 2,
+      "wall_attachment_similarity": 0.333333,
+      "functional_partner_graph_similarity": 0.4,
+      "normalized_position_rms": 0.268049,
+      "best_symmetry_transform": "mirror_x",
+      "yaw_combination_similarity": 0.2,
+      "primary_activity_goal_distance": 0.224755,
+      "open_space_distribution_similarity": 0.571429,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "home_office_003",
+      "room_type": "home_office",
+      "overall_similarity": 0.426885,
+      "category_multiset_jaccard": 0.5,
+      "furniture_count": 5,
+      "furniture_count_delta": 2,
+      "wall_attachment_similarity": 0.333333,
+      "functional_partner_graph_similarity": 0.4,
+      "normalized_position_rms": 0.207873,
+      "best_symmetry_transform": "rotate_180",
+      "yaw_combination_similarity": 0.0,
+      "primary_activity_goal_distance": 0.218535,
+      "open_space_distribution_similarity": 0.428571,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "bedroom_007",
+      "room_type": "bedroom",
+      "overall_similarity": 0.425509,
+      "category_multiset_jaccard": 0.625,
+      "furniture_count": 6,
+      "furniture_count_delta": 1,
+      "wall_attachment_similarity": 0.083333,
+      "functional_partner_graph_similarity": 0.333333,
+      "normalized_position_rms": 0.249627,
+      "best_symmetry_transform": "rotate_180",
+      "yaw_combination_similarity": 0.0,
+      "primary_activity_goal_distance": 0.115549,
+      "open_space_distribution_similarity": 0.428571,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "home_office_authored_001",
+      "room_type": "home_office",
+      "overall_similarity": 0.418497,
+      "category_multiset_jaccard": 0.4,
+      "furniture_count": 7,
+      "furniture_count_delta": 0,
+      "wall_attachment_similarity": 0.272727,
+      "functional_partner_graph_similarity": 0.428571,
+      "normalized_position_rms": 0.230082,
+      "best_symmetry_transform": "mirror_x",
+      "yaw_combination_similarity": 0.272727,
+      "primary_activity_goal_distance": 0.365339,
+      "open_space_distribution_similarity": 0.285714,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "home_office_authored_002",
+      "room_type": "home_office",
+      "overall_similarity": 0.413106,
+      "category_multiset_jaccard": 0.4,
+      "furniture_count": 7,
+      "furniture_count_delta": 0,
+      "wall_attachment_similarity": 0.272727,
+      "functional_partner_graph_similarity": 0.428571,
+      "normalized_position_rms": 0.266419,
+      "best_symmetry_transform": "mirror_y",
+      "yaw_combination_similarity": 0.076923,
+      "primary_activity_goal_distance": 0.276156,
+      "open_space_distribution_similarity": 0.428571,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    },
+    {
+      "scene_id": "home_office_006",
+      "room_type": "home_office",
+      "overall_similarity": 0.412004,
+      "category_multiset_jaccard": 0.5,
+      "furniture_count": 5,
+      "furniture_count_delta": 2,
+      "wall_attachment_similarity": 0.333333,
+      "functional_partner_graph_similarity": 0.4,
+      "normalized_position_rms": 0.29853,
+      "best_symmetry_transform": "mirror_y",
+      "yaw_combination_similarity": 0.090909,
+      "primary_activity_goal_distance": 0.12024,
+      "open_space_distribution_similarity": 0.285714,
+      "legacy_near_duplicate_distance": null,
+      "template_risk": false
+    }
+  ],
+  "candidate_features": {
+    "category_multiset": {
+      "bed": 1,
+      "nightstand": 1,
+      "desk": 1,
+      "chair": 1,
+      "wardrobe": 1,
+      "armchair": 1,
+      "side_table": 1
+    },
+    "furniture_count": 7,
+    "wall_attachments": {
+      "bed_01": "west",
+      "nightstand_01": "interior",
+      "desk_01": "interior",
+      "chair_01": "interior",
+      "wardrobe_01": "south",
+      "armchair_01": "interior",
+      "side_table_01": "interior"
+    },
+    "functional_partner_graph": [
+      "bed->nightstand",
+      "nightstand->bed",
+      "desk->chair",
+      "chair->desk",
+      "side_table->armchair"
+    ],
+    "yaw_bins": [
+      "bed:2",
+      "nightstand:0",
+      "desk:0",
+      "chair:4",
+      "wardrobe:4",
+      "armchair:6",
+      "side_table:0"
+    ],
+    "primary_activity_goal_xy_m": [
+      -0.48,
+      0.0
+    ],
+    "open_space_distribution_3x3": [
+      0.14285714285714285,
+      0.14285714285714285,
+      0.14285714285714285,
+      0.14285714285714285,
+      0.14285714285714285,
+      0.0,
+      0.14285714285714285,
+      0.14285714285714285,
+      0.0
+    ],
+    "functional_zone_composition": [
+      {
+        "owner_id": "bed_01",
+        "purpose": "bed_side_entry_and_making"
+      },
+      {
+        "owner_id": "nightstand_01",
+        "purpose": "bedside_reach"
+      },
+      {
+        "owner_id": "desk_01",
+        "purpose": "morning_work_and_grooming"
+      },
+      {
+        "owner_id": "chair_01",
+        "purpose": "desk_seat_pullback"
+      },
+      {
+        "owner_id": "wardrobe_01",
+        "purpose": "dressing_and_clothing_access"
+      },
+      {
+        "owner_id": "armchair_01",
+        "purpose": "reading_seat_sit_stand"
+      }
+    ]
+  }
+}

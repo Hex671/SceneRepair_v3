@@ -1,0 +1,91 @@
+{
+  "schema_version": "independent_semantic_scene_review_v1",
+  "scene_id": "bedroom_authored_001",
+  "isolation_compliance": {
+    "reviewed_artifacts": [
+      "reviews/reviewer_packet/bedroom_authored_001_scene.json",
+      "visualizations/bedroom_authored_001.png",
+      "validation/bedroom_authored_001.json",
+      "validation/bedroom_authored_001_diversity.json"
+    ],
+    "prohibited_artifacts_read": false,
+    "scene_modified": false,
+    "status": "compliant"
+  },
+  "object_reports": [
+    {
+      "cited_object_ids": [
+        "bed_sleep"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The bed is a clear primary sleeping mass on the west wall. Its east-side use zone and the rendered open lane remain reachable from the south-east entry, so making the bed and entering it do not require crossing another furniture grouping.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "nightstand_sleep",
+        "bed_sleep"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The nightstand sits immediately beyond the bed's north-side edge without occupying the bed egress zone. The supplied validation reports its access target as reachable and reports no collision or clearance violation.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "wardrobe_clothes"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The wardrobe forms a compact north-wall dressing zone. Its amber front clearance is visibly open, is distinct from the east window clearance, and its access target is marked reachable in the validation report.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "armchair_reading",
+        "side_table_reading",
+        "floor_lamp_reading"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "These objects form a coherent reading cluster in the open east half of the room: the side table and lamp are adjacent to the chair, while the chair's approach zone and path target remain open. The cluster stays clear of both the entry door clearance and the window clearance in the render.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "side_table_reading"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The side table is positioned as a usable companion surface for the chair and does not encroach on the east-wall window clearance or the central access lane.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "cited_object_ids": [
+        "floor_lamp_reading"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The floor lamp supports the reading chair from the south-east side while remaining outside the red door-clearance rectangle; the rendered separation leaves a usable entry route.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    }
+  ],
+  "overall_assessment": {
+    "assessment": "pass",
+    "concrete_reason": "The six-object layout reads as a bedroom with three deliberate zones: west sleeping, north dressing, and east reading. The rendered plan shows a continuous south-east entry route to each marked use target, and the supplied validation passes geometry, openings, reachability, and use clearance without violations.",
+    "detected_problem": null,
+    "required_correction": null
+  },
+  "template_risk_conclusion": {
+    "template_risk": false,
+    "concrete_reason": "The supplied diversity report finds no template risk. The closest bedroom comparison has modest overall similarity (0.475604) with low wall-attachment, functional-graph, and yaw similarities; visually, this scene combines a west-wall bed, north-wall wardrobe, and diagonal reading cluster rather than repeating a simple mirrored template."
+  },
+  "final_verdict": "semantic_review_pass"
+}

@@ -1,0 +1,1207 @@
+{
+  "schema_version": "authored_clean_layout_dataset_status_v2",
+  "accepted_clean_count": 7,
+  "hard_valid_pending_independent_review_count": 4,
+  "rejected_count": 0,
+  "scene_records": [
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "bedroom_authored_001",
+      "room_type": "bedroom",
+      "status": "accepted_clean",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 5,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": true
+      },
+      "semantic_review_status": null,
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "bedroom_authored_003",
+        "room_type": "bedroom",
+        "overall_similarity": 0.524624,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "closest_same_room_type": {
+        "scene_id": "bedroom_authored_003",
+        "room_type": "bedroom",
+        "overall_similarity": 0.524624,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/bedroom_authored_001.json",
+        "scene": "scenes/bedroom_authored_001.json",
+        "validation": "validation/bedroom_authored_001.json",
+        "diversity": "diversity/bedroom_authored_001.json",
+        "visualization": "visualizations/bedroom_authored_001.png",
+        "independent_review": "reviews/bedroom_authored_001_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/bedroom_authored_001_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_bedroom_authored_001.json"
+      },
+      "artifact_sha256": {
+        "proposal": "efcfbefdc6100b1edcb538751494b5cae5a7c5f17e3521d2736391ca02d8516c",
+        "scene": "5ac2b58c521bc2c6295c078e43febe92afd1a53b6cac5612b9e8be5d82e60b19",
+        "validation": "e8eab167498c014a9bd4799895fc86f833de55ad9f85d05193ffe2efb0d66029",
+        "diversity": "db18510ab6938f6c69e6ee3a5e001fab5cf783510302158285fa33b35ea6699f",
+        "visualization": "c74f01c160de424f69fd15f499429df17e40eb82a229cdf40541a1ed5b550057",
+        "independent_review": "af73330dfafe04a841f8d5aa7b0b041e13488806ae28680312e8763b3845d484",
+        "reviewer_geometry": "1300f27ca27744f87842cd925e4180620aa1285e0213dcfa87d9dfe2d7760e75",
+        "functional_partner_build": "a91f45c309791e0b160362defd522552a3fdeb0c03831c15f3a490771cda502b"
+      },
+      "revision": null
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "bedroom_authored_002",
+      "room_type": "bedroom",
+      "status": "hard_valid_pending_independent_review",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 2,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": false
+      },
+      "semantic_review_status": "pending_independent_review",
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "bedroom_authored_001",
+        "room_type": "bedroom",
+        "overall_similarity": 0.451975,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "closest_same_room_type": {
+        "scene_id": "bedroom_authored_001",
+        "room_type": "bedroom",
+        "overall_similarity": 0.451975,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/bedroom_authored_002.json",
+        "scene": "scenes/bedroom_authored_002.json",
+        "validation": "validation/bedroom_authored_002.json",
+        "diversity": "diversity/bedroom_authored_002.json",
+        "visualization": "visualizations/bedroom_authored_002.png",
+        "independent_review": "reviews/bedroom_authored_002_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/bedroom_authored_002_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_bedroom_authored_002.json"
+      },
+      "artifact_sha256": {
+        "proposal": "f2b405213e6c15b43a7156e59ff95676a35da948093050d2096af131561c73f0",
+        "scene": "6b8e9db585b777c9551d467e5ec86eebde43da07f98192a011cdc9614bf1b15a",
+        "validation": "ff0f3fb3faf9e9405c21f5dc006326ffa3168b993159da6a42fc0fa499cc67f6",
+        "diversity": "6321ab398ad6a3eb852a5d19986de7416f9ad3048ab49647e1885f3d05539659",
+        "visualization": "4e94df60a6c49c300dd28681f4ef9807148e858b2c082db4a4dc4be01f1b77b7",
+        "independent_review": "555adfc2a1e4d47ec011491f885f8e322962a1f8cf1c4d1229050663b3b2af2b",
+        "reviewer_geometry": "9d6144926d4cb1e8f0bddc33c240df351b7780bbbea6a82305ae1651e46765f9",
+        "functional_partner_build": "bdf7354bd6d910ce31d8361d8c9a81ca145a2d394a289f0f8f142ca4b413d8e8"
+      },
+      "revision": {
+        "schema_version": "authored_scene_revision_record_v1",
+        "scene_id": "bedroom_authored_002",
+        "revision_id": "rev_001_local_minus_y_yaw_corrected",
+        "status": "corrected_pending_independent_review",
+        "reason": "Yaw values and their use-clearance-zone orientations now follow the HSSD local -Y front convention; fresh independent review is required because the rendered arrows changed.",
+        "yaw_corrections": [
+          {
+            "object_id": "nightstand_sleep_west",
+            "old_yaw_rad": -3.141592653589793,
+            "new_yaw_rad": 0.0,
+            "old_local_minus_y_front_xy": [
+              -0.0,
+              1.0
+            ],
+            "new_local_minus_y_front_xy": [
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "object_id": "wardrobe_clothes_east",
+            "old_yaw_rad": 1.5707963267948966,
+            "new_yaw_rad": -1.5707963267948966,
+            "old_local_minus_y_front_xy": [
+              1.0,
+              -0.0
+            ],
+            "new_local_minus_y_front_xy": [
+              -1.0,
+              -0.0
+            ]
+          },
+          {
+            "object_id": "cabinet_dressing_south",
+            "old_yaw_rad": 0.0,
+            "new_yaw_rad": -3.141592653589793,
+            "old_local_minus_y_front_xy": [
+              0.0,
+              -1.0
+            ],
+            "new_local_minus_y_front_xy": [
+              -0.0,
+              1.0
+            ]
+          },
+          {
+            "object_id": "armchair_daylight_south_east",
+            "old_yaw_rad": 0.8,
+            "new_yaw_rad": -2.3415926535897933,
+            "old_local_minus_y_front_xy": [
+              0.717356,
+              -0.696707
+            ],
+            "new_local_minus_y_front_xy": [
+              -0.717356,
+              0.696707
+            ]
+          }
+        ],
+        "artifact_sha256": {
+          "authored_proposal": "f2b405213e6c15b43a7156e59ff95676a35da948093050d2096af131561c73f0",
+          "scene": "6b8e9db585b777c9551d467e5ec86eebde43da07f98192a011cdc9614bf1b15a",
+          "validation": "ff0f3fb3faf9e9405c21f5dc006326ffa3168b993159da6a42fc0fa499cc67f6",
+          "diversity": "6321ab398ad6a3eb852a5d19986de7416f9ad3048ab49647e1885f3d05539659",
+          "diversity_legacy": "6321ab398ad6a3eb852a5d19986de7416f9ad3048ab49647e1885f3d05539659",
+          "functional_partner_build": "bdf7354bd6d910ce31d8361d8c9a81ca145a2d394a289f0f8f142ca4b413d8e8",
+          "visualization": "4e94df60a6c49c300dd28681f4ef9807148e858b2c082db4a4dc4be01f1b77b7",
+          "independent_review": "555adfc2a1e4d47ec011491f885f8e322962a1f8cf1c4d1229050663b3b2af2b",
+          "reviewer_scene": "5ebf28e6306d2ef04c04cdf87cb03bb07336d98c8d7bab6437e925f3b156ddff",
+          "reviewer_geometry": "9d6144926d4cb1e8f0bddc33c240df351b7780bbbea6a82305ae1651e46765f9"
+        },
+        "supersedes": "rev_000_pre_yaw_convention_correction"
+      }
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "bedroom_authored_003",
+      "room_type": "bedroom",
+      "status": "accepted_clean",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": true
+      },
+      "semantic_review_status": "approved",
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "home_office_authored_003",
+        "room_type": "home_office",
+        "overall_similarity": 0.587382,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "closest_same_room_type": {
+        "scene_id": "bedroom_authored_001",
+        "room_type": "bedroom",
+        "overall_similarity": 0.524624,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/bedroom_authored_003.json",
+        "scene": "scenes/bedroom_authored_003.json",
+        "validation": "validation/bedroom_authored_003.json",
+        "diversity": "diversity/bedroom_authored_003.json",
+        "visualization": "visualizations/bedroom_authored_003.png",
+        "independent_review": "reviews/bedroom_authored_003_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/bedroom_authored_003_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_bedroom_authored_003.json"
+      },
+      "artifact_sha256": {
+        "proposal": "65307bd9d7f164a6549c07dc30f1db614282565a920dd52c822efaa7e242a16c",
+        "scene": "093ad044ffb6d879f8e839ea11642632647753102a404555f7c01efbebd6095c",
+        "validation": "cbc2b156cccd340264e8f1e707ae761d7fbe435ace4f24ab737b250f230060db",
+        "diversity": "b4eb6fc7545c4ca11e79b4aa6229e0f76d244a8d5267f938e7c2af1d8529c701",
+        "visualization": "c4ada2a5c7bbe994e1479341e92d0d29443f7acf5c78de03e2f6622a4386afce",
+        "independent_review": "21e2d6d599c492e2fa159a00aed53e9b3a9ce718eba2d42d328780d2bfba4923",
+        "reviewer_geometry": "a0030cf7d7562502d48c29cb95d89a7d1c36ecaa657cd1191ccee4f4c59ec1b0",
+        "functional_partner_build": "d71f3a899058d2e12d8dd932fad4b509af8b69b8421e76e93216d7e09140f25b"
+      },
+      "revision": {
+        "schema_version": "authored_scene_revision_record_v1",
+        "scene_id": "bedroom_authored_003",
+        "revision_id": "rev_002_lateral_side_table",
+        "status": "current_accepted_clean",
+        "reason": "side_table_01 keeps the required 0.02 m west correction and is moved south to a lateral position, clearing the west-facing sit/stand approach of armchair_01.",
+        "measured_pair": {
+          "object_a": "armchair_01",
+          "object_b": "side_table_01",
+          "signed_separation_m": 0.0615
+        },
+        "yaw_evidence": {
+          "armchair_01": "west",
+          "side_table_01": "south"
+        },
+        "independent_review_verdict": "pass",
+        "supersedes": "rev_001_strict_positive_separation",
+        "artifact_sha256": {
+          "authored_proposal": "65307bd9d7f164a6549c07dc30f1db614282565a920dd52c822efaa7e242a16c",
+          "scene": "093ad044ffb6d879f8e839ea11642632647753102a404555f7c01efbebd6095c",
+          "validation": "cbc2b156cccd340264e8f1e707ae761d7fbe435ace4f24ab737b250f230060db",
+          "diversity": "b4eb6fc7545c4ca11e79b4aa6229e0f76d244a8d5267f938e7c2af1d8529c701",
+          "visualization": "c4ada2a5c7bbe994e1479341e92d0d29443f7acf5c78de03e2f6622a4386afce",
+          "independent_review": "21e2d6d599c492e2fa159a00aed53e9b3a9ce718eba2d42d328780d2bfba4923",
+          "reviewer_geometry": "a0030cf7d7562502d48c29cb95d89a7d1c36ecaa657cd1191ccee4f4c59ec1b0",
+          "functional_partner_build": "d71f3a899058d2e12d8dd932fad4b509af8b69b8421e76e93216d7e09140f25b"
+        }
+      }
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "dining_room_authored_001",
+      "room_type": "dining_room",
+      "status": "accepted_clean",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 7,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": true
+      },
+      "semantic_review_status": "pass",
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "dining_room_authored_002",
+        "room_type": "dining_room",
+        "overall_similarity": 0.685724,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "closest_same_room_type": {
+        "scene_id": "dining_room_authored_002",
+        "room_type": "dining_room",
+        "overall_similarity": 0.685724,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/dining_room_authored_001.json",
+        "scene": "scenes/dining_room_authored_001.json",
+        "validation": "validation/dining_room_authored_001.json",
+        "diversity": "diversity/dining_room_authored_001.json",
+        "visualization": "visualizations/dining_room_authored_001.png",
+        "independent_review": "reviews/dining_room_authored_001_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/dining_room_authored_001_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_dining_room_authored_001.json"
+      },
+      "artifact_sha256": {
+        "proposal": "ae9a9a18edb86fe9d10aab2cde6543f4e64748b8560331f0e61204394ce432f5",
+        "scene": "4ea30ce4e70d2b6f858596c6d1e4bbd4660025e1248fad801b2ac88382ce51dd",
+        "validation": "cab148850acb15b5832f9e0669e5a995230d06fa2f0934b18e409bdb77170386",
+        "diversity": "32525c6fd3c86bf0558f03b55b4ea36a984f91967a6bd24f30681822e1b8be95",
+        "visualization": "5e1838c87884980038087c4d84a6e40b239bdd38e364743b83b53eb60e649f4e",
+        "independent_review": "1cbf865288cc059181e86930edbc56977d3034d0ddc4745b3f30326554e8c016",
+        "reviewer_geometry": "0ec77061ef3d6a45a7a16a9f99be58ec1578d5556244fce8a7bcdc2b1c4d6ab5",
+        "functional_partner_build": "e91c2dacd78af8e5437165c37ee4e158a0489c44ba5c416d67a2f2b8b1b22cfc"
+      },
+      "revision": null
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "dining_room_authored_002",
+      "room_type": "dining_room",
+      "status": "accepted_clean",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 7,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": true
+      },
+      "semantic_review_status": "complete_pass",
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "dining_room_authored_001",
+        "room_type": "dining_room",
+        "overall_similarity": 0.685724,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "closest_same_room_type": {
+        "scene_id": "dining_room_authored_001",
+        "room_type": "dining_room",
+        "overall_similarity": 0.685724,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/dining_room_authored_002.json",
+        "scene": "scenes/dining_room_authored_002.json",
+        "validation": "validation/dining_room_authored_002.json",
+        "diversity": "diversity/dining_room_authored_002.json",
+        "visualization": "visualizations/dining_room_authored_002.png",
+        "independent_review": "reviews/dining_room_authored_002_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/dining_room_authored_002_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_dining_room_authored_002.json"
+      },
+      "artifact_sha256": {
+        "proposal": "eefddfe33f8f07c4edfd3809978670a8a5102fd73a11f827aaf9e058f7c7b77d",
+        "scene": "117696e4ecb6cfd8efeb11ca57edc394964fd35df2a26bb96b6d01e04bf37a6a",
+        "validation": "4ff674fe9f1b6b88b8f71afa16a84cb940165913a85459e54e39a5a01a24e991",
+        "diversity": "966e93e8d183cd29bd4b4705f28cf2de966510b89c3a62fde2102683cee48b31",
+        "visualization": "a17e91243124255e3a1be845c62e16dbda2948718691000fca38e6eda5d4d814",
+        "independent_review": "1fbc25a69c46cc0ca96f70ca2ce53623c0a7a1c73b3ad842ee4e22d1cf248be6",
+        "reviewer_geometry": "6eac38194d08939db29c65b0e471b901a63d45c26540d35226f906881c973ed5",
+        "functional_partner_build": "3612e79c698a93bd875958d876649d594445976fd88503c40de6d961c2b07b03"
+      },
+      "revision": null
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "dining_room_authored_003",
+      "room_type": "dining_room",
+      "status": "hard_valid_pending_independent_review",
+      "furniture_count": 5,
+      "functional_partner_edge_count": 3,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": false
+      },
+      "semantic_review_status": "pending_independent_review",
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "dining_room_authored_002",
+        "room_type": "dining_room",
+        "overall_similarity": 0.473813,
+        "template_risk": false,
+        "best_symmetry_transform": "rotate_180"
+      },
+      "closest_same_room_type": {
+        "scene_id": "dining_room_authored_002",
+        "room_type": "dining_room",
+        "overall_similarity": 0.473813,
+        "template_risk": false,
+        "best_symmetry_transform": "rotate_180"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/dining_room_authored_003.json",
+        "scene": "scenes/dining_room_authored_003.json",
+        "validation": "validation/dining_room_authored_003.json",
+        "diversity": "diversity/dining_room_authored_003.json",
+        "visualization": "visualizations/dining_room_authored_003.png",
+        "independent_review": "reviews/dining_room_authored_003_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/dining_room_authored_003_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_dining_room_authored_003.json"
+      },
+      "artifact_sha256": {
+        "proposal": "5afdbdb6412facd94fa41030cf8e05b95a7913459663e788d1fa01bce4aaf577",
+        "scene": "59c85b489afaa101b1411163a7535a05b5950eeffe187834e513e78a0aa6e0ba",
+        "validation": "7dc229d31585b91721ccee20a5e60f6d46107f896d875c4d8667f1d38e7f5073",
+        "diversity": "a62694d7587928ece9678fb68763b955750b09284720a2c49ad3a6602900c787",
+        "visualization": "b32a15e60281727c6f523a8edf6895aa2772bc9a319acf01b5d6e3036c6577ae",
+        "independent_review": "351d72d7cd46c482f3db543e9a37e6a7d5b8e5331e8f9c3b22fcaa961c78b263",
+        "reviewer_geometry": "8e2a6015cd106c8fd1cb57192dc4b0beb30cccb6730841c202c4ff01a3e8c44c",
+        "functional_partner_build": "3546aee5da0d0311ad253317500b2c5ee77c3501d73c87416418ef89f14b9704"
+      },
+      "revision": {
+        "schema_version": "authored_scene_revision_record_v1",
+        "scene_id": "dining_room_authored_003",
+        "revision_id": "rev_001_local_minus_y_yaw_corrected",
+        "status": "corrected_pending_independent_review",
+        "reason": "Yaw values and their use-clearance-zone orientations now follow the HSSD local -Y front convention; fresh independent review is required because the rendered arrows changed.",
+        "yaw_corrections": [
+          {
+            "object_id": "bench_east_diners",
+            "old_yaw_rad": 1.5707963267948966,
+            "new_yaw_rad": -1.5707963267948966,
+            "old_local_minus_y_front_xy": [
+              1.0,
+              -0.0
+            ],
+            "new_local_minus_y_front_xy": [
+              -1.0,
+              -0.0
+            ]
+          },
+          {
+            "object_id": "chair_west_diner",
+            "old_yaw_rad": -1.5707963267948966,
+            "new_yaw_rad": 1.5707963267948966,
+            "old_local_minus_y_front_xy": [
+              -1.0,
+              -0.0
+            ],
+            "new_local_minus_y_front_xy": [
+              1.0,
+              -0.0
+            ]
+          },
+          {
+            "object_id": "cabinet_dishes_west",
+            "old_yaw_rad": -1.5707963267948966,
+            "new_yaw_rad": 1.5707963267948966,
+            "old_local_minus_y_front_xy": [
+              -1.0,
+              -0.0
+            ],
+            "new_local_minus_y_front_xy": [
+              1.0,
+              -0.0
+            ]
+          },
+          {
+            "object_id": "console_serving_south",
+            "old_yaw_rad": 0.0,
+            "new_yaw_rad": -3.141592653589793,
+            "old_local_minus_y_front_xy": [
+              0.0,
+              -1.0
+            ],
+            "new_local_minus_y_front_xy": [
+              -0.0,
+              1.0
+            ]
+          }
+        ],
+        "artifact_sha256": {
+          "authored_proposal": "5afdbdb6412facd94fa41030cf8e05b95a7913459663e788d1fa01bce4aaf577",
+          "scene": "59c85b489afaa101b1411163a7535a05b5950eeffe187834e513e78a0aa6e0ba",
+          "validation": "7dc229d31585b91721ccee20a5e60f6d46107f896d875c4d8667f1d38e7f5073",
+          "diversity": "a62694d7587928ece9678fb68763b955750b09284720a2c49ad3a6602900c787",
+          "diversity_legacy": "a62694d7587928ece9678fb68763b955750b09284720a2c49ad3a6602900c787",
+          "functional_partner_build": "3546aee5da0d0311ad253317500b2c5ee77c3501d73c87416418ef89f14b9704",
+          "visualization": "b32a15e60281727c6f523a8edf6895aa2772bc9a319acf01b5d6e3036c6577ae",
+          "independent_review": "351d72d7cd46c482f3db543e9a37e6a7d5b8e5331e8f9c3b22fcaa961c78b263",
+          "reviewer_scene": "bbf75ebe1979d94a402b3a893c8993bc6bb5d933649710d7be8cd7887aea72f7",
+          "reviewer_geometry": "8e2a6015cd106c8fd1cb57192dc4b0beb30cccb6730841c202c4ff01a3e8c44c"
+        },
+        "supersedes": "rev_000_pre_yaw_convention_correction"
+      }
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "home_office_authored_001",
+      "room_type": "home_office",
+      "status": "accepted_clean",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": true
+      },
+      "semantic_review_status": null,
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "home_office_authored_002",
+        "room_type": "home_office",
+        "overall_similarity": 0.668506,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "closest_same_room_type": {
+        "scene_id": "home_office_authored_002",
+        "room_type": "home_office",
+        "overall_similarity": 0.668506,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/home_office_authored_001.json",
+        "scene": "scenes/home_office_authored_001.json",
+        "validation": "validation/home_office_authored_001.json",
+        "diversity": "diversity/home_office_authored_001.json",
+        "visualization": "visualizations/home_office_authored_001.png",
+        "independent_review": "reviews/home_office_authored_001_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/home_office_authored_001_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_home_office_authored_001.json"
+      },
+      "artifact_sha256": {
+        "proposal": "86719f62c62c7fbcedc7b79c71d69ca028d080a5cad9e2812debc5614165c73d",
+        "scene": "efbdf592ea45f5363de6873747636b3951cb576b3b55ba2cc746c73e819be1c4",
+        "validation": "4ee3d806b9cbc4fe8fb0b2cdf31fc1a85f91d1f1727f3f9459c1271d17f8838f",
+        "diversity": "2a9627a841ec09fe4952ae3e14f3bb4017b1edb59a0658cf1fd023b0e39dffe2",
+        "visualization": "22ccee8521e4b00b601878b5f1d061f693e7a9d590b636f718ddb42a9e119dd0",
+        "independent_review": "403bec4dd8963ac0506e3d2de2f6dcc0a27fd93395f6b124a078786e127124b9",
+        "reviewer_geometry": "1405f02144582303907443d1292fdfbd24418f0481b65e583d73629beb5eaacf",
+        "functional_partner_build": "d8d1c50c270cb62b5eb4d00ec1d0642fbe6b4b61d8610ff631833c9385b73c79"
+      },
+      "revision": null
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "home_office_authored_002",
+      "room_type": "home_office",
+      "status": "hard_valid_pending_independent_review",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": false
+      },
+      "semantic_review_status": "pending_independent_review",
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "home_office_authored_001",
+        "room_type": "home_office",
+        "overall_similarity": 0.668506,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "closest_same_room_type": {
+        "scene_id": "home_office_authored_001",
+        "room_type": "home_office",
+        "overall_similarity": 0.668506,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/home_office_authored_002.json",
+        "scene": "scenes/home_office_authored_002.json",
+        "validation": "validation/home_office_authored_002.json",
+        "diversity": "diversity/home_office_authored_002.json",
+        "visualization": "visualizations/home_office_authored_002.png",
+        "independent_review": "reviews/home_office_authored_002_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/home_office_authored_002_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_home_office_authored_002.json"
+      },
+      "artifact_sha256": {
+        "proposal": "c9e9bd302852693644852aa62f1c8ae09592231afb7503b0335cf994679848b2",
+        "scene": "26beb7798c3f007ed76960d0572fb03495e68b4fc5a996dac798ed85f2e32704",
+        "validation": "594d42cb187dfdc38fb2e100308592332325b50773d2d0b842d1e73faccbc617",
+        "diversity": "ffb2436284e62859be48d4fb800f299d95a74fa81980aeb035d56d69c251ef64",
+        "visualization": "d05aa760fb379d8c6a3005ae19decb55cbdf9b4bb8a77dd996b70ddcc4ee1813",
+        "independent_review": "833ddc84f0d6f333c231b3d7302e452df8c0d89c8a368bd1c2cd12efbc9cd41f",
+        "reviewer_geometry": "ff7358abcfde581d8c9442900ca0ff9d0a8ba4e1d8052de359612a3fa09c7a7d",
+        "functional_partner_build": "3ba5b6476621858825a27ac1719a781ad22d419e0a56600300d75dfb1a134bf5"
+      },
+      "revision": {
+        "schema_version": "authored_scene_revision_record_v1",
+        "scene_id": "home_office_authored_002",
+        "revision_id": "rev_001_local_minus_y_yaw_corrected",
+        "status": "corrected_pending_independent_review",
+        "reason": "Yaw values and their use-clearance-zone orientations now follow the HSSD local -Y front convention; fresh independent review is required because the rendered arrows changed.",
+        "yaw_corrections": [
+          {
+            "object_id": "desk_work_east",
+            "old_yaw_rad": 1.5707963267948966,
+            "new_yaw_rad": -1.5707963267948966,
+            "old_local_minus_y_front_xy": [
+              1.0,
+              -0.0
+            ],
+            "new_local_minus_y_front_xy": [
+              -1.0,
+              -0.0
+            ]
+          },
+          {
+            "object_id": "chair_work_east",
+            "old_yaw_rad": -1.5707963267948966,
+            "new_yaw_rad": 1.5707963267948966,
+            "old_local_minus_y_front_xy": [
+              -1.0,
+              -0.0
+            ],
+            "new_local_minus_y_front_xy": [
+              1.0,
+              -0.0
+            ]
+          },
+          {
+            "object_id": "bookcase_reference_north",
+            "old_yaw_rad": -3.141592653589793,
+            "new_yaw_rad": 0.0,
+            "old_local_minus_y_front_xy": [
+              -0.0,
+              1.0
+            ],
+            "new_local_minus_y_front_xy": [
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "object_id": "cabinet_files_south_east",
+            "old_yaw_rad": 0.0,
+            "new_yaw_rad": -3.141592653589793,
+            "old_local_minus_y_front_xy": [
+              0.0,
+              -1.0
+            ],
+            "new_local_minus_y_front_xy": [
+              -0.0,
+              1.0
+            ]
+          },
+          {
+            "object_id": "armchair_window_reading",
+            "old_yaw_rad": -2.35,
+            "new_yaw_rad": 0.791592653589793,
+            "old_local_minus_y_front_xy": [
+              -0.711473,
+              0.702713
+            ],
+            "new_local_minus_y_front_xy": [
+              0.711473,
+              -0.702713
+            ]
+          }
+        ],
+        "artifact_sha256": {
+          "authored_proposal": "c9e9bd302852693644852aa62f1c8ae09592231afb7503b0335cf994679848b2",
+          "scene": "26beb7798c3f007ed76960d0572fb03495e68b4fc5a996dac798ed85f2e32704",
+          "validation": "594d42cb187dfdc38fb2e100308592332325b50773d2d0b842d1e73faccbc617",
+          "diversity": "ffb2436284e62859be48d4fb800f299d95a74fa81980aeb035d56d69c251ef64",
+          "diversity_legacy": "ffb2436284e62859be48d4fb800f299d95a74fa81980aeb035d56d69c251ef64",
+          "functional_partner_build": "3ba5b6476621858825a27ac1719a781ad22d419e0a56600300d75dfb1a134bf5",
+          "visualization": "d05aa760fb379d8c6a3005ae19decb55cbdf9b4bb8a77dd996b70ddcc4ee1813",
+          "independent_review": "833ddc84f0d6f333c231b3d7302e452df8c0d89c8a368bd1c2cd12efbc9cd41f",
+          "reviewer_scene": "f10b4df5771a9a135c78feec399802e6829a0b33e330201af4b979941fff49f0",
+          "reviewer_geometry": "ff7358abcfde581d8c9442900ca0ff9d0a8ba4e1d8052de359612a3fa09c7a7d"
+        },
+        "supersedes": "rev_000_pre_yaw_convention_correction"
+      }
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "home_office_authored_003",
+      "room_type": "home_office",
+      "status": "accepted_clean",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 3,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": true
+      },
+      "semantic_review_status": "semantic_review_pass",
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "home_office_authored_001",
+        "room_type": "home_office",
+        "overall_similarity": 0.600467,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "closest_same_room_type": {
+        "scene_id": "home_office_authored_001",
+        "room_type": "home_office",
+        "overall_similarity": 0.600467,
+        "template_risk": false,
+        "best_symmetry_transform": "identity"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/home_office_authored_003.json",
+        "scene": "scenes/home_office_authored_003.json",
+        "validation": "validation/home_office_authored_003.json",
+        "diversity": "diversity/home_office_authored_003.json",
+        "visualization": "visualizations/home_office_authored_003.png",
+        "independent_review": "reviews/home_office_authored_003_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/home_office_authored_003_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_home_office_authored_003.json"
+      },
+      "artifact_sha256": {
+        "proposal": "e074ae82bc3f8817c2885af7de633a53dd3a7078c1fc3feb356c478e54888177",
+        "scene": "091c8053eaf7269cbfec01a93dcf0e81b56dfd00b96dbcba475bf9432ef1da55",
+        "validation": "dc37faeb311013e92f32f0499a3633b7054dd7a048ae0dfb80fa6e2f60a27186",
+        "diversity": "8b0d820cc49fd2d3bbcf179fdb0a0bc1de01bf7f4d6caa29fef81625dc980f5f",
+        "visualization": "c9bd01f073e85aeb06c600304d5b145fb2106b5850509980a070f32adc1e9f56",
+        "independent_review": "e9793dcba2cc2475d994af6ea90089a17e7ecc74ef8c2f74cbbdbd19af359b77",
+        "reviewer_geometry": "7a8d9867631b86864639aa2e6abe765f4d1ef8048f60a37afeecb2252235d5cc",
+        "functional_partner_build": "29d74aaf938692c7971613fb5b3396115c552eefb2d5828588eddd2de8745c50"
+      },
+      "revision": null
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "living_room_authored_001",
+      "room_type": "living_room",
+      "status": "accepted_clean",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 10,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": true
+      },
+      "semantic_review_status": null,
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "living_room_004",
+        "room_type": "living_room",
+        "overall_similarity": 0.653729,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "closest_same_room_type": {
+        "scene_id": "living_room_004",
+        "room_type": "living_room",
+        "overall_similarity": 0.653729,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_y"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/living_room_authored_001.json",
+        "scene": "scenes/living_room_authored_001.json",
+        "validation": "validation/living_room_authored_001.json",
+        "diversity": "diversity/living_room_authored_001.json",
+        "visualization": "visualizations/living_room_authored_001.png",
+        "independent_review": "reviews/living_room_authored_001_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/living_room_authored_001_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_living_room_authored_001.json"
+      },
+      "artifact_sha256": {
+        "proposal": "fd14ec6e5aee3986fcccaabe312ff0adf7d6b7a5d0af1157d1bf9d744c50c86d",
+        "scene": "c959f5b589b256045937c79ad9694c382fecad28adeebbcf5aef12ce786b06c4",
+        "validation": "bba09bc6964c69eca095f82102414501d795f0d70dd1b22495384b8d60c2a6a4",
+        "diversity": "8d0c3688eb8a8247c69a804f8108fc2d6633b62b0eef3c8ff913fc9781765689",
+        "visualization": "3f6bd3bc81dac89ac9775e6f63c7a073db1c40b24dc1c5620be6b6a380424ce3",
+        "independent_review": "141ec37a9bdbbf1adfd72887fc6e022a9fa9b8e3ae5729a03f7ce77a55b648db",
+        "reviewer_geometry": "3a811a47167742b33e8d207e83e6619719ae84ad2ba1d80f8ddcc0f99ca32ebe",
+        "functional_partner_build": "8df110fc17efccae29ee8ae419ef15607b2d05522d959657e8267bc145139a2d"
+      },
+      "revision": null
+    },
+    {
+      "schema_version": "authored_clean_layout_manifest_record_v2",
+      "scene_id": "living_room_authored_002",
+      "room_type": "living_room",
+      "status": "hard_valid_pending_independent_review",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 10,
+      "checks": {
+        "schema_valid": true,
+        "hssd_metadata_valid": true,
+        "bbox_valid": true,
+        "geometry_hard_valid": true,
+        "room_bounds_valid": true,
+        "collision_valid": true,
+        "opening_clearance_valid": true,
+        "path_reachability_valid": true,
+        "use_clearance_valid": true,
+        "frozen_functional_partner_rules_used": true,
+        "no_handwritten_functional_edges": true,
+        "all_model_input_fields_available": true,
+        "functional_partner_coverage_valid": true,
+        "diversity_novelty_pass": true,
+        "semantic_review_pass": false
+      },
+      "semantic_review_status": "pending_independent_review",
+      "diversity_status": "novelty_pass",
+      "closest_global": {
+        "scene_id": "living_room_authored_001",
+        "room_type": "living_room",
+        "overall_similarity": 0.491217,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_x"
+      },
+      "closest_same_room_type": {
+        "scene_id": "living_room_authored_001",
+        "room_type": "living_room",
+        "overall_similarity": 0.491217,
+        "template_risk": false,
+        "best_symmetry_transform": "mirror_x"
+      },
+      "source_versions": {
+        "proposal_schema": "authored_furniture_proposal_v1",
+        "scene_schema": "scene_repair_v3_clean_furniture_scene_v1",
+        "validation_schema": "authored_scene_deterministic_validation_v2",
+        "validation_pipeline": "authored_single_scene_validator_v2",
+        "layout_rules_schema": "authored_furniture_layout_validation_rules_v2",
+        "layout_rules_sha256": "25a939e1b4e1425484a52407a954a0f428f86b82cd6aef16df0d4438c763ee79",
+        "functional_partner_rules_schema": "hssd_functional_partner_rules_v1",
+        "functional_partner_asset_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+        "functional_partner_rules_file_sha256": "d95f33b5337610462f7ba47028b4fb5c6cae85562b0552eef032db891b7d0218",
+        "functional_partner_compatibility_schema": "hssd_functional_partner_category_compatibility_v1",
+        "functional_partner_compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+        "functional_partner_compatibility_file_sha256": "da083f4401de2958a336cc27f5d10b6e025c19c884b567a5daa76c175fedc33d",
+        "semantic_mapping_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+        "semantic_mapping_file_sha256": "405c0d76f0e383c728f7bbce7fdcf791723e9dd970d35e96f6cfa9fd99c651b0",
+        "vocabulary_sha256": "c167b6a66cc32c8dc4a670d699081338847f93c4a69fc973b18b6bd8af7dc041",
+        "hssd_lookup_sha256": "48e11d2a2c943b1ea78e1173cdc98094344b5ee071ae3a79b29ea772b7f8867b"
+      },
+      "artifacts": {
+        "proposal": "authored_proposals/living_room_authored_002.json",
+        "scene": "scenes/living_room_authored_002.json",
+        "validation": "validation/living_room_authored_002.json",
+        "diversity": "diversity/living_room_authored_002.json",
+        "visualization": "visualizations/living_room_authored_002.png",
+        "independent_review": "reviews/living_room_authored_002_independent.json",
+        "reviewer_geometry": "reviews/reviewer_packet/living_room_authored_002_geometry.json",
+        "functional_partner_build": "validation/functional_partner_build_living_room_authored_002.json"
+      },
+      "artifact_sha256": {
+        "proposal": "c9651a9f197f077f65fe49d5b2bd902c8271cb7d03bc6457b4826856ff6d2d14",
+        "scene": "abfb26f90bff9f6c25ce5bd35fb9c4a227684076a048e312c2359429164b04a2",
+        "validation": "6ca5acdedc3057f4ddf95500afa6853c5261785d1d894aa941afab7922d1eae2",
+        "diversity": "03ffec3ee0a518d209247fdd51b8c850fbb9ad057d7a5e7c761ab793ef74cb20",
+        "visualization": "f70d757818869e44c0e07e505c41dafe129093b3a6b8912bcb3560acb97a5893",
+        "independent_review": "9abe41a0a62b075eb56343399cd683744bfe55a1b2469a1cc4fdfa93352c3d81",
+        "reviewer_geometry": "224e12dcc0186fba3290a2d3ed1fd0c832ecb295b0d968934d4c6514e102597a",
+        "functional_partner_build": "d8eb23396da5d54eb839a81c7a48911f7032d26423aba0fabbdff078f8a918bf"
+      },
+      "revision": {
+        "schema_version": "authored_scene_revision_record_v1",
+        "scene_id": "living_room_authored_002",
+        "revision_id": "rev_001_local_minus_y_yaw_corrected",
+        "status": "corrected_pending_independent_review",
+        "reason": "Yaw values and their use-clearance-zone orientations now follow the HSSD local -Y front convention; fresh independent review is required because the rendered arrows changed.",
+        "yaw_corrections": [
+          {
+            "object_id": "sofa_conversation_north",
+            "old_yaw_rad": -3.141592653589793,
+            "new_yaw_rad": 0.0,
+            "old_local_minus_y_front_xy": [
+              -0.0,
+              1.0
+            ],
+            "new_local_minus_y_front_xy": [
+              0.0,
+              -1.0
+            ]
+          },
+          {
+            "object_id": "armchair_conversation_east",
+            "old_yaw_rad": 0.8,
+            "new_yaw_rad": -2.3415926535897933,
+            "old_local_minus_y_front_xy": [
+              0.717356,
+              -0.696707
+            ],
+            "new_local_minus_y_front_xy": [
+              -0.717356,
+              0.696707
+            ]
+          },
+          {
+            "object_id": "console_serving_south_east",
+            "old_yaw_rad": 0.0,
+            "new_yaw_rad": -3.141592653589793,
+            "old_local_minus_y_front_xy": [
+              0.0,
+              -1.0
+            ],
+            "new_local_minus_y_front_xy": [
+              -0.0,
+              1.0
+            ]
+          }
+        ],
+        "artifact_sha256": {
+          "authored_proposal": "c9651a9f197f077f65fe49d5b2bd902c8271cb7d03bc6457b4826856ff6d2d14",
+          "scene": "abfb26f90bff9f6c25ce5bd35fb9c4a227684076a048e312c2359429164b04a2",
+          "validation": "6ca5acdedc3057f4ddf95500afa6853c5261785d1d894aa941afab7922d1eae2",
+          "diversity": "03ffec3ee0a518d209247fdd51b8c850fbb9ad057d7a5e7c761ab793ef74cb20",
+          "diversity_legacy": "03ffec3ee0a518d209247fdd51b8c850fbb9ad057d7a5e7c761ab793ef74cb20",
+          "functional_partner_build": "d8eb23396da5d54eb839a81c7a48911f7032d26423aba0fabbdff078f8a918bf",
+          "visualization": "f70d757818869e44c0e07e505c41dafe129093b3a6b8912bcb3560acb97a5893",
+          "independent_review": "9abe41a0a62b075eb56343399cd683744bfe55a1b2469a1cc4fdfa93352c3d81",
+          "reviewer_scene": "718bf6fa4336aebf6f9520bb0fd387d4b1c7e7a81f4d4423c6ae57520a52e7b1",
+          "reviewer_geometry": "224e12dcc0186fba3290a2d3ed1fd0c832ecb295b0d968934d4c6514e102597a"
+        },
+        "supersedes": "rev_000_pre_yaw_convention_correction"
+      }
+    }
+  ]
+}

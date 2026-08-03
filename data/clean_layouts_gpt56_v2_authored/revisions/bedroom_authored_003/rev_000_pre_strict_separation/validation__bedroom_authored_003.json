@@ -1,0 +1,136 @@
+{
+  "schema_version": "authored_scene_deterministic_validation_v1",
+  "scene_id": "bedroom_authored_003",
+  "pipeline_version": "authored_single_scene_validator_v1",
+  "passed": true,
+  "checks": {
+    "schema_valid": true,
+    "hssd_metadata_valid": true,
+    "bbox_valid": true,
+    "geometry_hard_valid": true,
+    "room_bounds_valid": true,
+    "collision_valid": true,
+    "opening_clearance_valid": true,
+    "path_reachability_valid": true,
+    "use_clearance_valid": true,
+    "frozen_functional_partner_rules_used": true,
+    "no_handwritten_functional_edges": true,
+    "all_model_input_fields_available": true,
+    "diversity_novelty_pass": true
+  },
+  "geometry_report": {
+    "passed": true,
+    "checks": {
+      "finite_transform": {
+        "passed": true,
+        "violations": []
+      },
+      "identity_bbox": {
+        "passed": true,
+        "violations": []
+      },
+      "room_bounds": {
+        "passed": true,
+        "violations": []
+      },
+      "furniture_collision": {
+        "passed": true,
+        "violations": []
+      },
+      "opening_clearance": {
+        "passed": true,
+        "violations": []
+      },
+      "functional_relations": {
+        "passed": true,
+        "violations": []
+      },
+      "use_clearance": {
+        "passed": true,
+        "violations": []
+      },
+      "path_reachability": {
+        "passed": true,
+        "violations": [],
+        "details": {
+          "visited_cells": 487,
+          "grid_shape": [
+            56,
+            43
+          ],
+          "resolved_start_cell": [
+            44,
+            6
+          ],
+          "resolved_goal_cell": [
+            24,
+            21
+          ]
+        }
+      }
+    },
+    "violations": []
+  },
+  "all_path_targets_report": {
+    "passed": true,
+    "targets": [
+      {
+        "target_id": "bed_01",
+        "goal_xy_m": [
+          -0.48,
+          0.0
+        ],
+        "purpose": "primary_sleep_zone",
+        "reachable": true,
+        "details": {
+          "visited_cells": 552,
+          "grid_shape": [
+            56,
+            43
+          ],
+          "resolved_start_cell": [
+            50,
+            8
+          ],
+          "resolved_goal_cell": [
+            24,
+            21
+          ]
+        }
+      },
+      {
+        "target_id": "desk_01",
+        "goal_xy_m": [
+          0.75,
+          0.37
+        ],
+        "purpose": "morning_surface_zone",
+        "reachable": true,
+        "details": {
+          "visited_cells": 539,
+          "grid_shape": [
+            56,
+            43
+          ],
+          "resolved_start_cell": [
+            50,
+            8
+          ],
+          "resolved_goal_cell": [
+            30,
+            25
+          ]
+        }
+      }
+    ]
+  },
+  "model_input_report": {
+    "passed": true,
+    "num_nodes": 10,
+    "num_furniture": 7,
+    "functional_partner_edges": 5,
+    "furniture_function_dim": 16
+  },
+  "functional_partner_edge_count": 5,
+  "violations": []
+}

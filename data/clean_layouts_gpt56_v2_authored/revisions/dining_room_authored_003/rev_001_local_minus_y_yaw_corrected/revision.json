@@ -1,0 +1,74 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "dining_room_authored_003",
+  "revision_id": "rev_001_local_minus_y_yaw_corrected",
+  "status": "corrected_pending_independent_review",
+  "reason": "Yaw values and their use-clearance-zone orientations now follow the HSSD local -Y front convention; fresh independent review is required because the rendered arrows changed.",
+  "yaw_corrections": [
+    {
+      "object_id": "bench_east_diners",
+      "old_yaw_rad": 1.5707963267948966,
+      "new_yaw_rad": -1.5707963267948966,
+      "old_local_minus_y_front_xy": [
+        1.0,
+        -0.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -1.0,
+        -0.0
+      ]
+    },
+    {
+      "object_id": "chair_west_diner",
+      "old_yaw_rad": -1.5707963267948966,
+      "new_yaw_rad": 1.5707963267948966,
+      "old_local_minus_y_front_xy": [
+        -1.0,
+        -0.0
+      ],
+      "new_local_minus_y_front_xy": [
+        1.0,
+        -0.0
+      ]
+    },
+    {
+      "object_id": "cabinet_dishes_west",
+      "old_yaw_rad": -1.5707963267948966,
+      "new_yaw_rad": 1.5707963267948966,
+      "old_local_minus_y_front_xy": [
+        -1.0,
+        -0.0
+      ],
+      "new_local_minus_y_front_xy": [
+        1.0,
+        -0.0
+      ]
+    },
+    {
+      "object_id": "console_serving_south",
+      "old_yaw_rad": 0.0,
+      "new_yaw_rad": -3.141592653589793,
+      "old_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ]
+    }
+  ],
+  "artifact_sha256": {
+    "authored_proposal": "5afdbdb6412facd94fa41030cf8e05b95a7913459663e788d1fa01bce4aaf577",
+    "scene": "59c85b489afaa101b1411163a7535a05b5950eeffe187834e513e78a0aa6e0ba",
+    "validation": "7dc229d31585b91721ccee20a5e60f6d46107f896d875c4d8667f1d38e7f5073",
+    "diversity": "a62694d7587928ece9678fb68763b955750b09284720a2c49ad3a6602900c787",
+    "diversity_legacy": "a62694d7587928ece9678fb68763b955750b09284720a2c49ad3a6602900c787",
+    "functional_partner_build": "3546aee5da0d0311ad253317500b2c5ee77c3501d73c87416418ef89f14b9704",
+    "visualization": "b32a15e60281727c6f523a8edf6895aa2772bc9a319acf01b5d6e3036c6577ae",
+    "independent_review": "351d72d7cd46c482f3db543e9a37e6a7d5b8e5331e8f9c3b22fcaa961c78b263",
+    "reviewer_scene": "bbf75ebe1979d94a402b3a893c8993bc6bb5d933649710d7be8cd7887aea72f7",
+    "reviewer_geometry": "8e2a6015cd106c8fd1cb57192dc4b0beb30cccb6730841c202c4ff01a3e8c44c"
+  },
+  "supersedes": "rev_000_pre_yaw_convention_correction"
+}

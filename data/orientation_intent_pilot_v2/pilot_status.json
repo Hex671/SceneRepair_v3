@@ -1,0 +1,10 @@
+{
+  "schema_version": "orientation_intent_pilot_status_v1",
+  "scene_id": "home_office_intent_pilot_002",
+  "status": "hard_valid_pending_independent_review",
+  "author_attempts": 2,
+  "model": "gpt-5.6-sol",
+  "hard_validation_pass": true,
+  "diversity_pass": true,
+  "formal_dataset_modified": false
+}

@@ -1,0 +1,228 @@
+{
+  "schema_version": "orientation_intent_compile_report_v1",
+  "scene_id": "bedroom_orientation_001",
+  "source_schema_version": "authored_furniture_intent_proposal_v1",
+  "coordinate_contract": {
+    "coordinate_frame": "room_local_z_up",
+    "yaw_axis": "+Z",
+    "semantic_front": "local_-Y",
+    "yaw_range": "[-pi,pi)",
+    "quaternion_order": "wxyz"
+  },
+  "compiler_invariants": {
+    "furniture_order_preserved": true,
+    "furniture_identity_preserved": true,
+    "hssd_id_preserved": true,
+    "xy_preserved": true,
+    "yaw_authored_by_model": false,
+    "quaternion_authored_by_model": false,
+    "clearance_geometry_authored_by_model": false
+  },
+  "objects": [
+    {
+      "object_id": "bed_guest_east",
+      "hssd_id": "58b7f3eee922fe43fe9f6156c0942be5f8e72e96",
+      "orientation_intent": {
+        "type": "face_direction",
+        "direction": "west"
+      },
+      "computed_yaw_rad": -1.5707963267948966,
+      "computed_quaternion_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "local_minus_y_front_vector_xy": [
+        -1.0,
+        -0.0
+      ],
+      "computation_rule": "face_direction:front_west",
+      "clearance_intent": "side_access_left",
+      "computed_clearance_geometry": {
+        "zone_id": "use_bed_guest_east_side_access_left",
+        "owner_id": "bed_guest_east",
+        "purpose": "side_access_left",
+        "center_xy_m": [
+          1.88,
+          -0.3125
+        ],
+        "size_xy_m": [
+          0.62,
+          2.07
+        ],
+        "yaw_rad": -1.5707963268,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "desk_writing_west",
+      "hssd_id": "24430dbe765dd54d727d0ba3d234601142805e4b",
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "west"
+      },
+      "computed_yaw_rad": 1.5707963267948966,
+      "computed_quaternion_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "local_minus_y_front_vector_xy": [
+        1.0,
+        -0.0
+      ],
+      "computation_rule": "back_to_wall:west->front_east",
+      "clearance_intent": "front_access",
+      "computed_clearance_geometry": {
+        "zone_id": "use_desk_writing_west_front_access",
+        "owner_id": "desk_writing_west",
+        "purpose": "front_access",
+        "center_xy_m": [
+          -1.9842,
+          0.65
+        ],
+        "size_xy_m": [
+          1.2,
+          0.82
+        ],
+        "yaw_rad": 1.5707963268,
+        "allowed_overlap_object_ids": [
+          "chair_writing"
+        ]
+      }
+    },
+    {
+      "object_id": "chair_writing",
+      "hssd_id": "0a5e809804911e71de6a4ef89f2c8fef5b9291b3",
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "desk_writing_west"
+      },
+      "computed_yaw_rad": -1.5707963267948966,
+      "computed_quaternion_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "local_minus_y_front_vector_xy": [
+        -1.0,
+        -0.0
+      ],
+      "computation_rule": "yaw_facing:target_object:desk_writing_west",
+      "clearance_intent": "rear_pullout",
+      "computed_clearance_geometry": {
+        "zone_id": "use_chair_writing_rear_pullout",
+        "owner_id": "chair_writing",
+        "purpose": "rear_pullout",
+        "center_xy_m": [
+          -1.2435,
+          0.65
+        ],
+        "size_xy_m": [
+          0.459,
+          0.48
+        ],
+        "yaw_rad": -1.5707963268,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "bookcase_guest_north",
+      "hssd_id": "163cdd355d2d228880dd6ed6f3fc5b49f7ba538a",
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "north"
+      },
+      "computed_yaw_rad": 0.0,
+      "computed_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "computation_rule": "back_to_wall:north->front_south",
+      "clearance_intent": "front_access",
+      "computed_clearance_geometry": {
+        "zone_id": "use_bookcase_guest_north_front_access",
+        "owner_id": "bookcase_guest_north",
+        "purpose": "front_access",
+        "center_xy_m": [
+          -0.65,
+          1.5705
+        ],
+        "size_xy_m": [
+          1.2,
+          0.62
+        ],
+        "yaw_rad": 0.0,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "wardrobe_clothing_south",
+      "hssd_id": "8a44f5e764ca2a131f50709d1253d341a61282d4",
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "south"
+      },
+      "computed_yaw_rad": -3.141592653589793,
+      "computed_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        -0.0,
+        1.0
+      ],
+      "computation_rule": "back_to_wall:south->front_north",
+      "clearance_intent": "front_access",
+      "computed_clearance_geometry": {
+        "zone_id": "use_wardrobe_clothing_south_front_access",
+        "owner_id": "wardrobe_clothing_south",
+        "purpose": "front_access",
+        "center_xy_m": [
+          0.1,
+          -1.1602
+        ],
+        "size_xy_m": [
+          1.5388,
+          0.78
+        ],
+        "yaw_rad": -3.1415926536,
+        "allowed_overlap_object_ids": []
+      }
+    },
+    {
+      "object_id": "floor_lamp_bed_head",
+      "hssd_id": "04931d5ea7f08e2d909793ade1d4c15819db2ceb",
+      "orientation_intent": {
+        "type": "orientation_irrelevant"
+      },
+      "computed_yaw_rad": 0.0,
+      "computed_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "computation_rule": "orientation_irrelevant:canonical_yaw_0",
+      "clearance_intent": "none",
+      "computed_clearance_geometry": null
+    }
+  ],
+  "passed": true,
+  "errors": []
+}

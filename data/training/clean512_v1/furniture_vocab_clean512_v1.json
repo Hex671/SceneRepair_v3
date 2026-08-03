@@ -1,0 +1,87 @@
+{
+  "schema_version": "furniture_vocab_clean512_v1",
+  "room_types": [
+    "UNK",
+    "bedroom",
+    "dining_room",
+    "home_office",
+    "living_room"
+  ],
+  "opening_kinds": [
+    "UNK",
+    "door",
+    "window"
+  ],
+  "categories": [
+    "UNK",
+    "armchair",
+    "bed",
+    "bench",
+    "bookcase",
+    "cabinet",
+    "chair",
+    "coffee_table",
+    "console_table",
+    "desk",
+    "floor_lamp",
+    "nightstand",
+    "ottoman",
+    "side_table",
+    "sofa",
+    "table",
+    "tv_bench",
+    "wardrobe"
+  ],
+  "families": [
+    "UNK",
+    "lighting",
+    "seating",
+    "sleep_surface",
+    "storage",
+    "support_surface"
+  ],
+  "functions": [
+    "UNK",
+    "contain",
+    "dining_surface",
+    "foot_support",
+    "illuminate",
+    "media_support",
+    "sit",
+    "sleep",
+    "store",
+    "support_objects",
+    "work_surface"
+  ],
+  "anchor_directions": [
+    "UNK",
+    "east",
+    "north",
+    "south",
+    "west"
+  ],
+  "anchor_modes": [
+    "UNK",
+    "against_wall",
+    "flush_to_wall",
+    "near_wall"
+  ],
+  "orientation_modes": [
+    "UNK",
+    "aligned",
+    "facing",
+    "none",
+    "parallel",
+    "perpendicular"
+  ],
+  "target_strategies": [
+    "UNK",
+    "align_with_target",
+    "face_target",
+    "maintain_gap",
+    "none",
+    "place_behind",
+    "place_beside",
+    "place_in_front"
+  ]
+}

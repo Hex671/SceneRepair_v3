@@ -1,0 +1,139 @@
+{
+  "schema_version": "authored_furniture_intent_proposal_v1",
+  "scene_id": "bedroom_orientation_001",
+  "room_type": "bedroom",
+  "coordinate_frame": "room_local_z_up",
+  "room": {
+    "length_m": 6.0,
+    "width_m": 4.6,
+    "organization": "A single bed runs east-west with its head at the east wall and its accessible side opening south. A compact west-wall writing position balances the room, while north reference storage and south clothing storage define separate bands.",
+    "daily_activities": [
+      "single-person sleep",
+      "guest writing or laptop work",
+      "bedside reading",
+      "clothing and book storage"
+    ],
+    "main_path": "Enter from the south-west door, move north beyond the wardrobe end, then turn east through the open center to the bed's south-side access or west to the desk chair.",
+    "protected_open_space": "A central horizontal passage links the desk chair to the accessible bed side, while a south-west turning pocket connects that passage to the door."
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "south",
+      "along_m": -2.05,
+      "opening_width_m": 0.9
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "north",
+      "along_m": 1.45,
+      "opening_width_m": 1.5
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "bed_guest_east",
+      "hssd_id": "58b7f3eee922fe43fe9f6156c0942be5f8e72e96",
+      "category": "bed",
+      "x": 1.88,
+      "y": 0.65,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_direction",
+        "direction": "west"
+      },
+      "clearance_intent": "side_access_left",
+      "placement_rationale": "The bed's semantic front/foot direction points west, placing its rear/head end near the east wall. For a person facing west along the bed, the declared left side is the open south side used for getting in and out."
+    },
+    {
+      "object_id": "desk_writing_west",
+      "hssd_id": "24430dbe765dd54d727d0ba3d234601142805e4b",
+      "category": "desk",
+      "x": -2.657,
+      "y": 0.65,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "west"
+      },
+      "clearance_intent": "front_access",
+      "placement_rationale": "The writing desk backs onto the west wall and faces east across the open center. This opposes rather than duplicates the bed axis and keeps work activity away from the north window clearance."
+    },
+    {
+      "object_id": "chair_writing",
+      "hssd_id": "0a5e809804911e71de6a4ef89f2c8fef5b9291b3",
+      "category": "chair",
+      "x": -1.75,
+      "y": 0.65,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "face_object",
+        "target_object_id": "desk_writing_west"
+      },
+      "clearance_intent": "rear_pullout",
+      "placement_rationale": "The chair faces west toward the desk and pulls back east into the central passage, with substantial separation from the bed's accessible side."
+    },
+    {
+      "object_id": "bookcase_guest_north",
+      "hssd_id": "163cdd355d2d228880dd6ed6f3fc5b49f7ba538a",
+      "category": "bookcase",
+      "x": -0.65,
+      "y": 2.05,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "north"
+      },
+      "clearance_intent": "front_access",
+      "placement_rationale": "The bookcase occupies the north wall west of the window, faces south into a browsing strip, and separates reading storage from clothing storage."
+    },
+    {
+      "object_id": "wardrobe_clothing_south",
+      "hssd_id": "8a44f5e764ca2a131f50709d1253d341a61282d4",
+      "category": "wardrobe",
+      "x": 0.1,
+      "y": -1.885,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "back_to_wall",
+        "wall": "south"
+      },
+      "clearance_intent": "front_access",
+      "placement_rationale": "The wardrobe uses the south wall east of the door, opens north into dedicated standing space, and leaves a clear gap before the bed-side access band."
+    },
+    {
+      "object_id": "floor_lamp_bed_head",
+      "hssd_id": "04931d5ea7f08e2d909793ade1d4c15819db2ceb",
+      "category": "floor_lamp",
+      "x": 2.48,
+      "y": 1.62,
+      "z": 0.0,
+      "orientation_intent": {
+        "type": "orientation_irrelevant"
+      },
+      "clearance_intent": "none",
+      "placement_rationale": "The floor lamp stands near the bed head but beyond the bed footprint, outside the window clearance and outside the south-side egress band. Its near-square base has no useful semantic yaw."
+    }
+  ],
+  "path_targets": [
+    {
+      "target_id": "bed_guest_east",
+      "goal_xy_m": [1.15, -0.32],
+      "purpose": "primary_bed_side_access"
+    },
+    {
+      "target_id": "desk_writing_west",
+      "goal_xy_m": [-1.75, 0.05],
+      "purpose": "writing_position_approach"
+    }
+  ],
+  "primary_zone_goal_xy_m": [1.15, -0.32],
+  "authorship": {
+    "layout_author": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "design_iteration": 1,
+    "status": "author_experiment_pending_compile"
+  }
+}

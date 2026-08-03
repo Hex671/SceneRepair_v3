@@ -1,0 +1,128 @@
+"""SceneRepair v3 Furniture-stage network."""
+
+from .contracts import (
+    ActionRange,
+    ActionType,
+    EdgeType,
+    FurnitureGraphBatch,
+    ModelConfig,
+    ModelOutput,
+    NodeType,
+)
+from .graph import (
+    FunctionalPartnerInput,
+    FurnitureGraphBuilder,
+    FurnitureInput,
+    OpeningInput,
+    RoomInput,
+    SceneInput,
+    collate_graphs,
+)
+from .functional_partners import (
+    FUNCTIONAL_PARTNER_RULE_SCHEMA,
+    FrozenFunctionalPartnerRule,
+    FrozenFunctionalPartnerRules,
+    normalize_hssd_id,
+    normalize_partner_category,
+)
+from .losses import (
+    FurnitureLoss,
+    FurnitureLossConfig,
+    FurnitureTargets,
+    action_types_from_delta,
+)
+from .inference import (
+    RUNTIME_PREDICTION_SCHEMA,
+    FurnitureRepairEngine,
+    RuntimeScenePrediction,
+)
+from .model import (
+    ConstraintAwareModelOutput,
+    DecodedActions,
+    FurnitureRepairNetwork,
+    HardConstraintRefinementLayer,
+    constraint_gated_action_types,
+    decode_actions,
+    decode_dense_deltas,
+    furniture_violation_mask,
+)
+from .repair import (
+    ConstraintRefinementConfig,
+    HardConstraintReport,
+    JointRepairResult,
+    apply_pose_deltas,
+    hard_constraint_report,
+    joint_translation_repair,
+    project_predicted_repair,
+)
+from .vocabulary import FurnitureVocabularies, Vocabulary
+from .sfur import (
+    SFUR_RULE_SCHEMA,
+    FunctionalLayoutEvaluator,
+    FunctionalSceneContract,
+    SFURRules,
+    SFURSceneReport,
+    SFURViolation,
+)
+from .functional_refinement import (
+    FUNCTIONAL_REFINEMENT_SCHEMA,
+    FunctionalConstraintRefinementLayer,
+    FunctionalRefinementConfig,
+    FunctionalRefinementResult,
+)
+
+__all__ = [
+    "ActionRange",
+    "ActionType",
+    "ConstraintAwareModelOutput",
+    "ConstraintRefinementConfig",
+    "DecodedActions",
+    "EdgeType",
+    "FunctionalPartnerInput",
+    "FUNCTIONAL_PARTNER_RULE_SCHEMA",
+    "FrozenFunctionalPartnerRule",
+    "FrozenFunctionalPartnerRules",
+    "FurnitureGraphBatch",
+    "FurnitureGraphBuilder",
+    "FurnitureInput",
+    "FurnitureLoss",
+    "FurnitureLossConfig",
+    "FurnitureRepairNetwork",
+    "FurnitureRepairEngine",
+    "HardConstraintRefinementLayer",
+    "FurnitureTargets",
+    "FurnitureVocabularies",
+    "HardConstraintReport",
+    "JointRepairResult",
+    "ModelConfig",
+    "ModelOutput",
+    "NodeType",
+    "OpeningInput",
+    "RoomInput",
+    "RUNTIME_PREDICTION_SCHEMA",
+    "RuntimeScenePrediction",
+    "SceneInput",
+    "SFUR_RULE_SCHEMA",
+    "FunctionalLayoutEvaluator",
+    "FunctionalSceneContract",
+    "SFURRules",
+    "SFURSceneReport",
+    "SFURViolation",
+    "FUNCTIONAL_REFINEMENT_SCHEMA",
+    "FunctionalConstraintRefinementLayer",
+    "FunctionalRefinementConfig",
+    "FunctionalRefinementResult",
+    "Vocabulary",
+    "action_types_from_delta",
+    "apply_pose_deltas",
+    "collate_graphs",
+    "decode_actions",
+    "decode_dense_deltas",
+    "constraint_gated_action_types",
+    "furniture_violation_mask",
+    "hard_constraint_report",
+    "joint_translation_repair",
+    "project_predicted_repair",
+    "normalize_hssd_id",
+    "normalize_partner_category",
+]

@@ -1,0 +1,203 @@
+{
+  "schema_version": "independent_semantic_review_v2",
+  "scene_id": "dining_room_authored_003",
+  "review_type": "independent_semantic_review",
+  "review_basis": "final_artifacts_only",
+  "artifact_hashes": {
+    "scene": {
+      "path": "reviews/reviewer_packet/dining_room_authored_003_scene.json",
+      "sha256": "e9b3645a3943fcaccd43b518a2e583c23ee157426d70252384cf9d997d1148c3"
+    },
+    "geometry": {
+      "path": "reviews/reviewer_packet/dining_room_authored_003_geometry.json",
+      "sha256": "81ebb30245c69dc85435932eaa154f625aa74a1e8a0c47e26155ca30d0bb99cc"
+    },
+    "validation": {
+      "path": "validation/dining_room_authored_003.json",
+      "sha256": "bd4c6e11d0cd411afec119dcc043068137404deb47d5db3579ca89ea9c0d9905"
+    },
+    "diversity": {
+      "path": "diversity/dining_room_authored_003.json",
+      "sha256": "2f4cca06071e88fac02a92969d8d007b37842302c05a1d8d350cdc2bf2a313e2"
+    },
+    "visualization": {
+      "path": "visualizations/dining_room_authored_003.png",
+      "sha256": "cdef6f6cf4e9fe1f339fd41588aae1004af6d3038ad14d05c4b08c78f66b039"
+    }
+  },
+  "scene_assessment": {
+    "assessment": "pass",
+    "concrete_reason": "Validation passed all schema, HSSD metadata, geometry, collision, opening/use clearance, reachability, frozen-partner, and diversity checks. Diversity template_risk is false.",
+    "detected_problem": null,
+    "required_correction": null,
+    "template_risk": false,
+    "final_verdict": "accept"
+  },
+  "frozen_functional_edges": [
+    {
+      "source_id": "table_meal_east",
+      "target_id": "chair_west_diner",
+      "cited_object_ids": ["table_meal_east", "chair_west_diner"],
+      "source_hssd_id": "01fd238f3e39659142240fc38ae44796e180597c",
+      "source_hssd_annotation": {
+        "source_category": "dining table",
+        "annotated_partner_category": "chair",
+        "annotation_present": true
+      },
+      "target_canonical": {
+        "category": "chair",
+        "family": "seating",
+        "functions": ["sit"]
+      },
+      "compatibility": {
+        "match_mode": "exact_canonical_category",
+        "rule_id": null,
+        "target_supports_required_semantics": true,
+        "required_target_semantics": ["seating", "sit"]
+      },
+      "no_handwritten_edge": true,
+      "assessment": "pass",
+      "concrete_reason": "FrozenFunctionalPartnerRules produced the edge from the dining-table HSSD annotation to canonical chair; source and target HSSD metadata are present.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false,
+      "final_verdict": "accept"
+    },
+    {
+      "source_id": "bench_east_diners",
+      "target_id": "table_meal_east",
+      "cited_object_ids": ["bench_east_diners", "table_meal_east"],
+      "source_hssd_id": "1545dff46c628df670d35950119834dbb0d7cdf3",
+      "source_hssd_annotation": {
+        "source_category": "bench",
+        "annotated_partner_category": "dining_table",
+        "annotation_present": true
+      },
+      "target_canonical": {
+        "category": "table",
+        "family": "support_surface",
+        "functions": ["dining_surface", "support_objects"]
+      },
+      "compatibility": {
+        "match_mode": "frozen_semantic_compatibility",
+        "rule_id": "dining_table_to_table_with_dining_surface_v1",
+        "target_supports_required_semantics": true,
+        "required_target_semantics": ["support_surface", "dining_surface"]
+      },
+      "no_handwritten_edge": true,
+      "assessment": "pass",
+      "concrete_reason": "Bench HSSD annotation names dining_table; frozen compatibility explicitly accepts canonical table only because its family is support_surface and functions include dining_surface.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false,
+      "final_verdict": "accept"
+    },
+    {
+      "source_id": "chair_west_diner",
+      "target_id": "table_meal_east",
+      "cited_object_ids": ["chair_west_diner", "table_meal_east"],
+      "source_hssd_id": "05e74cdc180382e77852871d4f0041023f18a16a",
+      "source_hssd_annotation": {
+        "source_category": "chair",
+        "annotated_partner_category": "dining_table",
+        "annotation_present": true
+      },
+      "target_canonical": {
+        "category": "table",
+        "family": "support_surface",
+        "functions": ["dining_surface", "support_objects"]
+      },
+      "compatibility": {
+        "match_mode": "frozen_semantic_compatibility",
+        "rule_id": "dining_table_to_table_with_dining_surface_v1",
+        "target_supports_required_semantics": true,
+        "required_target_semantics": ["support_surface", "dining_surface"]
+      },
+      "no_handwritten_edge": true,
+      "assessment": "pass",
+      "concrete_reason": "Chair HSSD annotation names dining_table; frozen compatibility explicitly accepts canonical table only because its family is support_surface and functions include dining_surface.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false,
+      "final_verdict": "accept"
+    }
+  ],
+  "geometry_evidence": {
+    "accepted_min_signed_separation_m": 0.0,
+    "numeric_separation_epsilon_m": 1e-09,
+    "pairwise_signed_separation_table": [
+      {"source_id":"table_meal_east","target_id":"bench_east_diners","signed_separation_m":0.25,"classification":"positive_gap"},
+      {"source_id":"table_meal_east","target_id":"chair_west_diner","signed_separation_m":0.2615,"classification":"positive_gap"},
+      {"source_id":"table_meal_east","target_id":"cabinet_dishes_west","signed_separation_m":2.1161,"classification":"positive_gap"},
+      {"source_id":"table_meal_east","target_id":"console_serving_south","signed_separation_m":1.3206,"classification":"positive_gap"},
+      {"source_id":"bench_east_diners","target_id":"chair_west_diner","signed_separation_m":2.0115,"classification":"positive_gap"},
+      {"source_id":"bench_east_diners","target_id":"cabinet_dishes_west","signed_separation_m":3.8661,"classification":"positive_gap"},
+      {"source_id":"bench_east_diners","target_id":"console_serving_south","signed_separation_m":1.3,"classification":"positive_gap"},
+      {"source_id":"chair_west_diner","target_id":"cabinet_dishes_west","signed_separation_m":1.2776,"classification":"positive_gap"},
+      {"source_id":"chair_west_diner","target_id":"console_serving_south","signed_separation_m":1.4226,"classification":"positive_gap"},
+      {"source_id":"cabinet_dishes_west","target_id":"console_serving_south","signed_separation_m":1.9702,"classification":"positive_gap"}
+    ],
+    "yaw_direction_table": [
+      {"object_id":"table_meal_east","yaw_rad":0.0,"yaw_deg":0.0,"local_minus_y_front_vector_xy":[0.0,-1.0],"dominant_cardinal_direction":"south"},
+      {"object_id":"bench_east_diners","yaw_rad":1.570796326795,"yaw_deg":90.0,"local_minus_y_front_vector_xy":[1.0,0.0],"dominant_cardinal_direction":"east"},
+      {"object_id":"chair_west_diner","yaw_rad":-1.570796326795,"yaw_deg":-90.0,"local_minus_y_front_vector_xy":[-1.0,0.0],"dominant_cardinal_direction":"west"},
+      {"object_id":"cabinet_dishes_west","yaw_rad":-1.570796326795,"yaw_deg":-90.0,"local_minus_y_front_vector_xy":[-1.0,0.0],"dominant_cardinal_direction":"west"},
+      {"object_id":"console_serving_south","yaw_rad":0.0,"yaw_deg":0.0,"local_minus_y_front_vector_xy":[0.0,-1.0],"dominant_cardinal_direction":"south"}
+    ],
+    "assessment": "pass",
+    "detected_problem": null
+  },
+  "per_object": [
+    {
+      "object_id":"table_meal_east",
+      "cited_object_ids":["table_meal_east","bench_east_diners","chair_west_diner"],
+      "assessment":"pass",
+      "concrete_reason":"HSSD dining table annotation is present; canonical table is support_surface with dining_surface, satisfying both frozen seating-to-table compatibility edges.",
+      "detected_problem":null,
+      "required_correction":null,
+      "template_risk":false,
+      "final_verdict":"accept"
+    },
+    {
+      "object_id":"bench_east_diners",
+      "cited_object_ids":["bench_east_diners","table_meal_east"],
+      "assessment":"pass",
+      "concrete_reason":"Bench HSSD annotation and sit function are valid; its dining_table partner resolves through the frozen compatibility rule.",
+      "detected_problem":null,
+      "required_correction":null,
+      "template_risk":false,
+      "final_verdict":"accept"
+    },
+    {
+      "object_id":"chair_west_diner",
+      "cited_object_ids":["chair_west_diner","table_meal_east"],
+      "assessment":"pass",
+      "concrete_reason":"Chair HSSD annotation and sit function are valid; its dining_table partner resolves through the frozen compatibility rule.",
+      "detected_problem":null,
+      "required_correction":null,
+      "template_risk":false,
+      "final_verdict":"accept"
+    },
+    {
+      "object_id":"cabinet_dishes_west",
+      "cited_object_ids":["cabinet_dishes_west"],
+      "assessment":"pass",
+      "concrete_reason":"Cabinet HSSD metadata, storage/contain functions, wall-floor placement, and opening/use clearance are valid; no functional edge is required.",
+      "detected_problem":null,
+      "required_correction":null,
+      "template_risk":false,
+      "final_verdict":"accept"
+    },
+    {
+      "object_id":"console_serving_south",
+      "cited_object_ids":["console_serving_south"],
+      "assessment":"pass",
+      "concrete_reason":"Console-table HSSD metadata and support/store functions are valid, with positive separations and reachable serving clearance.",
+      "detected_problem":null,
+      "required_correction":null,
+      "template_risk":false,
+      "final_verdict":"accept"
+    }
+  ],
+  "final_verdict": "accept"
+}

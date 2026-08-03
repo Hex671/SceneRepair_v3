@@ -1,0 +1,265 @@
+{
+  "schema_version": "authored_dataset_regression_baseline_v1",
+  "scene_ids": [
+    "home_office_authored_001",
+    "dining_room_authored_001",
+    "bedroom_authored_001",
+    "living_room_authored_001",
+    "home_office_authored_002",
+    "bedroom_authored_002",
+    "dining_room_authored_003",
+    "home_office_authored_003",
+    "dining_room_authored_002",
+    "bedroom_authored_003"
+  ],
+  "scenes": [
+    {
+      "scene_id": "home_office_authored_001",
+      "layout_hash": "b8163467b983a84cb458e5e4e45c81b6a27e3df837d68a4ce02b8965df196a0e",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "functional_partner_edges": [
+        [
+          "desk_work",
+          "desk_chair"
+        ],
+        [
+          "desk_chair",
+          "desk_work"
+        ],
+        [
+          "armchair_reading",
+          "floor_lamp_reading"
+        ],
+        [
+          "side_table_reading",
+          "armchair_reading"
+        ],
+        [
+          "floor_lamp_reading",
+          "armchair_reading"
+        ]
+      ]
+    },
+    {
+      "scene_id": "dining_room_authored_001",
+      "layout_hash": "3a9f219176b9e9dd97ddc7b33f7c7a9f8743c5d5c58d8a7873c3aabb205bce8d",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 3,
+      "functional_partner_edges": [
+        [
+          "table_dining",
+          "chair_south_west"
+        ],
+        [
+          "table_dining",
+          "chair_south_east"
+        ],
+        [
+          "table_dining",
+          "chair_east_end"
+        ]
+      ]
+    },
+    {
+      "scene_id": "bedroom_authored_001",
+      "layout_hash": "4b5e71a253c8b437a4cad7c46ee94bbd3976bd84aa7b523db0aa0e7936a83454",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 5,
+      "functional_partner_edges": [
+        [
+          "bed_sleep",
+          "nightstand_sleep"
+        ],
+        [
+          "nightstand_sleep",
+          "bed_sleep"
+        ],
+        [
+          "armchair_reading",
+          "floor_lamp_reading"
+        ],
+        [
+          "side_table_reading",
+          "armchair_reading"
+        ],
+        [
+          "floor_lamp_reading",
+          "armchair_reading"
+        ]
+      ]
+    },
+    {
+      "scene_id": "living_room_authored_001",
+      "layout_hash": "1e605b8476720bcbb292b9597919551c5a59fecb1934fcfe857c653b9e0d3bf5",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 10,
+      "functional_partner_edges": [
+        [
+          "sofa_main",
+          "coffee_table_main"
+        ],
+        [
+          "sofa_main",
+          "floor_lamp_reading"
+        ],
+        [
+          "coffee_table_main",
+          "sofa_main"
+        ],
+        [
+          "coffee_table_main",
+          "armchair_reading"
+        ],
+        [
+          "armchair_reading",
+          "coffee_table_main"
+        ],
+        [
+          "armchair_reading",
+          "floor_lamp_reading"
+        ],
+        [
+          "side_table_reading",
+          "sofa_main"
+        ],
+        [
+          "side_table_reading",
+          "armchair_reading"
+        ],
+        [
+          "floor_lamp_reading",
+          "sofa_main"
+        ],
+        [
+          "floor_lamp_reading",
+          "armchair_reading"
+        ]
+      ]
+    },
+    {
+      "scene_id": "home_office_authored_002",
+      "layout_hash": "8b09e43ea8567499ad8f4f7f438105831fc7f08e5231e3b428bbd9f9a048f2e6",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "functional_partner_edges": [
+        [
+          "desk_work_east",
+          "chair_work_east"
+        ],
+        [
+          "chair_work_east",
+          "desk_work_east"
+        ],
+        [
+          "armchair_window_reading",
+          "floor_lamp_window_reading"
+        ],
+        [
+          "side_table_window_reading",
+          "armchair_window_reading"
+        ],
+        [
+          "floor_lamp_window_reading",
+          "armchair_window_reading"
+        ]
+      ]
+    },
+    {
+      "scene_id": "bedroom_authored_002",
+      "layout_hash": "5ab314877c8f86c676cff399804b85d2abf5a01b4f958ef282b24e299ed119ec",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 2,
+      "functional_partner_edges": [
+        [
+          "bed_sleep_north",
+          "nightstand_sleep_west"
+        ],
+        [
+          "nightstand_sleep_west",
+          "bed_sleep_north"
+        ]
+      ]
+    },
+    {
+      "scene_id": "dining_room_authored_003",
+      "layout_hash": "71d00b3bae908961f8bc6cb17d7de7029a123944c98bd6bc947aa0f924cc4115",
+      "furniture_count": 5,
+      "functional_partner_edge_count": 1,
+      "functional_partner_edges": [
+        [
+          "table_meal_east",
+          "chair_west_diner"
+        ]
+      ]
+    },
+    {
+      "scene_id": "home_office_authored_003",
+      "layout_hash": "2505e7cbf4b1328b0d681c22caacab2992ec00be5b85110c85ce5502df8ba741",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 3,
+      "functional_partner_edges": [
+        [
+          "desk_01",
+          "chair_01"
+        ],
+        [
+          "chair_01",
+          "desk_01"
+        ],
+        [
+          "side_table_01",
+          "armchair_01"
+        ]
+      ]
+    },
+    {
+      "scene_id": "dining_room_authored_002",
+      "layout_hash": "ed7af9bf395dcd8055617d979d936496be3a4aeef0155a897a165ffe87305a50",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 3,
+      "functional_partner_edges": [
+        [
+          "table_01",
+          "chair_01"
+        ],
+        [
+          "table_01",
+          "chair_02"
+        ],
+        [
+          "table_01",
+          "chair_03"
+        ]
+      ]
+    },
+    {
+      "scene_id": "bedroom_authored_003",
+      "layout_hash": "8ae077093ebf3345faeef6c8f061bb0098ae3716d2967e592e26ea9eca76534d",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "functional_partner_edges": [
+        [
+          "bed_01",
+          "nightstand_01"
+        ],
+        [
+          "nightstand_01",
+          "bed_01"
+        ],
+        [
+          "desk_01",
+          "chair_01"
+        ],
+        [
+          "chair_01",
+          "desk_01"
+        ],
+        [
+          "side_table_01",
+          "armchair_01"
+        ]
+      ]
+    }
+  ]
+}

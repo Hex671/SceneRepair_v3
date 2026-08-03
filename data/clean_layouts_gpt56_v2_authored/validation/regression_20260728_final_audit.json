@@ -1,0 +1,323 @@
+{
+  "schema_version": "authored_dataset_regression_audit_v1",
+  "baseline": "data\\clean_layouts_gpt56_v2_authored\\validation\\regression_20260728_pre_pipeline_v2.json",
+  "scene_ids": [
+    "home_office_authored_001",
+    "dining_room_authored_001",
+    "bedroom_authored_001",
+    "living_room_authored_001",
+    "home_office_authored_002",
+    "bedroom_authored_002",
+    "dining_room_authored_003",
+    "home_office_authored_003",
+    "dining_room_authored_002",
+    "bedroom_authored_003"
+  ],
+  "scenes": [
+    {
+      "scene_id": "home_office_authored_001",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "minimum_signed_separation_m": 0.051339221,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "dining_room_authored_001",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 7,
+      "minimum_signed_separation_m": 0.186,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "bedroom_authored_001",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 5,
+      "minimum_signed_separation_m": 0.1167,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "living_room_authored_001",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 10,
+      "minimum_signed_separation_m": 0.121882627,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "home_office_authored_002",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "minimum_signed_separation_m": 0.255601177,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "bedroom_authored_002",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 2,
+      "minimum_signed_separation_m": 0.111,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "dining_room_authored_003",
+      "furniture_count": 5,
+      "functional_partner_edge_count": 3,
+      "minimum_signed_separation_m": 0.25,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "home_office_authored_003",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 3,
+      "minimum_signed_separation_m": 0.1085,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "dining_room_authored_002",
+      "furniture_count": 6,
+      "functional_partner_edge_count": 7,
+      "minimum_signed_separation_m": 0.0825,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    },
+    {
+      "scene_id": "bedroom_authored_003",
+      "furniture_count": 7,
+      "functional_partner_edge_count": 5,
+      "minimum_signed_separation_m": 0.0615,
+      "negative_pair_count": 0,
+      "hard_pass": true,
+      "functional_partner_coverage_valid": true
+    }
+  ],
+  "all_negative_pairs": [],
+  "negative_pair_count": 0,
+  "relation_changes": [
+    {
+      "scene_id": "dining_room_authored_001",
+      "baseline_edge_count": 3,
+      "current_edge_count": 7,
+      "added_edges": [
+        [
+          "bench_banquette",
+          "table_dining"
+        ],
+        [
+          "chair_east_end",
+          "table_dining"
+        ],
+        [
+          "chair_south_east",
+          "table_dining"
+        ],
+        [
+          "chair_south_west",
+          "table_dining"
+        ]
+      ],
+      "removed_edges": []
+    },
+    {
+      "scene_id": "dining_room_authored_003",
+      "baseline_edge_count": 1,
+      "current_edge_count": 3,
+      "added_edges": [
+        [
+          "bench_east_diners",
+          "table_meal_east"
+        ],
+        [
+          "chair_west_diner",
+          "table_meal_east"
+        ]
+      ],
+      "removed_edges": []
+    },
+    {
+      "scene_id": "dining_room_authored_002",
+      "baseline_edge_count": 3,
+      "current_edge_count": 7,
+      "added_edges": [
+        [
+          "bench_01",
+          "table_01"
+        ],
+        [
+          "chair_01",
+          "table_01"
+        ],
+        [
+          "chair_02",
+          "table_01"
+        ],
+        [
+          "chair_03",
+          "table_01"
+        ]
+      ],
+      "removed_edges": []
+    }
+  ],
+  "functional_partner_vocabulary_coverage": [
+    {
+      "scene_id": "home_office_authored_001",
+      "passed": true,
+      "expected_edge_count": 5,
+      "actual_edge_count": 5,
+      "missing_edges": [],
+      "compatibility_matches": []
+    },
+    {
+      "scene_id": "dining_room_authored_001",
+      "passed": true,
+      "expected_edge_count": 7,
+      "actual_edge_count": 7,
+      "missing_edges": [],
+      "compatibility_matches": [
+        {
+          "source_id": "bench_banquette",
+          "target_id": "table_dining",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        },
+        {
+          "source_id": "chair_south_west",
+          "target_id": "table_dining",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        },
+        {
+          "source_id": "chair_south_east",
+          "target_id": "table_dining",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        },
+        {
+          "source_id": "chair_east_end",
+          "target_id": "table_dining",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        }
+      ]
+    },
+    {
+      "scene_id": "bedroom_authored_001",
+      "passed": true,
+      "expected_edge_count": 5,
+      "actual_edge_count": 5,
+      "missing_edges": [],
+      "compatibility_matches": []
+    },
+    {
+      "scene_id": "living_room_authored_001",
+      "passed": true,
+      "expected_edge_count": 10,
+      "actual_edge_count": 10,
+      "missing_edges": [],
+      "compatibility_matches": []
+    },
+    {
+      "scene_id": "home_office_authored_002",
+      "passed": true,
+      "expected_edge_count": 5,
+      "actual_edge_count": 5,
+      "missing_edges": [],
+      "compatibility_matches": []
+    },
+    {
+      "scene_id": "bedroom_authored_002",
+      "passed": true,
+      "expected_edge_count": 2,
+      "actual_edge_count": 2,
+      "missing_edges": [],
+      "compatibility_matches": []
+    },
+    {
+      "scene_id": "dining_room_authored_003",
+      "passed": true,
+      "expected_edge_count": 3,
+      "actual_edge_count": 3,
+      "missing_edges": [],
+      "compatibility_matches": [
+        {
+          "source_id": "bench_east_diners",
+          "target_id": "table_meal_east",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        },
+        {
+          "source_id": "chair_west_diner",
+          "target_id": "table_meal_east",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        }
+      ]
+    },
+    {
+      "scene_id": "home_office_authored_003",
+      "passed": true,
+      "expected_edge_count": 3,
+      "actual_edge_count": 3,
+      "missing_edges": [],
+      "compatibility_matches": []
+    },
+    {
+      "scene_id": "dining_room_authored_002",
+      "passed": true,
+      "expected_edge_count": 7,
+      "actual_edge_count": 7,
+      "missing_edges": [],
+      "compatibility_matches": [
+        {
+          "source_id": "bench_01",
+          "target_id": "table_01",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        },
+        {
+          "source_id": "chair_01",
+          "target_id": "table_01",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        },
+        {
+          "source_id": "chair_02",
+          "target_id": "table_01",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        },
+        {
+          "source_id": "chair_03",
+          "target_id": "table_01",
+          "annotated_partner_category": "dining_table",
+          "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1"
+        }
+      ]
+    },
+    {
+      "scene_id": "bedroom_authored_003",
+      "passed": true,
+      "expected_edge_count": 5,
+      "actual_edge_count": 5,
+      "missing_edges": [],
+      "compatibility_matches": []
+    }
+  ],
+  "strict_acceptance_min_signed_separation_m": 0.0,
+  "numeric_separation_epsilon_m": 1e-09
+}

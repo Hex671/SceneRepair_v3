@@ -1,0 +1,82 @@
+{
+  "scene_id": "bedroom_authored_002",
+  "review_type": "independent_semantic_review",
+  "isolation_compliance": {
+    "passed": true,
+    "inspected_artifacts": [
+      "reviews/reviewer_packet/bedroom_authored_002_scene.json",
+      "visualizations/bedroom_authored_002.png",
+      "validation/bedroom_authored_002.json",
+      "validation/bedroom_authored_002_diversity.json"
+    ],
+    "statement": "Review was based only on the four designated final artifacts."
+  },
+  "object_reports": [
+    {
+      "object_id": "bed_sleep_north",
+      "cited_object_ids": [
+        "nightstand_sleep_west",
+        "bench_dressing_foot"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The bed is north-wall aligned, with its accessible west bedside zone clear and the bench placed beyond its foot with a visible circulation gap.",
+      "detected_problem": false,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "nightstand_sleep_west",
+      "cited_object_ids": [
+        "bed_sleep_north"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The nightstand sits at the bed's northwest bedside, close enough to function as a bedside surface while remaining outside the marked bed egress zone.",
+      "detected_problem": false,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "wardrobe_clothes_east",
+      "cited_object_ids": [],
+      "assessment": "pass",
+      "concrete_reason": "The wardrobe is attached to the east wall with an unobstructed dressing and door-opening zone to its room-facing side; validation marks that access target reachable.",
+      "detected_problem": false,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "bench_dressing_foot",
+      "cited_object_ids": [
+        "bed_sleep_north"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The bench is centered at the bed foot with a distinct front sitting zone and does not obstruct the bed's bedside egress or the south-side storage access.",
+      "detected_problem": false,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "cabinet_dressing_south",
+      "cited_object_ids": [
+        "bench_dressing_foot"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The cabinet is sensibly south-wall aligned, its drawer and folding clearance is open to the room, and it remains clear of the west-south entry door clearance.",
+      "detected_problem": false,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "armchair_daylight_south_east",
+      "cited_object_ids": [
+        "wardrobe_clothes_east"
+      ],
+      "assessment": "pass",
+      "concrete_reason": "The armchair occupies the open southeast portion of the room near the south window side, has a dedicated approach zone, and does not impede the wardrobe access path.",
+      "detected_problem": false,
+      "required_correction": null,
+      "template_risk": false
+    }
+  ],
+  "final_verdict": "semantic_review_pass"
+}

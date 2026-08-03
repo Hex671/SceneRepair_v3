@@ -1,0 +1,275 @@
+{
+  "schema_version": "authored_scene_geometry_review_tables_v1",
+  "numeric_separation_epsilon_m": 1e-09,
+  "accepted_min_signed_separation_m": 0.0,
+  "pairwise_signed_separation_table": [
+    {
+      "source_id": "table_01",
+      "target_id": "bench_01",
+      "signed_separation_m": 0.1715,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "table_01",
+      "target_id": "chair_01",
+      "signed_separation_m": 0.0895,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "table_01",
+      "target_id": "chair_02",
+      "signed_separation_m": 0.0825,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "table_01",
+      "target_id": "chair_03",
+      "signed_separation_m": 0.1,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "table_01",
+      "target_id": "cabinet_01",
+      "signed_separation_m": 1.5689,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_01",
+      "target_id": "chair_01",
+      "signed_separation_m": 0.6845,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_01",
+      "target_id": "chair_02",
+      "signed_separation_m": 0.3105,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_01",
+      "target_id": "chair_03",
+      "signed_separation_m": 1.1855,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "bench_01",
+      "target_id": "cabinet_01",
+      "signed_separation_m": 2.6544,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_01",
+      "target_id": "chair_02",
+      "signed_separation_m": 0.126,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_01",
+      "target_id": "chair_03",
+      "signed_separation_m": 0.737,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_01",
+      "target_id": "cabinet_01",
+      "signed_separation_m": 1.5777,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_02",
+      "target_id": "chair_03",
+      "signed_separation_m": 0.73,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_02",
+      "target_id": "cabinet_01",
+      "signed_separation_m": 2.0959,
+      "classification": "positive_gap"
+    },
+    {
+      "source_id": "chair_03",
+      "target_id": "cabinet_01",
+      "signed_separation_m": 0.9229,
+      "classification": "positive_gap"
+    }
+  ],
+  "yaw_direction_table": [
+    {
+      "object_id": "table_01",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    },
+    {
+      "object_id": "bench_01",
+      "yaw_rad": 0.0,
+      "yaw_deg": 0.0,
+      "local_minus_y_front_vector_xy": [
+        0.0,
+        -1.0
+      ],
+      "dominant_cardinal_direction": "south"
+    },
+    {
+      "object_id": "chair_01",
+      "yaw_rad": 1.570796326795,
+      "yaw_deg": 90.0,
+      "local_minus_y_front_vector_xy": [
+        1.0,
+        -0.0
+      ],
+      "dominant_cardinal_direction": "east"
+    },
+    {
+      "object_id": "chair_02",
+      "yaw_rad": 1.570796326795,
+      "yaw_deg": 90.0,
+      "local_minus_y_front_vector_xy": [
+        1.0,
+        -0.0
+      ],
+      "dominant_cardinal_direction": "east"
+    },
+    {
+      "object_id": "chair_03",
+      "yaw_rad": -3.14159265359,
+      "yaw_deg": -180.0,
+      "local_minus_y_front_vector_xy": [
+        -0.0,
+        1.0
+      ],
+      "dominant_cardinal_direction": "north"
+    },
+    {
+      "object_id": "cabinet_01",
+      "yaw_rad": -3.14159265359,
+      "yaw_deg": -180.0,
+      "local_minus_y_front_vector_xy": [
+        -0.0,
+        1.0
+      ],
+      "dominant_cardinal_direction": "north"
+    }
+  ],
+  "scene_id": "dining_room_authored_002",
+  "scene_layout_hash": "ed7af9bf395dcd8055617d979d936496be3a4aeef0155a897a165ffe87305a50",
+  "functional_partner_match_table": [
+    {
+      "source_id": "table_01",
+      "target_id": "chair_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "58c41e1e141147c2fcf9027c8930acecc9f39276",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "table_01",
+      "target_id": "chair_02",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "58c41e1e141147c2fcf9027c8930acecc9f39276",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "table_01",
+      "target_id": "chair_03",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "58c41e1e141147c2fcf9027c8930acecc9f39276",
+      "matched_original_partner_category": "chair",
+      "category_match_mode": "exact_canonical_category",
+      "compatibility_rule_id": null,
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "bench_01",
+      "target_id": "table_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "396cb5be76282bba5590f45f0bacdd9d79475a93",
+      "matched_original_partner_category": "dining_table",
+      "category_match_mode": "frozen_semantic_compatibility",
+      "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_01",
+      "target_id": "table_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "ac92c090320c6273da3073b81639ae33b30a0fe0",
+      "matched_original_partner_category": "dining_table",
+      "category_match_mode": "frozen_semantic_compatibility",
+      "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_02",
+      "target_id": "table_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "56ce3dac1ca47c0534438464f8df65faddea0302",
+      "matched_original_partner_category": "dining_table",
+      "category_match_mode": "frozen_semantic_compatibility",
+      "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    },
+    {
+      "source_id": "chair_03",
+      "target_id": "table_01",
+      "source": "FrozenFunctionalPartnerRules.build_edge_matches",
+      "rules_schema_version": "hssd_functional_partner_rules_v1",
+      "rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+      "source_hssd_id": "d96243bc179651b7469f0e0a4ab6fa72e261bbf4",
+      "matched_original_partner_category": "dining_table",
+      "category_match_mode": "frozen_semantic_compatibility",
+      "compatibility_rule_id": "dining_table_to_table_with_dining_surface_v1",
+      "compatibility_schema_version": "hssd_functional_partner_category_compatibility_v1",
+      "compatibility_rules_sha256": "09b2cfb9a8bfdf007622d71c8314c739a00b67b672f9963852c1eced1c64fe85",
+      "asset_keyed_only": true,
+      "category_inheritance": false,
+      "commonsense_completion": false
+    }
+  ]
+}

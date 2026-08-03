@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1180" viewBox="0 0 1900 1180" role="img" aria-labelledby="title desc">
+  <title id="title">FurnitureRepairNetwork v7 constraint-aware architecture</title>
+  <desc id="desc">Type-specific node encoders and four relation-specific edge encoders feed a two-layer relation-aware graph transformer. A model-owned parameter-free constraint layer refines per-furniture actions into a feasible final trajectory.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1f2937" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title { font: 700 29px "Segoe UI", Arial, sans-serif; fill: #142033; letter-spacing: 0; }
+      .subtitle { font: 400 14px "Segoe UI", Arial, sans-serif; fill: #64748b; letter-spacing: 0; }
+      .stage { font: 700 12px "Segoe UI", Arial, sans-serif; fill: #475569; letter-spacing: 0; }
+      .h { font: 700 17px "Segoe UI", Arial, sans-serif; fill: #172033; letter-spacing: 0; }
+      .b { font: 600 14px "Segoe UI", Arial, sans-serif; fill: #273449; letter-spacing: 0; }
+      .s { font: 400 12.5px "Segoe UI", Arial, sans-serif; fill: #526176; letter-spacing: 0; }
+      .tiny { font: 400 11.5px "Segoe UI", Arial, sans-serif; fill: #64748b; letter-spacing: 0; }
+      .mono { font: 600 12px Consolas, "Courier New", monospace; fill: #334155; letter-spacing: 0; }
+      .white { fill: #ffffff; }
+      .group { fill: #f9fbfe; stroke: #d4deeb; stroke-width: 1.4; }
+      .blue { fill: #eff6ff; stroke: #3b82f6; stroke-width: 1.4; }
+      .cyan { fill: #ecfeff; stroke: #0891b2; stroke-width: 1.4; }
+      .orange { fill: #fff7ed; stroke: #f97316; stroke-width: 1.4; }
+      .green { fill: #f0fdf4; stroke: #16a34a; stroke-width: 1.4; }
+      .violet { fill: #f5f3ff; stroke: #7c3aed; stroke-width: 1.4; }
+      .rose { fill: #fff1f2; stroke: #e11d48; stroke-width: 1.4; }
+      .gray { fill: #f1f5f9; stroke: #94a3b8; stroke-width: 1.25; }
+      .dark { fill: #233a5e; stroke: #233a5e; stroke-width: 1.4; }
+      .line { fill: none; stroke: #64748b; stroke-width: 1.7; marker-end: url(#arrow); }
+      .line-blue { fill: none; stroke: #2563eb; stroke-width: 2; marker-end: url(#arrow-blue); }
+      .bus { fill: none; stroke: #94a3b8; stroke-width: 1.5; }
+      .dash { fill: none; stroke: #94a3b8; stroke-width: 1.4; stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+
+  <rect width="1900" height="1180" fill="#eef2f7"/>
+  <text id="titleText" class="title" x="38" y="48">FurnitureRepairNetwork v7 — Constraint-aware Architecture</text>
+  <text class="subtitle" x="38" y="75">Typed schemas · relation-aware graph reasoning · neural proposals · model-owned hard-constraint refinement</text>
+  <rect x="1570" y="28" width="292" height="34" rx="17" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.3"/>
+  <circle cx="1591" cy="45" r="5" fill="#16a34a"/>
+  <text class="stage" x="1605" y="50" fill="#166534">V7 · 832/832 TEST SCENES CLEAR</text>
+
+  <!-- Stage 01: typed input schemas -->
+  <rect class="group" x="32" y="108" width="348" height="858" rx="14" filter="url(#shadow)"/>
+  <text class="stage" x="52" y="139">01 · TYPED NODE SCHEMAS</text>
+
+  <rect class="blue" x="52" y="162" width="308" height="108" rx="9"/>
+  <text class="h" x="70" y="191">ROOM schema</text>
+  <text class="s" x="70" y="216">room type · length · width</text>
+  <text class="s" x="70" y="239">container state only</text>
+  <text class="tiny" x="70" y="258">Validity and versions stay in input gates</text>
+
+  <rect class="cyan" x="52" y="292" width="308" height="126" rx="9"/>
+  <text class="h" x="70" y="321">OPENING schema</text>
+  <text class="s" x="70" y="346">kind · center · size · interior normal</text>
+  <text class="s" x="70" y="369">clearance box · tolerance · masks</text>
+  <text class="tiny" x="70" y="395">Door / window geometry is immutable</text>
+
+  <rect class="orange" x="52" y="440" width="308" height="354" rx="9"/>
+  <text class="h" x="70" y="471">FURNITURE schema</text>
+
+  <rect x="70" y="492" width="272" height="72" rx="7" fill="#ffffff" stroke="#fb923c"/>
+  <text class="b" x="86" y="518">Geometry</text>
+  <text class="s" x="86" y="541">x/y · sin/cos yaw · bbox · masks</text>
+
+  <rect x="70" y="580" width="272" height="84" rx="7" fill="#ffffff" stroke="#fb923c"/>
+  <text class="b" x="86" y="606">Category identity</text>
+  <text class="s" x="86" y="629">frozen vocabulary ID + UNK</text>
+  <text class="tiny" x="86" y="650">Collision-free; no hash buckets</text>
+
+  <rect x="70" y="680" width="272" height="92" rx="7" fill="#ffffff" stroke="#fb923c"/>
+  <text class="b" x="86" y="706">Behavioral labels</text>
+  <text class="s" x="86" y="729">family · function multi-hot · masks</text>
+  <text class="tiny" x="86" y="750">No explicit HSSD asset ID</text>
+
+  <rect class="gray" x="52" y="818" width="308" height="118" rx="9"/>
+  <text class="b" x="70" y="847">Node contract</text>
+  <text class="s" x="70" y="871">Only 3 node types remain:</text>
+  <text class="mono" x="70" y="894">ROOM · OPENING · FURNITURE</text>
+  <text class="tiny" x="70" y="917">Type selects the schema and encoder.</text>
+
+  <!-- Stage 02: type-specific node encoders -->
+  <rect class="group" x="404" y="108" width="430" height="858" rx="14" filter="url(#shadow)"/>
+  <text class="stage" x="424" y="139">02 · TYPE-SPECIFIC NODE ENCODING</text>
+
+  <rect class="blue" x="446" y="174" width="344" height="82" rx="9"/>
+  <text class="h" x="618" y="205" text-anchor="middle">RoomEncoder</text>
+  <text class="s" x="618" y="230" text-anchor="middle">Room schema → 128D room state</text>
+
+  <rect class="cyan" x="446" y="304" width="344" height="92" rx="9"/>
+  <text class="h" x="618" y="337" text-anchor="middle">OpeningEncoder</text>
+  <text class="s" x="618" y="362" text-anchor="middle">Opening schema → 128D opening state</text>
+  <text class="tiny" x="618" y="382" text-anchor="middle">kind embedding + continuous geometry</text>
+
+  <rect class="orange" x="430" y="422" width="378" height="180" rx="10"/>
+  <text class="h" x="619" y="450" text-anchor="middle">FurnitureFusionEncoder</text>
+
+  <rect x="444" y="466" width="108" height="62" rx="7" fill="#ffffff" stroke="#fb923c"/>
+  <text class="s" x="498" y="490" text-anchor="middle">GeometryEncoder</text>
+  <text class="tiny" x="498" y="513" text-anchor="middle">geometry → g</text>
+
+  <rect x="565" y="466" width="108" height="62" rx="7" fill="#ffffff" stroke="#fb923c"/>
+  <text class="s" x="619" y="490" text-anchor="middle">CategoryEncoder</text>
+  <text class="tiny" x="619" y="513" text-anchor="middle">vocabulary → c</text>
+
+  <rect x="686" y="466" width="108" height="62" rx="7" fill="#ffffff" stroke="#fb923c"/>
+  <text class="s" x="740" y="490" text-anchor="middle">BehavioralEncoder</text>
+  <text class="tiny" x="740" y="513" text-anchor="middle">labels → b</text>
+
+  <path class="bus" d="M498 528 V538 H740 V528 M619 528 V538"/>
+  <rect x="476" y="538" width="286" height="48" rx="7" fill="#fff7ed" stroke="#ea580c" stroke-width="1.6"/>
+  <text class="b" x="619" y="558" text-anchor="middle">concat [g, c, b]</text>
+  <text class="tiny" x="619" y="577" text-anchor="middle">48D + 32D + 48D → FusionMLP → 128D</text>
+
+  <path class="bus" d="M790 215 H814 V628 H760 M790 350 H814"/>
+  <circle cx="814" cy="215" r="3" fill="#94a3b8"/>
+  <circle cx="814" cy="350" r="3" fill="#94a3b8"/>
+  <path class="line" d="M814 628 H760"/>
+  <path class="line" d="M619 602 V618"/>
+  <rect class="dark" x="470" y="620" width="288" height="72" rx="9"/>
+  <text class="h white" x="614" y="649" text-anchor="middle">Assemble typed rows → H⁰</text>
+  <text class="tiny white" x="614" y="672" text-anchor="middle">ROOM · OPENING · FURNITURE · N × 128</text>
+
+  <rect class="gray" x="446" y="746" width="344" height="138" rx="9"/>
+  <text class="b" x="466" y="776">Node encoding rule</text>
+  <text class="s" x="466" y="803">Each node type keeps its own schema and encoder.</text>
+  <text class="s" x="466" y="828">Furniture branches fuse by concat + MLP.</text>
+  <text class="s" x="466" y="853">Typed node rows are stacked, never feature-added.</text>
+  <text class="tiny" x="466" y="874">Node type acts as routing metadata.</text>
+
+  <!-- Input-to-encoder arrows -->
+  <path class="line" d="M360 216 H444"/>
+  <path class="line" d="M360 355 H444"/>
+  <path class="line" d="M360 617 H394 V512 H428"/>
+
+  <!-- Stage 03: edge encoding and graph transformer -->
+  <rect class="group" x="858" y="108" width="530" height="858" rx="14" filter="url(#shadow)"/>
+  <text class="stage" x="878" y="139">03 · RELATION-AWARE GRAPH TRANSFORMER</text>
+
+  <text class="b" x="882" y="174">Four independent EdgeEncoderMLPs</text>
+  <rect class="blue" x="882" y="190" width="229" height="72" rx="8"/>
+  <text class="mono" x="996" y="217" text-anchor="middle">ROOM_MEMBERSHIP</text>
+  <text class="tiny" x="996" y="240" text-anchor="middle">4 signed margins · optional anchor</text>
+
+  <rect class="orange" x="1130" y="190" width="234" height="72" rx="8"/>
+  <text class="mono" x="1247" y="217" text-anchor="middle">FURNITURE_SPATIAL</text>
+  <text class="tiny" x="1247" y="240" text-anchor="middle">relative pose · separation · escape</text>
+
+  <rect class="green" x="882" y="280" width="229" height="72" rx="8"/>
+  <text class="mono" x="996" y="307" text-anchor="middle">FUNCTIONAL_PARTNER</text>
+  <text class="tiny" x="996" y="330" text-anchor="middle">target edge · mode · strategy · range</text>
+
+  <rect class="cyan" x="1130" y="280" width="234" height="72" rx="8"/>
+  <text class="mono" x="1247" y="307" text-anchor="middle">OBJECT_OPENING</text>
+  <text class="tiny" x="1247" y="330" text-anchor="middle">separation · escape · validity</text>
+
+  <path class="bus" d="M1111 226 H1120 M1130 226 H1120 M1111 316 H1120 M1130 316 H1120 M1120 226 V360"/>
+  <path class="line" d="M1120 360 V372"/>
+  <rect class="violet" x="918" y="374" width="410" height="72" rx="9"/>
+  <text class="b" x="1123" y="402" text-anchor="middle">Typed edge states E⁰</text>
+  <text class="s" x="1123" y="426" text-anchor="middle">relative geometry + relation features → edge hidden</text>
+
+  <rect x="882" y="548" width="482" height="350" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.7"/>
+  <rect x="974" y="530" width="298" height="36" rx="18" fill="#7c3aed"/>
+  <text class="stage white" x="1123" y="553" text-anchor="middle">2 LAYERS · 4 HEADS · 32D / HEAD</text>
+
+  <text class="h" x="1123" y="590" text-anchor="middle">Relation-aware Transformer Layer</text>
+  <rect x="912" y="620" width="422" height="72" rx="8" fill="#ffffff" stroke="#8b5cf6"/>
+  <text class="b" x="1123" y="647" text-anchor="middle">Edge-conditioned Q / K / V attention</text>
+  <text class="s" x="1123" y="671" text-anchor="middle">independent incoming-edge softmax per relation</text>
+
+  <rect x="912" y="710" width="94" height="58" rx="7" fill="#eff6ff" stroke="#60a5fa"/>
+  <text class="tiny" x="959" y="734" text-anchor="middle">room</text>
+  <text class="tiny" x="959" y="753" text-anchor="middle">message</text>
+  <rect x="1015" y="710" width="94" height="58" rx="7" fill="#fff7ed" stroke="#fb923c"/>
+  <text class="tiny" x="1062" y="734" text-anchor="middle">spatial</text>
+  <text class="tiny" x="1062" y="753" text-anchor="middle">message</text>
+  <rect x="1118" y="710" width="94" height="58" rx="7" fill="#f0fdf4" stroke="#22c55e"/>
+  <text class="tiny" x="1165" y="734" text-anchor="middle">functional</text>
+  <text class="tiny" x="1165" y="753" text-anchor="middle">message</text>
+  <rect x="1221" y="710" width="113" height="58" rx="7" fill="#ecfeff" stroke="#06b6d4"/>
+  <text class="tiny" x="1277" y="734" text-anchor="middle">opening</text>
+  <text class="tiny" x="1277" y="753" text-anchor="middle">message</text>
+
+  <path class="bus" d="M959 768 V786 H1277 V768 M1062 768 V786 M1165 768 V786"/>
+  <rect x="952" y="786" width="342" height="50" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.4"/>
+  <text class="b" x="1123" y="807" text-anchor="middle">RelationFusionGate</text>
+  <text class="tiny" x="1123" y="826" text-anchor="middle">prevents dense spatial edges from dominating</text>
+
+  <path class="line" d="M1123 836 V852"/>
+  <rect x="952" y="854" width="342" height="36" rx="8" fill="#ffffff" stroke="#7c3aed"/>
+  <text class="s" x="1123" y="877" text-anchor="middle">Residual + LayerNorm + FFN</text>
+
+  <path class="line-blue" d="M758 656 H910"/>
+  <text class="tiny" x="834" y="646" text-anchor="middle" fill="#2563eb">node stream H⁰</text>
+  <path class="line" d="M1123 446 V546"/>
+
+  <rect class="dark" x="992" y="910" width="262" height="44" rx="9"/>
+  <text class="b white" x="1123" y="929" text-anchor="middle">Final node states H²</text>
+  <text class="tiny white" x="1123" y="947" text-anchor="middle">N × 128</text>
+  <path class="line" d="M1123 898 V908"/>
+
+  <!-- Stage 04: direct furniture decoder -->
+  <rect class="group" x="1412" y="108" width="456" height="858" rx="14" filter="url(#shadow)"/>
+  <text class="stage" x="1432" y="139">04 · DIRECT FURNITURE ACTION DECODER</text>
+
+  <rect class="dark" x="1452" y="174" width="376" height="74" rx="9"/>
+  <text class="h white" x="1640" y="203" text-anchor="middle">Gather FURNITURE rows only</text>
+  <text class="mono white" x="1640" y="228" text-anchor="middle">H²_furniture : F × 128</text>
+  <path class="line-blue" d="M1254 932 H1374 V211 H1450"/>
+
+  <rect class="green" x="1436" y="290" width="194" height="164" rx="9"/>
+  <text class="h" x="1533" y="321" text-anchor="middle">ActionTypeMLP</text>
+  <text class="s" x="1533" y="346" text-anchor="middle">128 → 128 → 4</text>
+  <text class="tiny" x="1533" y="370" text-anchor="middle">GELU · LayerNorm</text>
+  <line x1="1460" y1="386" x2="1606" y2="386" stroke="#86b89a"/>
+  <text class="mono" x="1533" y="410" text-anchor="middle">KEEP · TRANSLATE</text>
+  <text class="mono" x="1533" y="433" text-anchor="middle">ROTATE · BOTH</text>
+
+  <rect class="rose" x="1650" y="290" width="194" height="164" rx="9"/>
+  <text class="h" x="1747" y="321" text-anchor="middle">PoseDeltaMLP</text>
+  <text class="s" x="1747" y="346" text-anchor="middle">128 → 128 → 3</text>
+  <text class="tiny" x="1747" y="370" text-anchor="middle">GELU · LayerNorm · tanh</text>
+  <line x1="1674" y1="386" x2="1820" y2="386" stroke="#e7a1ae"/>
+  <text class="mono" x="1747" y="410" text-anchor="middle">normalized Δx · Δy</text>
+  <text class="mono" x="1747" y="433" text-anchor="middle">normalized Δyaw</text>
+
+  <path class="bus" d="M1640 248 V270 H1533 V288 M1640 270 H1747 V288"/>
+  <path class="bus" d="M1533 454 V484 H1747 V454"/>
+  <rect class="violet" x="1464" y="484" width="352" height="82" rx="9"/>
+  <text class="b" x="1640" y="513" text-anchor="middle">Action-type component gate</text>
+  <text class="s" x="1640" y="538" text-anchor="middle">KEEP zeros all · TRANSLATE zeros Δyaw</text>
+  <text class="tiny" x="1640" y="558" text-anchor="middle">ROTATE zeros Δx/Δy · BOTH keeps all</text>
+
+  <path class="line" d="M1640 566 V590"/>
+  <rect class="green" x="1440" y="592" width="400" height="126" rx="10"/>
+  <text class="h" x="1640" y="622" text-anchor="middle">Network output contract</text>
+  <text class="mono" x="1464" y="653">action_type_logits</text>
+  <text class="mono" x="1814" y="653" text-anchor="end">[B, F, 4]</text>
+  <text class="mono" x="1464" y="681">primary_delta_normalized</text>
+  <text class="mono" x="1814" y="681" text-anchor="end">[B, F, 3]</text>
+  <text class="tiny" x="1640" y="704" text-anchor="middle">No scene-level route, OOD, candidate or ranking outputs</text>
+
+  <rect class="gray" x="1436" y="754" width="408" height="182" rx="9"/>
+  <text class="b" x="1456" y="783">Removed from the new network</text>
+  <text class="s" x="1456" y="810">shared NodeMLP + additive fusion</text>
+  <text class="s" x="1456" y="833">hash category buckets · shared edge MLP</text>
+  <text class="s" x="1456" y="856">4-layer transformer · unified relation softmax</text>
+  <text class="s" x="1456" y="879">scene pooling · candidate queries / pairs</text>
+  <text class="s" x="1456" y="902">violation decoder · candidate scoring heads</text>
+  <text class="tiny" x="1456" y="924">Legacy checkpoint compatibility is intentionally broken.</text>
+
+  <!-- Model-owned deterministic constraint layer -->
+  <rect x="32" y="992" width="1836" height="150" rx="14" fill="#ffffff" stroke="#64748b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text class="stage" x="52" y="1021">COMPLETE MODEL CONTRACT · PARAMETER-FREE HARD-CONSTRAINT REFINEMENT</text>
+
+  <rect class="gray" x="68" y="1044" width="256" height="64" rx="8"/>
+  <text class="b" x="196" y="1069" text-anchor="middle">Eligibility mask</text>
+  <text class="tiny" x="196" y="1092" text-anchor="middle">movable / fixed / valid</text>
+  <path class="line" d="M324 1076 H382"/>
+
+  <rect class="violet" x="384" y="1044" width="256" height="64" rx="8"/>
+  <text class="b" x="512" y="1069" text-anchor="middle">Decode + physical scaling</text>
+  <text class="tiny" x="512" y="1092" text-anchor="middle">ActionRange(3 m, pi)</text>
+  <path class="line" d="M640 1076 H698"/>
+
+  <rect class="orange" x="700" y="1044" width="256" height="64" rx="8"/>
+  <text class="b" x="828" y="1069" text-anchor="middle">Primary proposal</text>
+  <text class="tiny" x="828" y="1092" text-anchor="middle">one action per furniture</text>
+  <path class="line" d="M956 1076 H1014"/>
+
+  <rect class="blue" x="1016" y="1044" width="256" height="64" rx="8"/>
+  <text class="b" x="1144" y="1069" text-anchor="middle">HardConstraintRefinementLayer</text>
+  <text class="tiny" x="1144" y="1092" text-anchor="middle">boundary · collision · opening</text>
+  <path class="line" d="M1272 1076 H1330"/>
+
+  <rect class="green" x="1332" y="1044" width="472" height="64" rx="8"/>
+  <text class="b" x="1568" y="1069" text-anchor="middle">Final per-furniture action + delta</text>
+  <text class="tiny" x="1568" y="1092" text-anchor="middle">feasible trajectory · exact report · versioned contract</text>
+
+  <path class="dash" d="M1640 718 V736 H1856 V972 H512 V1042"/>
+  <text class="tiny" x="1304" y="986">neural raw remains separately measurable inside the complete model</text>
+</svg>

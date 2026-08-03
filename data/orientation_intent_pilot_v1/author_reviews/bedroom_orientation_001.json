@@ -1,0 +1,74 @@
+{
+  "schema_version": "orientation_intent_author_review_v1",
+  "scene_id": "bedroom_orientation_001",
+  "review_type": "author_generation_and_self_review_only",
+  "independent_semantic_review_completed": false,
+  "status": "author_self_review_pass",
+  "accepted_clean": false,
+  "design_iterations_used": 1,
+  "deterministic_validation_passed": true,
+  "diversity_validation_passed": true,
+  "orientation_compile_passed": true,
+  "yaw_direction_table_review": {
+    "passed": true,
+    "back_to_wall_fronts_point_indoors": true,
+    "seats_face_declared_service_objects": true,
+    "local_minus_y_front_matches_intent": true,
+    "clearance_regions_match_declared_side": true,
+    "notes": "The bed front/foot vector points west. With that facing direction, local +X is the occupant's left and projects south, matching the bed's south-side access zone. The west desk points east, its chair points west, the north bookcase points south, and the south wardrobe points north."
+  },
+  "object_reviews": [
+    {
+      "object_id": "bed_guest_east",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "The HSSD bed has a stable semantic front. Its front points west and its rear/head end is near the east wall. The requested left-side clearance is deterministically south of the bed and remains clear."
+    },
+    {
+      "object_id": "desk_writing_west",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Back is against the west wall and front points east. The front access region contains only the facing chair through compiler-derived allowed overlap."
+    },
+    {
+      "object_id": "chair_writing",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Faces west toward the desk center; its rear pullout zone extends east into the central passage without reaching the bed-side zone."
+    },
+    {
+      "object_id": "bookcase_guest_north",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Back is against the north wall west of the window. Front and browsing clearance point south into the room."
+    },
+    {
+      "object_id": "wardrobe_clothing_south",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Back is against the south wall east of the door. Front and clothing-access clearance point north, with positive separation from the bed-side zone."
+    },
+    {
+      "object_id": "floor_lamp_bed_head",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "The near-square lamp base is normalized to yaw zero under orientation_irrelevant. It is outside the bed, window, and bed-side clearance footprints."
+    }
+  ],
+  "visual_review": {
+    "image_checked": true,
+    "furniture_overlap_observed": false,
+    "opening_conflict_observed": false,
+    "incoherent_text_or_geometry_overlap_observed": false,
+    "main_path_visually_plausible": true,
+    "functional_zoning_visually_plausible": true
+  },
+  "unexpressible_orientation_intent": false,
+  "review_limitations": "This is the generating author's semantic and visual self-review. It is not an independent semantic audit."
+}

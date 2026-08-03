@@ -1,0 +1,81 @@
+{
+  "schema_version": "orientation_intent_author_review_v1",
+  "scene_id": "home_office_orientation_001",
+  "review_type": "author_generation_and_self_review_only",
+  "independent_semantic_review_completed": false,
+  "status": "author_self_review_pass",
+  "accepted_clean": false,
+  "design_iterations_used": 1,
+  "deterministic_validation_passed": true,
+  "diversity_validation_passed": true,
+  "orientation_compile_passed": true,
+  "yaw_direction_table_review": {
+    "passed": true,
+    "back_to_wall_fronts_point_indoors": true,
+    "seats_face_declared_service_objects": true,
+    "local_minus_y_front_matches_intent": true,
+    "clearance_regions_match_declared_side": true,
+    "notes": "The north desk points south, south bookcase points north, and east cabinet points west. The task chair points north to the desk; both consultation chairs point to the offset table. Rear-pullout zones lie opposite each chair front, and front-access zones lie beyond the relevant furniture front."
+  },
+  "object_reviews": [
+    {
+      "object_id": "desk_personal_north",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Back is against the north wall; local -Y front points south into the room. The front-access strip contains the task chair only through compiler-derived allowed overlap."
+    },
+    {
+      "object_id": "chair_personal",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Faces the desk center to the north. Its rear-pullout strip extends south toward open floor and does not cross another furniture footprint."
+    },
+    {
+      "object_id": "table_consultation",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "The annotated bbox is longer on local X, so yaw zero correctly gives an east-west long axis. The table has no authored semantic front and requests no standalone clearance."
+    },
+    {
+      "object_id": "chair_consultation_south",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Faces north-west toward the table center; the rear strip falls south-east, away from the table and outside the entry clearance."
+    },
+    {
+      "object_id": "chair_consultation_west",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Faces almost due east toward the table center. The rear strip extends west and remains north of the west-wall door clearance."
+    },
+    {
+      "object_id": "bookcase_reference_south",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Back is against the south wall and front points north. Its access strip remains clear and separate from the consultation chair footprint."
+    },
+    {
+      "object_id": "cabinet_files_east",
+      "orientation_semantics_pass": true,
+      "clearance_semantics_pass": true,
+      "placement_semantics_pass": true,
+      "review": "Back is against the east wall below the window span and front points west. The west-side access zone is unobstructed."
+    }
+  ],
+  "visual_review": {
+    "image_checked": true,
+    "furniture_overlap_observed": false,
+    "opening_conflict_observed": false,
+    "incoherent_text_or_geometry_overlap_observed": false,
+    "main_path_visually_plausible": true,
+    "functional_zoning_visually_plausible": true
+  },
+  "unexpressible_orientation_intent": false,
+  "review_limitations": "This is the generating author's semantic and visual self-review. It is not an independent semantic audit."
+}

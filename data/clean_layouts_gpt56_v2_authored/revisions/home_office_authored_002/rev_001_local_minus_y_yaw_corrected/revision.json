@@ -1,0 +1,87 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "home_office_authored_002",
+  "revision_id": "rev_001_local_minus_y_yaw_corrected",
+  "status": "corrected_pending_independent_review",
+  "reason": "Yaw values and their use-clearance-zone orientations now follow the HSSD local -Y front convention; fresh independent review is required because the rendered arrows changed.",
+  "yaw_corrections": [
+    {
+      "object_id": "desk_work_east",
+      "old_yaw_rad": 1.5707963267948966,
+      "new_yaw_rad": -1.5707963267948966,
+      "old_local_minus_y_front_xy": [
+        1.0,
+        -0.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -1.0,
+        -0.0
+      ]
+    },
+    {
+      "object_id": "chair_work_east",
+      "old_yaw_rad": -1.5707963267948966,
+      "new_yaw_rad": 1.5707963267948966,
+      "old_local_minus_y_front_xy": [
+        -1.0,
+        -0.0
+      ],
+      "new_local_minus_y_front_xy": [
+        1.0,
+        -0.0
+      ]
+    },
+    {
+      "object_id": "bookcase_reference_north",
+      "old_yaw_rad": -3.141592653589793,
+      "new_yaw_rad": 0.0,
+      "old_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "object_id": "cabinet_files_south_east",
+      "old_yaw_rad": 0.0,
+      "new_yaw_rad": -3.141592653589793,
+      "old_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ]
+    },
+    {
+      "object_id": "armchair_window_reading",
+      "old_yaw_rad": -2.35,
+      "new_yaw_rad": 0.791592653589793,
+      "old_local_minus_y_front_xy": [
+        -0.711473,
+        0.702713
+      ],
+      "new_local_minus_y_front_xy": [
+        0.711473,
+        -0.702713
+      ]
+    }
+  ],
+  "artifact_sha256": {
+    "authored_proposal": "c9e9bd302852693644852aa62f1c8ae09592231afb7503b0335cf994679848b2",
+    "scene": "26beb7798c3f007ed76960d0572fb03495e68b4fc5a996dac798ed85f2e32704",
+    "validation": "594d42cb187dfdc38fb2e100308592332325b50773d2d0b842d1e73faccbc617",
+    "diversity": "ffb2436284e62859be48d4fb800f299d95a74fa81980aeb035d56d69c251ef64",
+    "diversity_legacy": "ffb2436284e62859be48d4fb800f299d95a74fa81980aeb035d56d69c251ef64",
+    "functional_partner_build": "3ba5b6476621858825a27ac1719a781ad22d419e0a56600300d75dfb1a134bf5",
+    "visualization": "d05aa760fb379d8c6a3005ae19decb55cbdf9b4bb8a77dd996b70ddcc4ee1813",
+    "independent_review": "833ddc84f0d6f333c231b3d7302e452df8c0d89c8a368bd1c2cd12efbc9cd41f",
+    "reviewer_scene": "f10b4df5771a9a135c78feec399802e6829a0b33e330201af4b979941fff49f0",
+    "reviewer_geometry": "ff7358abcfde581d8c9442900ca0ff9d0a8ba4e1d8052de359612a3fa09c7a7d"
+  },
+  "supersedes": "rev_000_pre_yaw_convention_correction"
+}

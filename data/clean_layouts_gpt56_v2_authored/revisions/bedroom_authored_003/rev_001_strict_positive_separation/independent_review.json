@@ -1,0 +1,101 @@
+{
+  "schema_version": "independent_semantic_review_v2",
+  "scene_id": "bedroom_authored_003",
+  "isolation_compliance": {
+    "read_only_authorized_artifacts": true,
+    "authorized_artifact_count": 5,
+    "unauthorized_artifacts_read": false
+  },
+  "reviewed_artifacts_sha256": {
+    "reviews/reviewer_packet/bedroom_authored_003_scene.json": "0D0BD2DC4EBEB58637BF008EB25BCAF9002CA5E89A4BEB501C5EAC33938E0A02",
+    "visualizations/bedroom_authored_003.png": "7408D9DE2AD0E472EFDB4FB3A8B71EF740EB7A057F29F40692369F47A8803C9D",
+    "validation/bedroom_authored_003.json": "A633A62AA8290BAA0676B3369234F1ECAD7501A2E56E4B773C576ACCF7258E1E",
+    "diversity/bedroom_authored_003.json": "4005158981EF045D6054179C6A863F2B5F3A1CA3C3F9E7C2CA90B713BEFD4D05",
+    "reviews/reviewer_packet/bedroom_authored_003_geometry.json": "33D0F9F585CC32C0327254C42B350762003E8FBFC07104307CCD0F47FBE8193B"
+  },
+  "pairwise_table_read": true,
+  "yaw_direction_table_read": true,
+  "cited_object_ids": [
+    "bed_01",
+    "nightstand_01",
+    "desk_01",
+    "chair_01",
+    "wardrobe_01",
+    "armchair_01",
+    "side_table_01"
+  ],
+  "object_reports": [
+    {
+      "object_id": "bed_01",
+      "assessment": "pass",
+      "evidence": "West-wall bed with east-facing local-minus-Y direction; 0.1455 m gap to nightstand and positive gaps to every other object."
+    },
+    {
+      "object_id": "nightstand_01",
+      "assessment": "pass",
+      "evidence": "Bedside support surface has a 0.1455 m positive gap to bed_01 and south-facing front; placement is visually and functionally plausible."
+    },
+    {
+      "object_id": "desk_01",
+      "assessment": "pass",
+      "evidence": "Desk/chair partner edge is present, desk front is south, desk-chair signed separation is 0.219 m, and desk path target is reachable."
+    },
+    {
+      "object_id": "chair_01",
+      "assessment": "pass",
+      "evidence": "Chair faces north toward desk_01; 0.219 m desk gap and clear pullback/use region are supported by validation and PNG."
+    },
+    {
+      "object_id": "wardrobe_01",
+      "assessment": "pass",
+      "evidence": "South-wall wardrobe faces north with 1.53505 m to chair and 1.8219 m to armchair; opening, collision, and use clearances pass."
+    },
+    {
+      "object_id": "armchair_01",
+      "assessment": "fail",
+      "evidence": "Yaw table gives yaw -90 deg, local-minus-Y vector [-1,0], cardinal west. The exact armchair_01 -> side_table_01 signed separation is only 0.0155 m, and the PNG places the table immediately west, directly in the armchair's front sit/stand approach rather than beside it."
+    },
+    {
+      "object_id": "side_table_01",
+      "assessment": "fail",
+      "evidence": "Although the frozen functional edge side_table_01 -> armchair_01 exists and collision/use checks pass, its shown location is directly in front of the west-facing armchair at 0.0155 m, not a usable side position. Relocate laterally beside the armchair and preserve a clear front approach."
+    }
+  ],
+  "geometry_assessment": {
+    "deterministic_validation_passed": true,
+    "all_pairwise_rows_positive": true,
+    "minimum_signed_separation_m": 0.0155,
+    "minimum_pair": "armchair_01 -> side_table_01",
+    "opening_clearance_passed": true,
+    "collision_passed": true,
+    "human_semantic_geometry_passed": false,
+    "issue": "Near-touching side table is aligned with armchair front approach."
+  },
+  "functional_relation_assessment": {
+    "frozen_functional_edges": [
+      "bed_01 -> nightstand_01",
+      "nightstand_01 -> bed_01",
+      "desk_01 -> chair_01",
+      "chair_01 -> desk_01",
+      "side_table_01 -> armchair_01"
+    ],
+    "deterministic_functional_checks_passed": true,
+    "path_targets_reachable": ["bed_01", "desk_01"],
+    "semantic_result": "fail",
+    "required_correction": "Move side_table_01 to the armchair's lateral side, not along its west-facing front vector."
+  },
+  "template_risk": {
+    "diversity_novelty_pass": true,
+    "template_risk": false,
+    "closest_global": {
+      "scene_id": "home_office_authored_003",
+      "overall_similarity": 0.586685
+    },
+    "closest_same_room_type": {
+      "scene_id": "bedroom_authored_001",
+      "overall_similarity": 0.527416
+    }
+  },
+  "semantic_review_status": "rejected_semantic_functional_issue",
+  "final_verdict": "fail"
+}

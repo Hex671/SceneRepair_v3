@@ -1,0 +1,94 @@
+{
+  "scene_id": "bedroom_authored_003",
+  "review_type": "independent_semantic_review",
+  "semantic_review_status": "semantic_review_pass",
+  "isolation_compliance": {
+    "compliant": true,
+    "inspected_artifacts": [
+      "reviews/reviewer_packet/bedroom_authored_003_scene.json",
+      "visualizations/bedroom_authored_003.png",
+      "validation/bedroom_authored_003.json",
+      "validation/bedroom_authored_003_diversity.json"
+    ],
+    "nonpermitted_artifacts_inspected": false,
+    "note": "Assessment uses only the four authorized final artifacts; authored rationale, self-review, and revision history were not inspected."
+  },
+  "object_reports": [
+    {
+      "object_id": "bed_01",
+      "cited_object_ids": ["bed_01", "nightstand_01", "door_00"],
+      "assessment": "pass",
+      "concrete_reason": "bed_01 occupies the west side as the dominant sleep zone, with its east-side entry-and-making clearance visibly open toward the room center. door_00 can reach that clearance according to the validation report, and nightstand_01 is placed at the north bedside edge without footprint penetration.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "nightstand_01",
+      "cited_object_ids": ["nightstand_01", "bed_01", "window_00"],
+      "assessment": "pass",
+      "concrete_reason": "nightstand_01 is immediately adjacent to the north side of bed_01 while remaining outside the bed footprint. Its access zone faces the open side of the room and does not encroach on window_00 clearance, providing a credible bedside reach position.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "desk_01",
+      "cited_object_ids": ["desk_01", "chair_01", "window_00"],
+      "assessment": "pass",
+      "concrete_reason": "desk_01 forms a compact work or grooming station below window_00. The rendered footprint leaves a visible gap to the window clearance, and its front clearance opens south toward chair_01 and the central circulation area rather than toward a wall.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "chair_01",
+      "cited_object_ids": ["chair_01", "desk_01", "door_00"],
+      "assessment": "pass",
+      "concrete_reason": "chair_01 is centered immediately south of desk_01 and oriented into the desk work relationship. Its pull-back area remains clear of door_00 and the route from the east entry, so a user can approach, sit, and leave without crossing the bed-side zone.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "wardrobe_01",
+      "cited_object_ids": ["wardrobe_01", "door_00", "bed_01"],
+      "assessment": "pass",
+      "concrete_reason": "wardrobe_01 uses the south wall with its access side facing north into the room. The dedicated front-access zone is separate from bed_01 and does not occupy the east-side door clearance, leaving a practical dressing approach from the central aisle.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "armchair_01",
+      "cited_object_ids": ["armchair_01", "side_table_01", "door_00", "desk_01"],
+      "assessment": "pass",
+      "concrete_reason": "armchair_01 creates a distinct southeast sitting or reading position, separated from desk_01 by open floor. Its approach zone is on the west side and remains outside door_00 clearance; the east-facing orientation gives a plausible view toward the entry side without blocking the entry-to-room route.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "side_table_01",
+      "cited_object_ids": ["side_table_01", "armchair_01", "door_00"],
+      "assessment": "pass",
+      "concrete_reason": "side_table_01 is directly beside the west arm of armchair_01 at a usable reach distance, while the small gap between the two footprints avoids collision. It stays clear of door_00 and does not narrow the central path to the desk or bed.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    }
+  ],
+  "diversity_assessment": {
+    "comparison_count": 39,
+    "closest_scene": "home_office_authored_003",
+    "overall_similarity": 0.58651,
+    "best_symmetry_transform": "identity",
+    "novelty_pass": true,
+    "template_risk": false,
+    "assessment": "pass",
+    "concrete_reason": "The diversity report compares 39 existing scenes and identifies home_office_authored_003 as the closest match at 0.58651. Category overlap is 0.4, wall attachment similarity is 0.4, yaw similarity is 0.4, and the best transform is identity; the report flags no template risk and reports novelty_pass=true."
+  },
+  "scene_assessment": "The bedroom has a clear west-side sleep zone, a north daylight work station, south-wall storage, and an independent southeast sitting corner. The east door opens to a continuous central route serving the bed, desk, and wardrobe. The final visualization shows no implausible penetration, blocked opening clearance, or unusable furniture access, and the deterministic report confirms all hard checks pass.",
+  "template_risk": false,
+  "final_verdict": "semantic_review_pass"
+}

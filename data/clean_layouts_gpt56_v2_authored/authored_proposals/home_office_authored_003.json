@@ -1,0 +1,132 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "home_office_authored_003",
+  "room_type": "home_office",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 4.8,
+    "width_m": 3.9,
+    "organization": "North daylight work band, west-wall reference storage, east reading pocket, and an intentionally open diagonal route from the south entry.",
+    "daily_activities": ["focused computer work", "paperwork and file retrieval", "reading", "short one-person conversation"],
+    "main_path": "From door_00 at the south wall, move northeast through the open center to chair_01 and desk_01, with a secondary eastward branch to armchair_01.",
+    "protected_open_space": "The south-central turning area and the diagonal strip between door_00, chair_01, and armchair_01 remain free of furniture and use-clearance overlap."
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "south",
+      "along_m": -1.35,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "interior_normal_xy": [0.0, 1.0]
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "north",
+      "along_m": 0.65,
+      "opening_width_m": 1.8,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "interior_normal_xy": [0.0, -1.0]
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "desk_01",
+      "hssd_id": "b48729416ed78da505af25fd953a52babdaa421b",
+      "category": "desk",
+      "x": 0.25,
+      "y": 1.10,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "desk_01 is the primary work surface, set south of window_00 so daylight reaches the papers from the north while its 0.425 m rear wall gap keeps the full window clearance free. Its local -Y front opens toward chair_01 and the south-central approach, preserving a clear pull-back zone behind the chair."
+    },
+    {
+      "object_id": "chair_01",
+      "hssd_id": "69803a92f62572f4bc4de8fc64fd84c6a6e63229",
+      "category": "chair",
+      "x": 0.25,
+      "y": 0.28,
+      "z": 0.0,
+      "yaw_rad": 3.141592653589793,
+      "placement_rationale": "chair_01 is the wheeled task seat for desk_01, centered on the desk work span with roughly 0.23 m between the chair front and desk front. Its yaw of pi points the local -Y front north toward desk_01, while the clear area south of chair_01 supports rolling back toward door_00."
+    },
+    {
+      "object_id": "bookcase_01",
+      "hssd_id": "b327a81554761221992e56b367cc58fcebd3386b",
+      "category": "bookcase",
+      "x": -2.20,
+      "y": 0.62,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "placement_rationale": "bookcase_01 occupies the west wall segment above the south door zone, keeping reference books near the work path without narrowing door_00. At yaw pi/2 its shallow depth bears on the west wall and its local -Y front faces east into the room, leaving browsing clearance toward the central aisle."
+    },
+    {
+      "object_id": "cabinet_01",
+      "hssd_id": "93ecb08a04a5bfd07faf30edf670664a00b55be2",
+      "category": "cabinet",
+      "x": -2.14,
+      "y": -0.68,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "placement_rationale": "cabinet_01 is the tall file cabinet on the remaining west wall below bookcase_01, close enough to desk_01 for active folders but separated from door_00 by the south-west wall interval. Its east-facing front and dedicated opening zone avoid forcing a user to cross the chair route for filing."
+    },
+    {
+      "object_id": "cabinet_02",
+      "hssd_id": "14a55d7cdd6f72794835d1580ec491b47e16155e",
+      "category": "cabinet",
+      "x": 2.14,
+      "y": 0.62,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "placement_rationale": "cabinet_02 is a low equipment and printer cabinet on the east wall, outside the swing and approach of armchair_01. Its local -Y front rotates west, so equipment is reached from the open room rather than from the wall, and it does not block window_00 or the diagonal entry path."
+    },
+    {
+      "object_id": "armchair_01",
+      "hssd_id": "7d1d8de783160f62eb3538664d34fe913acca8a9",
+      "category": "armchair",
+      "x": 1.28,
+      "y": -0.72,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "placement_rationale": "armchair_01 forms the independent reading pocket on the east side, angled west toward the room instead of facing the desk straight on. It is far enough south of cabinet_02 to leave cabinet access, and its west-facing seat keeps the central route visible from the chair while preserving a short approach from door_00."
+    },
+    {
+      "object_id": "side_table_01",
+      "hssd_id": "37fe9dd335464555c11ba560a08515dd129c2257",
+      "category": "side_table",
+      "x": 0.54,
+      "y": -1.05,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "side_table_01 sits west and slightly forward of armchair_01 at hand height for a book or drink, outside the armchair seat footprint and below the chair_01 pull-back strip. Its neutral yaw is appropriate for a small square support surface and leaves the reading group open toward the room."
+    }
+  ],
+  "use_clearance_zones": [
+    {"zone_id": "desk_01_front_clearance", "owner_id": "desk_01", "purpose": "seated_work_and_monitor_access", "center_xy_m": [0.25, 0.47], "size_xy_m": [1.62, 0.82], "yaw_rad": 0.0, "allowed_overlap_object_ids": ["chair_01"]},
+    {"zone_id": "chair_01_pullback_clearance", "owner_id": "chair_01", "purpose": "task_chair_roll_back_to_entry", "center_xy_m": [0.25, -0.25], "size_xy_m": [0.86, 0.48], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "bookcase_01_browsing_clearance", "owner_id": "bookcase_01", "purpose": "standing_book_selection", "center_xy_m": [-1.77, 0.62], "size_xy_m": [0.62, 1.14], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "cabinet_01_file_access", "owner_id": "cabinet_01", "purpose": "file_drawer_access", "center_xy_m": [-1.72, -0.68], "size_xy_m": [0.70, 0.55], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "cabinet_02_equipment_access", "owner_id": "cabinet_02", "purpose": "printer_and_equipment_access", "center_xy_m": [1.70, 0.62], "size_xy_m": [0.70, 1.08], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "armchair_01_approach", "owner_id": "armchair_01", "purpose": "reading_seat_sit_stand_clearance", "center_xy_m": [0.92, -0.72], "size_xy_m": [0.68, 0.92], "yaw_rad": 0.0, "allowed_overlap_object_ids": ["side_table_01"]}
+  ],
+  "path_targets": [
+    {"target_id": "desk_01", "goal_xy_m": [0.25, 0.79], "purpose": "primary_work_zone"},
+    {"target_id": "armchair_01", "goal_xy_m": [0.92, -0.72], "purpose": "secondary_reading_zone"}
+  ],
+  "primary_zone_goal_xy_m": [0.25, 0.79],
+  "authorship": {
+    "author": "GPT-5.6 Codex primary agent",
+    "layout_decisions_by_python": false,
+    "design_intent_path": "authored_proposals/home_office_authored_003.intent.json",
+    "asset_query_source": "hssd-annotations/data/hssd_annotation_lookup.json.gz",
+    "functional_partners": "omitted_by_design; generated only by FrozenFunctionalPartnerRules"
+  }
+}

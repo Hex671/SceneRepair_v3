@@ -1,0 +1,117 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "bedroom_authored_003",
+  "room_type": "bedroom",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 5.6,
+    "width_m": 4.2,
+    "organization": "West-wall longitudinal bed, north-window morning surface, south-wall wardrobe, and a separate east reading pocket connected by an L-shaped circulation route.",
+    "daily_activities": ["sleeping", "dressing", "morning paperwork or grooming", "short reading"],
+    "main_path": "From door_00 on the east-south wall, pass north-west around the reading pocket, reach the central bed side, then continue north to chair_01 and desk_01.",
+    "protected_open_space": "The east-central landing, bed's accessible east side, desk chair pull-back strip, and wardrobe front remain free of unrelated furniture."
+  },
+  "openings": [
+    {"opening_id": "door_00", "kind": "door", "wall": "east", "along_m": -1.30, "opening_width_m": 0.9, "opening_height_m": 2.05, "sill_height_m": 0.0, "clearance_depth_m": 0.8, "interior_normal_xy": [-1.0, 0.0]},
+    {"opening_id": "window_00", "kind": "window", "wall": "north", "along_m": 0.70, "opening_width_m": 1.8, "opening_height_m": 1.2, "sill_height_m": 0.85, "clearance_depth_m": 0.5, "interior_normal_xy": [0.0, -1.0]}
+  ],
+  "furniture": [
+    {
+      "object_id": "bed_01",
+      "hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+      "category": "bed",
+      "x": -1.75,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "placement_rationale": "bed_01 runs longitudinally along the west wall, keeping its east long side accessible from the central landing and avoiding the north window_00 band. Its yaw pi/2 turns the long depth along room X, so the bed does not divide the room and the door_00 approach can pass on the east side."
+    },
+    {
+      "object_id": "nightstand_01",
+      "hssd_id": "e0d5b8aea675e79541af41ec6cbd4e132d82cd37",
+      "category": "nightstand",
+      "x": -1.75,
+      "y": 1.28,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "nightstand_01 sits at bed_01's north head-side corner rather than duplicating a pair, leaving the east side open for entry and making one reachable surface sufficient. Its local -Y front faces south toward the bed and its north clearance does not intrude on window_00."
+    },
+    {
+      "object_id": "desk_01",
+      "hssd_id": "a42e2ef37ca205ecb1927bde89c6b618ddcda71b",
+      "category": "desk",
+      "x": 0.75,
+      "y": 1.10,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "desk_01 occupies the north wall below window_00, with a 0.39 m rear setback from the window clearance so morning light reaches the surface without overlap. Its local -Y front faces chair_01 and the central room, while the desk stays east of bed_01's accessible side."
+    },
+    {
+      "object_id": "chair_01",
+      "hssd_id": "ac92c090320c6273da3073b81639ae33b30a0fe0",
+      "category": "chair",
+      "x": 0.75,
+      "y": 0.30,
+      "z": 0.0,
+      "yaw_rad": 3.141592653589793,
+      "placement_rationale": "chair_01 is the single desk seat for desk_01, facing north with its local -Y front toward the work surface. The south pull-back strip remains part of the east-central route from door_00, and the chair does not compete with bed_01's bedside access."
+    },
+    {
+      "object_id": "wardrobe_01",
+      "hssd_id": "115400dd7dd9aa26ca595007f18b5a515626554d",
+      "category": "wardrobe",
+      "x": -1.30,
+      "y": -1.80,
+      "z": 0.0,
+      "yaw_rad": 3.141592653589793,
+      "placement_rationale": "wardrobe_01 uses the south wall so its tall storage does not compete with window_00 or the east door_00 landing. Its yaw pi turns the local -Y front north into the room, leaving the shallow back on the south wall and giving a direct dressing approach from the central landing."
+    },
+    {
+      "object_id": "armchair_01",
+      "hssd_id": "a7083dbe58df81fdaf42d9483d2f6a4a80d56df0",
+      "category": "armchair",
+      "x": 1.50,
+      "y": -0.78,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "placement_rationale": "armchair_01 forms a quiet reading pocket in the east-south corner while its west-shifted footprint stays clear of door_00's east-side clearance. Its yaw -pi/2 points the local -Y front west toward the room, keeping the central landing visually open and separating reading from the bed axis."
+    },
+    {
+      "object_id": "side_table_01",
+      "hssd_id": "0a2e52d5f93bd2346b2e686bbad4e128b2ff276b",
+      "category": "side_table",
+      "x": 0.86,
+      "y": -1.45,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "side_table_01 sits southwest of armchair_01 as a lateral reading surface rather than occupying the chair's west-facing sit/stand approach. The table remains within side reach, stays north of door_00's landing and east of wardrobe_01's access strip, while its square top makes yaw 0 appropriate."
+    }
+  ],
+  "use_clearance_zones": [
+    {"zone_id": "bed_01_east_side", "owner_id": "bed_01", "purpose": "bed_side_entry_and_making", "center_xy_m": [-0.48, 0.0], "size_xy_m": [0.62, 2.30], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "nightstand_01_access", "owner_id": "nightstand_01", "purpose": "bedside_reach", "center_xy_m": [-1.75, 0.72], "size_xy_m": [0.70, 0.55], "yaw_rad": 0.0, "allowed_overlap_object_ids": ["bed_01"]},
+    {"zone_id": "desk_01_front_clearance", "owner_id": "desk_01", "purpose": "morning_work_and_grooming", "center_xy_m": [0.75, 0.37], "size_xy_m": [1.55, 0.82], "yaw_rad": 0.0, "allowed_overlap_object_ids": ["chair_01"]},
+    {"zone_id": "chair_01_pullback", "owner_id": "chair_01", "purpose": "desk_seat_pullback", "center_xy_m": [0.75, -0.10], "size_xy_m": [0.85, 0.48], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "wardrobe_01_front_access", "owner_id": "wardrobe_01", "purpose": "dressing_and_clothing_access", "center_xy_m": [-1.30, -1.27], "size_xy_m": [1.40, 0.48], "yaw_rad": 0.0, "allowed_overlap_object_ids": []},
+    {"zone_id": "armchair_01_approach", "owner_id": "armchair_01", "purpose": "reading_seat_sit_stand", "center_xy_m": [1.06, -0.78], "size_xy_m": [0.80, 0.95], "yaw_rad": 0.0, "allowed_overlap_object_ids": ["side_table_01"]}
+  ],
+  "path_targets": [
+    {"target_id": "bed_01", "goal_xy_m": [-0.48, 0.0], "purpose": "primary_sleep_zone"},
+    {"target_id": "desk_01", "goal_xy_m": [0.75, 0.37], "purpose": "morning_surface_zone"}
+  ],
+  "primary_zone_goal_xy_m": [-0.48, 0.0],
+  "authorship": {
+    "author": "GPT-5.6 Codex primary agent",
+    "layout_decisions_by_python": false,
+    "design_intent_path": "authored_proposals/bedroom_authored_003.intent.json",
+    "asset_query_source": "hssd-annotations/data/hssd_annotation_lookup.json.gz",
+    "functional_partners": "omitted_by_design; generated only by FrozenFunctionalPartnerRules",
+    "revision": {
+      "revision_id": "rev_002_lateral_side_table",
+      "supersedes": "rev_001_strict_positive_separation",
+      "change": "Kept the required 0.02 m west correction and moved side_table_01 south into a lateral position, clearing the west-facing armchair approach identified by independent review."
+    }
+  }
+}

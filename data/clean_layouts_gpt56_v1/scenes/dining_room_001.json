@@ -1,0 +1,570 @@
+{
+  "schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "scene_id": "dining_room_001",
+  "stage": "furniture",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room_type": "dining_room",
+  "length": 5.4,
+  "width": 4.4,
+  "validity": {
+    "scene_id": true,
+    "single_room": true,
+    "room_type": true,
+    "dimensions": true,
+    "coordinate_contract": true,
+    "stage_scope": true
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "south",
+      "opening_width_m": 0.95,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_center_xyz_m": [
+        1.7,
+        -1.8000000000000003,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        0.95,
+        0.8,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "north",
+      "opening_width_m": 1.55,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_center_xyz_m": [
+        -1.35,
+        1.9500000000000002,
+        1.025
+      ],
+      "clearance_size_xyz_m": [
+        1.55,
+        0.5,
+        2.05
+      ],
+      "interior_normal_xy": [
+        0.0,
+        -1.0
+      ],
+      "validity": {
+        "opening_id": true,
+        "kind": true,
+        "clearance_center_xyz_m": true,
+        "clearance_size_xyz_m": true,
+        "interior_normal_xy": true
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "table_01",
+      "hssd_id": "006ea4bce9bbe0c73d6d47776b25e76265235722",
+      "hssd_source_category": "table",
+      "category": "table",
+      "family": "support_surface",
+      "functions": [
+        "dining_surface",
+        "support_objects"
+      ],
+      "bbox": {
+        "width": 1.7,
+        "depth": 0.9,
+        "height": 0.76
+      },
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "The dining surface is central enough for chair pull-out clearance on all occupied sides."
+      }
+    },
+    {
+      "object_id": "chair_01",
+      "hssd_id": "56ce3dac1ca47c0534438464f8df65faddea0302",
+      "hssd_source_category": "chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.52,
+        "depth": 0.566,
+        "height": 0.833
+      },
+      "x": 0.0,
+      "y": 1.163,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Dining seat is parallel to its table edge, faces its place setting, and has pull-out space behind."
+      }
+    },
+    {
+      "object_id": "chair_02",
+      "hssd_id": "56ce3dac1ca47c0534438464f8df65faddea0302",
+      "hssd_source_category": "chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.52,
+        "depth": 0.566,
+        "height": 0.833
+      },
+      "x": 0.0,
+      "y": -1.163,
+      "z": 0.0,
+      "yaw_rad": -3.141592653589793,
+      "rotation_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Dining seat is parallel to its table edge, faces its place setting, and has pull-out space behind."
+      }
+    },
+    {
+      "object_id": "chair_03",
+      "hssd_id": "56ce3dac1ca47c0534438464f8df65faddea0302",
+      "hssd_source_category": "chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.52,
+        "depth": 0.566,
+        "height": 0.833
+      },
+      "x": 1.563,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Dining seat is parallel to its table edge, faces its place setting, and has pull-out space behind."
+      }
+    },
+    {
+      "object_id": "chair_04",
+      "hssd_id": "56ce3dac1ca47c0534438464f8df65faddea0302",
+      "hssd_source_category": "chair",
+      "category": "chair",
+      "family": "seating",
+      "functions": [
+        "sit"
+      ],
+      "bbox": {
+        "width": 0.52,
+        "depth": 0.566,
+        "height": 0.833
+      },
+      "x": -1.563,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.nonartic_clearance_v2.object_bbox_m",
+        "bbox_source_axis_order": "room_z_up_[x,y,z]",
+        "bbox_axis_conversion": "identity",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": true,
+        "canonical_orientation_confidence": 0.72,
+        "placement_rationale": "Dining seat is parallel to its table edge, faces its place setting, and has pull-out space behind."
+      }
+    },
+    {
+      "object_id": "cabinet_01",
+      "hssd_id": "ed943cd8dc7cedb573fb99c899be31601eb384f7",
+      "hssd_source_category": "cabinet",
+      "category": "cabinet",
+      "family": "storage",
+      "functions": [
+        "store",
+        "contain"
+      ],
+      "bbox": {
+        "width": 1.1966,
+        "depth": 0.4552,
+        "height": 1.3956
+      },
+      "x": 2.3924,
+      "y": 0.9,
+      "z": 0.0,
+      "yaw_rad": -1.5707963267948966,
+      "rotation_wxyz": [
+        0.7071067812,
+        0.0,
+        0.0,
+        -0.7071067812
+      ],
+      "movable": true,
+      "validity": {
+        "object_id": true,
+        "hssd_id": true,
+        "category": true,
+        "family": true,
+        "functions": true,
+        "bbox": true,
+        "transform": true,
+        "movable": true
+      },
+      "audit": {
+        "bbox_source_path": "interaction_clearance.official_combined_clearance.obj_aabb",
+        "bbox_source_axis_order": "asset_[x,y_up,z]",
+        "bbox_axis_conversion": "room_[x,y,z]=asset_[x,z,y]",
+        "canonical_orientation_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "canonical_orientation_is_semantic_front": false,
+        "canonical_orientation_confidence": 0.2,
+        "placement_rationale": "Dining service storage is reachable but separated from chair pull-out zones."
+      }
+    }
+  ],
+  "functional_partners": [
+    {
+      "source_id": "chair_01",
+      "target_id": "table_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.31,
+        0.49
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This chair is assigned to this dining table instance."
+      }
+    },
+    {
+      "source_id": "chair_02",
+      "target_id": "table_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.31,
+        0.49
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This chair is assigned to this dining table instance."
+      }
+    },
+    {
+      "source_id": "chair_03",
+      "target_id": "table_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.31,
+        0.49
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This chair is assigned to this dining table instance."
+      }
+    },
+    {
+      "source_id": "chair_04",
+      "target_id": "table_01",
+      "orientation_mode": "facing",
+      "target_strategy": "face_target",
+      "desired_gap_range": [
+        0.31,
+        0.49
+      ],
+      "validity": {
+        "source_id": true,
+        "target_id": true,
+        "orientation_mode": true,
+        "target_strategy": true,
+        "desired_gap_range": true,
+        "relation": true
+      },
+      "audit": {
+        "rationale": "This chair is assigned to this dining table instance."
+      }
+    }
+  ],
+  "audit": {
+    "generator_version": "clean_furniture_generator_gpt56_v1",
+    "rules_version": "furniture_layout_rules_gpt56_v1",
+    "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+    "design_summary": "A 4-seat dining group is centered for circulation, with service storage on a separate wall and no decorative filler.",
+    "provenance": {
+      "layout_author": "GPT-5.6 independent layout reasoning",
+      "qwen_layout_used_as_answer": false,
+      "hssd_usage": "asset semantics, canonical orientation metadata, and bbox lookup only"
+    },
+    "use_clearance_zones": [
+      {
+        "zone_id": "use_chair_01_behind",
+        "owner_id": "chair_01",
+        "center_xy_m": [
+          0.0,
+          1.671
+        ],
+        "size_xy_m": [
+          0.52,
+          0.45
+        ],
+        "yaw_rad": 0.0,
+        "purpose": "dining_chair_pull_out_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_chair_02_behind",
+        "owner_id": "chair_02",
+        "center_xy_m": [
+          0.0,
+          -1.671
+        ],
+        "size_xy_m": [
+          0.52,
+          0.45
+        ],
+        "yaw_rad": -3.1415926536,
+        "purpose": "dining_chair_pull_out_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_chair_03_behind",
+        "owner_id": "chair_03",
+        "center_xy_m": [
+          2.071,
+          0.0
+        ],
+        "size_xy_m": [
+          0.52,
+          0.45
+        ],
+        "yaw_rad": -1.5707963268,
+        "purpose": "dining_chair_pull_out_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_chair_04_behind",
+        "owner_id": "chair_04",
+        "center_xy_m": [
+          -2.071,
+          0.0
+        ],
+        "size_xy_m": [
+          0.52,
+          0.45
+        ],
+        "yaw_rad": 1.5707963268,
+        "purpose": "dining_chair_pull_out_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      },
+      {
+        "zone_id": "use_cabinet_01_front",
+        "owner_id": "cabinet_01",
+        "center_xy_m": [
+          1.8148,
+          0.9
+        ],
+        "size_xy_m": [
+          1.1966,
+          0.7
+        ],
+        "yaw_rad": -1.5707963268,
+        "purpose": "dining_service_storage_clearance",
+        "allowed_overlap_object_ids": [],
+        "validity": true
+      }
+    ],
+    "primary_zone_goal_xy_m": [
+      0.0,
+      1.883
+    ],
+    "gpt_semantic_review": {
+      "status": "gpt_visual_pass",
+      "requires_human_review": false,
+      "notes": [
+        "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+      ],
+      "review_schema_version": "gpt56_topdown_semantic_review_v1",
+      "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+    },
+    "layout_hash": "cbf471e043b40c72688d02517c5fb96542aaa9c91fd7d0f61ee951ff94d73ab7"
+  }
+}

@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.python_packages/
+build/
+dist/
+*.egg-info/
+
+# Local credentials and environment files.
+clean_layout_data_engine/config.json
+.env
+.env.*
+
+# Training outputs and model weights are kept outside the source repository.
+checkpoints/
+runs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Large generated production batches and transient pipeline state.
+data/clean_layout_production/
+data/clean_layout_production_v1/
+data/clean_layout_production_v2/
+data/clean_layout_engine_plan_smoke/
+data/**/staging/
+data/**/continuous_logs/
+data/**/logs/
+*.log
+
+# Tool/editor caches and local metadata.
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db

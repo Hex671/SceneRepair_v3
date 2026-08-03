@@ -1,0 +1,64 @@
+{
+  "schema_version": "authored_topdown_visual_audit_v1",
+  "scene_id": "home_office_authored_002",
+  "reviewer_role": "layout_author",
+  "review_basis": "Final top-down PNG after deterministic validation round 1",
+  "review_items": [
+    {
+      "criterion": "natural_entry",
+      "cited_object_ids": ["cabinet_files_south_east", "chair_work_east", "floor_lamp_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The south-center door opens into an unoccupied central turn-in field. cabinet_files_south_east is east of its clearance, chair_work_east is far north of it, and floor_lamp_window_reading is confined to the west reading pocket."
+    },
+    {
+      "criterion": "continuous_paths",
+      "cited_object_ids": ["desk_work_east", "cabinet_files_south_east", "bookcase_reference_north", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The rendered targets for desk_work_east, cabinet_files_south_east, bookcase_reference_north, and armchair_window_reading are all reachable from the door. The open middle acts as a branching field rather than a narrow corridor between furniture."
+    },
+    {
+      "criterion": "normal_use",
+      "cited_object_ids": ["desk_work_east", "chair_work_east", "bookcase_reference_north", "cabinet_files_south_east", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "chair_work_east has a west-side pull-out zone away from the door, desk_work_east has a seated work zone, bookcase_reference_north has a south-side browsing zone, cabinet_files_south_east has a north-side operating zone, and armchair_window_reading retains its diagonal approach zone."
+    },
+    {
+      "criterion": "functional_grouping",
+      "cited_object_ids": ["desk_work_east", "chair_work_east", "armchair_window_reading", "side_table_window_reading", "floor_lamp_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "desk_work_east and chair_work_east are a single focused work pair. armchair_window_reading, side_table_window_reading, and floor_lamp_window_reading form a separate brief-reading group, with neither group using the other's operating clearance."
+    },
+    {
+      "criterion": "density_and_open_space",
+      "cited_object_ids": ["bookcase_reference_north", "cabinet_files_south_east", "desk_work_east", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The bulky bookcase, cabinet, and desk are kept to three different walls. armchair_window_reading is set inward below the window, so the center and the entire south entry strip remain intentionally open rather than being filled with auxiliary furniture."
+    },
+    {
+      "criterion": "human_habit",
+      "cited_object_ids": ["desk_work_east", "bookcase_reference_north", "cabinet_files_south_east", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The desk is given an open room-facing work position, the bookcase presents its accessible side toward the aisle, and the file cabinet is close to but not inside the desk-chair area. The armchair is near natural light without blocking the window."
+    },
+    {
+      "criterion": "natural_orientation",
+      "cited_object_ids": ["desk_work_east", "chair_work_east", "bookcase_reference_north", "cabinet_files_south_east", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "desk_work_east faces west with chair_work_east facing it from the west; bookcase_reference_north presents south into the room; cabinet_files_south_east presents north to its service field; and armchair_window_reading is diagonally directed toward its open south-east approach rather than directly at a wall."
+    },
+    {
+      "criterion": "hierarchy",
+      "cited_object_ids": ["desk_work_east", "bookcase_reference_north", "cabinet_files_south_east", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "desk_work_east is the primary functional anchor. bookcase_reference_north and cabinet_files_south_east are boundary storage support, while the smaller armchair group is intentionally secondary and visually separated on the west side."
+    },
+    {
+      "criterion": "not_old_template",
+      "cited_object_ids": ["desk_work_east", "bookcase_reference_north", "cabinet_files_south_east", "armchair_window_reading"],
+      "assessment": "pass",
+      "concrete_reason": "The closest home_office_authored_001 puts its desk on the north-east, bookcase on the west, cabinet on the east, and reading chair in the south-west. This scene instead uses an east-wall desk, north bookcase, south file cabinet, and north-west window reading group; the 0.4 wall-attachment similarity, 0.319954 normalized position RMS, and 0.166667 yaw similarity confirm it is not a simple mirror or asset substitution."
+    }
+  ],
+  "modification_rounds": [],
+  "final_verdict": "author_visual_pass"
+}

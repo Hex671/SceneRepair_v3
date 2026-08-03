@@ -1,0 +1,2025 @@
+{
+  "dataset_schema_version": "scene_repair_v3_clean_furniture_scene_v1",
+  "generator_version": "clean_furniture_generator_gpt56_v1",
+  "verifier_version": "clean_furniture_verifier_gpt56_v1",
+  "rules_version": "furniture_layout_rules_gpt56_v1",
+  "semantic_package_hash": "3ab8d60e33e73bceac607544fae3724267e711f86aa467d3c670fed6d3002e11",
+  "candidate_count": 30,
+  "accepted_count": 30,
+  "rejected_count": 0,
+  "deterministic_overall_pass_rate": 1.0,
+  "rejection_reasons": {},
+  "rejected_candidates": [],
+  "scene_reports": [
+    {
+      "scene_id": "bedroom_001",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 572,
+            "grid_shape": [
+              55,
+              46
+            ],
+            "resolved_start_cell": [
+              44,
+              11
+            ],
+            "resolved_goal_cell": [
+              22,
+              10
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "bedroom_002",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 492,
+            "grid_shape": [
+              51,
+              43
+            ],
+            "resolved_start_cell": [
+              38,
+              11
+            ],
+            "resolved_goal_cell": [
+              33,
+              26
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "bedroom_003",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 706,
+            "grid_shape": [
+              58,
+              48
+            ],
+            "resolved_start_cell": [
+              11,
+              9
+            ],
+            "resolved_goal_cell": [
+              32,
+              18
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "bedroom_004",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 491,
+            "grid_shape": [
+              48,
+              41
+            ],
+            "resolved_start_cell": [
+              11,
+              11
+            ],
+            "resolved_goal_cell": [
+              20,
+              22
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "bedroom_005",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 231,
+            "grid_shape": [
+              56,
+              44
+            ],
+            "resolved_start_cell": [
+              11,
+              34
+            ],
+            "resolved_goal_cell": [
+              23,
+              35
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "bedroom_006",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 800,
+            "grid_shape": [
+              53,
+              47
+            ],
+            "resolved_start_cell": [
+              42,
+              35
+            ],
+            "resolved_goal_cell": [
+              31,
+              19
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass_human_priority",
+        "requires_human_review": true,
+        "notes": [
+          "Hard-valid minimalist three-piece bedroom; human review should confirm that the deliberately sparse furnishing density matches the desired pilot distribution."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "bedroom_007",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 547,
+            "grid_shape": [
+              55,
+              43
+            ],
+            "resolved_start_cell": [
+              10,
+              31
+            ],
+            "resolved_goal_cell": [
+              25,
+              17
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "bedroom_008",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 775,
+            "grid_shape": [
+              61,
+              48
+            ],
+            "resolved_start_cell": [
+              48,
+              10
+            ],
+            "resolved_goal_cell": [
+              29,
+              18
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "living_room_001",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 1059,
+            "grid_shape": [
+              63,
+              48
+            ],
+            "resolved_start_cell": [
+              46,
+              11
+            ],
+            "resolved_goal_cell": [
+              38,
+              36
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass_human_priority",
+        "requires_human_review": true,
+        "notes": [
+          "Hard-valid seating/media layout with a large open arrival corridor; human review should confirm preferred visual density."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "living_room_002",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 669,
+            "grid_shape": [
+              58,
+              46
+            ],
+            "resolved_start_cell": [
+              46,
+              10
+            ],
+            "resolved_goal_cell": [
+              26,
+              14
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "living_room_003",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 1189,
+            "grid_shape": [
+              66,
+              51
+            ],
+            "resolved_start_cell": [
+              16,
+              38
+            ],
+            "resolved_goal_cell": [
+              25,
+              12
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass_human_priority",
+        "requires_human_review": true,
+        "notes": [
+          "Hard-valid long media sight line and generous central circulation; human review should confirm the room does not feel under-furnished."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "living_room_004",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 534,
+            "grid_shape": [
+              56,
+              45
+            ],
+            "resolved_start_cell": [
+              11,
+              34
+            ],
+            "resolved_goal_cell": [
+              29,
+              31
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "living_room_005",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 968,
+            "grid_shape": [
+              61,
+              48
+            ],
+            "resolved_start_cell": [
+              14,
+              11
+            ],
+            "resolved_goal_cell": [
+              23,
+              35
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "living_room_006",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 1236,
+            "grid_shape": [
+              65,
+              50
+            ],
+            "resolved_start_cell": [
+              52,
+              38
+            ],
+            "resolved_goal_cell": [
+              19,
+              33
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass_human_priority",
+        "requires_human_review": true,
+        "notes": [
+          "Hard-valid asymmetric cluster leaves substantial open floor area; human review should confirm the intended flexible-use space."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "living_room_007",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 638,
+            "grid_shape": [
+              60,
+              50
+            ],
+            "resolved_start_cell": [
+              45,
+              38
+            ],
+            "resolved_goal_cell": [
+              36,
+              26
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "living_room_008",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 1212,
+            "grid_shape": [
+              69,
+              51
+            ],
+            "resolved_start_cell": [
+              11,
+              11
+            ],
+            "resolved_goal_cell": [
+              42,
+              18
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "dining_room_001",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 850,
+            "grid_shape": [
+              55,
+              45
+            ],
+            "resolved_start_cell": [
+              44,
+              11
+            ],
+            "resolved_goal_cell": [
+              27,
+              41
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "dining_room_002",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 185,
+            "grid_shape": [
+              58,
+              53
+            ],
+            "resolved_start_cell": [
+              11,
+              12
+            ],
+            "resolved_goal_cell": [
+              10,
+              20
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "dining_room_003",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 733,
+            "grid_shape": [
+              51,
+              43
+            ],
+            "resolved_start_cell": [
+              39,
+              8
+            ],
+            "resolved_goal_cell": [
+              31,
+              39
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "dining_room_004",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 258,
+            "grid_shape": [
+              61,
+              53
+            ],
+            "resolved_start_cell": [
+              12,
+              11
+            ],
+            "resolved_goal_cell": [
+              11,
+              21
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "dining_room_005",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 259,
+            "grid_shape": [
+              56,
+              46
+            ],
+            "resolved_start_cell": [
+              11,
+              34
+            ],
+            "resolved_goal_cell": [
+              23,
+              41
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "dining_room_006",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 289,
+            "grid_shape": [
+              53,
+              48
+            ],
+            "resolved_start_cell": [
+              11,
+              38
+            ],
+            "resolved_goal_cell": [
+              7,
+              24
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "dining_room_007",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 474,
+            "grid_shape": [
+              63,
+              50
+            ],
+            "resolved_start_cell": [
+              51,
+              40
+            ],
+            "resolved_goal_cell": [
+              25,
+              44
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "home_office_001",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 662,
+            "grid_shape": [
+              48,
+              41
+            ],
+            "resolved_start_cell": [
+              38,
+              11
+            ],
+            "resolved_goal_cell": [
+              18,
+              19
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "home_office_002",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 1081,
+            "grid_shape": [
+              53,
+              43
+            ],
+            "resolved_start_cell": [
+              41,
+              8
+            ],
+            "resolved_goal_cell": [
+              21,
+              24
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "home_office_003",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 864,
+            "grid_shape": [
+              51,
+              46
+            ],
+            "resolved_start_cell": [
+              10,
+              34
+            ],
+            "resolved_goal_cell": [
+              31,
+              21
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "home_office_004",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 822,
+            "grid_shape": [
+              48,
+              41
+            ],
+            "resolved_start_cell": [
+              11,
+              33
+            ],
+            "resolved_goal_cell": [
+              26,
+              16
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "home_office_005",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 527,
+            "grid_shape": [
+              55,
+              43
+            ],
+            "resolved_start_cell": [
+              42,
+              8
+            ],
+            "resolved_goal_cell": [
+              34,
+              22
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "home_office_006",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 549,
+            "grid_shape": [
+              51,
+              46
+            ],
+            "resolved_start_cell": [
+              39,
+              11
+            ],
+            "resolved_goal_cell": [
+              20,
+              17
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass",
+        "requires_human_review": false,
+        "notes": [
+          "Top-down inspection found coherent furniture orientation, functional grouping, use clearance, and circulation."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    },
+    {
+      "scene_id": "home_office_007",
+      "passed": true,
+      "checks": {
+        "finite_transform": {
+          "passed": true,
+          "violations": []
+        },
+        "identity_bbox": {
+          "passed": true,
+          "violations": []
+        },
+        "room_bounds": {
+          "passed": true,
+          "violations": []
+        },
+        "furniture_collision": {
+          "passed": true,
+          "violations": []
+        },
+        "opening_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "functional_relations": {
+          "passed": true,
+          "violations": []
+        },
+        "use_clearance": {
+          "passed": true,
+          "violations": []
+        },
+        "path_reachability": {
+          "passed": true,
+          "violations": [],
+          "details": {
+            "visited_cells": 328,
+            "grid_shape": [
+              56,
+              45
+            ],
+            "resolved_start_cell": [
+              10,
+              8
+            ],
+            "resolved_goal_cell": [
+              20,
+              21
+            ]
+          }
+        }
+      },
+      "violations": [],
+      "gpt_semantic_review": {
+        "status": "gpt_visual_pass_human_priority",
+        "requires_human_review": true,
+        "notes": [
+          "Hard-valid focused workroom without lounge seating; human review should confirm the intentionally minimal furniture program."
+        ],
+        "review_schema_version": "gpt56_topdown_semantic_review_v1",
+        "review_basis": "Individual inspection of generated top-down PNGs after deterministic verification"
+      }
+    }
+  ],
+  "summary": {
+    "accepted_scene_count": 30,
+    "room_type_coverage": {
+      "bedroom": 8,
+      "dining_room": 7,
+      "home_office": 7,
+      "living_room": 8
+    },
+    "category_coverage": {
+      "armchair": 18,
+      "bed": 8,
+      "bench": 3,
+      "bookcase": 5,
+      "cabinet": 7,
+      "chair": 44,
+      "coffee_table": 8,
+      "console_table": 10,
+      "desk": 8,
+      "floor_lamp": 4,
+      "nightstand": 13,
+      "ottoman": 1,
+      "side_table": 10,
+      "sofa": 8,
+      "table": 7,
+      "tv_bench": 8,
+      "wardrobe": 8
+    },
+    "family_coverage": {
+      "lighting": 4,
+      "seating": 74,
+      "sleep_surface": 8,
+      "storage": 20,
+      "support_surface": 64
+    },
+    "function_coverage": {
+      "contain": 15,
+      "dining_surface": 7,
+      "foot_support": 1,
+      "illuminate": 4,
+      "media_support": 8,
+      "sit": 74,
+      "sleep": 8,
+      "store": 43,
+      "support_objects": 69,
+      "work_surface": 8
+    },
+    "furniture_count_distribution": {
+      "min": 3,
+      "max": 8,
+      "mean": 5.667,
+      "histogram": {
+        "3": 1,
+        "4": 5,
+        "5": 7,
+        "6": 11,
+        "7": 2,
+        "8": 4
+      }
+    },
+    "room_dimension_distribution_m": {
+      "length": {
+        "min": 4.7,
+        "max": 6.8,
+        "mean": 5.59
+      },
+      "width": {
+        "min": 4.0,
+        "max": 5.3,
+        "mean": 4.568
+      }
+    },
+    "deterministic_check_pass_rates": {
+      "finite_transform": 1.0,
+      "identity_bbox": 1.0,
+      "room_bounds": 1.0,
+      "furniture_collision": 1.0,
+      "opening_clearance": 1.0,
+      "functional_relations": 1.0,
+      "use_clearance": 1.0,
+      "path_reachability": 1.0
+    },
+    "unique_hssd_ids": 136,
+    "hssd_placements": 170,
+    "hssd_repeat_placement_rate": 0.2,
+    "hssd_use_count_histogram": {
+      "1": 124,
+      "2": 5,
+      "4": 3,
+      "6": 4
+    }
+  },
+  "deterministic_conclusions": [
+    "identity_bbox",
+    "finite_transform",
+    "room_bounds",
+    "furniture_collision",
+    "opening_clearance",
+    "functional_relations",
+    "use_clearance",
+    "path_reachability",
+    "layout_hash_deduplication"
+  ],
+  "gpt_semantic_judgment_scope": [
+    "human-use plausibility",
+    "non-mechanical wall placement",
+    "functional grouping",
+    "orientation interpretation",
+    "visual circulation quality"
+  ],
+  "gpt_semantic_review_counts": {
+    "gpt_visual_pass": 25,
+    "gpt_visual_pass_human_priority": 5
+  },
+  "manual_judgment_required_scene_ids": [
+    "bedroom_006",
+    "living_room_001",
+    "living_room_003",
+    "living_room_006",
+    "home_office_007"
+  ]
+}

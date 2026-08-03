@@ -1,0 +1,64 @@
+{
+  "schema_version": "authored_topdown_visual_audit_v1",
+  "scene_id": "bedroom_authored_002",
+  "reviewer_role": "layout_author",
+  "review_basis": "Final top-down PNG after deterministic validation round 1",
+  "review_items": [
+    {
+      "criterion": "natural_entry",
+      "cited_object_ids": ["cabinet_dressing_south", "bed_sleep_north", "bench_dressing_foot"],
+      "assessment": "pass",
+      "concrete_reason": "The west-south door opens into a vacant west lane. cabinet_dressing_south is well east of the door clearance, while bed_sleep_north and bench_dressing_foot are reached only after the natural northward turn."
+    },
+    {
+      "criterion": "continuous_paths",
+      "cited_object_ids": ["bed_sleep_north", "wardrobe_clothes_east", "bench_dressing_foot", "cabinet_dressing_south", "armchair_daylight_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "Every declared target is reachable from the entry. The west lane reaches the bedside, then the open south-of-bed field connects to wardrobe_clothes_east, bench_dressing_foot, cabinet_dressing_south, and armchair_daylight_south_east without crossing another use zone."
+    },
+    {
+      "criterion": "normal_use",
+      "cited_object_ids": ["bed_sleep_north", "wardrobe_clothes_east", "bench_dressing_foot", "cabinet_dressing_south", "armchair_daylight_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "bed_sleep_north has a long free west egress and making strip; wardrobe_clothes_east has a clear west-side dressing space; bench_dressing_foot retains a gap from the bed foot; cabinet_dressing_south has a north-side drawer zone; and armchair_daylight_south_east has an unobstructed diagonal approach."
+    },
+    {
+      "criterion": "functional_grouping",
+      "cited_object_ids": ["bed_sleep_north", "nightstand_sleep_west", "bench_dressing_foot", "wardrobe_clothes_east", "cabinet_dressing_south"],
+      "assessment": "pass",
+      "concrete_reason": "bed_sleep_north and nightstand_sleep_west are a compact sleep group, bench_dressing_foot directly supports changing at the bed foot, and wardrobe_clothes_east plus cabinet_dressing_south make a separate two-sided clothing-storage group."
+    },
+    {
+      "criterion": "density_and_open_space",
+      "cited_object_ids": ["bed_sleep_north", "wardrobe_clothes_east", "cabinet_dressing_south", "armchair_daylight_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "The largest masses are assigned to north, east, and south walls, leaving the west-side entrance lane and central south-of-bed field open. armchair_daylight_south_east occupies a discrete corner rather than turning the room center into a furniture cluster."
+    },
+    {
+      "criterion": "human_habit",
+      "cited_object_ids": ["bed_sleep_north", "bench_dressing_foot", "wardrobe_clothes_east", "armchair_daylight_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "A north-wall bed with one accessible bedside surface and a bench at its foot is a normal single-occupant sleeping and dressing pattern. The wardrobe faces usable floor, and the armchair benefits from daylight while remaining outside the south window clearance."
+    },
+    {
+      "criterion": "natural_orientation",
+      "cited_object_ids": ["bed_sleep_north", "nightstand_sleep_west", "wardrobe_clothes_east", "cabinet_dressing_south", "armchair_daylight_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "bed_sleep_north follows the north wall, nightstand_sleep_west presents into the bedside area, wardrobe_clothes_east and cabinet_dressing_south present toward their respective operating spaces, and armchair_daylight_south_east turns toward its north-west room-facing approach rather than directly into glazing or a wall."
+    },
+    {
+      "criterion": "hierarchy",
+      "cited_object_ids": ["bed_sleep_north", "wardrobe_clothes_east", "cabinet_dressing_south", "bench_dressing_foot", "armchair_daylight_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "bed_sleep_north is visibly the primary sleeping anchor. wardrobe_clothes_east and cabinet_dressing_south establish the secondary storage frame, while bench_dressing_foot and armchair_daylight_south_east are smaller tertiary supports."
+    },
+    {
+      "criterion": "not_old_template",
+      "cited_object_ids": ["nightstand_sleep_west", "wardrobe_clothes_east", "cabinet_dressing_south", "armchair_daylight_south_east"],
+      "assessment": "pass",
+      "concrete_reason": "The closest bedroom_001 uses two north-side nightstands, a west-south wardrobe, no cabinet, and no armchair. This scene uses one nightstand, moves clothing storage to the east wall, adds a south-wall cabinet and south-east daylight chair, and has only the two frozen bed-nightstand edges rather than bedroom_001's three source relations."
+    }
+  ],
+  "modification_rounds": [],
+  "final_verdict": "author_visual_pass"
+}

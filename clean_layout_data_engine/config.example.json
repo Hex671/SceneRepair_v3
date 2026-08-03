@@ -1,0 +1,9 @@
+{
+  "api": {
+    "api_key": "replace-with-a-local-key",
+    "base_url": "https://api.example.com/v1",
+    "model": "model-name",
+    "wire_api": "responses",
+    "timeout_seconds": 180
+  }
+}

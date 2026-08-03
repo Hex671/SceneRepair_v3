@@ -1,0 +1,87 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "home_office_authored_002",
+  "revision_id": "rev_000_pre_yaw_convention_correction",
+  "status": "superseded_yaw_semantic_error",
+  "reason": "The proposal used local +Y as the furniture front although the dataset contract defines HSSD local -Y as the front.",
+  "yaw_corrections": [
+    {
+      "object_id": "desk_work_east",
+      "old_yaw_rad": 1.5707963267948966,
+      "new_yaw_rad": -1.5707963267948966,
+      "old_local_minus_y_front_xy": [
+        1.0,
+        -0.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -1.0,
+        -0.0
+      ]
+    },
+    {
+      "object_id": "chair_work_east",
+      "old_yaw_rad": -1.5707963267948966,
+      "new_yaw_rad": 1.5707963267948966,
+      "old_local_minus_y_front_xy": [
+        -1.0,
+        -0.0
+      ],
+      "new_local_minus_y_front_xy": [
+        1.0,
+        -0.0
+      ]
+    },
+    {
+      "object_id": "bookcase_reference_north",
+      "old_yaw_rad": -3.141592653589793,
+      "new_yaw_rad": 0.0,
+      "old_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "object_id": "cabinet_files_south_east",
+      "old_yaw_rad": 0.0,
+      "new_yaw_rad": -3.141592653589793,
+      "old_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ]
+    },
+    {
+      "object_id": "armchair_window_reading",
+      "old_yaw_rad": -2.35,
+      "new_yaw_rad": 0.791592653589793,
+      "old_local_minus_y_front_xy": [
+        -0.711473,
+        0.702713
+      ],
+      "new_local_minus_y_front_xy": [
+        0.711473,
+        -0.702713
+      ]
+    }
+  ],
+  "artifact_sha256": {
+    "authored_proposal": "f26b39a3483f85e31133d6190c65f3c2bf8ab87f55ec9fd67711ab7bd755a8af",
+    "scene": "73ac131837577c6c62a47d3e5297ac03039002ff976b6ba5b3ceb0e388f75c5b",
+    "validation": "ddc84c57e25edcdab25538a21eac1b64fba1656c1f974165b2c27e739b7d9634",
+    "diversity": "0169d2cd91edb61f0804a924a8621fbaeff2f9e5d0f4fe0e992f6d4623beb446",
+    "diversity_legacy": "0169d2cd91edb61f0804a924a8621fbaeff2f9e5d0f4fe0e992f6d4623beb446",
+    "functional_partner_build": "3ba5b6476621858825a27ac1719a781ad22d419e0a56600300d75dfb1a134bf5",
+    "visualization": "ea3b60d248ab8e96b13d0ec2ecc0dd2e667f84ac6be5f5435bc7f1bfed114a7e",
+    "independent_review": "deb59266045a7b00c3e0dea722aff62b59f5127c681be8d4a7c02aeb51d89218",
+    "reviewer_scene": "ff03fda74844dfde1df39be07ff6de2d00a6a062a80e70bb52938a77e7def131",
+    "reviewer_geometry": "fa57cb69f65809a5abb13a8e2628a81d5d3c3c5f6cfa040ee98e2147a1f4ea26"
+  },
+  "superseded_by": "rev_001_local_minus_y_yaw_corrected"
+}

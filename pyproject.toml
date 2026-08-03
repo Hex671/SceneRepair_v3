@@ -1,0 +1,23 @@
+[project]
+name = "scene-repair-v3"
+version = "0.1.0"
+description = "Relation-aware Furniture-stage scene repair network"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "torch>=2.3,<2.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["scene_repair_v3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "clean_layout_data_engine/tests"]
+addopts = "-ra"

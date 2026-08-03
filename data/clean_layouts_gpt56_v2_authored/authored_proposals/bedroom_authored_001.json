@@ -1,0 +1,149 @@
+{
+  "schema_version": "authored_furniture_proposal_v1",
+  "scene_id": "bedroom_authored_001",
+  "room_type": "bedroom",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 5.4,
+    "width_m": 4.4,
+    "spatial_character": "A single-occupant bedroom arranged as a west-side sleeping bay, north-side dressing zone, and small day-reading corner near east-side light.",
+    "daily_activities": [
+      "sleeping and waking",
+      "changing clothes and storing garments",
+      "quiet reading away from the bed"
+    ],
+    "organization": "The bed runs north-south with its head at the west wall and a broad east-side egress lane. The wardrobe uses the north-east wall, while a compact angled armchair, side table, and lamp form a separate reading group in the south-east without crowding the entry.",
+    "main_path": "Enter from the south-east door, move north through the open east-side lane to reach the wardrobe or bed egress, or turn northwest into the reading chair approach; the bed never needs to be crossed to reach storage.",
+    "protected_open_space": "The east side of the bed, the strip north of the door, and the center between sleeping and dressing remain open for morning movement, changing clothes, and carrying laundry."
+  },
+  "openings": [
+    {
+      "opening_id": "door_entry_south_east",
+      "kind": "door",
+      "wall": "south",
+      "along_m": 1.65,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "placement_rationale": "The south-east door opens into an unoccupied entrance strip that lets a resident choose the bed lane, wardrobe route, or reading chair without stepping into a furniture use zone."
+    },
+    {
+      "opening_id": "window_east_daylight",
+      "kind": "window",
+      "wall": "east",
+      "along_m": 0.8,
+      "opening_width_m": 1.7,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "placement_rationale": "The east-wall window gives side light to the reading corner and morning light to the open bed egress lane; every furniture footprint remains west of its clearance zone."
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "bed_sleep",
+      "hssd_id": "7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+      "category": "bed",
+      "x": -1.623,
+      "y": 0.25,
+      "z": 0.0,
+      "yaw_rad": 1.5707963267948966,
+      "placement_rationale": "The bed anchors the west wall with its headboard side against that wall and its usable east side facing the open room. This avoids the south-east entry, leaves a full egress lane on the bed's east side, and keeps the north side available for nightstand_sleep without forcing a pair of symmetric bedside tables."
+    },
+    {
+      "object_id": "nightstand_sleep",
+      "hssd_id": "030dc7920f6b43d809ddc87281cdd46ffdad2d9f",
+      "category": "nightstand",
+      "x": -1.95,
+      "y": 1.48,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "This single nightstand sits on the bed's north side near the head end, giving a reachable surface for nighttime items while preserving the larger east-side route. It is deliberately not duplicated on the south side, where a second table would reduce the entry-side freedom."
+    },
+    {
+      "object_id": "wardrobe_clothes",
+      "hssd_id": "5f1c51116d658b454806329a7be495f18190e7d1",
+      "category": "wardrobe",
+      "x": 0.8,
+      "y": 1.869,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The wardrobe occupies the north-east wall and faces south into a dedicated dressing zone. It is clear of the east window and far enough from bed_sleep that doors can be opened and clothes selected without entering the sleeping surface's egress lane."
+    },
+    {
+      "object_id": "armchair_reading",
+      "hssd_id": "098cb07d9311b915c7d28680fd4ce1b44df9b637",
+      "category": "armchair",
+      "x": 1.05,
+      "y": -0.45,
+      "z": 0.0,
+      "yaw_rad": -2.356194490192345,
+      "placement_rationale": "The reading chair occupies the south-east corner but is set north of the door clearance. Its diagonal north-west orientation faces the room and bed-side daylight rather than a wall, and its approach remains separate from the main route to wardrobe_clothes."
+    },
+    {
+      "object_id": "side_table_reading",
+      "hssd_id": "0eaba51224158a6f8e89a31843f85cf8b978b592",
+      "category": "side_table",
+      "x": 1.85,
+      "y": 0.12,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The slim side table is on armchair_reading's north-east side for a book or drink. Its compact footprint stays west of the window clearance and outside the chair's north-west approach wedge."
+    },
+    {
+      "object_id": "floor_lamp_reading",
+      "hssd_id": "129451389f982fcfe102675270009ce1da6671db",
+      "category": "floor_lamp",
+      "x": 1.9,
+      "y": -0.75,
+      "z": 0.0,
+      "yaw_rad": 0.0,
+      "placement_rationale": "The slender floor lamp occupies the armchair's east-south flank, where it can light reading without entering the chair approach or the door's inward clearance. It also remains west of the window clearance despite sitting near the daylight side of the room."
+    }
+  ],
+  "use_clearance_zones": [
+    {
+      "zone_id": "use_bed_sleep_east_egress",
+      "owner_id": "bed_sleep",
+      "center_xy_m": [-0.276, 0.25],
+      "size_xy_m": [1.2, 0.7],
+      "yaw_rad": 1.5707963267948966,
+      "purpose": "bed_east_side_egress_and_making",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_wardrobe_clothes_front",
+      "owner_id": "wardrobe_clothes",
+      "center_xy_m": [0.8, 1.228],
+      "size_xy_m": [1.2, 0.78],
+      "yaw_rad": 0.0,
+      "purpose": "wardrobe_door_and_dressing",
+      "allowed_overlap_object_ids": []
+    },
+    {
+      "zone_id": "use_armchair_reading_front",
+      "owner_id": "armchair_reading",
+      "center_xy_m": [0.6731, -0.0731],
+      "size_xy_m": [0.724, 0.4],
+      "yaw_rad": -2.356194490192345,
+      "purpose": "reading_chair_approach_and_sit",
+      "allowed_overlap_object_ids": []
+    }
+  ],
+  "path_targets": [
+    {"target_id": "bed_egress_access", "goal_xy_m": [-0.15, 0.25]},
+    {"target_id": "wardrobe_access", "goal_xy_m": [0.8, 1.05]},
+    {"target_id": "reading_access", "goal_xy_m": [0.65, -0.08]},
+    {"target_id": "nightstand_access", "goal_xy_m": [-1.55, 1.18]}
+  ],
+  "primary_zone_goal_xy_m": [-0.15, 0.25],
+  "authorship": {
+    "layout_decisions_by": "GPT-5.6 Codex primary agent",
+    "python_layout_decisions": false,
+    "functional_partners_authored": false,
+    "old_scene_coordinates_viewed_before_initial_draft": false
+  }
+}

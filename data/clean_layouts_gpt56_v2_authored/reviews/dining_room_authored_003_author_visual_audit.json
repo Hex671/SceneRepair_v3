@@ -1,0 +1,70 @@
+{
+  "schema_version": "authored_topdown_visual_audit_v1",
+  "scene_id": "dining_room_authored_003",
+  "reviewer_role": "layout_author",
+  "review_basis": "Final top-down PNG after deterministic validation round 2",
+  "review_items": [
+    {
+      "criterion": "natural_entry",
+      "cited_object_ids": ["cabinet_dishes_west", "table_meal_east", "bench_east_diners"],
+      "assessment": "pass",
+      "concrete_reason": "The north-west door opens into an unoccupied north lane. cabinet_dishes_west begins south of the door clearance, and table_meal_east plus bench_east_diners are far enough east and south to preserve a natural entry turn."
+    },
+    {
+      "criterion": "continuous_paths",
+      "cited_object_ids": ["table_meal_east", "bench_east_diners", "chair_west_diner", "cabinet_dishes_west", "console_serving_south"],
+      "assessment": "pass",
+      "concrete_reason": "All five targets are reachable from the entry. The north lane branches to cabinet_dishes_west and the table, while the central and south lanes reach chair_west_diner, bench_east_diners, and console_serving_south without crossing a chair pull-out zone."
+    },
+    {
+      "criterion": "normal_use",
+      "cited_object_ids": ["table_meal_east", "bench_east_diners", "chair_west_diner", "cabinet_dishes_west", "console_serving_south"],
+      "assessment": "pass",
+      "concrete_reason": "table_meal_east has a dedicated south setting strip, bench_east_diners is entered from its open north end, chair_west_diner has an unobstructed west pull-out area, cabinet_dishes_west presents into a clear service aisle, and console_serving_south has a full north-side serving zone."
+    },
+    {
+      "criterion": "functional_grouping",
+      "cited_object_ids": ["table_meal_east", "bench_east_diners", "chair_west_diner", "cabinet_dishes_west", "console_serving_south"],
+      "assessment": "pass",
+      "concrete_reason": "table_meal_east, bench_east_diners, and chair_west_diner form a compact three-person meal group. cabinet_dishes_west is a separate retrieval point and console_serving_south is a separate serving point, giving the room a clear meal-service sequence."
+    },
+    {
+      "criterion": "density_and_open_space",
+      "cited_object_ids": ["cabinet_dishes_west", "console_serving_south", "table_meal_east", "bench_east_diners"],
+      "assessment": "pass",
+      "concrete_reason": "The cabinet and console occupy opposite perimeter walls, and the table group is placed to the east-middle rather than filling the room center. The north entry lane and east window strip remain visibly open."
+    },
+    {
+      "criterion": "human_habit",
+      "cited_object_ids": ["bench_east_diners", "chair_west_diner", "cabinet_dishes_west", "console_serving_south"],
+      "assessment": "pass",
+      "concrete_reason": "A two-person bench paired with one loose chair is a plausible daily household arrangement. Storing dishes at cabinet_dishes_west and placing food on console_serving_south keeps preparation and clearing out of the seat access path."
+    },
+    {
+      "criterion": "natural_orientation",
+      "cited_object_ids": ["bench_east_diners", "chair_west_diner", "cabinet_dishes_west", "console_serving_south"],
+      "assessment": "pass",
+      "concrete_reason": "bench_east_diners and chair_west_diner face one another across table_meal_east. cabinet_dishes_west faces east into the room, and console_serving_south faces north into its service strip; no seated object faces directly into a wall or opening."
+    },
+    {
+      "criterion": "hierarchy",
+      "cited_object_ids": ["table_meal_east", "bench_east_diners", "cabinet_dishes_west", "console_serving_south"],
+      "assessment": "pass",
+      "concrete_reason": "The table-and-bench pair is the primary visual and functional center. The west cabinet and south console establish a secondary service frame, while the single loose chair remains deliberately subordinate and flexible."
+    },
+    {
+      "criterion": "not_old_template",
+      "cited_object_ids": ["bench_east_diners", "chair_west_diner", "cabinet_dishes_west", "console_serving_south"],
+      "assessment": "pass",
+      "concrete_reason": "The closest dining_room_authored_001 uses a north banquette, three loose chairs, a south-west door, a north-east window, and one east-wall cabinet. This scene instead has an east bench plus one west chair, a north-west door, an east window, a west dish cabinet, and a distinct south serving console; its category Jaccard is 0.571429 and its frozen graph has only one table-to-chair edge."
+    }
+  ],
+  "modification_rounds": [
+    {
+      "round": 1,
+      "validator_error": "china_cabinet_dishes_west category 'cabinet' does not match HSSD source category 'china cabinet'",
+      "manual_correction": "Replaced the unmapped china-cabinet asset with HSSD cabinet 198459120142c19e59b9d94063326307dba1be5b and recomputed its west-wall x position from the real 0.6338 m depth."
+    }
+  ],
+  "final_verdict": "author_visual_pass"
+}

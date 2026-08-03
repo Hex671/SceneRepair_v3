@@ -1,0 +1,94 @@
+{
+  "scene_id": "home_office_authored_003",
+  "review_type": "independent_semantic_review",
+  "semantic_review_status": "semantic_review_pass",
+  "isolation_compliance": {
+    "compliant": true,
+    "inspected_artifacts": [
+      "reviews/reviewer_packet/home_office_authored_003_scene.json",
+      "visualizations/home_office_authored_003.png",
+      "validation/home_office_authored_003.json",
+      "validation/home_office_authored_003_diversity.json"
+    ],
+    "nonpermitted_artifacts_inspected": false,
+    "note": "Assessment uses only the four authorized final artifacts; authored rationale and revision history were not inspected."
+  },
+  "object_reports": [
+    {
+      "object_id": "desk_01",
+      "cited_object_ids": ["desk_01", "chair_01", "window_00"],
+      "assessment": "pass",
+      "concrete_reason": "The desk occupies the north work zone directly below window_00, while its front clearance opens toward chair_01 and the room center. The rendered footprint leaves a narrow but continuous gap below the window clearance, and deterministic validation reports reachable desk access without collision.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "chair_01",
+      "cited_object_ids": ["chair_01", "desk_01", "door_00"],
+      "assessment": "pass",
+      "concrete_reason": "chair_01 is placed south of desk_01 and faces it, giving a natural seated-work relationship. Its pull-back zone extends toward the entry side without entering door_00 clearance, and the visualization shows an unobstructed route for approaching and leaving the chair.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "bookcase_01",
+      "cited_object_ids": ["bookcase_01", "cabinet_01"],
+      "assessment": "pass",
+      "concrete_reason": "bookcase_01 is aligned to the west wall with its accessible face toward the room. Its browsing zone is separated from cabinet_01 by a visible vertical gap, so standing access to the shelves does not require entering the neighboring cabinet zone.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "cabinet_01",
+      "cited_object_ids": ["cabinet_01", "bookcase_01", "door_00"],
+      "assessment": "pass",
+      "concrete_reason": "cabinet_01 uses the lower west wall for file storage, with its front access facing the open room rather than the door. The clearance is distinct from bookcase_01 browsing space and remains outside the south entry opening clearance.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "cabinet_02",
+      "cited_object_ids": ["cabinet_02", "window_00", "desk_01"],
+      "assessment": "pass",
+      "concrete_reason": "cabinet_02 is flush with the east wall and leaves its equipment-access side toward the central aisle. It does not encroach on window_00 or desk_01, and the east-side footprint and access area remain visually and geometrically separate from the work chair.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "armchair_01",
+      "cited_object_ids": ["armchair_01", "side_table_01", "desk_01", "door_00"],
+      "assessment": "pass",
+      "concrete_reason": "armchair_01 forms a separate reading seat in the southeast portion of the room, angled toward the room center. Its approach zone is open on the west/northwest side, remains distinct from desk_01, and does not block the path from door_00.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    },
+    {
+      "object_id": "side_table_01",
+      "cited_object_ids": ["side_table_01", "armchair_01", "door_00"],
+      "assessment": "pass",
+      "concrete_reason": "side_table_01 sits immediately to the southwest of armchair_01, close enough to support reading use while preserving a visible gap from the chair footprint. Its position is outside door_00 clearance and does not narrow the central entry-to-work path.",
+      "detected_problem": null,
+      "required_correction": null,
+      "template_risk": false
+    }
+  ],
+  "diversity_assessment": {
+    "comparison_count": 36,
+    "closest_scene": "home_office_authored_001",
+    "overall_similarity": 0.600467,
+    "best_symmetry_transform": "identity",
+    "novelty_pass": true,
+    "template_risk": false,
+    "assessment": "pass",
+    "concrete_reason": "The updated diversity report compares this layout with 36 scenes. Its closest match is home_office_authored_001 at 0.600467 similarity, while wall attachment and yaw similarities are both 0.555556 and open-space-distribution similarity is 0.285714. The best transform is identity rather than a mirror or rotation, and the report flags no template risk."
+  },
+  "scene_assessment": "The home office has a legible primary work zone under window_00, west-wall storage, an independent east-side equipment cabinet, and a compact southeast reading zone. door_00 opens into a continuous central route to both the desk and armchair. The final visualization does not show implausible furniture penetration, blocked access, or an unnatural facing direction. The updated diversity artifact reports comparison_count 36, identifies home_office_authored_001 as the closest scene at 0.600467 similarity, and records novelty_pass=true with template_risk=false.",
+  "template_risk": false,
+  "final_verdict": "semantic_review_pass"
+}

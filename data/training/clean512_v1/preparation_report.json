@@ -1,0 +1,45 @@
+{
+  "schema_version": "scene_repair_v3_training_preparation_report_v1",
+  "scene_count": 512,
+  "splits": {
+    "train": 409,
+    "val": 51,
+    "test": 52
+  },
+  "room_types": {
+    "bedroom": 128,
+    "dining_room": 127,
+    "home_office": 128,
+    "living_room": 129
+  },
+  "furniture_count_histogram": {
+    "5": 165,
+    "6": 86,
+    "7": 92,
+    "8": 84,
+    "9": 85
+  },
+  "category_counts": {
+    "armchair": 381,
+    "bed": 128,
+    "bench": 91,
+    "bookcase": 123,
+    "cabinet": 301,
+    "chair": 659,
+    "coffee_table": 129,
+    "console_table": 161,
+    "desk": 187,
+    "floor_lamp": 360,
+    "nightstand": 152,
+    "ottoman": 19,
+    "side_table": 264,
+    "sofa": 129,
+    "table": 128,
+    "tv_bench": 62,
+    "wardrobe": 148
+  },
+  "functional_partner_edges": 3644,
+  "vocabulary_sha256": "86be2988c69851d4d8eef70ed1f2433847750c1dce6f5ce0e3bfdd71002832d6",
+  "functional_rules_sha256": "83a282e2b163a193440c7065509d2d4def03368d2f51cd6c073a12360a682f26",
+  "validated_graphs": 512
+}

@@ -1,0 +1,252 @@
+{
+  "schema_version": "authored_furniture_intent_proposal_v1",
+  "scene_id": "home_office_intent_pilot_002",
+  "room_type": "home_office",
+  "coordinate_frame": "room_local_z_up",
+  "quaternion_order": "wxyz",
+  "yaw_range": "[-pi,pi)",
+  "room": {
+    "length_m": 5.8,
+    "width_m": 5.1,
+    "daily_activities": [
+      "computer work at the east-wall desk",
+      "document and book storage",
+      "reading in the northwest lounge corner"
+    ],
+    "main_path": "Enter through the west-wall door, move east along the unobstructed south-central aisle, then turn northeast through the room center to reach the work chair; short branches serve the south bookcase and northwest reading area.",
+    "organization": "An asymmetric perimeter layout concentrates focused work on the east wall, storage on separate south and northwest walls, and a compact reading group northwest of center.",
+    "protected_open_space": "Keep the west-door clearance, the north-window interior strip, and the broad central-to-south aisle free of furniture so entry, daylight access, chair pullout, and circulation remain unobstructed."
+  },
+  "openings": [
+    {
+      "opening_id": "door_00",
+      "kind": "door",
+      "wall": "west",
+      "along_m": -1.426,
+      "opening_width_m": 0.9,
+      "opening_height_m": 2.05,
+      "sill_height_m": 0.0,
+      "clearance_depth_m": 0.8,
+      "interior_normal_xy": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "opening_id": "window_00",
+      "kind": "window",
+      "wall": "north",
+      "along_m": 0.181,
+      "opening_width_m": 1.6,
+      "opening_height_m": 1.2,
+      "sill_height_m": 0.85,
+      "clearance_depth_m": 0.5,
+      "interior_normal_xy": [
+        0.0,
+        -1.0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "category": "desk",
+      "clearance_intents": [
+        {
+          "allowed_overlap_object_ids": [
+            "office_chair_01"
+          ],
+          "clearance_id": "desk_01_front_access",
+          "purpose": "Primary seated work zone with clear access from the west side of the desk.",
+          "type": "front_access"
+        }
+      ],
+      "hssd_id": "95ecb8436c547896a7d222d29d2a354c03837950",
+      "object_id": "desk_01",
+      "orientation_intent": {
+        "direction": null,
+        "long_axis": "north_south",
+        "mode": "back_to_wall",
+        "target_object_id": null,
+        "target_xy_m": null,
+        "wall": "east"
+      },
+      "placement_rationale": "The desk is backed against the east wall, outside both opening clearances, with its work front facing west into the room and its long dimension running north-south.",
+      "x": 2.5,
+      "y": 0.5,
+      "z": 0.375
+    },
+    {
+      "category": "chair",
+      "clearance_intents": [
+        {
+          "allowed_overlap_object_ids": [],
+          "clearance_id": "office_chair_01_rear_pullout",
+          "purpose": "Allows the work chair to roll westward for entry, exit, and repositioning.",
+          "type": "rear_pullout"
+        }
+      ],
+      "hssd_id": "635ab59d7907b0ad6234fd5b7f0e58e7726cac20",
+      "object_id": "office_chair_01",
+      "orientation_intent": {
+        "direction": null,
+        "long_axis": null,
+        "mode": "face_object",
+        "target_object_id": "desk_01",
+        "target_xy_m": null,
+        "wall": null
+      },
+      "placement_rationale": "The swivel chair is centered on the desk's west-facing work side, with enough separation for seated use and a direct approach from the open center of the room.",
+      "x": 1.45,
+      "y": 0.5,
+      "z": 0.607
+    },
+    {
+      "category": "bookcase",
+      "clearance_intents": [
+        {
+          "allowed_overlap_object_ids": [],
+          "clearance_id": "bookcase_01_front_access",
+          "purpose": "Provides unobstructed standing and browsing space along the north-facing shelves.",
+          "type": "front_access"
+        }
+      ],
+      "hssd_id": "5c60be6945490b8be0256760b447608e49c55150",
+      "object_id": "bookcase_01",
+      "orientation_intent": {
+        "direction": null,
+        "long_axis": "east_west",
+        "mode": "back_to_wall",
+        "target_object_id": null,
+        "target_xy_m": null,
+        "wall": "south"
+      },
+      "placement_rationale": "The bookcase occupies a quiet section of the south wall, well east of the doorway approach and clear of the primary route to the desk.",
+      "x": 0.4,
+      "y": -2.351,
+      "z": 0.9652
+    },
+    {
+      "category": "cabinet",
+      "clearance_intents": [
+        {
+          "allowed_overlap_object_ids": [],
+          "clearance_id": "cabinet_01_front_access",
+          "purpose": "Keeps the cabinet doors or drawers accessible from the open area to the east.",
+          "type": "front_access"
+        }
+      ],
+      "hssd_id": "b3839ea63c12168f51635e0f01f431fa4de910b4",
+      "object_id": "cabinet_01",
+      "orientation_intent": {
+        "direction": null,
+        "long_axis": "north_south",
+        "mode": "back_to_wall",
+        "target_object_id": null,
+        "target_xy_m": null,
+        "wall": "west"
+      },
+      "placement_rationale": "The cabinet is backed against the northwest portion of the west wall, above the door zone and outside the north-window clearance.",
+      "x": -2.6605,
+      "y": 1.55,
+      "z": 0.75
+    },
+    {
+      "category": "armchair",
+      "clearance_intents": [
+        {
+          "allowed_overlap_object_ids": [],
+          "clearance_id": "reading_armchair_01_front_access",
+          "purpose": "Preserves an open approach to the reading seat from the room center.",
+          "type": "front_access"
+        }
+      ],
+      "hssd_id": "a2019b85453656ac64d641ff7098bc79598089e8",
+      "object_id": "reading_armchair_01",
+      "orientation_intent": {
+        "direction": null,
+        "long_axis": null,
+        "mode": "face_point",
+        "target_object_id": null,
+        "target_xy_m": [
+          0.0,
+          0.0
+        ],
+        "wall": null
+      },
+      "placement_rationale": "The armchair forms an informal reading corner northwest of center and faces diagonally into the room rather than toward its adjacent table or lamp.",
+      "x": -1.25,
+      "y": 1.05,
+      "z": 0.532
+    },
+    {
+      "category": "side_table",
+      "clearance_intents": [],
+      "hssd_id": "4b410e0f052d226f5d429064000e29e1cae39d8a",
+      "object_id": "side_table_01",
+      "orientation_intent": {
+        "direction": null,
+        "long_axis": null,
+        "mode": "orientation_irrelevant",
+        "target_object_id": null,
+        "target_xy_m": null,
+        "wall": null
+      },
+      "placement_rationale": "The compact square table sits beside the armchair on its west side, within easy reach while remaining separated from the cabinet and circulation route.",
+      "x": -2.12,
+      "y": 0.72,
+      "z": 0.2355
+    },
+    {
+      "category": "floor_lamp",
+      "clearance_intents": [],
+      "hssd_id": "1dd1d62f7ee0db01a8b67719ed4105279bb937ba",
+      "object_id": "floor_lamp_01",
+      "orientation_intent": {
+        "direction": null,
+        "long_axis": "north_south",
+        "mode": "axis_only",
+        "target_object_id": null,
+        "target_xy_m": null,
+        "wall": null
+      },
+      "placement_rationale": "The narrow floor lamp stands northeast of the reading chair, close enough to support reading without entering the window clearance or the central walking path.",
+      "x": -0.55,
+      "y": 1.55,
+      "z": 0.7245
+    }
+  ],
+  "path_target_intents": [
+    {
+      "clearance_id": "office_chair_01_rear_pullout",
+      "purpose": "Primary route from the west door through the open center to the work chair.",
+      "target_id": "office_chair_01"
+    },
+    {
+      "clearance_id": "desk_01_front_access",
+      "purpose": "Maintains direct access to the main work surface from the central aisle.",
+      "target_id": "desk_01"
+    },
+    {
+      "clearance_id": "bookcase_01_front_access",
+      "purpose": "Branches south from the central aisle to the bookcase browsing zone.",
+      "target_id": "bookcase_01"
+    },
+    {
+      "clearance_id": "cabinet_01_front_access",
+      "purpose": "Provides an approach to northwest storage without crossing the reading seat.",
+      "target_id": "cabinet_01"
+    },
+    {
+      "clearance_id": "reading_armchair_01_front_access",
+      "purpose": "Provides a clear diagonal approach from the room center to the reading corner.",
+      "target_id": "reading_armchair_01"
+    }
+  ],
+  "primary_target_id": "office_chair_01",
+  "authorship": {
+    "author": "OpenAI API independent single-scene author",
+    "model": "gpt-5.6-sol",
+    "response_id": "resp_08ad66074395c1c3016a69782211f08196b8fd510b22671fe3",
+    "layout_decisions_by_python": false
+  }
+}

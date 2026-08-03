@@ -1,0 +1,61 @@
+{
+  "schema_version": "authored_scene_revision_record_v1",
+  "scene_id": "living_room_authored_002",
+  "revision_id": "rev_001_local_minus_y_yaw_corrected",
+  "status": "corrected_pending_independent_review",
+  "reason": "Yaw values and their use-clearance-zone orientations now follow the HSSD local -Y front convention; fresh independent review is required because the rendered arrows changed.",
+  "yaw_corrections": [
+    {
+      "object_id": "sofa_conversation_north",
+      "old_yaw_rad": -3.141592653589793,
+      "new_yaw_rad": 0.0,
+      "old_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "object_id": "armchair_conversation_east",
+      "old_yaw_rad": 0.8,
+      "new_yaw_rad": -2.3415926535897933,
+      "old_local_minus_y_front_xy": [
+        0.717356,
+        -0.696707
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.717356,
+        0.696707
+      ]
+    },
+    {
+      "object_id": "console_serving_south_east",
+      "old_yaw_rad": 0.0,
+      "new_yaw_rad": -3.141592653589793,
+      "old_local_minus_y_front_xy": [
+        0.0,
+        -1.0
+      ],
+      "new_local_minus_y_front_xy": [
+        -0.0,
+        1.0
+      ]
+    }
+  ],
+  "artifact_sha256": {
+    "authored_proposal": "c9651a9f197f077f65fe49d5b2bd902c8271cb7d03bc6457b4826856ff6d2d14",
+    "scene": "abfb26f90bff9f6c25ce5bd35fb9c4a227684076a048e312c2359429164b04a2",
+    "validation": "6ca5acdedc3057f4ddf95500afa6853c5261785d1d894aa941afab7922d1eae2",
+    "diversity": "03ffec3ee0a518d209247fdd51b8c850fbb9ad057d7a5e7c761ab793ef74cb20",
+    "diversity_legacy": "03ffec3ee0a518d209247fdd51b8c850fbb9ad057d7a5e7c761ab793ef74cb20",
+    "functional_partner_build": "d8eb23396da5d54eb839a81c7a48911f7032d26423aba0fabbdff078f8a918bf",
+    "visualization": "f70d757818869e44c0e07e505c41dafe129093b3a6b8912bcb3560acb97a5893",
+    "independent_review": "9abe41a0a62b075eb56343399cd683744bfe55a1b2469a1cc4fdfa93352c3d81",
+    "reviewer_scene": "718bf6fa4336aebf6f9520bb0fd387d4b1c7e7a81f4d4423c6ae57520a52e7b1",
+    "reviewer_geometry": "224e12dcc0186fba3290a2d3ed1fd0c832ecb295b0d968934d4c6514e102597a"
+  },
+  "supersedes": "rev_000_pre_yaw_convention_correction"
+}
