@@ -13,7 +13,7 @@ Relation-aware 3D scene repair with auditable clean-layout data tooling.
 
 </div>
 
-![SceneRepair v10 三维场景修复示例](fig/05_application_concept_demo_preview.png?v=531b0b0)
+![SceneRepair v10 三维场景修复示例](fig/05_application_concept_demo.png?v=83af0ab)
 
 SceneRepair v3 将房间、开口和家具编码为异构关系图，联合预测每件家具的修复动作与位姿增量，并在模型推理链路内完成硬约束和功能约束细化。仓库同时提供纯净布局数据生产、训练、评估、JSON-to-JSON 推理和结果审计工具。
 
